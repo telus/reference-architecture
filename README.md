@@ -23,6 +23,7 @@ _TBD_
   - [Releases](development/github-releases.md)
 - [Isomorphic Design](development/isomorphic.md)
 - [BFF](development/bff.md) _(Backend-for-frontend)_
+- [URI Templates & Structure](development/uri-structure.md)
 
 #### Languages & Frameworks
 
