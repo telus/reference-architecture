@@ -18,7 +18,25 @@ Within TELUS digital we have several different contexts that need to support con
 
 We also need to delineate between secrets and non-secrets. **Secrets must NEVER be committed to code**.
 
-Generally speaking, our preferred approach is to set a `NODE_ENV` environment variable, with the value of development, staging or production. Based off of this flag, read a specific `config/environment.js` (e.g. `config/production.js`). This allows us to define a constrained list of specific environments that are supported by the codebase. We can define large chunks of structured, nested configurations (if necessary). Usually the shared libraries we use also take in their configuration as JavaScript objects, so it is simple to read this data from a JavaScript object configuration file.
+### APP_ENV
+
+Generally speaking, our preferred approach is to set a single `APP_ENV` environment variable, which is used to load a configuration file in your native application language (e.g. `config/staging.js` for JS code deployed to staging... APP_ENV=staging).
+
+Define a constrained list of environments that are supported by the codebase. Generally these are local `development`, plus remote environments controlled by the delivery pipeline, such as `staging` and `production`. Each of these local/remote application environments can be configured differently, while they will still use the same artifact.
+
+Usually the shared libraries we use also take in their configuration as JavaScript objects, so it is simple to read this data from a JavaScript object configuration file.
+
+### NODE_ENV
+
+NODE_ENV is a special environment variable used by Express.js, React and Redux. It should not be confused with APP_ENV, even though it has similar values:
+
+- *test*: used when running unit tests
+- *development*: used when running code locally
+- *production*: used when running in a production-like environment
+
+Note that all of our Docker environments, whether local or remote, are using the production NODE_ENV. We typically hardcode this value in the `npm start` command, while hardcoding NODE_ENV as development in the `npm run dev` command.
+
+### Environment variables
 
 Only for the purpose of secrets do we use environment variables. These secrets must be read from HashiCorp/Ansible vault, and stored ephemerally in the environment. You can either read and set these values in your local shell environment, or store them on the local filesystem (**IMPORTANT**: if storing on the filesystem you MUST add the path to .gitignore so that you NEVER commit them... once they are committed you can assume the secret is now "leaked", and should be re-rolled, as git history lasts forever).
 
@@ -31,7 +49,7 @@ For secrets in Kubernetes, the HashiCorp/Ansible vault secrets should be read, a
       key: super-secret-license
 ```
 
-#### On 12 factor
+### On 12 factor
 
 We have also seen teams opt for the 12-factor approach, using properties-formatted `.env` files. While this is a popular (Heroku-backed) cloud-native way of defining configurations, in general this is somewhat problematic for our toolchain. Docker-compose can easily mount `.env` files into the environment of the Docker container... but for local Node and remote Kubernetes, it is not so straightforward. For local Node you can use tools like `dotenv` to read the secrets and put them in your current shell session. For Kubernetes, every single configuration needs to be declared for each container.
 
