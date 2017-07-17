@@ -12,7 +12,7 @@ We have a proprietary nginx-based inbound proxy, which routes ALL requests to TE
 
 We present www.telus.com and a few subdomains used to route to application environments:
 
-- www.wcdevelop.telus.com
+- wcdevelopment.telus.com
 - www.wctest.telus.com
 - www.wcstage.telus.com
 
