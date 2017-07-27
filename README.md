@@ -77,6 +77,7 @@ _TBD_
 - [Unit testing](testing/unit.md)
 - [End to End testing](testing/e2e.md)
 - [Security testing](testing/security.md)
+- [Load testing](testing/load.md)
 - [Consumer driven contract testing](testing/consumer_driven_contracts.md)
 
 ### Delivery
