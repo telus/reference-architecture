@@ -78,6 +78,7 @@ _TBD_
 - [End to End testing](testing/e2e.md)
 - [Security testing](testing/security.md)
 - [SEO testing](testing/seo.md)
+- [Analytics testing](testing/analytics.md)
 - [Consumer driven contract testing](testing/consumer_driven_contracts.md)
 
 ### Delivery
