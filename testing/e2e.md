@@ -22,9 +22,9 @@ UI's shall be end-to-end tested using [Nightwatch.js](http://nightwatchjs.org/).
 
 #### Sauce Labs
 
-We can also use Nightwatch to test our application on [Sauce Labs](https://saucelabs.com/) (a cross-browser testing platform), which offers us the ability to test innumerable browsers in parallel. The isomorphic starter kit ships with the tooling necessary to run its tests against Saucelabs.
+We can also use Nightwatch to test our application on [Sauce Labs](https://saucelabs.com/) (a cross-browser testing platform), which offers us the ability to test innumerable desktop and mobile browsers in parallel. The isomorphic starter kit ships with the tooling necessary to run its tests against Saucelabs.
 
-Currently we do not have enough threads to run this as part of our pipelines, so it is used for ad-hoc testing.
+Currently we do not have enough threads to run this as part of our pipelines, so it is used for ad-hoc testing. You'll need to authenticate with [ship.py](../delivery/shippy.md) in order to get the credentials necessary to use the `./run-saucelabs.sh` CLI tool.
 
 #### Device lab
 
