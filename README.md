@@ -67,6 +67,10 @@ _TBD_
 - [ESLint](development/eslint.md)
 - [stylelint](development/stylelint.md)
 
+#### Best Practices
+
+- [Caching user data](best-practices/caching.md)
+
 ### API Platform
 
 - [Overview](api/README.md)

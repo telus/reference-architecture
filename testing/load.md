@@ -19,7 +19,6 @@ Do not load test openshiftapps.com or telus.com routes; instead, test the intern
 Load testing downstream services may require a fixed testing window, otherwise these tests need to be kept small.
 
 ## TODO
-
 - [ ] make the load test [pipeline gating](../delivery/continuous-delivery.md#automated-gating)
 - [ ] add example artillery yml
 
