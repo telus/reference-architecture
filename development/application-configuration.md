@@ -26,13 +26,17 @@ Define a constrained list of environments that are supported by the codebase. Ge
 
 Usually the shared libraries we use also take in their configuration as JavaScript objects, so it is simple to read this data from a JavaScript object configuration file.
 
+#### Isomorphic APP_ENV
+
+In our isomorphic [starter kit](starter-kits.md), we want to support per-environment configuration files on the client side, without having to re-run [webpack compilation](webpack.md#how). As such, we inject APP_ENV into the client-side JavaScript (as `window.__APP_ENV__`). This should be used to load the relevant configuration file on the client side (v.s. `process.env.APP_ENV` on server-side). Use `process.env.BROWSER` to determine whether you are on client side, or not, and choose the correct APP_ENV source accordingly (note: `process.env.APP_ENV` is not available on client-side.
+
 ### NODE_ENV
 
-NODE_ENV is a special environment variable used by Express.js, React and Redux. It should not be confused with APP_ENV, even though it has similar values:
+NODE_ENV is a special environment variable used by Express.js, React, Redux and Webpack. It should not be confused with APP_ENV, even though it has similar values:
 
 - *test*: used when running unit tests
-- *development*: used when running code locally
-- *production*: used when running in a production-like environment
+- *development*: used when running dynamic development code locally
+- *production*: used when running in a static production-like environment
 
 Note that all of our Docker environments, whether local or remote, are using the production NODE_ENV. We typically hardcode this value in the `npm start` command, while hardcoding NODE_ENV as development in the `npm run dev` command.
 
