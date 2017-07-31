@@ -80,6 +80,7 @@ _TBD_
 - [Accessibility testing](testing/accessibility.md)
 - [Load testing](testing/load.md)
 - [SEO testing](testing/seo.md)
+- [Analytics testing](testing/analytics.md)
 - [Consumer driven contract testing](testing/consumer_driven_contracts.md)
 
 ### Delivery
