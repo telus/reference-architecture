@@ -77,6 +77,7 @@ _TBD_
 - [Unit testing](testing/unit.md)
 - [End to End testing](testing/e2e.md)
 - [Security testing](testing/security.md)
+- [Visual regression testing](testing/visual-regression.md)
 - [Accessibility testing](testing/accessibility.md)
 - [Load testing](testing/load.md)
 - [SEO testing](testing/seo.md)
