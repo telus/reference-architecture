@@ -28,7 +28,20 @@ Usually the shared libraries we use also take in their configuration as JavaScri
 
 #### Isomorphic APP_ENV
 
-In our isomorphic [starter kit](starter-kits.md), we want to support per-environment configuration files on the client side, without having to re-run [webpack compilation](webpack.md#how). As such, we inject APP_ENV into the client-side JavaScript (as `window.__APP_ENV__`). This should be used to load the relevant configuration file on the client side (v.s. `process.env.APP_ENV` on server-side). Use `process.env.BROWSER` to determine whether you are on client side, or not, and choose the correct APP_ENV source accordingly (note: `process.env.APP_ENV` is not available on client-side.
+In our isomorphic [starter kit](starter-kits.md), we want to support per-environment configuration files on the client side, without having to re-run [webpack compilation](webpack.md#how). At the same time, we don't want our bundle to contain every possible environment configuration (especially in production). To accomplish this we inject the environment specific configuration into the client-side JavaScript (as `window.__APP_CONFIG__`) during isomorphic render. Throughout the codebase the config that is included looks like this:
+
+```
+if (process.env.BROWSER) {
+ envConfig = window.__APP_CONFIG__;
+} else {
+ // This will only happen on the server side
+ const env = process.env.APP_ENV || 'production';
+
+ envConfig = require(`./${env}`).default;
+}
+```
+
+What this means is that when the code executes on the client (i.e. through bundle.js), the config will be retrieved from the window. When the code executes on the server, node will require the actual config file. 
 
 ### NODE_ENV
 
