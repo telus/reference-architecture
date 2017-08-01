@@ -22,6 +22,21 @@ By writing the test first:
 - Implement the feature that makes the test pass
 - Avoid [fragile tests](https://www.youtube.com/watch?v=URSWYvyc42M) and tight coupling
 
+## Style
+
+For testing React higher order components, it is preferred to keep the presentational component and the enhancing container in separate source files, then wrap in `index.js` to export the enhanced component. This way, testing can be done separately on the presentational component, and then the higher order component, without adding in extra named exports.
+
+ie: Given a `Card` that gets wrapped in an HoC, the directory structure should look as follows:
+```
+- Card/
+  - __tests__/
+    - Card.spec.jsx
+    - EnhancedCard.spec.jsx
+  - Card.jsx
+  - EnhancedCard.jsx
+  - index.js
+```
+
 ## Who
 
 @delivery @qa
