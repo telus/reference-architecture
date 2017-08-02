@@ -50,15 +50,17 @@ Bill Wake's [article on the INVEST mnemonic](http://xp123.com/articles/invest-in
 
 For more on the importance and practical advice on how to achieve small stories, check out the article on [smaller stories](process/small-stories-are-faster.md).
 
-It's also common practice to include acceptance criteria in a story in order to help a developer know when they're finished. When present, acceptance criteria often follow a "Given, When, Then" pattern. Martin Fowler's article on the Given When Then pattern describes it well:
+It's also common practice to include acceptance criteria in a story in order to help a developer know when they're finished. QA folks often go by the acceptance criteria when validating a story or developing a test strategy. When present, acceptance criteria often follow a "Given, When, Then" pattern. Martin Fowler's article on the [Given When Then](https://martinfowler.com/bliki/GivenWhenThen.html) pattern describes it well:
 
 > The essential idea is to break down writing a scenario (or test) into three sections:
 >
-> The given part describes the state of the world before you begin the behavior you're specifying in this scenario. You can think of it as the pre-conditions to the test.
-> The when section is that behavior that you're specifying.
-> Finally the then section describes the changes you expect due to the specified behavior.
-> Since we're talking about using examples as specifications, it makes sense to show this with an example:
+> The 'given' part describes the state of the world before you begin the behavior you're specifying in this scenario. You can think of it as the pre-conditions to the test.
 >
+> The 'when' section is that behavior that you're specifying.
+>
+> Finally the 'then' section describes the changes you expect due to the specified behavior.
+>
+Example:
 ~~~
 Feature: User trades stocks
  Scenario: User requests a sell before close of trading
