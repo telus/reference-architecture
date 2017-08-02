@@ -20,7 +20,7 @@ User Stories are a more modern approach to helping developers answer the questio
 > 
 > As a < type of user >, I want < some goal > so that < some reason >.
 
-It's common practice to write stories out on 3x5 index cards with a marker, forcing them to be fairly short, which places the focus on the conversation. It's more common at TELUS digital to enter them in to JIRA to facilitate teams that are co-located, though often teams which are kicking off a new project will work with markers, sticky notes and 3x5 cards as they're building up an initial release plan.
+It's common practice to write stories out on 3x5 index cards with a marker, forcing them to be fairly short, which places the focus on the conversation. It's more common at TELUS digital to enter them in to JIRA to facilitate teams that are distributed, though often teams which are kicking off a new project will work with markers, sticky notes and 3x5 cards as they're building up an initial release plan.
 
 Mike goes on to illustrate the flexibility of the concept. Stories can describe very coarse grained requirements, or very fine grained requirements:
 
@@ -37,7 +37,7 @@ Mike goes on to illustrate the flexibility of the concept. Stories can describe 
 
 ## How
 
-Martin Fowler's article on user stories goes in to more detail on what makes a good story.
+Bill Wake's [article on the INVEST mnemonic](http://xp123.com/articles/invest-in-good-stories-and-smart-tasks/) goes in to more detail on what makes a good story.
 
 > Characteristics of good stories:
 >
@@ -48,7 +48,7 @@ Martin Fowler's article on user stories goes in to more detail on what makes a g
 > - **Small**: stories should be built in a small amount of time, usually a matter of person-days. Certainly you should be able to build several stories within one iteration.
 > - **Testable**: you should be able to write tests to verify the software for this story works correctly.
 
-For more on the importance and practical advice on how to acheive small stories, check out the article on [smaller stories](process/small-stories-are-faster.md).
+For more on the importance and practical advice on how to achieve small stories, check out the article on [smaller stories](process/small-stories-are-faster.md).
 
 It's also common practice to include acceptance criteria in a story in order to help a developer know when they're finished. When present, acceptance criteria often follow a "Given, When, Then" pattern. Martin Fowler's article on the Given When Then pattern describes it well:
 
