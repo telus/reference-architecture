@@ -9,7 +9,6 @@ Old-fashioned concepts like the "Business Requirements document" and "Functional
  - They take forever for developers to try to parse in to something useful
  - They don't at all facilitate iterative process
 
-
 ## What
 
 User Stories are a more modern approach to helping developers answer the question "how do I know what software to make?" Mike Cohn puts it best on [his website](https://www.mountaingoatsoftware.com/agile/user-stories): 
@@ -50,7 +49,7 @@ Bill Wake's [article on the INVEST mnemonic](http://xp123.com/articles/invest-in
 
 For more on the importance and practical advice on how to achieve small stories, check out the article on [smaller stories](process/small-stories-are-faster.md).
 
-It's also common practice to include acceptance criteria in a story in order to help a developer know when they're finished. QA folks often go by the acceptance criteria when validating a story or developing a test strategy. When present, acceptance criteria often follow a "Given, When, Then" pattern. Martin Fowler's article on the [Given When Then](https://martinfowler.com/bliki/GivenWhenThen.html) pattern describes it well:
+Once a story has stabilized, and before its picked up by developers, it's common practice to include acceptance criteria in order to help a developer know when they're finished. QA folks often go by the acceptance criteria when validating a story and developing a test strategy. When present, acceptance criteria often follow a "Given, When, Then" pattern. Martin Fowler's article on the [Given When Then](https://martinfowler.com/bliki/GivenWhenThen.html) pattern describes it well:
 
 > The essential idea is to break down writing a scenario (or test) into three sections:
 >
@@ -75,6 +74,7 @@ Feature: User trades stocks
      And a sell order for 20 shares of MSFT stock should have been executed
 ~~~
 
+Stories often have their own life cycle. They may start out as literal 3x5 cards or sticky notes; be entered later in to JIRA, and later still enhanced with acceptance criteria pairing with a QA. 
 
 ## References
 
