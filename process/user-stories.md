@@ -82,7 +82,7 @@ Martin Fowler's [article on user stories](https://martinfowler.com/bliki/UserSto
 
 Mike Cohn wrote what is now the [standard book on writing user stories](https://www.amazon.com/gp/product/0321205685?ie=UTF8&tag=martinfowlerc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0321205685).
 
-Bill Wake came up wit the [INVEST mnemonic](Bill Wake came up with the [INVEST mnemonic](http://xp123.com/articles/invest-in-good-stories-and-smart-tasks/) used above.
+Bill Wake came up with the [INVEST mnemonic](http://xp123.com/articles/invest-in-good-stories-and-smart-tasks/) described above.
 
 Martin Fowler's article on [Given When Then](https://martinfowler.com/bliki/GivenWhenThen.html) explains its roots in the BDD approach to software development.
 
