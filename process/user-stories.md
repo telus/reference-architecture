@@ -70,7 +70,7 @@ Feature: User trades stocks
      
     Then I should have 80 shares of MSFT stock
      And I should have 150 shares of APPL stock
-     And a sell order for 20 shares of MSFT stock should have been executed`
+     And a sell order for 20 shares of MSFT stock should have been executed
 ~~~
 
 
