@@ -15,6 +15,7 @@ We present www.telus.com and a few subdomains used to route to application envir
 - wcdevelopment.telus.com
 - www.wctest.telus.com
 - www.wcstage.telus.com
+- www.wcpreview.telus.com
 
 ### Develop, test, staging
 
