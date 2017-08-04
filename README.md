@@ -1,5 +1,5 @@
-<h1>Reference Architecture Wiki <img align="right" height="50" src="logo.png"/></h1>
-
+![Reference Architecture Wiki Logo](logo.png "Reference Architecture Wiki")
+---
 > **Note**: This is a work in progress, you are welcome to contribute and suggest changes, please follow the [contribution guidelines](.github/CONTRIBUTING.md)
 
 ## Why
