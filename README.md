@@ -98,6 +98,17 @@ _TBD_
 - [Inbound Proxies](delivery/inbound-proxies.md)
 - [Shippy](delivery/shippy.md)
 
+### Performance
+- Isomorphic React Applications
+    - [Performance Baseline](performance/performance-baseline.md)
+    - [API Optimization (Server Side)](performance/api-optimization.md)
+    - [Server Side Rendering](performance/server-side-rendering.md)
+    - [Image Optimization](performance/image-optimization.md)
+    - [CSS Optimization](performance/css-optimization.md)
+    - [Resource Hinting](performance/resource-hinting.md)
+    - [Page Speed Insights](performance/page-speed-insights.md)
+    - [Automated Performance Testing](performance/automated-testing.md)
+
 ### Analytics
 
 _TBD_
