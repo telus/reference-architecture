@@ -20,6 +20,8 @@ _TBD_
 
 - [Project Template](process/project-template.md)
 - [Contribution Model](process/contribution-model.md)
+- [User Stories](process/user-stories.md) 
+  - [Smaller Stories Are Faster](process/small-stories-are-faster.md)
 
 #### Concepts & Architecture
 
