@@ -65,7 +65,7 @@ We use two types of OpenShift build strategies: `JenkinsPipeline` and `Docker`:
 
 #### Routes
 
-A route exposes a Service over a given cluster URL. It also adds SSL edge termination.
+A route exposes a Service over a given cluster URL. It also adds [SSL edge termination](tls-routes.md).
 
 #### ImageStreams
 
