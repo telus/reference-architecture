@@ -15,7 +15,7 @@ Secured routes specify the TLS termination of the route and, optionally, provide
 To create a secured HTTPS route encrypted with a key and certificate (PEM-format files which you must generate and sign separately), you can use the create route command and optionally provide certificates and a key.
 
 ```
-$ oc create route ${ROUTE_NAME} \ 
+$ oc create route edge ${ROUTE_NAME}\
     --service=${SERVICE_NAME} \
     --cert=${CERTS_DIR}/ca.crt \
     --key=${CERTS_DIR}/ca.key \
