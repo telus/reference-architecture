@@ -67,7 +67,7 @@ _TBD_
 - [ESLint](development/eslint.md)
 - [stylelint](development/stylelint.md)
 
-### API Platform
+### API Practice
 
 - [Overview](api/README.md)
 - [RESTful Design](api/restful.md)
