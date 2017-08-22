@@ -1,0 +1,334 @@
+---
+swagger: "2.0"
+info:
+  description: "No description"
+  version: "0.1"
+  title: "WiFiManagementService"
+  contact: {}
+host: "dv.com"
+basePath: "/v1/cmo/selfmgmt/wifimanagement"
+schemes:
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /account/{account}/device:
+    get:
+      summary: "getDevices"
+      description: "get all services associated with Compass or Netcracker account\n\
+        returns error as per following table in case operation failed to fetch information\n\
+        \n\n| HTTP Status Code | statusCd | Notes |\n| -------- | -------- | --------\
+        \ |\n| 404     | ACNF     | error is returned if failed to find account in\
+        \ system     |\n| 404     | DVNF     | error is returned if failed to find\
+        \ device in system     |\n|500|SYSERR|error is returned if there is runtime\
+        \ error in service |\n|500|DEPERR|error is returned if service failed to contact\
+        \ one of the downstream or received unexpected response|\n"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Device"
+        404:
+          description: "Status 404"
+          schema:
+            type: "object"
+            properties:
+              status:
+                $ref: "#/definitions/Status"
+        500:
+          description: "Status 500"
+          schema:
+            type: "object"
+            properties:
+              status:
+                $ref: "#/definitions/Status"
+    parameters:
+    - name: "account"
+      in: "path"
+      required: true
+      type: "string"
+  ? /account/{account}/device/organizationuniqueid/{organizationUniqueIdTxt}/productclass/{productClassTxt}/serialNumber/{serialNumber}/status
+  : get:
+      summary: "getDeviceStatus"
+      description: "Synchronous operation to get device status from HDM cache.\n\n\
+        To get actual device status from the device itself is asynchronous operation\
+        \ and it is requested by \n1. POST createDeviceStatusRequest - to invoke\n\
+        2. HEAD checkDeviceStatusRequest - to poll\n3. DELETE fetchAndDeleteDeviceStatusRequest\
+        \ - to get actual response."
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+          schema:
+            $ref: "#/definitions/DeviceStatus"
+        500:
+          description: "Status 500"
+    head:
+      summary: "checkDeviceStatusRequest"
+      description: "check status of DeviceStatus Request\nlast modified time resposne\
+        \ header is present if DeviceStatus is available"
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+          headers:
+            Last-Modified:
+              type: "string"
+              description: "last modified unix time is present if deviceStatus is\
+                \ present"
+              x-example: "1500401635"
+        204:
+          description: "status 204 - no Content is returned if no DeviceStatus is\
+            \ available"
+        404:
+          description: "status 404 Not Found is returned if no POST request is made\
+            \ for this DeviceStatus earlier"
+    post:
+      summary: "createDeviceStatusRequest"
+      description: "triggers device status reqeust to HDM"
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+    delete:
+      summary: "fetchAndDeleteDeviceStatusRequest"
+      description: "returns DeviceStatus received from HDM and clears request from\
+        \ cache"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+          schema:
+            $ref: "#/definitions/DeviceStatus"
+    parameters:
+    - name: "account"
+      in: "path"
+      required: true
+      type: "string"
+    - name: "organizationUniqueIdTxt"
+      in: "path"
+      required: true
+      type: "string"
+    - name: "productClassTxt"
+      in: "path"
+      required: true
+      type: "string"
+    - name: "serialNumber"
+      in: "path"
+      required: true
+      type: "string"
+  ? /account/{acount}/device/organizationuniqueid/{organizationUniqueIdTxt}/productclass/{productClassTxt}/serialNumber/{serialNumber}/configure
+  : head:
+      summary: "checkDeviceConfigRequest"
+      description: "check status of DeviceStatus Request\nlast modified time resposne\
+        \ header is present if DeviceStatus is available"
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+          headers:
+            Last-Modified:
+              type: "string"
+              description: "last modified unix time is present if deviceStatus is\
+                \ present"
+              x-example: "1500401635"
+        204:
+          description: "status 204 - no Content is returned if no DeviceStatus is\
+            \ available"
+        404:
+          description: "status 404 Not Found is returned if no POST request is made\
+            \ for this DeviceStatus earlier"
+    post:
+      summary: "createDeviceConfigRequest"
+      consumes:
+      - "application/json"
+      parameters:
+      - name: "body"
+        in: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/DeviceStatus"
+      responses:
+        200:
+          description: "Status 200"
+    put:
+      summary: "configureDeviceStatus"
+      description: "Synchronous operation to configure device status. Operation request\
+        \ device change and returns immidiately without confirmation.\n\nTo get cofirmation\
+        \ on device config change from the device itself is asynchronous operation\
+        \ and it is requested by \n1. POST createDeviceConfigureRequest - to request\
+        \ config change\n2. HEAD checkDeviceConfigRequest - to poll request status\n\
+        3. DELETE fetchAndDeleteDeviceConfigRequest - to get actual confirmation."
+      consumes:
+      - "application/json"
+      parameters:
+      - name: "body"
+        in: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/DeviceStatus"
+      responses:
+        200:
+          description: "Status 200"
+    delete:
+      summary: "fetchAndDeleteDeviceConfigRequest"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+          schema:
+            $ref: "#/definitions/DeviceStatus"
+    parameters:
+    - name: "acount"
+      in: "path"
+      required: true
+      type: "string"
+    - name: "organizationUniqueIdTxt"
+      in: "path"
+      required: true
+      type: "string"
+    - name: "productClassTxt"
+      in: "path"
+      required: true
+      type: "string"
+    - name: "serialNumber"
+      in: "path"
+      required: true
+      type: "string"
+definitions:
+  Device:
+    type: "object"
+    required:
+    - "deviceTypeCd"
+    - "organizationUniqueIdTxt"
+    - "productClassTxt"
+    - "productDescription"
+    - "serialNumberTxt"
+    properties:
+      deviceTypeCd:
+        type: "string"
+        description: "device type"
+        enum:
+        - "Router"
+        - "AccessPoint"
+        - "WirelessExtender"
+      status:
+        type: "string"
+        description: "device status only applicable to deviceTypeCd 'Router'"
+      serialNumberTxt:
+        type: "string"
+        description: "Base64 encoded CPE device SerialNumber"
+      organizationUniqueIdTxt:
+        type: "string"
+        description: "OUI of the CPE device manufacturer"
+      productClassTxt:
+        type: "string"
+        description: "ProductClass of the CPE device manufacturer"
+      productDescription:
+        type: "string"
+        description: "Human readable product name"
+      lastContactDateTime:
+        type: "string"
+        description: "last contacted date time of device. applicable only to deviceTypeCd\
+          \ 'AccessPoint' and 'WirelessExtender'"
+      connectedDevices:
+        type: "array"
+        description: "connected devices to router only applicable to deviceTypeCd\
+          \ ‘Router’"
+        items:
+          $ref: "#/definitions/Device"
+  Status:
+    type: "object"
+    properties:
+      statusCd:
+        type: "string"
+      statusSubCd:
+        type: "string"
+      statusTxt:
+        type: "string"
+      systemErrorCd:
+        type: "string"
+      systemErrorTxt:
+        type: "string"
+      systemErrorTimeStamp:
+        type: "string"
+  DeviceStatus:
+    type: "object"
+    properties:
+      adminPassword:
+        type: "string"
+        description: "write only field. \nused to set admin password for CPE.\nno\
+          \ value is returned in get status."
+      deviceModel:
+        type: "string"
+        description: "Model name of the CPE (human readable string)"
+      serialNumber:
+        type: "string"
+        description: "Serial number of the CPE."
+      firmwareVersion:
+        type: "string"
+        description: "A string identifying the software version currently"
+      ipAddress:
+        type: "string"
+        description: "IP address of the CPE."
+      macAddress:
+        type: "string"
+        description: "The physical address of the WANIPConnection"
+      upTime:
+        type: "integer"
+        description: "Time in seconds since the CPE was last restarted"
+      autoConfigEnabled:
+        type: "boolean"
+      logicalDeviceStatusList:
+        type: "array"
+        items:
+          $ref: "#/definitions/LogicalDevice"
+  LogicalDevice:
+    type: "object"
+    properties:
+      wirelessChannel:
+        type: "string"
+        description: "The current radio channel used by 802.11 LAN connection on a\
+          \ CPE device"
+        example: "2.4"
+      ssid:
+        type: "string"
+        description: "The current service set identifier in use by 802.11 LAN connection\
+          \ on a CPE device"
+        example: "TELUS0040-2.4G"
+      status:
+        type: "string"
+        description: "Indicates whether or not the access point radio is enabled"
+        enum:
+        - "On"
+        - "Off"
+      ssidBroadcastEnabled:
+        type: "string"
+        description: "Indicates whether or not the access point is sending out beacons"
+      wirelessSecurity:
+        type: "string"
+        description: "Wireless Security method to set"
+        example: "WEP64-Open"
+      passPhrase:
+        type: "string"
+        description: "Wireless Password  to set"
+      wirelessRadioFrequency:
+        type: "string"
+        description: "Indiacetes the radio frequency(2.4 GHz or 5 GHz) of Wireless\
+          \ Extender."
+    description: "logical device representing channel.\n\nconstraint - wirelessSecurity\
+      \ and passPhrase, both properties needs to be provided if either of them has\
+      \ to be changed.\n"

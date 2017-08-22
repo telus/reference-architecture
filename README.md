@@ -71,7 +71,7 @@ _TBD_
 
 - [Overview](api/README.md)
 - [RESTful Design](api/restful.md)
-- [Authorization Proxy](api/authorization-proxy.md)
+- [Authorization Proxy](api/authproxy/authorization-proxy.md)
 - [Documentation Format](api/documentation.md)
 
 ### Testing Practice
