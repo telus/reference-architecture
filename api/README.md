@@ -4,6 +4,10 @@
 
 * [API Roadmap](roadmap/roadmap.md)
 
+## AuthProxy
+
+* [AuthProxy](authproxy/authorization-proxy.md)
+
 ## API Minutes
 
 Minutes from various meetings related to the API Practice.
