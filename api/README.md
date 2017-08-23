@@ -8,18 +8,12 @@
 
 * [AuthProxy](authproxy/authorization-proxy.md)
 
-## API Minutes
-
-Minutes from various meetings related to the API Practice.
-
-* [Minutes space](minutes/)
-
 ## API Standards
 
 Development standards for the API practice:
 
 * [Design Decision Log](standards/API-Standards.md)
-* [TODO: Example dev docs on github]()
+* [API Guild Standards](https://github.com/telusdigital/developer-guild/tree/master/g-apis)
 
 ### NFRs:
 
