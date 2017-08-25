@@ -39,7 +39,7 @@ Presentation logic, orchestration, and aggregation are usually the stock and tra
 
 ### Deloyment & Separation
 
-In the [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit) you'll find we have both the React Isomorphic (client & server-side) UI, as well as an Express.js BFF in the same repository. Both are set up as separate [Docker](../delivery/docker.md) containers. Locally you can run them separately with `npm`, or together with `docker-compose`. These containers are both built and deployed in parallel to a shared host on our [Continuous Integration](../delivery/continuous-integration.md)/[Delivery](../delivery/continuous-delivery.md) build pipeline on [OpenShift](../delivery/openshift.md). By being coupled in the same release, you are able to keep the domain models in sync between the BFF & UI containers, and version them together.
+In the [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit) you'll find we have both the React Isomorphic (client & server-side) UI, as well as an Express.js BFF in the same repository. Both are set up as separate [Docker](../delivery/docker.md) containers. Locally you can run them separately with `npm`, or together with `docker-compose`. These containers are both built and deployed in parallel to a shared host on our [Continuous Integration](../process/continuous-integration.md)/[Delivery](../process/continuous-delivery.md) build pipeline on [OpenShift](../delivery/openshift.md). By being coupled in the same release, you are able to keep the domain models in sync between the BFF & UI containers, and version them together.
  
 ### When should a BFF be shared amongst teams or squads?
 

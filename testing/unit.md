@@ -6,7 +6,7 @@ When designing or implementing a feature, we want to know that we are doing it p
 
 ## What
 
-As part of our [Continuous Integration](../delivery/continuous-integration.md) practices, we are pushing for Test Driven Development, where unit tests are written BEFORE a new feature. It falls in line with the construction proverb: "measure twice, cut once".
+As part of our [Continuous Integration](../process/continuous-integration.md) practices, we are pushing for Test Driven Development, where unit tests are written BEFORE a new feature. It falls in line with the construction proverb: "measure twice, cut once".
 
 By writing the test first:
 

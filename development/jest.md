@@ -2,7 +2,7 @@
 
 ## Why
 
-As part of our move to [continuous integration](../delivery/continuous-integration.md), we need a unit testing framework, in order to support our emerging Test-Driven-Development practice. By writing unit tests, we increase the confidence in our code and our build pipeline, and limit the number of issues when we make a code change.
+As part of our move to [continuous integration](../process/continuous-integration.md), we need a unit testing framework, in order to support our emerging Test-Driven-Development practice. By writing unit tests, we increase the confidence in our code and our build pipeline, and limit the number of issues when we make a code change.
 
 ## What
 
