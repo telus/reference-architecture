@@ -95,6 +95,7 @@ _TBD_
 - [OpenShift](delivery/openshift.md)
 - [Jenkins](delivery/jenkins.md)
 - [Secrets](delivery/secrets.md)
+- [TLS Routes](delivery/tls-routes.md)
 - [Inbound Proxies](delivery/inbound-proxies.md)
 - [Shippy](delivery/shippy.md)
 
