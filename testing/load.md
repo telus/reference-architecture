@@ -8,7 +8,7 @@ We want our websites to handle large volumes of customer traffic.
 
 We need to send simulated traffic to our application, as a step during the continuous delivery pipeline, to confirm that the application is performant.
 
-Our starter kits, by default, are expected to serve 50 RPS ("requests per second"), with max 25ms latency and 100ms response for 95% of traffic. These variables should be tunable, based on load expectations for your application.
+Our starter kits, by default, are expected to serve 50 RPS ("requests per second"), with max 50ms latency and 100ms response for 95% of traffic. These variables should be tunable, based on load expectations for your application.
 
 ## How
 
