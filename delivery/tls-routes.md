@@ -8,7 +8,7 @@ Unsecured routes are the default configuration, and are therefore the simplest t
 
 ## What
 
-Secured routes specify the TLS termination of the route and, optionally, provide a key and certificate(s).
+Secured routes specify the TLS termination of the route and provide a key and certificate(s). All routes exposed outside of our cluster must be on TLS.
 
 ## How
 
