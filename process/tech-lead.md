@@ -2,7 +2,7 @@
 
 ## Why
 
-Why do we need Tech Leads in squads and outcome teams?  I like [Pat Kua](http://www.se-radio.net/2016/08/se-radio-episode-265-pat-kua-on-becoming-a-tech-lead/) on the subject:
+Why do we need Tech Leads in squads and outcome teams?  I like [Pat Kua](https://medium.com/featured-insights/5-tips-for-being-an-effective-tech-lead-7ec36391de34) on the subject:
 
 > **"A good sign of effective tech leadership and a team working together is that everything feels like it’s written by the same developer mindset."**
 
@@ -61,6 +61,8 @@ A lunch and learn is a format where someone develops some content to present to 
 It's not uncommon for people in either of these roles to hold [one on one](one-on-ones.md) (1:1) meetings with the other developers working on the teams they serve.  As part of these 1:1 meetings leaders can focus on how a particular developer can continue to improve. 
 
 ## References
+
+https://medium.com/featured-insights/5-tips-for-being-an-effective-tech-lead-7ec36391de34
 
 https://www.thoughtworks.com/insights/blog/three-common-mistakes-first-time-tech-lead
 
