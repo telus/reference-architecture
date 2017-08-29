@@ -7,7 +7,7 @@
 Security is everyone's responsibility, by including security mindfulness early
 in the development process, concerns are identified and remediated ideally
 before they are put into production. This avoids the costly (both in terms of
-time and money) of refactoring a project later in the development cycle.
+time and money) refactoring of a project later in the development cycle.
 Moreover, our customers expect the Confidentiality, Identity and Availability
 of our products and services to be an intrinsic value.
 
@@ -18,8 +18,8 @@ The following sections and placeholder articles are the the bare minimum your pr
 ## How
 First and foremost, application security is a relatively new discipline, the
 humility and wisdom to ask for help is a great start. There's a lot of moving
-parts and new threats are a given. Connecting with your outcome team's assigned @security resource is
-lot of moving parts. The humility and wisdom to concede that
+parts and new threats are a given. Connecting with your outcome team's assigned @security resource can help you overcome some initial hurdles
+
 
 ## Who
 As mentioned above, security is everyone's responsibility our customers are
