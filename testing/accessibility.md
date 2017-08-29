@@ -4,7 +4,7 @@
 
 AODA, or the [Accessibility for Ontarians with Disabilities Act](http://www.aoda.ca/) mandates accessibility compliance. The standard we comply to is [WCAG 2.0 AA](https://www.w3.org/WAI/WCAG20/quickref/).
 
-When our application gets deployed through our [Continuous Delivery](../delivery/continuous-delivery.md) pipeline, we want to know that it is accessible.
+When our application gets deployed through our [Continuous Delivery](../process/continuous-delivery.md) pipeline, we want to know that it is accessible.
 
 ## What
 

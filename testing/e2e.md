@@ -2,7 +2,7 @@
 
 ## Why
 
-When our application gets deployed through our [Continuous Delivery](../delivery/continuous-delivery.md) pipeline, we want to know that an application is working when it is deployed to our pre-production and production environments.
+When our application gets deployed through our [Continuous Delivery](../process/continuous-delivery.md) pipeline, we want to know that an application is working when it is deployed to our pre-production and production environments.
 
 ## What
 
