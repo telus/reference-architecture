@@ -54,6 +54,10 @@ For new and existing team members, a single place where all the technical knowle
 - [Gitignore](development/gitignore.md)
 - [ESLint](development/eslint.md)
 
+#### Best Practices
+
+- [Caching user data](best-practices/caching.md)
+
 ### API Platform
 
 - [Authorization Proxy](api/authorization-proxy.md)
