@@ -20,7 +20,7 @@ Load testing downstream services may require a fixed testing window, otherwise t
 
 ## TODO
 
-- [ ] make the load test [pipeline gating](../delivery/continuous-delivery.md#automated-gating)
+- [ ] make the load test [pipeline gating](../process/continuous-delivery.md#automated-gating)
 - [ ] add example artillery yml
 
 ## Who

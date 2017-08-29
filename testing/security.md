@@ -2,7 +2,7 @@
 
 ## Why
 
-When our application gets deployed through our [Continuous Delivery](../delivery/continuous-delivery.md) pipeline, we want to know that our code is secure, and does not have vulnerable packages installed, so that we don't get owned.
+When our application gets deployed through our [Continuous Delivery](../process/continuous-delivery.md) pipeline, we want to know that our code is secure, and does not have vulnerable packages installed, so that we don't get owned.
 
 ## What
 

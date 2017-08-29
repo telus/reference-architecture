@@ -17,7 +17,7 @@ In our [isomorphic starter kit][starter-kit], we have a standard schemas that de
 
 Additionally, if a custom schema is provided for the project level, it will validate values as well. 
 
-These are automated [gating](../delivery/continuous-delivery.md#automated-gating) tests. If the structure or content of your objects is incorrect, the test will fail, and the delivery pipeline will be halted.
+These are automated [gating](../process/continuous-delivery.md#automated-gating) tests. If the structure or content of your objects is incorrect, the test will fail, and the delivery pipeline will be halted.
 
 ## TODO
 
