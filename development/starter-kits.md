@@ -10,7 +10,7 @@ Starter kits are a reference implementation of our reference architecture. A liv
 
 ## How
 
-Our starter kits are autonomous GitHub repositories, with all of the functional implementation for a full [Continuous Integration](../delivery/continuous-integration.md) and [Continuous Delivery](../delivery/continuous-delivery.md) build pipeline. They implement our best practices for [Node.js](node.md), [React](react.md), [Redux](redux.md), [Express](express.md), [Jenkins](../delivery/jenkins.md), [Docker](../delivery/docker.md), [Kubernetes](../delivery/kubernetes.md), [OpenShift](../delivery/openshift.md), [Secrets](../delivery/secrets.md), [Logging](logging.md), [New Relic](newrelic.md), [Code Formatting](code-formatting.md), [BFFs](bff.md), and much, much more.
+Our starter kits are autonomous GitHub repositories, with all of the functional implementation for a full [Continuous Integration](../process/continuous-integration.md) and [Continuous Delivery](../process/continuous-delivery.md) build pipeline. They implement our best practices for [Node.js](node.md), [React](react.md), [Redux](redux.md), [Express](express.md), [Jenkins](../delivery/jenkins.md), [Docker](../delivery/docker.md), [Kubernetes](../delivery/kubernetes.md), [OpenShift](../delivery/openshift.md), [Secrets](../delivery/secrets.md), [Logging](logging.md), [New Relic](newrelic.md), [Code Formatting](code-formatting.md), [BFFs](bff.md), and much, much more.
 
 They have been developed in a collaborative partnership with the following teams:
 - Delivery

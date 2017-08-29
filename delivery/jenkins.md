@@ -2,7 +2,7 @@
 
 ## Why
 
-As part of our delivery practices, we are pushing for [Continuous Integration](continuous-integration.md) and [Continuous Delivery](continuous-delivery.md), across all of our reference architecture applications. This means that when we make changes to our code, we need a delivery pipeline that builds, tests, and deploys our changes automatically, all the way to production.
+As part of our delivery practices, we are pushing for [Continuous Integration](../process/continuous-integration.md) and [Continuous Delivery](../process/continuous-delivery.md), across all of our reference architecture applications. This means that when we make changes to our code, we need a delivery pipeline that builds, tests, and deploys our changes automatically, all the way to production.
 
 ## What
 

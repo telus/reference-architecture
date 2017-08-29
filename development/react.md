@@ -2,7 +2,7 @@
 
 ## Why
 
-We need a [JavaScript](javascript.md) library for building [isomorphic](isomorphic.md) web applications, which have the rich "app-like" transitionless experience of a mobile native app, while maintaining good SEO and performance. This library needs to be easy to use, and have a good community of support behind it. It must support "component architecture", so that we can set design standards, and share components between applications for a similar look and feel. Finally, we want something that works well with our [Continuous Integration](../delivery/continuous-integration.md) practices, by being declarative, stateless (no database or complicated setup), and easily scaled.
+We need a [JavaScript](javascript.md) library for building [isomorphic](isomorphic.md) web applications, which have the rich "app-like" transitionless experience of a mobile native app, while maintaining good SEO and performance. This library needs to be easy to use, and have a good community of support behind it. It must support "component architecture", so that we can set design standards, and share components between applications for a similar look and feel. Finally, we want something that works well with our [Continuous Integration](../process/continuous-integration.md) practices, by being declarative, stateless (no database or complicated setup), and easily scaled.
 
 ## What
 
