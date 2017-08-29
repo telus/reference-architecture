@@ -35,9 +35,9 @@ TELUS maintains an "SEO Checklist" for best practices and requirements, the foll
 
 ## How
 
-In our [isomorphic starter kit][starter-kit], we validate the rules above in the [e2e](e2e.md) testing phase using [`nightwatch`][nightwatch] custom assertion library.
+In our [isomorphic starter kit](../development/starter-kits.md), we validate the rules above in the [e2e](e2e.md) testing phase using [nightwatch](http://nightwatchjs.org/) custom assertion library.
 
-These are automated [gating](../delivery/continuous-delivery.md#automated-gating) tests. If the tests fail the delivery pipeline will be halted.
+These are automated [gating](../process/continuous-delivery.md#automated-gating) tests. If the tests fail the delivery pipeline will be halted.
 
 ## TODO
 
