@@ -18,7 +18,7 @@ The following sections and placeholder articles are the the bare minimum your pr
 ## How
 First and foremost, application security is a relatively new discipline, the
 humility and wisdom to ask for help is a great start. There's a lot of moving
-parts and new threats are a given. Connecting with your outcome team's assigned @security resource can help you overcome some initial hurdles
+parts and new threats are a given. Connecting with your outcome team's assigned @security resource can help you overcome some initial hurdles.
 
 
 ## Who
@@ -43,6 +43,10 @@ dependent upon our decision making to ensure the custody of their data. The
 #### Web Application Security Controls
 - [Browser Security Controls](security/browser-controls.md)
 - [Server Side Controls](security/server-side-controls.md)
+
+### Development Process
+- [Linting](security/linting.md)
+- [RCS Secrets](security/rcs-secrets.md)
 
 ### Best Practices
 - [React.JS](security/best-practices/react.md)
