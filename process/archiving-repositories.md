@@ -6,7 +6,7 @@ As Products & Projects get deprecated and [EOLed][eol], the code-base used to bu
 
 ## What
 
-Our code is hosted on Github, and includes scope beyond the code it-self, an archiving solution should enable a full backup and restore functionality.
+Our code is hosted on Github, and includes scope beyond the code itself, an archiving solution should enable a full backup and restore functionality.
 
 This includes:
 
@@ -22,7 +22,7 @@ This includes:
 
 We created a separate Github organization: [`telusdigital-archive`][archive] that will host all archived repositories, leveraging the ["transfer ownership"][transfer-docs] feature in Github.
 
-Once repo is transferd, the following actions need to be taken:
+Once repo is transferred, the following actions need to be taken:
 
 - remove all collaborators and teams
 - remove all webhooks 
