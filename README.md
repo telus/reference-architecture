@@ -18,6 +18,7 @@ For new and existing team members, a single place where all the technical knowle
   - [Smaller Stories Are Faster](process/small-stories-are-faster.md)
 - [Project Template](process/project-template.md)
 - [Contribution Model](process/contribution-model.md)
+- [Archiving Repositories](process/archiving-repositories.md)
 
 #### Concepts & Architecture
 
