@@ -40,6 +40,12 @@ The pieces we might need:
 
  ![Image of how two squads who depend on one another's content might work with CMS as code](cms-as-code-two-squads.png)
 
+### Versioning
+
+ - If a squad that provides a piece of content that was shared with many teams wants to change the schema on this content, it may end up impacting many teams, as the teams who leverage the content may have developed components that make assumptions about the content model in question
+ - In order not to break the constraint around teams connecting directly to one another's content repositories, one suggestion would be for the team that creates the global item to maintain two separate versions of that item - the new and improved one, and the old one that existing teams have already taken a dependency against. This allows the dependent teams to schedule the work at their leisure
+
+
 ## References
 
 <a name="#dbdeploy">1</a> Systems like [DBDeploy](http://dbdeploy.com/) make this capability available generically to several languages and database systems, SQL and NoSQL alike.
