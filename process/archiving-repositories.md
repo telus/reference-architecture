@@ -1,4 +1,4 @@
-# Archiving Projects
+# Archiving Repositories
 
 ## Why
 
