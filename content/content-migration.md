@@ -43,7 +43,7 @@ The pieces we might need:
 ### Versioning
 
  - If a squad that provides a piece of content that was shared with many teams wants to change the schema on this content, it may end up impacting many teams, as the teams who leverage the content may have developed components that make assumptions about the content model in question
- - In order not to break the constraint around teams connecting directly to one another's content repositories, one suggestion would be for the team that creates the global item to maintain two separate versions of that item - the new and improved one, and the old one that existing teams have already taken a dependency against. This allows the dependent teams to schedule the work at their leisure
+ - In order not to break the constraint around teams connecting directly to one another's content repositories, one suggestion would be for the team that creates the global item to maintain two separate versions of that service - the new and improved one, and the old one that existing teams have already taken a dependency against. This allows the dependent teams to schedule the work at their leisure
 
  ![Image of how a team can create two versions of a service](cms-as-code-versioning.png)
 
