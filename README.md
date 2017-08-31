@@ -1,108 +1,21 @@
 ![Reference Architecture Wiki Logo](logo.png "Reference Architecture Wiki")
 ---
-> **Note**: This is a work in progress, you are welcome to contribute and suggest changes, please follow the [contribution guidelines](.github/CONTRIBUTING.md)
+> This is a collaborative effort to document our digital standards, tooling and process, you are welcome to contribute and suggest changes, please follow the [contribution guidelines](.github/CONTRIBUTING.md)
 
 ## Why
 
-For new and existing team members, a single place where all the technical knowledge and platform specifications can be documented, tracked and debated.
+For new and existing team members & partners, a single place where all the technical knowledge and platform specifications can be documented, tracked and debated.
 
 ## What
 
-### Development
+### Table of Content
 
-#### Process
-
-- [Continuous Integration](process/continuous-integration.md)
-- [Continuous Delivery](process/continuous-delivery.md)
-- [User Stories](process/user-stories.md)
-  - [Smaller Stories Are Faster](process/small-stories-are-faster.md)
-- [Project Template](process/project-template.md)
-- [Contribution Model](process/contribution-model.md)
-- [Archiving Repositories](process/archiving-repositories.md)
-
-#### Concepts & Architecture
-
-- [Starter Kits](development/starter-kits.md)
-- [Versioning](development/versioning.md)
-- [BFF](development/bff.md) _(Backend-for-frontend)_
-- [URI Templates & Structure](development/uri-structure.md)
-- [Application Configuration](development/application-configuration.md)
-
-#### Languages & Frameworks
-
-- [CSS](development/css.md)
-- [JavaScript](development/javascript.md)
-  - [Node.js](development/node.md)
-  - [Isomorphic / Universal](development/isomorphic.md)
-  - [Transpiling](development/transpiling.md)
-  - [Express](development/express.md)
-  - [React](development/react.md)
-  - [Redux](development/redux.md)
-
-#### Tooling & Libraries
-
-- [Publishing to NPM](development/npm.md)
-- [Webpack](development/webpack.md)
-- [Jest](development/jest.md)
-- [NewRelic](development/newrelic.md)
-- [Logging](development/logging.md)
-- [Caching](development/caching.md)
-- [Databases](development/databases.md)
-
-#### Syntax & Style
-
-- [Code formatting](development/code-formatting.md)
-- [Gitignore](development/gitignore.md)
-- [ESLint](development/eslint.md)
-
-#### Best Practices
-
-- [Caching user data](best-practices/caching.md)
-
-### API Platform
-
-- [Authorization Proxy](api/authorization-proxy.md)
-
-### Testing Practice
-
-- [Unit testing](testing/unit.md)
-- [End to End testing](testing/e2e.md)
-- [Security testing](testing/security.md)
-- [Visual regression testing](testing/visual-regression.md)
-- [Accessibility testing](testing/accessibility.md)
-- [Load testing](testing/load.md)
-- [SEO testing](testing/seo.md)
-- [Analytics testing](testing/analytics.md)
-- [Consumer driven contract testing](testing/consumer_driven_contracts.md)
-- [Performance Testing](testing/automated-testing.md)
-
-### Delivery
-
-- [Docker](delivery/docker.md)
-- [Kubernetes](delivery/kubernetes.md)
-- [OpenShift](delivery/openshift.md)
-- [Jenkins](delivery/jenkins.md)
-- [Secrets](delivery/secrets.md)
-- [TLS Routes](delivery/tls-routes.md)
-- [Inbound Proxies](delivery/inbound-proxies.md)
-- [Shippy](delivery/shippy.md)
-
-### Performance
-- [Performance Baseline](performance/performance-baseline.md)
-- [API Optimization (Server Side)](performance/api-optimization.md)
-- [Server Side Rendering](performance/server-side-rendering.md)
-- [Image Optimization](performance/image-optimization.md)
-- [CSS Optimization](performance/css-optimization.md)
-- [Resource Hinting](performance/resource-hinting.md)
-- [Page Speed Insights](performance/page-speed-insights.md)
-
-### Analytics
-
-_TBD_
-
-### Design
-
-_TBD_
+- [Development](development/)
+- [Process](process/)
+- [API Platform](api/)
+- [Testing](testing/)
+- [Delivery](delivery/)
+- [Performance](performance/)
 
 ## How
 
