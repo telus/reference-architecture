@@ -28,26 +28,25 @@ Before you open an issue or pull request, or ask a question in chat, keep these 
 >
 > 😢 _"I was driving down the highway the other day and stopped for gas, and then I had this amazing idea for something we should be doing, but before I explain that, let me show you..."_
 
-**Keep all communication public.** Unless you need to share sensitive information (such as a security and privacy issue, or a serious concern to the business). When you keep the conversation public, more people can learn and benefit from your exchange. Discussions can be, in themselves, contributions.
+**Keep all communication public.** Unless you need to share sensitive information (such as a security and privacy issue, or a serious concern to the business), keep the conversation public. By doing so, more people can learn and benefit from your exchange. Discussions can be, in themselves, contributions.
 
 > 😇 _(as a comment) "@-maintainer Hi there! How should we proceed on this PR?"_
 >
 > 😢 _(as an email) "Hey there, sorry to bother you over email, but I was wondering if you've had a chance to review my PR"_
 
-**It's okay to ask questions (but be patient!).** Everybody was new to the team at some point, and even experienced team members need to get up to speed when they look at a new project. By the same token, even longtime team members are not always familiar with every part of the project. Show them the same patience that you'd want them to show to you.
+**It's okay to ask questions (but be patient!).** Everybody was new to the team at some point, and even experienced team members needing to get up to speed when they look at a new project. By the same token, even longtime team members are not always familiar with every part of the project. Show them the same patience that you'd want them to show you.
 
 > 😇 _"Thanks for looking into this error. I followed your suggestions. Here's the output."_
 >
 > 😢 _"Why can't you fix my problem? Isn't this your project?"_
 
-**Respect team decisions.** Your ideas may differ from the team's priorities or vision. They may offer feedback or decide not to pursue your idea. While you should discuss and look for compromise, the business will have to live with your decision longer than you will. If you disagree with the team direction, you can always always ask for clarification with the team leads and Principal Architect.
+**Respect team decisions.** Your ideas may differ from the team's priorities or vision. They may offer feedback or decide not to pursue your idea. While you should discuss and look for compromise, the business will have to live with your decision longer than you will. If you disagree with the team direction, you can always ask for clarification with the team leads and Principal Architect.
 
 > 😇 _"I'm disappointed you can't support my use case, but as you've explained it only affects a minor portion of use-cases, I understand why. Thanks for listening."_
 >
 > 😢 _"Why won't you support my use case? This is unacceptable!"_
 
 **Above all, keep it classy.** Context gets lost across squads, teams, and time zones. In addition, written communication makes it harder to convey a tone or mood. Assume good intentions in these conversations. It's fine to politely push back on an idea, ask for more context, or further clarify your position. Just try to leave the technology and technologists in a better place than when you joined.
-
 
 ## Gathering context
 
@@ -81,6 +80,8 @@ You should usually open a pull request in the following situations:
 
 A pull request doesn't have to represent finished work. It's usually better to open a pull request early on, so others can watch or give feedback on your progress. Just mark it as a "WIP" (Work in Progress) in the subject line. You can always add more commits later.
 
+As your write commits, be sure to check the [pull request template](./PULL_REQUEST_TEMPLATE.md) for guidance.
+
 ## What happens after you submit a contribution
 
 You did it! Congratulations on becoming a contributor. We hope it's the first of many.
@@ -110,3 +111,5 @@ Your contribution may or may not be accepted in the end. Hopefully you didn't pu
 Hooray! You've successfully made a contribution!
 
 Don't forget to say thanks when a team member put effort into helping you. Our entire work is made by people like you: one issue, pull request, comment, or high-five at a time.
+
+[karma-format]: https://karma-runner.github.io/1.0/dev/git-commit-msg.html
