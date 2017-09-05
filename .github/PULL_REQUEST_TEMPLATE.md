@@ -22,7 +22,8 @@ Your rationale.
   - content considered competitive intelligence
   - keys, tokens or credentials
 - [ ] documentation format follows [this template][template]
-- [ ] "work in progress" commits are squashed 
+- [ ] fork is up to date ([see this guide from github](https://help.github.com/articles/syncing-a-fork/))
+- [ ] "work in progress" commits are squashed ([see "Squashing Commits"](https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History))
 - [ ] commits follow the [Karma][karma-format] or [Commitizen](https://www.npmjs.com/package/commitizen) format
 
 [template]: ../.template.md
