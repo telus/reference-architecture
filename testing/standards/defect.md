@@ -2,29 +2,24 @@
 
 ## Why
 
+We didn't have a single source of truth to capture all necessary data to properly report a defect. 
 
 ## What
-Initialtive doc:
-```
-In Q4 2016, we started an initiative of using JIRA (on cloud: https://telusdigital.atlassian.net) and issue type “TD Defect” for our defect tracking. We did a test run and improved based on feedback. We also announced the initiative in two of our QA weekly guild meetings.
 
-Starting 2017, we need to streamline our defect tracking process for consistency and reporting purposes. And we will be doing so through the use of above cloud JIRA and “TD Defect”.
+Ensure all teams move to JIRA, and all projects in JIRA use a particular issue type "TD Defect" for logging bugs.
 
-Here are the action items (for the person in charge of defect management):
-If you are already using cloud JIRA, the JIRA project admin of each squad need to:
-Enable “TD Defect” issue type for your project by following this document. If you do not have JIRA admin rights, let me know https://docs.google.com/document/d/1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k/editand I can help with getting you access.
-Update your squad info here.
-Move all 2017 open defects to "TD Defect", you can do so via the "Move" option when viewing an issue.
-If you are not using cloud JIRA already, and have NO difficulties moving to cloud JIRA, please start the migration. Meaning: Get cloud JIRA account, create a project for your squad, and follow the 3 steps under the first bullet point.
-If you are not using cloud JIRA already, and have difficulties moving to cloud JIRA, please add your squad info and state the reason(s) here in the “Reasons for not able to switch to Cloud JIRA” column, and we will evaluate your situation.
+TD Defect has more comprehensive fields to capture data such as:
 
-Please complete the above tasks (enable TD Defect / Migrate to cloud JIRA / State reasons) by:
-Friday, Jan 20th, 2017
+<img src="http://i.imgur.com/HaCnpoU.png" height=240 width=280>
 
-If you have any feedback or questions, please contact ben.chen@telus.com.
-Audit will be conducted the following week, if no actions taken, corresponding escalations will take place.
+and 
 
------------------------------------------------
+<img src="http://i.imgur.com/r1XttRH.png" height=240 width=200>
+
+## How
+[Google doc tutorial](https://docs.google.com/document/d/1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k)
+
+## FAQ
 Frequently asked questions:
 
 Q: What does it mean that we need to use “TD Defect” in cloud JIRA?
@@ -41,16 +36,13 @@ A: No, just all existing open defects from 2017 (not stories or tasks or anythin
 
 Q: What is "all existing open defects from 2017" ?
 A: All defects found in 2017 that have not been resolved.
------------------------------------------------
 
-Thank you for your contribution in making TELUS Digital better!
-
-```
-
-
-## How
-[Google doc tutorial](https://docs.google.com/document/d/1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k)
 
 ## Who
 
 @qa
+
+## Reference
+* [TD Defect initialtive doc](https://docs.google.com/document/d/1kupC2NN8nfqjnRILcpYNbeiDbMOye9ngK0T8hL3wqw8)
+* [How to enable your JIRA project to use TD Defect](https://drive.google.com/open?id=1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k)
+* [TD Defect onboarding tracker](https://drive.google.com/open?id=1Wk4Ap_eaUIdess_sZUlIrBTxwzrwdM8NX0wkvXOiAhg)
