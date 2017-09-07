@@ -73,6 +73,7 @@ _TBD_
 - [RESTful Design](api/restful.md)
 - [Authorization Proxy](api/authproxy/authorization-proxy.md)
 - [Documentation Format](api/documentation.md)
+- [API Catalog](https://github.com/telusdigital/api-practice-wiki/)
 
 ### Testing Practice
 
