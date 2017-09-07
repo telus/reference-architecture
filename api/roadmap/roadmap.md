@@ -136,6 +136,7 @@ Outcome: a unified logging methodology across all APIs, including scrubbing logs
 Tech: Log view errors.
 Tech: Log Aggregation and Scrubbing
 Tech: Include versus Image versus Instance
+Tech: Scrubbing
 
 Documentation: NFR Standards.
 Why: Separate from, and in support of, business requirements, APIs have technical requirements which need to be understood from the point of view of Telus Digital.

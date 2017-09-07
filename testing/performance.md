@@ -6,8 +6,8 @@ Automated Front-End Performance Testing based on [PageSpeed Insights](https://de
 
 ## What
 
-Configure and run tests automatically in your pipeline 
+Configure and run tests automatically in your pipeline
 
 ## How
 
-Automated Performance Testing is part of the [isomorphic starter kit](https://github.com/telusdigital/telus-isomorphic-starter-kit/tree/master/load-test). For more details on setup, see [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
+Automated Performance Testing is implemented in the isomorphic [starter kit](../development/starter-kits.md), using the [psi](https://www.npmjs.com/package/psi) library. For more details on setup, see [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
