@@ -18,5 +18,7 @@ Writing performance tests: Up on story completion
 
 Running performance tests: As part of the delivery pipeline
 
-
 ## Standards
+
+## Who
+@delivery @dev

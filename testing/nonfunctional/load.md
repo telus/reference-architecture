@@ -32,7 +32,7 @@ Running load/stress tests: As part of the delivery pipeline
 
 ## Who
 
-@delivery @qa
+@delivery @dev
 
 ## References
 

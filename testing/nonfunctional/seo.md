@@ -47,7 +47,6 @@ Running SEO tests: As part of the delivery pipeline
 
 ## Standards
 
-TODO...
 SEO team to instill and maintain the SEO checklist based on these standards
 
 ## TODO

@@ -85,7 +85,7 @@ However, you should invest in these tests, __because__ users’ affection and tr
 
 [Contract tests]: functional/consumer_driven_contracts.md
 [Contract tests:why]: functional/consumer_driven_contracts.md#illustrating-the-problem
-[Contract tests:when]: functional/consumer_driven_contracts.md#When
+[Contract tests:when]: functional/consumer_driven_contracts.md#when
 
 [E2E functional]: functional/e2e.md
 [E2E functional:why]: functional/e2e.md#why

@@ -24,8 +24,9 @@ By writing the test first:
 
 ## When
 
-Writing unit tests - ideally, before you write the actual code, as we want to follow the [TDD][TDD] practice
-Running unit tests - before each commit, and as part of the delivery pipeline
+- Writing unit tests: ideally, before you write the actual code, as we want to follow the [TDD][TDD] practice
+
+- Running unit tests: before each commit, and as part of the delivery pipeline
 
 ## Standards
 
