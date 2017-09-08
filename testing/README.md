@@ -1,59 +1,71 @@
-<img src="https://i.imgur.com/hpDNFJy.png" width=320 height=240>
+## Testing 
 
-## Testing (in an RA world)
+As we move to the world of reference architecture, many questions arise in the realm of testing:
 
-Have you asked the following questions: 
+- What is testing in an RA world?
+- How does that reflect my squad?
+
+or more specifically:
 
 - __What__ needs to be tested?
-- __Who__ needs to test {insert type of test}?
 - __Why__ do I need to test {insert type of test}?
-- __When__ do I need to test/write the test {insert type of test}?
+- __Who__ needs to test {insert type of test}?
+- __When__ do I need to write/run {insert type of test}?
 
 If you have, then here's the place to find your answers!
 
 ---
 
-### Automated functional tests
+### Our philosophy on testing
+
+- We care about the quality of our products, hence we care about testing
+- Testing is a shared responsibility, not just the testers' or the developers'
+- Testing is not just running the happy path, it's both __checking__ the product's functionality, and __exploring__ the product's potential vulnerabilities
+
+---
+### Testing practices
+
+Here we lay out all the testing practices teams should be following in the RA world, whether they are automated, manually performed, [functional][Functional testing] or [non-functional][Non-functional testing]
+
+#### *Automated functional tests*
 These are tests that directly validates the functionality of your software / application.
 
 
-| What | Why | Who | When (to write) | When (to run) |
-| ---- | --- | --- | --------------- | ------------- |
-| [Unit tests](functional/unit.md) |[Why](functional/unit.md#why)| Developers | Ideally, before you write the actual code, as we want to follow the [TDD](https://en.wikipedia.org/wiki/Test-driven_development) practice| As part of the delivery pipeline, through [Jest](https://facebook.github.io/jest/). Ref: [starter-kit: docker#unit test](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/6226eeb9998247eed430ddf686028a992f115dfc/DOCKER.md#unit-testing) |
-| [Contract tests](functional/consumer_driven_contracts.md) | [Why](functional/consumer_driven_contracts.md#illustrating-the-problem) | Developers | During feature/story development | As part of the delivery pipeline |
-| [E2E (functional)](functional/e2e.md) | [Why](functional/e2e.md#why) | Testers | Ideally, if [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) done right: after the UAT is defined in story. (Realistically: after application is built) | A lightweight E2E smoke test suite should be run as part of the delivery pipeline, a more robust regression suite should be run on a daily basis (assuming [CI](../process/continuous-integration.md)) |
-| [E2E (UI)](functional/visual-regression.md) | [Why](functional/visual-regression.md#why) | Testers | Currently, only need to define the delta as part of starter-kit, after story complete  | As part of the delivery pipeline, through [starter-kit: visual regression](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/6226eeb9998247eed430ddf686028a992f115dfc/e2e/test/assertions/compareScreenshot.js) |
+| What | Why | Who | When |
+| ---- | --- | --- | ---- |
+| [Unit tests][Unit tests] |[Why][Unit tests:why]| Developers | [When][Unit tests:when] |
+| [Contract tests][Contract tests] | [Why][Contract tests:why] | Developers | [When][Contract tests:when] |
+| [E2E (functional)][E2E functional] | [Why][E2E functional:why] | Testers | [When][E2E functional:when]|
+| [E2E (visual validation)][E2E ui]] | [Why][E2E ui:why] | Testers | [When][E2E ui:when] |
 
 ---
 
-### Automated non-functional tests
+#### *Automated non-functional tests*
 These are tests that does not directly validate the functionality of your application. 
 
 However, you should invest in these tests, __because__ users’ affection and trust of a software or system is swayed and affected by these non-functional qualities. (Just imagine if Google takes 10 seconds to load your search results, or your Gmail password gets hacked every so often, would you trust their service still?)
 
-| What | Why | Who | Standards | When (to run) |
+| What | Why | Who | Standards | When |
 | ---- | --- | --- | ---------------- | ------------- |
-| [SEO](nonfunctional/seo.md) | [Why](nonfunctional/seo.md#why) | Developers | [SEO standards](standards/seo.md) | As part of the delivery pipeline, through [starter-kit: SEO assertion](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.conf.js#L15) |
-| [Security](nonfunctional/security.md) | [Why](nonfunctional/security.md#why) | Developers | [Security standards](standards/security.md) | As part of the delivery pipeline through [nsp](https://www.npmjs.com/package/nsp) |
-| [Performance](nonfunctional/performance.md) | [Why](nonfunctional/performance.md#why) | Developers | [Performance standards](standards/performance.md) | As part of the delivery pipeline, through through [starter-kit: performance-test](https://github.com/telusdigital/telus-isomorphic-starter-kit/tree/master/performance-test) |
-| [Load / Stress](nonfunctional/load.md) | [Why](nonfunctional/load.md#why) | Developers | [Load standards](standards/load.md) | As part of the delivery pipeline, through [starter-kit: load-test](https://github.com/telusdigital/telus-isomorphic-starter-kit/tree/master/load-test) |
-| [Accessibility](nonfunctional/accessibility.md) | [Why](nonfunctional/accessibility.md#why) | Testers | [Accessibility standards](standards/accessibility.md) | As part of the delivery pipeline, through [starter-kit: e2e-accessibility](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.conf.js#L14)  |
-| [Analytics](nonfunctional/analytics.md) | [Why](nonfunctional/analytics.md#why) | Testers | [Analytics standards](standards/analytics.md) | As part of the delivery pipeline, through [starter-kit: e2e-analytics](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/e2e/test/assertions/dataLayer.js)  |
+| [SEO][SEO] | [Why][SEO:why] | Developers | [SEO standards][SEO:standards] | [When][SEO:when] |
+| [Security][Security] | [Why][Security:why] | Developers | [Security standards][Security:standards] |[When][Security:when] |
+| [Performance][Performance] | [Why][Performance:why] | Developers | [Performance standards][Performance:standards] |[When][Performance:when]|
+| [Load / Stress][Load] | [Why][Load:why] | Developers | [Load standards][Load:standards] | [When][Load:when] |
+| [Accessibility][Accessibility] | [Why][Accessibility:why] | Testers | [Accessibility standards][Accessibility:standards] | [When][Accessibility:when] |
+| [Analytics][Analytics] | [Why][Analytics:why] | Testers | [Analytics standards][Analytics:standards] | [When][Analytics:when] |
 
 ---
-### Non automated tests
+#### *Non automated tests*
 
-| What | Why | Who | When (to run) | Notes |
-| ---- | --- | --- | ------------- | ----- | 
-| Exploratory testing | TODO | Testers | When the feature is being built and ready for desk check | We did a [Exploratory testing lunch and learn session](https://docs.google.com/a/telus.com/presentation/d/1_i45rCsNOMyJSyHr-niBbPZgyauYYbXBW5WXr9TUTYw/edit?usp=drive_web) in 05/2017|
+| What | Why | Who | When |
+| ---- | --- | --- | ---- |
+| Exploratory testing | TODO | Testers | When the feature is being built and ready for desk check |
+| Usability | TODO | Designers | ?? | .. | 
 
 ---
 
----
+### Standards, processes and culture
 
-### Practices, standards and culture
-- [Strat: Tech details](strat/strat_tech_detail.md)
-- [Strat: Practice and culture](strat/strat_practice_culture.md)
 - [Browser support standards](standards/browser.md)
 - [OS support standards](standards/os.md)
 - [Mobile device data](standards/mobiledevice.md)
@@ -65,3 +77,56 @@ However, you should invest in these tests, __because__ users’ affection and tr
 ### Tools and platforms
 - [Devicefarm](tools_platforms/devicefarm.md) and its [FAQ](tools_platforms/devicefarmfaq.md)
 - [Saucelabs](tools_platforms/saucelabs.md)
+
+
+[Unit tests]: functional/unit.md
+[Unit tests:why]: functional/unit.md#why
+[Unit tests:when]: functional/unit.md#when
+
+[Contract tests]: functional/consumer_driven_contracts.md
+[Contract tests:why]: functional/consumer_driven_contracts.md#illustrating-the-problem
+[Contract tests:when]: functional/consumer_driven_contracts.md#When
+
+[E2E functional]: functional/e2e.md
+[E2E functional:why]: functional/e2e.md#why
+[E2E functional:when]: functional/e2e.md#when
+
+[E2E ui]:functional/visual-regression.md
+[E2E ui:why]:functional/visual-regression.md#why
+[E2E ui:when]:functional/visual-regression.md#when
+
+[SEO]: nonfunctional/seo.md
+[SEO:why]: nonfunctional/seo.md#why
+[SEO:standards]: nonfunctional/seo.md#standards
+[SEO:when]: nonfunctional/seo.md#when
+
+[Security]: nonfunctional/security.md#
+[Security:why]: nonfunctional/security.md#why
+[Security:standards]: nonfunctional/security.md#standards
+[Security:when]: nonfunctional/security.md#when
+
+[Performance]: nonfunctional/performance.md
+[Performance:why]: nonfunctional/performance.md#why
+[Performance:standards]: nonfunctional/performance.md#standards
+[Performance:when]: nonfunctional/performance.md#when
+
+[Load]: nonfunctional/load.md
+[Load:why]: nonfunctional/load.md#why
+[Load:standards]: nonfunctional/load.md#standards
+[Load:when]: nonfunctional/load.md#when
+
+[Accessibility]: nonfunctional/accessibility.md
+[Accessibility:why]: nonfunctional/accessibility.md#why
+[Accessibility:standards]: nonfunctional/accessibility.md#standards
+[Accessibility:when]: nonfunctional/accessibility.md#when
+
+[Analytics]: nonfunctional/analytics.md
+[Analytics:why]: nonfunctional/analytics.md#why
+[Analytics:standards]: nonfunctional/analytics.md#standards
+[Analytics:when]: nonfunctional/analytics.md#when
+
+
+[Explore it deck]:https://docs.google.com/a/telus.com/presentation/d/1_i45rCsNOMyJSyHr-niBbPZgyauYYbXBW5WXr9TUTYw/edit?usp=drive_web
+[Jest]: https://facebook.github.io/jest/
+[Functional testing]: https://en.wikipedia.org/wiki/Functional_testing
+[Non-functional testing]: https://en.wikipedia.org/wiki/Non-functional_testing

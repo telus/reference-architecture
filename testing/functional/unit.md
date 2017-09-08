@@ -22,7 +22,14 @@ By writing the test first:
 - Implement the feature that makes the test pass
 - Avoid [fragile tests](https://www.youtube.com/watch?v=URSWYvyc42M) and tight coupling
 
-## Style
+## When
+
+Writing unit tests - ideally, before you write the actual code, as we want to follow the [TDD][TDD] practice
+Running unit tests - before each commit, and as part of the delivery pipeline
+
+## Standards
+
+### Style
 
 For testing React higher order components, it is preferred to keep the presentational component and the enhancing container in separate source files, then wrap in `index.js` to export the enhanced component. This way, testing can be done separately on the presentational component, and then the higher order component, without adding in extra named exports.
 
@@ -39,8 +46,12 @@ ie: Given a `Card` that gets wrapped in an HoC, the directory structure should l
 
 ## Who
 
-@delivery @qa
+@delivery @dev
 
 ## References
 
 - [Magic tricks of unit testing](https://www.youtube.com/watch?v=URSWYvyc42M) _Ruby, but excellent concepts_
+
+
+[Starter-kit: unit test]: https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/DOCKER.md#unit-testing
+[TDD]: https://en.wikipedia.org/wiki/Test-driven_development

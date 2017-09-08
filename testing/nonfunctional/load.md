@@ -20,6 +20,16 @@ The [starter kits](../development/starter-kits.md) include a load testing phase 
 
 Load testing downstream services may require a fixed testing window, otherwise these tests need to be kept small.
 
+## When
+
+Writing load/stress tests: Upon story completion
+
+Running load/stress tests: As part of the delivery pipeline
+
+
+
+## Standards
+
 ## Who
 
 @delivery @qa

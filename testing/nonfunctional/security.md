@@ -10,6 +10,12 @@ Build continuous security into our delivery pipeline, so that we monitor our app
 
 ## How
 
+## When
+
+## Standards
+
+Security team to instill and maintain
+
 ### Node Security Platform
 
 Our [starter kits](../development/starter-kits.md) ship out of the box with [nsp](https://nodesecurity.io/) to scan the `package.json` for any known vulnerabilities. Our pipeline will fail if any are found.

@@ -11,3 +11,12 @@ Configure and run tests automatically in your pipeline
 ## How
 
 Automated Performance Testing is implemented in the isomorphic [starter kit](../development/starter-kits.md), using the [psi](https://www.npmjs.com/package/psi) library. For more details on setup, see [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
+
+## When
+
+Writing performance tests: Up on story completion
+
+Running performance tests: As part of the delivery pipeline
+
+
+## Standards

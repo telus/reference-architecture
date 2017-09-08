@@ -39,6 +39,17 @@ In our [isomorphic starter kit](../development/starter-kits.md), we validate the
 
 These are automated [gating](../process/continuous-delivery.md#automated-gating) tests. If the tests fail the delivery pipeline will be halted.
 
+## When
+
+Writing SEO tests: The SEO checklist is updated in the starter-kit, teams should make sure their app has the latest incorporated
+
+Running SEO tests: As part of the delivery pipeline
+
+## Standards
+
+TODO...
+SEO team to instill and maintain the SEO checklist based on these standards
+
 ## TODO
 
 - [ ] separate the logic from the starter kit into a standalone `nightwatch-seo` library
