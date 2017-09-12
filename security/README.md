@@ -52,14 +52,20 @@ Deployment/Delivery (CD) methodology  that's leveraged within our organization.
 
 #### Code Development Phase
 
-##### Development Process
+##### General Development Process
 - [Linting](security/linting.md)
 - [RCS Secrets](security/rcs-secrets.md)
+- [General Best Practices](security/general.md)
 
-#####  Best Practices
-- [General Best Practices](security/best-practices/general.md)
-- [React.JS](security/best-practices/react.md)
-- [Express.JS](security/best-practices/express.md)
+#### Front End Development 
+- [React.JS](security/front-end/react.md)
+
+#### Back End Development
+- [Node.JS](security/back-end/node.js)
+- [Express.JS](security/back-end//express.md)
+
+#### API Development 
+- [API Concerns[](security/api/api.md)
 
 ##### Web Application Security Controls
 - [Browser Security Controls](security/browser-controls.md)
