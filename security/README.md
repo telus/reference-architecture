@@ -78,5 +78,4 @@ Deployment/Delivery (CD) methodology  that's leveraged within our organization.
 - [Jenkins](jenkins.md)
 #### Post Deployment Phase
 - [Vulnerabilty Management Program](vuln-management.md)
-
 ```

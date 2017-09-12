@@ -1,13 +1,14 @@
-#What
+##What
 The Principle of Least Privilege (PoLP)/Principle of Least Access is a tennat
 that requires an entity to only have the access it requires for legitimate
 purpose and nothing more. 
-#Why
+##Why
 PoLP is an important security system design concern supporting the elements
 within the [CIA Triad](security/cia.md).
-#How
+##How
 Ensuring system requirements and the required actions are well understood
 within your team, and in working in concert with your assigned security
 resource can assist in ensuring this principle is applied.
-#Who
+##Who
 Everyone is responsible for applying this principle.
+```
