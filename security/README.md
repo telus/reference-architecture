@@ -43,7 +43,7 @@ special call out recognizing the new Continuous Integration (CI) / Continuous
 Deployment/Delivery (CD) methodology  that's leveraged within our organization.
 
 #### Inception Phase 
-- [OWASP Application Security Verfification Standard](ASVS.md)
+- [OWASP Application Security Verification Standard](ASVS.md)
 - [Privacy Impact Assessment](pia.md)
 - [Security Architecture Engagement Request](pia.md)
 - [Evil User Stories](evil-user.md)
