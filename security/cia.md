@@ -1,8 +1,3 @@
-![Reference Architecture Wiki Logo](logo.png "Reference Architecture Wiki")
----
-> **Note**: This is a work in progress, you are welcome to contribute and suggest changes, please follow the [contribution guidelines](.github/CONTRIBUTING.md)
-
-
 ## What
 All security related concerns can be distilled into ensuring one or more of the
 core Security Pillars. These Pillars are known as the CIA triad.
