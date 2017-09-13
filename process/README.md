@@ -7,3 +7,4 @@
 - [Project Template](project-template.md)
 - [Contribution Model](contribution-model.md)
 - [Archiving Repositories](archiving-repositories.md)
+- [Tech Lead Roles](tech-lead.md)
