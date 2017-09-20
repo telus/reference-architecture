@@ -20,24 +20,24 @@ We also need to delineate between secrets and non-secrets. **Secrets must NEVER 
 
 ### APP_ENV
 
-Generally speaking, our preferred approach is to set a single `APP_ENV` environment variable, which is used to load a configuration file in your native application language (e.g. `config/staging.js` for JS code deployed to staging... APP_ENV=staging).
+Generally speaking, our preferred approach is to set a single `APP_ENV` environment variable, which is used to load a configuration file in your native application language (e.g. `config/staging.js` for JS code deployed to staging... `APP_ENV=staging`).
 
 Define a constrained list of environments that are supported by the codebase. Generally these are local `development`, plus remote environments controlled by the delivery pipeline, such as `staging` and `production`. Each of these local/remote application environments can be configured differently, while they will still use the same artifact.
 
 Usually the shared libraries we use also take in their configuration as JavaScript objects, so it is simple to read this data from a JavaScript object configuration file.
 
-#### Isomorphic APP_ENV
+#### Isomorphic `APP_ENV`
 
 In our isomorphic [starter kit](starter-kits.md), we want to support per-environment configuration files on the client side, without having to re-run [webpack compilation](webpack.md#how). At the same time, we don't want our bundle to contain every possible environment configuration (especially in production). To accomplish this we inject the environment specific configuration into the client-side JavaScript (as `window.__APP_CONFIG__`) during isomorphic render. Throughout the codebase the config that is included looks like this:
 
-```
+```js
 if (process.env.BROWSER) {
- envConfig = window.__APP_CONFIG__;
+ envConfig = window.__APP_CONFIG__
 } else {
  // This will only happen on the server side
- const env = process.env.APP_ENV || 'production';
+ const env = process.env.APP_ENV || 'development'
 
- envConfig = require(`./${env}`).default;
+ envConfig = require(`./${env}`).default
 }
 ```
 
@@ -58,6 +58,7 @@ Note that all of our Docker environments, whether local or remote, are using the
 Only for the purpose of secrets do we use environment variables. These secrets must be read from HashiCorp/Ansible vault, and stored ephemerally in the environment. You can either read and set these values in your local shell environment, or store them on the local filesystem (**IMPORTANT**: if storing on the filesystem you MUST add the path to .gitignore so that you NEVER commit them... once they are committed you can assume the secret is now "leaked", and should be re-rolled, as git history lasts forever).
 
 For secrets in Kubernetes, the HashiCorp/Ansible vault secrets should be read, and new Kubernetes secrets should be created. Those Kubernetes secrets then get mounted to the deployment, e.g.:
+
 ```yaml
 - name: SUPER_SECRET_LICENSE_KEY
   valueFrom:
