@@ -26,6 +26,14 @@ The visual diff will mark the problem areas with a purple overlay:
 
 ![Visual regression example](visual-regression.png)
 
+## When
+
+Writing visual regression tests: Given how it is implemented, teams only need to define the threshold/delta upon story completion 
+
+Running visual regression tests: As part of the delivery pipeline
+
+## Standards
+
 ## Who
 
 - @design: Baseline Images

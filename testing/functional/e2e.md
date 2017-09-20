@@ -12,6 +12,14 @@ Even though unit tests are passing, there may be issues with the application sta
 
 Our [starter kits](../development/starter-kits.md) ship out of the box with an End to End testing step as part of their delivery pipeline.
 
+## When
+
+Writing E2E functional tests: Ideally, if [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) done right: after the UAT is defined in story. 
+
+Running E2E functional tests: A lightweight E2E smoke test suite should be run as part of the delivery pipeline, a more robust regression suite should be run on a daily basis (assuming [CI](../process/continuous-integration.md)) 
+
+## Standards
+
 ### API
 
 API's shall be end-to-end tested using node-fetch, to query the API endpoints and verify that they are working. Authenticated APIs should be able to log in, in order to test secured endpoints.

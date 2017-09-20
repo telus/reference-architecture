@@ -18,6 +18,12 @@ Our [isomorphic starter kit](../development/starter-kits.md) ships out of the bo
 
 NVDA (screen reader) testing can't be automated, so we need to run periodic manual tests of our applications with it.
 
+## When
+
+Writing analytics tests: Upon story completion, make sure to include the assertion
+
+Running analytics tests: As part of the delivery pipeline
+
 ## Who
 
 @delivery @qa

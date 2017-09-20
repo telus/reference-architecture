@@ -19,6 +19,16 @@ Additionally, if a custom schema is provided for the project level, it will vali
 
 These are automated [gating](../process/continuous-delivery.md#automated-gating) tests. If the structure or content of your objects is incorrect, the test will fail, and the delivery pipeline will be halted.
 
+## When
+
+Writing analytics tests: Up on story completion, make sure to include the assertion, also make sure to pull the latest starter-kit change regarding dataLayer to incorporate latest analytics checklist
+
+Running analytics tests: As part of the delivery pipeline
+
+## Standards
+
+Analytics team to set
+
 ## TODO
 
 - [ ] create a standalone `nightwatch-json-schema` OSS package that implements the logic above

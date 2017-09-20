@@ -22,3 +22,13 @@ You would then on a regular cadence (example: cron-job) make the actual request 
 
 ## Testing from the provider side
 In an ideal scenario (when you have access to both the consumer and provider), the consumer would provide the contract to the provider. Then the provider would, in their pipeline, test against this contract. This makes sure that any code changes on the provider side does not break the contract they have with the consumer(s).
+
+## When
+
+Writing contract tests: During feature/story development
+Running contract tests: As part of the delivery pipeline
+
+## Standards
+
+## Who
+@devs @delivery
