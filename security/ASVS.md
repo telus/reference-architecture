@@ -8,3 +8,5 @@ Agreeing to an ASVS Security Level  objective at the inception of your project c
 With your team, identify the control objective your project is intent on achieving  (1-3). Thereafter use this level and it's prescribed controls to craft user stories and evil user stories ensuring the prescribed controls are serviced and testable. 
 ## Who
 Product Owners should consult with their assigned security team resource to identify an appropriate level to aspire to. Therafter, a Product Owner should consult with their team socializing the level expected and work to craft user stories and evil user stories as necessary to satisfy the respective control objectives.
+## References
+ * Evil User stories: https://www.owasp.org/index.php/Agile_Software_Development:_Don%27t_Forget_EVIL_User_Stories
