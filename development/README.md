@@ -21,16 +21,17 @@
 
 ### Tooling & Libraries
 
-- [Publishing to NPM](npm.md)
-- [Webpack](webpack.md)
-- [Jest](jest.md)
-- [NewRelic](newrelic.md)
-- [Logging](logging.md)
 - [Caching](caching.md)
 - [Databases](databases.md)
+- [Git & GitHub](git.md)
+- [Jest](jest.md)
+- [Logging](logging.md)
+- [NewRelic](newrelic.md)
+- [Publishing to NPM](npm.md)
+- [Webpack](webpack.md)
 
 ### Syntax & Style
 
 - [Code formatting](code-formatting.md)
-- [Gitignore](gitignore.md)
 - [ESLint](eslint.md)
+- [Gitignore](gitignore.md)
