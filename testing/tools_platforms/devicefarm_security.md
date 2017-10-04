@@ -4,11 +4,11 @@
 
 ### Hardware level:
 
-To ensure the physical inventory for devicefarm is properly secured and monitored for theft prevention
+To ensure the physical inventory for devicefarm is properly secured and monitored for theft prevention.
 
 ## What
 
-Securing the devicefarm physical resources, which includes
+Securing the devicefarm's physical resources, which includes:
 
 - Devices mounted on the wall fixture
 - Hardware / equipments inside the wall fixture
@@ -19,10 +19,10 @@ Securing the devicefarm physical resources, which includes
 
 - Are secured via [Shopguard][Shopguard]'s [riser unit][4wriser]
 - Each device is attached to a recoiler so the devices can be pulled out for use. 
-- At it's base, the unit is connected to a central alarm for additional security.
+- At its base, the unit is connected to a central alarm for additional security.
 - Here's picture of what the assembly looks like: ![assembly]
 
-**Hardware and equipments** 
+**Hardware and equipment** 
 
 - are secured in the wall fixture via a lockable cabinet
 
@@ -30,7 +30,7 @@ Securing the devicefarm physical resources, which includes
 **Alarm**
 
 - Is secured in the wall fixture as mentioned in #2, and arms all devices connected to it. 
-- Will go off alerting nearby personels if
+- Will go off alerting nearby personel if:
   - The devices are forced off the riser units they attach to
   - Or the riser units removed
   - Or the cables connected to the units are cut
@@ -42,7 +42,7 @@ Securing the devicefarm physical resources, which includes
 
 ## Who
 
-@qa @peopleops
+@telusdigital/digital-farmers @qa @peopleops
 
 ## References
 

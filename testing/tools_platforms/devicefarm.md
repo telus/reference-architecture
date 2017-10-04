@@ -1,12 +1,13 @@
-# Device farm
+# Devicefarm
 
 ## Why
-We are living in a mobile first world, reflected by our TELUS.com and My Account app customers: 
+
+We are living in a mobile-first world, reflected by our TELUS.com and My Account app customers: 
 
 - Web with ~ 61% traffic (filtering Samsung default browser traffic) coming from mobile devices. Src: [Domo][Domo: mobile vs desktop], Aug/17 data
 - My Account has 630k from native app. Src: [Domo][Domo:my account active user], Aug/17 data
 
-As such, leveraging real devices(see why not emulators and simulators in [FAQ][Devicefarm FAQ]) to mimic and test end to end use cases should be an essential part of the quality assurance scope, which aligns with the TELUS Digital principles:
+As such, leveraging real devices (see why not emulators and simulators in [FAQ][Devicefarm FAQ]) to mimic and test end-to-end use cases should be an essential part of the quality assurance scope, which aligns with the TELUS Digital principles:
 
 - Mobile first - simplicity
 - End-to-end experiences
@@ -18,9 +19,9 @@ As such, leveraging real devices(see why not emulators and simulators in [FAQ][D
 
 Devicefarm is a platform aiming to provide teams with real mobile automation and manual testing environments / capabilities.
 
-It consists of infrastructure and software layers that we built from ground up, utilizing opensrc projects such as Selenium and Appium.
+It consists of infrastructure and software layers that we built from ground up, utilizing open source projects such as Selenium and Appium.
 
-It is a huge step in the mobile first initiative, we hope to raise visibility, awareness, and empower teams to improve their mobile testing through this project.
+It is a huge step in the mobile-first initiative, we hope to raise visibility, awareness, and empower teams to improve their mobile testing through this project.
 
 In terms of features, it aims to provide
 
@@ -52,8 +53,8 @@ We have [farmville][Farmville] which provides
 
   - Visually, it looks like ![][DF media: webapp]
   - Benefits: 
-    - By running automated web tests on the devicefarm, teams can quickly gain a sense of how their apps performs on different devices/operating systems/screensizes. These automated tests(when written properly) have rapid feedback, high accuracy, low false positives, and most importantly frees up team members to focus their testing on the non-repetitive and meaningful exploration.
-    - Devicefarm is placed in an open area, having your apps running against it is a great way to showcase and promote your work done. And potentially giving other teams inspiration how to create theirs.
+    - By running automated web tests on the devicefarm, teams can quickly gain a sense of their app's performance on different devices/operating systems/screensizes. These automated tests (when written properly) have rapid feedback, high accuracy, low false positives, and most importantly frees up team members to focus their testing on the non-repetitive and meaningful exploration.
+    - Devicefarm is placed in an open area, having your apps running against it is a great way to showcase and promote your work, and potentially giving other teams inspiration how to create theirs.
 
 - Native app automation environment, via Expresso/XCUITest
 
@@ -66,9 +67,9 @@ We have [farmville][Farmville] which provides
   - Visually, it looks like ![][DF media: sync]
   - Benefits:
     - Exploratory testing across multiple devices at the same time! Great tool for testers and POs!
-    - Multi threaded visual validation for both published apps and in dev apps! Great tool for designers and front-end devs!
+    - Multi-threaded visual validation for both published apps and in dev apps! Great tool for designers and front-end devs!
 
-- And of cause, manual testing inventory:
+- And of course, manual testing inventory:
 
   - Visual demonstration by the Mobility GTM team on their iPhone launch prep: ![][DF media: mobility]
   - Benefits:
@@ -85,7 +86,7 @@ We have [farmville][Farmville] which provides
 
 ## Who
 
-@qa @devs @designers
+@telusdigital/digital-farmers @qa
 
 --- 
 ## Links
@@ -124,7 +125,7 @@ We have [farmville][Farmville] which provides
 
 * [Perfecto](https://www.perfectomobile.com/)
 * [Saucelab's Test Object](https://app.testobject.com)
-* [Amazon's AWS Device Farm](https://aws.amazon.com/device-farm/)
+* [Amazon's AWS Device-Farm](https://aws.amazon.com/device-farm/)
 
 
 #### References

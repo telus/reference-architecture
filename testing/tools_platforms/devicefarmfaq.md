@@ -20,10 +20,10 @@ Let's look at the following points
 
 ---
 
-<details><summary>Q: Why hosting in house instead of utilizing cloud services (Perfecto, Saucelabs testobject, Amazon device farm, Google firebase)</summary><p> 
+<details><summary>Q: Why hosting in-house instead of utilizing cloud services (Perfecto, Saucelabs testobject, Amazon device-farm, Google firebase)</summary><p> 
         
 1. Resources: As mentioned in the previous question, we are a telecom, we have good access to physical devices. (We already have lots of devices in both [Toronto][Toronto inventory] and [Vancouver][Vancouver inventory]) Why not take advantage of such by building on top of what we have?
-2. Pricing, we cannot justify spending 300k per year on a hosted device lab just yet, without proving value and defining long term scaling strategy.
+2. Pricing, we cannot justify spending 300k per year on a hosted device lab just yet, without proving value and defining long-term scaling strategy.
 
 </p></details>
 
@@ -33,7 +33,7 @@ Let's look at the following points
         
 It will be in both TOR and VAN.
 
-We are currently piloting in TOR to promote the concept, gather feedback and make sure it provides value for teams. Once we have a good turnout, it will be much easier to obtain backing to establish Devicefarm in Vancouver as well.
+We are currently piloting in TOR to promote the concept, gather feedback and make sure it provides value for teams. Once we have a good turnout, it will be much easier to obtain backing to establish devicefarm in Vancouver as well.
 
 **Follow up Q:**
 
@@ -58,7 +58,7 @@ Currently(08/17) with the 14 devices, ~ 70% based on [Top 25 mobile devices card
 
 <details><summary>Q: How does it work from a tech perspective?</summary><p> 
         
-Long story short: Mac minis power devices as Appium nodes, connects to a Selenium grid/server, which handles requests and deligate to nodes based on desired capabilities.
+Long story short: Mac minis power devices as Appium nodes, connects to a Selenium grid/server, which handles requests and delegate to nodes based on desired capabilities.
 
 </p></details>
 
@@ -66,7 +66,7 @@ Long story short: Mac minis power devices as Appium nodes, connects to a Seleniu
 
 <details><summary>Q: How can I start using devicefarm for running my automated tests?</summary><p> 
         
-For web automation, if you are using Nightwatch.js, or you are still on the Ruby/Cucumber automation stack that we had previously implemented(yes it's still supported), then you are in luck! It would be simply pointing to the Selenium server dedicated for devicefarm in your Selenium config. Where is this Selenium server you ask? Checkout our [starter-kit][starter-kit]! (WIP/PR in progress)
+For web automation, if you are using Nightwatch.js, or you are still on the Ruby/Cucumber automation stack that we had previously implemented(yes it's still supported), then you are in luck! You can point to the Selenium server dedicated for devicefarm in your Selenium config. Where is this Selenium server you ask? Checkout our [starter-kit:e2e devicefarm config][starter-kit df config]!
 
 </p></details>
 
@@ -86,8 +86,8 @@ For web automation, if you are using Nightwatch.js, or you are still on the Ruby
 
 <details><summary>Q: Why Mac minis?</summary><p> 
         
-- iOS automation needs OSX (the operating system that Macs runs)
-- Mac minis are the cheapest amoung all Mac machines
+- iOS automation needs macOS (the operating system that Macs runs)
+- Mac minis are the cheapest among all Mac machines
 
 </p></details>
 
@@ -107,7 +107,7 @@ FYI [Perfecto][Perfecto] (who specializes in physical device testing) recommends
 
 <details><summary>Q: How are the devices managed?</summary><p> 
         
-- Software layer: For a short term strategy, we currently just use selenium grid's console, as well as some shell scripts to manage the devices.  For a long term strategy, a proper MDM (mobile device management) system [needs to be established][Github MDM issue].
+- Software layer: For a short-term strategy, we currently just use selenium grid's console, as well as some shell scripts to manage the devices.  For a long term strategy, a proper MDM (mobile device management) system [needs to be established][Github MDM issue].
 
 - Hardware / infrastructure: Currently manually managed
 
@@ -121,13 +121,13 @@ For hardware:
 
 1. The devices are secured by leveraging [Shopguard's][Shopguard] locking unit which is also used in TELUS stores, these units are connected to a central alarm so that if any of the devices is detached, or any of the cables is cut, the alarm will go off. 
 
-2. The the Mac minis are secured inside a lockable area in the wall mount / fixture
+2. The Mac minis are secured inside a lockable area in the wall mount / fixture
 
 3. We have a [Nestcam][Nestcam] monitoring the wall fixture 24/7, with live streaming and video history capabilities.
 
 For software:
 
-1. The Selenium server will be accessed via API tokens (WIP) much like how Saucelab's API end point functions.
+1. The Selenium server will be accessed via API tokens (WIP) much like how Saucelab's API endpoint functions.
 
 </p></details>
 
@@ -138,7 +138,7 @@ For software:
 To start, we will have around 16-24 devices on the wall fixture(Phrase 1), once we prove out the value and identify the need, we can either 
 
 1. Go to phase 2 to craft out the [device cabinet][Device cabinet], which will host around 50-60 devices. 
-2. Seek out cloud services (Saucelabs's Testobject, Perfecto, Amazon devicefarm, Google firebase, etc) as a long term scaling strategy. As in house hosting might not be maintainable and cost effective.
+2. Seek out cloud services (Saucelabs's Testobject, Perfecto, Amazon devicefarm, Google firebase, etc) as a long term scaling strategy. As in-house hosting might not be maintainable or cost-effective.
 
 </p></details>
 
@@ -146,7 +146,7 @@ To start, we will have around 16-24 devices on the wall fixture(Phrase 1), once 
 
 <details><summary>Q: Why "Devicefarm:, not "Devicelab" or anything else?</summary><p> 
         
-The rationale is that a farm can be "grown" or scaled up, where as a lab perceives a confined space and a static image, a farm can be nurtured by the inspiration of its farmers (us all) where as a lab is more of a ... ok I can't BS any longer, it really doesn't matter so call it whatever you like.
+The rationale is that a farm can be "grown" or scaled up, whereas a lab is perceived as a confined space and a static image, a farm can be nurtured by the inspiration of its farmers (us all) where as a lab is more of a ... ok I can't BS any longer, it really doesn't matter so call it whatever you like.
 
 </p></details>
 
@@ -154,8 +154,10 @@ The rationale is that a farm can be "grown" or scaled up, where as a lab perceiv
 
 <details><summary>Q: I can't find the answer I want!</summary><p> 
         
-1. Ask in #devicefarm on Slack
-2. contact Ben: Slack: @benexpress / Email: ben.chen@telus.com
+- Ask in #devicefarm on Slack
+- Contact @Nintendot / Slack: @benexpress / Email: ben.chen@telus.com
+- Contact @telusdigital/digital-farmers 
+
 
 </p></details>
 
@@ -186,4 +188,4 @@ The rationale is that a farm can be "grown" or scaled up, where as a lab perceiv
 
 [Real vs simulator and emulator]: https://www.guru99.com/real-device-vs-emulator-testing-ultimate-showdown.html
 
-[starter-kit]:https://github.com/telusdigital/telus-isomorphic-starter-kit/tree/master/e2e
+[starter-kit df config]:https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.devicefarm.conf.js#L42
