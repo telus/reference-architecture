@@ -2,9 +2,7 @@
 
 ## Why
 
-### Hardware level:
-
-To ensure the physical inventory for devicefarm is properly secured and monitored for theft prevention.
+The TELUS [Devicefarm][devicefarm] is a physical platform to provide teams with real mobile automation and manual testing environments. Given it houses expensive computing equipment, is is imperative to properly secure and monitor the devicefarm for theft prevention.
 
 ## What
 
@@ -30,7 +28,7 @@ Securing the devicefarm's physical resources, which includes:
 **Alarm**
 
 - Is secured in the wall fixture as mentioned in #2, and arms all devices connected to it. 
-- Will go off alerting nearby personel if:
+- Will go off alerting nearby personnel if:
   - The devices are forced off the riser units they attach to
   - Or the riser units removed
   - Or the cables connected to the units are cut
@@ -48,6 +46,7 @@ Securing the devicefarm's physical resources, which includes:
 
 * Shopguard: www.shopguard.ca
 
+[devicefarm]: ./devicefarm.md
 [Shopguard]: www.shopguard.ca
 [4wriser]: https://drive.google.com/open?id=0B-bqF6r0I5YgNXNXZW5mWkpyV2tPcTg2ZDdDSU1OQTh4bDJR
 [remote]: ./devicefarm_media/remote.jpeg

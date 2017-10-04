@@ -135,7 +135,7 @@ For software:
 
 <details><summary>Q: How many devices do you plan to have? How do you scale?</summary><p> 
         
-To start, we will have around 16-24 devices on the wall fixture(Phrase 1), once we prove out the value and identify the need, we can either 
+To start, we will have around 16-24 devices on the wall fixture (phase 1), once we prove out the value and identify the need, we can either 
 
 1. Go to phase 2 to craft out the [device cabinet][Device cabinet], which will host around 50-60 devices. 
 2. Seek out cloud services (Saucelabs's Testobject, Perfecto, Amazon devicefarm, Google firebase, etc) as a long term scaling strategy. As in-house hosting might not be maintainable or cost-effective.
