@@ -55,7 +55,7 @@ Any teams deploying to www.telus.com:
 - [inbound.telus-gateway-staging-config][telus-gateway-staging-config]
 - [inbound.telus-gateway-production-config][telus-gateway-production-config]
 
-[f5-www.telus.com]: http://www.teluswebteam.com/wiki/doku.php?id=f5_context "F5 Context Paths to AWS for www.telus.com"
+[f5-www.telus.com]: https://telusdigital.atlassian.net/wiki/spaces/TOS/pages/44236901/F5+Context+Paths+to+AWS "F5 Context Paths to AWS for www.telus.com"
 [rfc-6570]: https://tools.ietf.org/html/rfc6570 "RFC 6570"
 [telus-gateway-staging-config]: https://github.com/telusdigital/inbound.telus-gateway-staging-config "inbound.telus-gateway-staging-config"
 [telus-gateway-production-config]: https://github.com/telusdigital/inbound.telus-gateway-production-config "inbound.telus-gateway-production-config"
