@@ -33,10 +33,10 @@ In this way teams are encouraged to adopt a hybrid approach:
  
 ### Commit Template
 
-For standardized git commits, projects may use Commitizen with conventional-changelog adapter.
- 
-This can be set up by running the following in your project's root:
- 
+For standardized git commits, projects may use Commitizen with conventional-changelog adapter. This can be hooked into your commit-msg git-hook to ensure all commit messages utilize this format. Commitizen is optional; contributors may alternatively reference the [Karma Format][karma] document and write out their commits ordinarily.
+
+This can be set up by running the following in a project's root:
+
 ```bash
 # Install commitizen globally if you have not already
 npm install commitizen -g 
@@ -49,8 +49,6 @@ Once installed, git commits using the commitizen tool can be made with:
 ```bash
 git cz
 ```
-
-This can be hooked into your commit-msg git-hook to ensure all commit messages utilize this format. Commitizen is optional; contributors may alternatively reference the [Karma Format][karma] document and write out their commits ordinarily.
  
 ## References
 - [Open Source Guides][open-source-guides]
