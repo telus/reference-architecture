@@ -22,9 +22,7 @@ What belongs in `[/locale][/path]` portion of URI?
 
 ### Routing
 
-Once specific context paths are created in BTO F5 to route to TELUS digital inbound proxies, from there we have control to route to our different applications.  Here is a diagram describing the routing for a telus.com request:
-
-https://docs.google.com/drawings/d/1yUxOCdKRciYD7TvY_IXwzO2zW2G3ka4cdcX8SJfhSDA/edit
+Once specific context paths are created in BTO F5 to route to TELUS digital inbound proxies, from there we have control to route to our different applications.  [Here is a diagram](https://docs.google.com/drawings/d/1yUxOCdKRciYD7TvY_IXwzO2zW2G3ka4cdcX8SJfhSDA/edit) describing the routing for a telus.com request.
 
 ### Locale
 
@@ -33,27 +31,30 @@ The `[/locale]` segment describes what locale the content is intended for. The l
 `www.telus.com/en/bc/internet`
 `www.telus.com/en/business` 
 
-As of September 2017, the `[/locale]` is set through cookies (Java & PHP stack) or URL segments (RA).  On the Java & PHP stack, the cookies will overwrite the locale that is provided through the URL.  
-The intendend behaviour going forward is to **not use cookies** to set the locale, as the applications locale should be set through the `[/locale]` URL segments. 
+The desired behaviour on the Reference Architecture is for applications to set the locale through the `[/locale]` URL segments.  Do **not use cookies** to set the locale.
+
+Historically, the `[/locale]` was set through cookies on the Java & PHP stack.  The cookies would overwrite the locale that is provided through the URL.  
 
 #### Available Locales
 
 Currently, only `en` and `fr` are supported by the [F5 routing][f5-www.telus.com].
 
 For the regions, the following URI segments are supported: 
-* British Columbia - `bc`
-* Alberta - `ab`
-* Manitoba - `mb`
-* New Brunswick - `nb`
-* Newfoundland - `nl`
-* Northwest Territories - `nt`
-* Nova Scotia - `ns`
-* Nunavut - `nu`
-* Ontario - `on`
-* Prince Edward Island - `pe`
-* Quebec - `qc`
-* Saskatchewan - `sk`
-* Yukon - `yt`
+| Region | Region URI Segment |
+| :---: | :---: |
+| British Columbia | `bc` |
+| Alberta | `ab` |
+| Manitoba | `mb` |
+| New Brunswick | `nb` |
+| Newfoundland | `nl` |
+| Northwest Territories | `nt` |
+| Nova Scotia | `ns` |
+| Nunavut | `nu` |
+| Ontario | `on` |
+| Prince Edward Island | `pe` |
+| Quebec | `qc` |
+| Saskatchewan | `sk` |
+| Yukon | `yt` |
 
 
 ### Routing for www.wcstage.telus.com
