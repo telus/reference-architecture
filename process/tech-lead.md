@@ -62,8 +62,8 @@ It's not uncommon for people in either of these roles to hold [one on one](one-o
 
 ## References
 
-https://medium.com/featured-insights/5-tips-for-being-an-effective-tech-lead-7ec36391de34
+Pat Kua's article [5 Tips for Being an Effective Tech Lead](https://medium.com/featured-insights/5-tips-for-being-an-effective-tech-lead-7ec36391de34)
 
-https://www.thoughtworks.com/insights/blog/three-common-mistakes-first-time-tech-lead
+Pat Kua's article [Three Common Mistakes of the First Time Tech Lead](https://www.thoughtworks.com/insights/blog/three-common-mistakes-first-time-tech-lead)
 
-http://www.se-radio.net/2016/08/se-radio-episode-265-pat-kua-on-becoming-a-tech-lead/
+Pat Kua podcast interview [on Becoming a tech lead](http://www.se-radio.net/2016/08/se-radio-episode-265-pat-kua-on-becoming-a-tech-lead/)
