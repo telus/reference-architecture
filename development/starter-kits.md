@@ -22,9 +22,28 @@ They have been developed in a collaborative partnership with the following teams
 - Incident Management
 - etc.
 
-No one team owns the starter kits. They are worked on collaboratively, with an open-source pull-request model. The standards are managed through the weekly [Architecture Forum](https://github.com/telusdigital/architecture-forum), on [#TechMondays](https://telusdigital.atlassian.net/wiki/display/techmondays/Schedule).
+### Ownership and updating
+
+No one team owns the starter kits. They are worked on collaboratively, with an open-source pull-request model. The standards are managed through the weekly [Architecture Forum](https://github.com/telusdigital/architecture-forum), on [#TechMondays](https://telusdigital.atlassian.net/wiki/display/techmondays/Schedule). If you are looking for a new feature to be added, you should join the forum and open an issue, although this is not required to submit a pull request.
 
 The starter kit projects are designed to be [named anything](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/CLONING.md), and be [deployed to any OpenShift project](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/openshift/README.md). We are working on [shippy](../delivery/shippy.md) to expedite the creation of projects in GitHub, using starter kit templates.
+
+### Make a change
+
+To make a change to a starter kit:
+
+- Fork the starter kit or create a branch
+- Make your changes to the branch (with commit messages using [Karma format](https://conventionalcommits.org/))
+- Once changes are ready, it is recommended that you merge any changes from master, and run `yarn upgrade` to ensure you are up to date
+- Test your branch on the sandbox environment, all the way to "production" ([following the OpenShift setup instructions](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/openshift/README.md))
+- If your pipeline fails in sandbox, make the appropriate fixes
+- Once tested end to end, open a pull request (add a link to your sandbox namespace in the comments)
+- For pull requests that are not intended to be merged immediately, make sure you label them as WIP (work in progress)
+- The pull request can be reviewed and completed by members of the Technical Outcomes team or any GitHub administrators
+- The pull request should be *SQUASHED*, not merged, so that there's one easy-to-follow commit for developers who are merging changes from the starter kit to their older projects
+- If there are any pipeline failures in master, either revert your change, or fix it immediately! This is of paramount importance, as people will be cloning it in a broken state, if it is not fixed.
+- Use GitHub to tag and release the starter kit with a changelog and a new version: Major changes should be reserved for extreme breaking changes (e.g. switching out a core framework used by the tool). Minor changes can denote updates to existing tooling with significant complexity to update. Patch changes can denote trivial updates or newly added tooling that is easily ported.
+- For each release, post in the `#gong` and `#g-developers` slack channel when you make an update, so that developers know to pull the change if they need it
 
 ## Who
 
