@@ -1,11 +1,11 @@
 ## Why
 
-Security is everyone's responsibility, by including security mindfulness early in the development process, so security concerns are identified and remediated ideally before they are put into production. This avoids the costly (both in terms of
+Security is everyone's responsibility, by including security mindfulness early in the development process, security concerns are identified and remediated ideally before they are put into production. This avoids the costly (both in terms of
 time and money) refactoring of a project later in the development cycle. Moreover, our customers expect the Confidentiality, Identity and Availability of our products and services to be an intrinsic value.
 
 ## What
 
-The following sections and placeholder articles are the the bare minimum your project should consider as part of it's "Secure by Design" development.
+The following headers and placeholder articles are the the bare minimum your project should consider as part of it's "Secure by Design" development.
 
 ## How
 
