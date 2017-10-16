@@ -11,7 +11,7 @@ We're generally referring to software *design* decisions - but generally, when w
 
 If you have a need to persist data, and you're trying to figure out how to do that, this might be considered a decision that's difficult to change later. If we start out in PostgresQL and move to MySQL later, we're going to have to migrate our data to the new database, think differently about clustering, possibly change code that was relying on specific PostgresQL features. It's a design decision like any other, but one that's going to have broader implications. 
 
-Let's say you're making decisions about logging - no database involved. If your system processes financial transactions, and just logs everything, its possible you'll end up logging a significant amount of information about a credit card. This could get us in trouble if it violates PCI standards. The decision might not be difficult to change, but it does have a big impact on us from a regulatory perspective.
+Let's say you're making decisions about logging - no database involved. If your system processes financial transactions, and just logs everything, it is possible you'll end up logging a significant amount of information about a credit card. This could get us in trouble if it violates PCI standards. The decision might not be difficult to change, but it does have a big impact on us from a regulatory perspective.
 
 If you name a function `submitOrder` this is an act of software design, of course - but in most cases we would not call it architecture. It's trivial to change later, and doesn't have any regulatory impact.
 
@@ -21,7 +21,7 @@ There are different kinds of architecture, too. We'll talk about two of them her
 
 Tech Leads and the squads they serve often have to make design decisions about how to solve a particular problem. "We need an app that allows people to save their checking account number so that we can bill them monthly".  No problem - we'll stand up a UI that allows the user to enter the information, we'll use Auth Proxy to handle login, we'll integrate with the BTO service that accepts the checking account number, we'll make sure to use server side rendering and responsive design to make it fast and work well on a phone. These are all Solution Architecture decisions. They represent the software design decisions the team is making about how to tackle the work in front of them. 
 
-Making good Solution Architecture decisions is essentially a process of applying technology experience to solving business problems - so its important to work closely with your Product Owner or Business Analyst friends so that we can deeply understand what the business problem is. A buzzword compliant solution architecture that looks beautiful on paper is only good if its helping to solve the business problem in an elegant way.
+Making good Solution Architecture decisions is essentially a process of applying technology experience to solving business problems - so it's important to work closely with your Product Owner or Business Analyst friends so that we can deeply understand what the business problem is. A buzzword compliant solution architecture that looks beautiful on paper is only good if it's helping to solve the business problem in an elegant way.
 
 ## Enterprise Architecture
 
