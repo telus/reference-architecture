@@ -42,8 +42,8 @@ To make a change to a starter kit:
 - The pull request can be reviewed and completed by members of the Technical Outcomes team or any GitHub administrators
 - The pull request should be *SQUASHED*, not merged, so that there's one easy-to-follow commit for developers who are merging changes from the starter kit to their older projects
 - If there are any pipeline failures in master, either revert your change, or fix it immediately! This is of paramount importance, as people will be cloning it in a broken state, if it is not fixed.
-- Tag the starter kit with a new version: Major changes should be reserved for extreme breaking changes (e.g. switching out a core framework used by the tool). Minor changes can denote updates to existing tooling with significant complexity to update. Patch changes can denote trivial updates or newly added tooling that is easily ported.
-- Post in the `#gong` and `#g-developers` slack channel when you make an update, so that developers know to pull the change if they need it
+- Use GitHub to tag and release the starter kit with a changelog and a new version: Major changes should be reserved for extreme breaking changes (e.g. switching out a core framework used by the tool). Minor changes can denote updates to existing tooling with significant complexity to update. Patch changes can denote trivial updates or newly added tooling that is easily ported.
+- For each release, post in the `#gong` and `#g-developers` slack channel when you make an update, so that developers know to pull the change if they need it
 
 ## Who
 
