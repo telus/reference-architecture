@@ -1,7 +1,3 @@
-![Reference Architecture Wiki Logo](logo.png "Reference Architecture Wiki")
----
-> **Note**: This is a work in progress, you are welcome to contribute and suggest changes, please follow the [contribution guidelines](.github/CONTRIBUTING.md)
-
 ## Why
 
 Security is everyone's responsibility, by including security mindfulness early in the development process, so security concerns are identified and remediated ideally before they are put into production. This avoids the costly (both in terms of
