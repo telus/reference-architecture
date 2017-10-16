@@ -25,12 +25,17 @@ The pieces we might need:
  - An idea of what the DSL might look like. For instance, the Rails [Active Record DSL](http://edgeguides.rubyonrails.org/active_record_migrations.html) for content migration is one approach, but wouldn't fit what we'd need for content.
  - An idea of what the migration runner tool might look like. Perhaps something like [DBDeploy](http://dbdeploy.com/)
  - Documentation and guidelines around how the DSL and tools should be used, specifically covering the engineering discipline needed to ensure that squads building apps test those apps against not only the "vcurrent" version of the content schema which is in prod today, but also the "vnext" version of the schema that will be published next
+ 
+Currently, the "About" team is making use of the engineering approach above.
 
 ## How
 
  - Following the principle that ["Integration databases are an antipattern"](https://martinfowler.com/bliki/IntegrationDatabase.html), we believe that each squad or close collection of squads within an outcome team ought to own a space. 
  - The squad that owns the space can own the development, testing, and deployment of the database migration scripts that evolve that content space
  - If you follow the db migration analogy, these scripts would be doing not only the content model (analagous to "alter table") commands, but also the commands that would re-shape the existing content itself 
+ - To continue to follow this analogy, content authors would make changes to content via the user interface, developers would only make changes via new migration scripts that either apply migrations to content or to content models
+ - It wouldn't be unusual for team members to create sandboxes where they might use visual modeling tools to edit models and content, while playing with an idea, however ...
+ - All changes that are destined for production would be made through the process of creating migration scripts that would edit content and models
 
 ![Image of how a squad might work with CMS as code](cms-as-code-one-squad.png)
 
