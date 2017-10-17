@@ -5,7 +5,7 @@ time and money) refactoring of a project later in the development cycle. Moreove
 
 ## What
 
-The following headers and placeholder articles are the the bare minimum your project should consider as part of it's "Secure by Design" development.
+The following concerns  are the the bare minimum your project should consider as part of it's "Secure by Design" development.
 
 ## How
 
@@ -13,7 +13,7 @@ First and foremost, application security is a relatively new discipline, the hum
 
 ## Who
 
-As mentioned above, security is everyone's responsibility our customers are dependent upon our decision making to ensure the custody of their data. The @security team is here to help with guidance, find answers  and to coach on secure practices.
+@everyone
 
 ## Security Concepts 
 
