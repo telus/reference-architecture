@@ -15,6 +15,7 @@ For new and existing team members & partners, a single place where all the techn
 - [API Platform](api/)
 - [Testing](testing/)
 - [Delivery](delivery/)
+- [Security](security/)
 - [Performance](performance/)
 
 ## How
