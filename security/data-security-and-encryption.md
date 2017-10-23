@@ -1,4 +1,4 @@
-## Data Security and Encryption
+# Data Security and Encryption
 
 When collecting personal information, care must be taken to ensure data stays private.
 There are different levels of controls used depending on the classification of the information, as below:
@@ -7,7 +7,7 @@ There are different levels of controls used depending on the classification of t
 - Confidential - logging, role-based access control (RBAC), encryption in transit and rest
 - Restricted - multiple controls are required - our security team will need to be engaged further.
 
-# Data In Transit
+## Data In Transit
 
 Transport Layer Security is mandatory (HTTPS) for all TELUS websites. This is not only to protect customer data, but to uphold our brand integrity.
 - There is an internal process to request digital certificates for TELUS websites that will need to be coordinated by a TELUS prime. (see [Project Inception and Security Process](project-inception-and-security-process.md))
@@ -16,7 +16,7 @@ Transport Layer Security is mandatory (HTTPS) for all TELUS websites. This is no
 - RSA digital signatures key sizes must be 2048 or larger
 - Hashing standards: SHA-2 (SHA256, SHA-384, SHA-512/224, SHA-512/256) family of cryptographic hashing must be used instead of SHA-1
 
-# Data at Rest
+## Data at Rest
 
 Ensure that sensitive data is always stored encrypted in either permanent or temporary storage. Amongst the typical storage mechanism used are databases, configuration files and caches.
 - Store sensitive data only if required by business
