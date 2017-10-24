@@ -13,9 +13,8 @@ TELUS Security Standards are intended to serve as guidelines to which we should 
 
 ## How
 
-The following are the security guidelines:
+### TELUS Security Standards:
 
-- [Guiding Principles](guiding-principles.md)
 - [Project Inception and Security Process](project-inception-and-security-process.md)
 - [Data Security and Encryption](data-security-and-encryption.md)
 - [PI security](PI-security.md)
@@ -26,11 +25,10 @@ The following are the security guidelines:
 - [Secure Coding Practices](secure-coding-practices.md)
 - [Contact](contact.md)
 
-Owners or stakeholders of TELUS projects should use the security guidelines as follows:
+Owners or stakeholders of TELUS projects should use the TELUS Security Standards as follows:
 - review at project inception
 - use as reference or checklist during SDLC
-- keep the security guidelines in mind during development
-- adhere to the guidelines throughout the project
+- adhere to throughout the project progress
 - ensure the standards are met prior to launch
 - if any deviations of the standards are required contact security team for consultation ( see [Contact](contact.md) )
 
