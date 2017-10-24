@@ -20,7 +20,7 @@ TELUS Security Standards are intended to serve as guidelines to which we should 
 - [PI security](PI-security.md)
 - [Web Configuration](web-configuration.md)
 - [Domain Management](domain-management.md)
-- [Password Management](password-policy.md)
+- [Password Policy](password-policy.md)
 - [Application Security Testing](app-sec-testing.md)
 - [Secure Coding Practices](secure-coding-practices.md)
 - [Contact](contact.md)
