@@ -26,8 +26,8 @@ Ensure that sensitive data is always stored encrypted in either permanent or tem
 - Store keys separately from the data they encrypt
 - Ensure that appropriate access-controls are in place
 - Browser caching should be disabled for dynamic and sensitive content. Prevent caching by sending anti-caching HTTP headers:
-  o   Cache-Control: no-cache, no-store
-  o   Pragma: no-cache
+  - Cache-Control: no-cache, no-store
+  - Pragma: no-cache
 - Persistent cookies should not be used for cookies with sensitive information
  
 OWASP reference: https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet
