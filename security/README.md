@@ -21,7 +21,7 @@ The following are the security guidelines:
 - [PI security](PI-security.md)
 - [Web Configuration](web-configuration.md)
 - [Domain Management](domain-management.md)
-- [Password Management](password-management.md)
+- [Password Management](password-policy.md)
 - [Application Security Testing](app-sec-testing.md)
 - [Secure Coding Practices](secure-coding-practices.md)
 - [Contact](contact.md)
