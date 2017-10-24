@@ -37,7 +37,7 @@ Owners or stakeholders of TELUS projects should use the security guidelines as f
 
 ## Who
 
-PO/Scrum Masters/Architects/Developers/vendors/partners
+PO/Project Manager/Scrum Master/Architect/Developer/Vendor/Partner
 
 ## References
 
