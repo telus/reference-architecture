@@ -34,7 +34,7 @@ Owners or stakeholders of TELUS projects should use the TELUS Security Standards
 
 ## Who
 
-PO/Project Manager/Scrum Master/Architect/Developer/Vendor/Partner
+@Everyone
 
 ## References
 
