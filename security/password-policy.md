@@ -23,6 +23,6 @@ Owners or stakeholders of TELUS projects that handle user registration that incl
 
 ## Who
 
-PO/Project Manager/Scrum Master/Architect/Developer/Vendor/Partner
+@everyone
 
 
