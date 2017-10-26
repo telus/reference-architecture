@@ -1,7 +1,6 @@
 ## Why
 
-Security is everyone's responsibility, by including security mindfulness early in the development process, security concerns are identified and remediated ideally before they are put into production. This avoids the costly (both in terms of
-time and money) refactoring of a project later in the development cycle. Moreover, our customers expect the Confidentiality, Identity and Availability of our products and services to be an intrinsic value.
+Security is everyone's responsibility, by including security mindfulness early in the development process, security concerns are identified and remediated ideally before they are put into production. This avoids the costly (both in terms of time and money) refactoring of a project later in the development cycle. Moreover, our customers expect the Confidentiality, Identity and Availability of our products and services to be an intrinsic value.
 
 ## What
 
@@ -9,16 +8,17 @@ The following concerns  are the the bare minimum your project should consider as
 
 ## How
 
-First and foremost, application security is a relatively new discipline, the humility and wisdom to ask for help is a great start. There's a lot of moving parts and new threats are a given. Connecting with your outcome team's assigned @security resource can help you overcome some initial hurdles.
+First and foremost, application security is a relatively new discipline, the humility and wisdom to ask for help is a great start. There's a lot of moving parts and new threats are a given. Connecting with your outcome team's assigned @security resource can help you overcome some initial hurdles. Adhering to the practices laid out within this reference can provide a structured repeatableprocess for enhancing our application security and subsequently our security posture.
 
 ## Who
 
-@everyone
+@everyone with support from the @security team.
 
 ## Security Concepts 
 
 - [Confidentiality, Integrity, Availability](cia.md)
 - [Least Privilege/Least Access](least-privilege.md)
+- [Personal Information](personal-information.md)
 
 ### Threats
 
@@ -33,14 +33,15 @@ This reference is segmented by phase, covering security concerns from  project i
 
 - [OWASP Application Security Verification Standard](ASVS.md)
 - [Privacy Impact Assessment](pia.md)
-- [Security Architecture Engagement Request](pia.md)
+- [Security Architecture Engagement Request](saer.md)
 - [Evil User Stories](evil-user.md)
-- [Threat Modeling](threat-modeling.md)
+- [Threat Modelling](threat-modelling.md)
 
 #### Code Development Phase
 
 ##### General Development Process
 
+- [Git Ignore](git-ignore.md)
 - [Linting](linting.md)
 - [RCS Secrets](rcs-secrets.md)
 - [General Best Practices](general.md)

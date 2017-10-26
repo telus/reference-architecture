@@ -10,5 +10,4 @@ Ensuring system requirements and the required actions are well understood
 within your team, and in working in concert with your assigned security
 resource can assist in ensuring this principle is applied.
 ## Who
-Everyone is responsible for applying this principle.
-```
+@everyone
