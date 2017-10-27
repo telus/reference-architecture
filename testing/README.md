@@ -58,17 +58,20 @@ However, you should invest in these tests, __because__ users’ affection and tr
 
 ### Standards, processes and culture
 
-- [Browser support standards](standards/browser.md)
-- [OS support standards](standards/os.md)
-- [Mobile device data](standards/mobiledevice.md)
-- [Screensize data](standards/screensize.md)
-- [Defect streamlining via JIRA](standards/defect.md)
+- [Browser support standards](standards/browser.md) (WIP)
+- [OS support standards](standards/os.md)(WIP)
+- [Mobile device data](standards/mobiledevice.md) (WIP)
+- [Screensize data](standards/screensize.md) (WIP)
+- [Defect streamlining via JIRA](standards/defect.md) (WIP)
 
 ---
 
 ### Tools and platforms
-- [Devicefarm](tools_platforms/devicefarm.md) and its [FAQ](tools_platforms/devicefarmfaq.md)
-- [Saucelabs](tools_platforms/saucelabs.md)
+- [Devicefarm][Devicefarm] 
+  - [Using the devicefarm][Devicefarming]
+  - [Security measures][Devicefarm_security]
+  - [FAQs][Devicefarm_FAQ]
+- [Saucelabs][Saucelabs]
 
 
 [Unit tests]: functional/unit.md
@@ -86,3 +89,10 @@ However, you should invest in these tests, __because__ users’ affection and tr
 [Jest]: https://facebook.github.io/jest/
 [Functional testing]: https://en.wikipedia.org/wiki/Functional_testing
 [Non-functional testing]: https://en.wikipedia.org/wiki/Non-functional_testing
+
+[Devicefarm]: tools_platforms/devicefarm.md
+[Devicefarming]: tools_platforms/devicefarming.md
+[Devicefarm_FAQ]: tools_platforms/devicefarmfaq.md
+[Devicefarm_security]: tools_platforms/devicefarm_security.md
+
+[Saucelabs]: tools_platforms/saucelabs.md
