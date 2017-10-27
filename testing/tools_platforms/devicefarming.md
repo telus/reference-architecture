@@ -110,7 +110,7 @@ e.g:
 
 [sk-dfconfig_selenium]: https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.devicefarm.conf.js#L41_L42
 
-[nw]: nightwatchjs.org
+[nw]: http://nightwatchjs.org/
 [nw-cli]: https://github.com/nightwatchjs/nightwatch-docs/blob/master/guide/running-tests/runner-options.md
 [e2e tests]: ../functional/e2e.md
 [devicefarm]: ./devicefarm.md
