@@ -10,12 +10,109 @@ For new and existing team members & partners, a single place where all the techn
 
 ### Table of Content
 
-- [Development](development/)
-- [Process](process/)
-- [API Platform](api/)
-- [Testing](testing/)
-- [Delivery](delivery/)
-- [Performance](performance/)
+### Design
+
+_TBD_
+
+### Development
+
+#### Process
+
+- [Project Template](process/project-template.md)
+- [Contribution Model](process/contribution-model.md)
+- [User Stories](process/user-stories.md) 
+  - [Smaller Stories Are Faster](process/small-stories-are-faster.md)
+
+#### Concepts & Architecture
+
+- [Starter Kits](development/starter-kits.md)
+- [Versioning](development/versioning.md)
+  - [Changelog](development/github-releases.md)
+  - [Releases](development/github-releases.md)
+- [BFF](development/bff.md) _(Backend-for-frontend)_
+- [URI Templates & Structure](development/uri-structure.md)
+- [Application Configuration](development/application-configuration.md)
+
+#### Languages & Frameworks
+
+- [CSS](development/css.md)
+  - [SCSS](development/scss.md)
+- [JavaScript](development/javascript.md)
+  - [Node.js](development/node.md)
+  - [Isomorphic / Universal](development/isomorphic.md)
+  - [Transpiling](development/transpiling.md)
+    - [ES6 / ES2015](development/transpiling/es2015.md)
+    - [ES2016](development/transpiling/es2016.md)
+    - [ES2017](development/transpiling/es2016.md)
+  - [Express](development/express.md)
+  - [React](development/react.md)
+  - [Redux](development/redux.md)
+
+#### Tooling & Libraries
+
+- [NPM](development/npm.md)
+- [Yarn](development/yarn.md)
+- [Webpack](development/webpack.md)
+- [Enzyme](development/enzyme.md)
+- [Jest](development/jest.md)
+- [NewRelic](development/newrelic.md)
+- [Logging](development/logging.md)
+- [Caching](development/caching.md)
+- [Databases](development/databases.md)
+
+#### Syntax & Style
+
+- [Code formatting](development/code-formatting.md)
+- [Gitignore](development/gitignore.md)
+- [ESLint](development/eslint.md)
+- [stylelint](development/stylelint.md)
+
+### API Practice
+
+- [Overview](api/README.md)
+- [RESTful Design](api/restful.md)
+- [Authorization Proxy](api/authproxy/authorization-proxy.md)
+- [Documentation Format](api/documentation.md)
+- [API Catalog](https://github.com/telusdigital/api-practice-wiki/)
+
+### Testing Practice
+
+- [Unit testing](testing/unit.md)
+- [End to End testing](testing/e2e.md)
+- [Security testing](testing/security.md)
+- [Visual regression testing](testing/visual-regression.md)
+- [Accessibility testing](testing/accessibility.md)
+- [Load testing](testing/load.md)
+- [SEO testing](testing/seo.md)
+- [Analytics testing](testing/analytics.md)
+- [Consumer driven contract testing](testing/consumer_driven_contracts.md)
+
+### Delivery
+
+- [Continuous Integration](delivery/continuous-integration.md)
+- [Continuous Delivery](delivery/continuous-delivery.md)
+- [Docker](delivery/docker.md)
+- [Kubernetes](delivery/kubernetes.md)
+- [OpenShift](delivery/openshift.md)
+- [Jenkins](delivery/jenkins.md)
+- [Secrets](delivery/secrets.md)
+- [Inbound Proxies](delivery/inbound-proxies.md)
+- [Shippy](delivery/shippy.md)
+
+### Performance
+- Isomorphic React Applications
+    - [Performance Baseline](performance/performance-baseline.md)
+    - [API Optimization (Server Side)](performance/api-optimization.md)
+    - [Server Side Rendering](performance/server-side-rendering.md)
+    - [Image Optimization](performance/image-optimization.md)
+    - [CSS Optimization](performance/css-optimization.md)
+    - [Resource Hinting](performance/resource-hinting.md)
+    - [Page Speed Insights](performance/page-speed-insights.md)
+    - [Automated Performance Testing](performance/automated-testing.md)
+
+### Analytics
+
+_TBD_
 
 ## How
 
