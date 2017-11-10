@@ -2,21 +2,25 @@
 
 ## Why
 
-AODA, or the [Accessibility for Ontarians with Disabilities Act](http://www.aoda.ca/) mandates accessibility compliance. The standard we comply to is [WCAG 2.0 AA](https://www.w3.org/WAI/WCAG20/quickref/).
+Accessibility is about ensuring as many customers as possible can effectively use a product or service. This manner of thinking automatically lends itself to better strategy, design and overall key message.
+
+The [Accessibility for Ontarians with Disabilities Act](http://www.aoda.ca/) (AODA) and [Canadian Radio-Television and Telecommunications Commission](http://www.crtc.gc.ca/eng/home-accueil.htm) (CRTC) mandates accessibility compliance. TELUS is committed to meeting or exceeding the [Website Content Accessibiliity Guidelines (WCAG 2.0 AA)](https://www.w3.org/WAI/WCAG20/quickref/).
 
 When our application gets deployed through our [Continuous Delivery](../process/continuous-delivery.md) pipeline, we want to know that it is accessible.
 
 ## What
 
-We use [aXe](https://www.deque.com/products/axe/) to validate our accessiblity meets WCAG 2.0 AA, while running [end to end](e2e.md) tests.
+Automated testing, complemented with effective manual testing will provide reliable results. Automated testing tools will idnetify programmatic issues, but manual testing is needed to validate usability and content consistentcy.
 
-We also use the [NVDA](https://www.nvaccess.org/) screen reader to test functionality for the visually-impaired.
+We use the [aXe extension for Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd) and the [Wave Toolbar](http://wave.webaim.org/extension/) to validate our accessiblity  while running [end to end](e2e.md) tests.
+
+We also use text-to-speech engines (screen readers) like [NVDA](https://www.nvaccess.org/) and [Voiceover](https://www.apple.com/ca/accessibility/iphone/vision/) to manually review functionality and usability.
 
 ## How
 
 Our [isomorphic starter kit](../development/starter-kits.md) ships out of the box with an End to End aXe testing step as part of its delivery pipeline.
 
-NVDA (screen reader) testing can't be automated, so we need to run periodic manual tests of our applications with it.
+Manual keyboard testing and quick screen reader revoew, will help to validate automated testing and gerenal usabibity.
 
 ## When
 
