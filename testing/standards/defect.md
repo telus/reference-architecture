@@ -12,13 +12,15 @@ We need a standard process of how to
 - Properly report defects
 - Properly monitor defects
 
-To accomplish the above, we use [JIRA][JIRA] for issue tracking, and need to align on the issue type `TD Defect`, which contains useful fields for diagnosis, it also enables data collection and visualization through domo, so that we can do data analytis on defects across all teams.
+To accomplish the above, we use [JIRA][JIRA] for issue tracking, and align on using the issue type `TD Defect` for all production and staging defect reports.
+
+This specific issue type contains useful fields for diagnosis, it also enables data collection and visualization through domo, so that we can do data analytis on defects across all teams.
 
 ## How
 
 JIRA:
 
-For all projects, make sure the issue type `TD Defect` is visible by following this [google doc][Enable TD Defect]
+Make sure the issue type `TD Defect` is enabled for your project by following this [google doc][Enable TD Defect]
 
 When logging defects, make sure to provide as much information as possible, such as:
 
@@ -33,7 +35,7 @@ When logging defects, make sure to provide as much information as possible, such
 So that application owners can easily identify and investigate the problem.
 
 As mentioned in the `What` section, we want to be able to visualize defect data.
-These are tracked in [the Domo/defect reports][DOMO: defect] view
+These are tracked in [the Domo/defect reports][DOMO: defect] view.
 
 ## FAQ
 
