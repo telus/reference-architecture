@@ -10,7 +10,7 @@ When our application gets deployed through our [Continuous Delivery](../process/
 
 ## What
 
-Automated testing, complemented with effective manual testing will provide reliable results. Automated testing tools will idnetify programmatic issues, but manual testing is needed to validate usability and content consistentcy.
+Automated testing, complemented with effective manual testing will provide reliable results. Automated testing tools will identify programmatic issues, but manual testing is needed to validate usability and content consistentcy.
 
 We use the [aXe extension for Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd) and the [Wave Toolbar](http://wave.webaim.org/extension/) to validate our accessiblity  while running [end to end](e2e.md) tests.
 
@@ -20,7 +20,7 @@ We also use text-to-speech engines (screen readers) like [NVDA](https://www.nvac
 
 Our [isomorphic starter kit](../development/starter-kits.md) ships out of the box with an End to End aXe testing step as part of its delivery pipeline.
 
-Manual keyboard testing and quick screen reader revoew, will help to validate automated testing and gerenal usabibity.
+Manual keyboard testing and quick screen reader review, will help to validate automated testing and general usability.
 
 ## When
 
