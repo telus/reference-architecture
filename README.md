@@ -8,11 +8,9 @@ For new and existing team members & partners, a single place where all the techn
 
 ## What
 
-### Table of Content
+### Development
 
-## Development
-
-### Concepts & Architecture
+#### Concepts & Architecture
 
 - [Starter Kits](development/starter-kits.md)
 - [Versioning](development/versioning.md)
@@ -20,7 +18,7 @@ For new and existing team members & partners, a single place where all the techn
 - [URI Templates & Structure](development/uri-structure.md)
 - [Application Configuration](development/application-configuration.md)
 
-### Languages & Frameworks
+#### Languages & Frameworks
 
 - [CSS](development/css.md)
 - [JavaScript](development/javascript.md)
@@ -31,7 +29,7 @@ For new and existing team members & partners, a single place where all the techn
   - [React](development/react.md)
   - [Redux](development/redux.md)
 
-### Tooling & Libraries
+#### Tooling & Libraries
 
 - [Caching](development/caching.md)
 - [Databases](development/databases.md)
@@ -42,13 +40,13 @@ For new and existing team members & partners, a single place where all the techn
 - [Publishing to NPM](development/npm.md)
 - [Webpack](development/webpack.md)
 
-### Syntax & Style
+#### Syntax & Style
 
 - [Code formatting](development/code-formatting.md)
 - [ESLint](development/eslint.md)
 - [Gitignore](development/gitignore.md)
 
-## Process
+### Process
 
 - [Continuous Integration](process/continuous-integration.md)
 - [Continuous Delivery](process/continuous-delivery.md)
@@ -59,15 +57,15 @@ For new and existing team members & partners, a single place where all the techn
 - [Archiving Repositories](process/archiving-repositories.md)
 - [Architecture](process/architecture.md)
 
-## API Platform
+### API Platform
 
 - [Authorization Proxy](api/authorization-proxy.md)
 
-## Testing
+### Testing
 
 - [Testing Overview](testing/)
 
-## Delivery
+### Delivery
 
 - [Docker](delivery/docker.md)
 - [Kubernetes](delivery/kubernetes.md)
@@ -78,7 +76,7 @@ For new and existing team members & partners, a single place where all the techn
 - [Inbound Proxies](delivery/inbound-proxies.md)
 - [Shippy](delivery/shippy.md)
 
-## Performance
+### Performance
 
 - [Performance Baseline](performance/performance-baseline.md)
 - [API Optimization (Server Side)](performance/api-optimization.md)
