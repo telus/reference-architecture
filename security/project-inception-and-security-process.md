@@ -26,7 +26,7 @@ The standard engagement of the TELUS security and privacy teams for a digital in
   - Be aware that depending on your project, requested changes may require additional time/effort to complete, so plan accordingly.
   - Once SAER requirements have been satisfied, you will receive a SAER approval.
 
-- Application requires undergo a security assessment ( refer to [Application Security Assessment](app-sec-testing.md) ):
+- Application requires undergo [Application Security Assessment](app-sec-testing.md):
   - For TELUS digital initiatives - contact security consultant assigned for your outcome team to conduct security assessment.
     - TELUS digital security prime will work with you to conduct appropriate security test.
     - Any Critical/High severity findings must be remediated prior to launch and Med/Low severity findings must be prioritized to be remediated post launch.
