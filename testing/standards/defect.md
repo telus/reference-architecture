@@ -54,4 +54,4 @@ A: That’s because it’s not configured for your project, refer to the documen
 
 [Enable TD Defect]: https://docs.google.com/document/d/1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k
 [JIRA]: https://telusdigital.atlassian.net
-[DOMO: defect]: https://telus.domo.com/page/2123786002
+[DOMO: defect]: https://telus.domo.com/page/1527406136
