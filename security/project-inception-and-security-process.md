@@ -34,3 +34,7 @@ Email CIDC.change@telus.com with the request, it can simply state the following:
 You will receive a response from CIDC.change@telus.com which will include the incident number (IN#).
 - Step 3
 Visit GO/SensitiveDNSchange and complete the form found within the site. Add the IN# received from the CIDC team in the appropriate field. Mark N/A for all other optional fields.
+
+## Who
+
+@everyone
