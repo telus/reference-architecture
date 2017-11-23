@@ -20,7 +20,7 @@ This specific issue type contains useful fields for diagnosis, it also enables d
 
 JIRA:
 
-Make sure the issue type `TD Defect` is enabled for your project by following this [google doc][Enable TD Defect]
+Make sure the issue type `TD Defect` is enabled for your project by following this [google doc][Enable TD Defect].
 
 When logging defects, make sure to provide as much information as possible, such as:
 
@@ -28,7 +28,7 @@ When logging defects, make sure to provide as much information as possible, such
 - Defect nature
 - Browser type
 
-etc...
+etc.
 
 So that application owners can easily identify and investigate the problem.
 
@@ -38,6 +38,7 @@ These are tracked in [the Domo/defect reports][DOMO: defect] view.
 ## FAQ
 
 Q: “TD Defect” is not showing up when I create issue?
+
 A: That’s because it’s not configured for your project, refer to the documentation: [enabling your project for TD Defect][Enable TD Defect] for instructions.
 
 
