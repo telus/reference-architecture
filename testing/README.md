@@ -51,18 +51,17 @@ However, you should invest in these tests, __because__ users’ affection and tr
 ---
 #### *Non automated tests*
 
-- Exploratory testing
-- Usability testing 
+- Exploratory testing (WIP)
+- Usability testing (WIP)
 
 ---
 
 ### Standards, processes and culture
 
-- [Browser support standards](standards/browser.md) (WIP)
-- [OS support standards](standards/os.md)(WIP)
-- [Mobile device data](standards/mobiledevice.md) (WIP)
-- [Screensize data](standards/screensize.md) (WIP)
-- [Defect streamlining via JIRA](standards/defect.md) (WIP)
+- [Defect standards][Defect standards]
+- Browser support standards (WIP)
+- OS support standards (WIP)
+
 
 ---
 
@@ -96,3 +95,5 @@ However, you should invest in these tests, __because__ users’ affection and tr
 [Devicefarm_security]: tools_platforms/devicefarm_security.md
 
 [Saucelabs]: tools_platforms/saucelabs.md
+
+[Defect standards]: standards/defect.md
