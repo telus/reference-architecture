@@ -11,22 +11,24 @@ This document will only cover testing practices focused on HTML & the DOM.
 
 TELUS maintains an "SEO Checklist" for best practices and requirements, the following is a subset that covers @developer & @qa concerns **that can be automated**:
 
-###### Page headings
-#### Should properly reflect title of the page
+### Page headings
 
-- `<h1/>`
-  - [ ] element should be unique and found only once per page
+Page headings should properly reflect the title of the page.
 
-###### Images
-#### Informative elements that cannot be seen by crawlers should have short and descriptive alternate text
+- [ ] `<h1 />` element should be unique and found only once per page
+
+### Images
+
+Images that cannot be seen by crawlers should have short and descriptive alternate text.
 
 - `<img>`
   - [ ] element alt attribute exists and is short and descriptive
   - [ ] element src attribute should be separated by underscores
   - [ ] image filename appropriately named and separated by underscores ("_")
-  
-###### Meta tags
-##### Meta titles and descriptions may be included in search results to concisely inform users of a page's content 
+
+### Meta tags
+
+Meta titles and descriptions may be included in search results to concisely inform users of a page's content.
 
 - `<title>`
   - [ ] element exist and be unique
@@ -37,62 +39,76 @@ TELUS maintains an "SEO Checklist" for best practices and requirements, the foll
   - [ ] element is unique
   - [ ] element is within a min of 150 to 155 characters with spaces
 
-###### URL structure
+### URL structure
 
-- URL
-  - [ ] URL phrase should be separated with dashes (`-`) 
+URLs should be consistent, concise, and human-readable.
+
+- [ ] URL phrase should be separated with dashes (`-`) 
 
 - `<link rel="canonical">`
   - [ ] element should exist
   - [ ] element href attribute should not be empty
   - [ ] element href attribute should exclude provincial parameters, tracking codes and any other extra parameters & query strings
-  - [ ] element href attribute is not broken and/or do not fall in an infinite loop (i.e. canonicals pointing to each other)
+  - [ ] element `href` attribute is not broken and/or do not fall in an infinite loop (i.e. canonicals pointing to each other)
 
-###### Indexability checks
-#### Ensure page is not being blocked from crawler discovery and indexation 
+### Indexability checks
 
-  - [ ] The `robots.txt` file does not prevent the page from being indexed
-  - [ ] element <meta name="robots" content="noindex"> does not exist 
-  - [ ] HTTPS response does not return an "X-Robots-Tag: noindex" 
+Ensure page is not being blocked from crawler discovery and indexing.
 
-###### Status codes
-##### The HTTP status code tells crawlers whether a URL leads to a valid page or not. Pages with unsuccessful status codes may not be indexed properly. 
+- [ ] The `robots.txt` file does not prevent the page from being indexed
+- [ ] element <meta name="robots" content="noindex"> does not exist 
+- [ ] HTTPS response does not return an "X-Robots-Tag: noindex" 
+
+### Status codes
+
+The HTTP status code tells crawlers whether a URL leads to a valid page or not. Pages with unsuccessful status codes may not be indexed properly.
+
   - [ ] Page's status codes is not in the range of [400, 600]
-  - [ ] Development and staging environments should be blocked from Googlebots via robots.txt, meta robots tag and/or return a 401 (unauthorized) HTTP response
+  - [ ] Development and staging environments should be blocked from Googlebots via `robots.txt`, `<meta name="robots">` tag and/or return a `401 Unauthorized` HTTP response
   
-###### Page Speed
-#### Help tools: https://developers.google.com/speed/pagespeed/insights/
-  - [ ] Check your site-speed on Google Page Speed, Webpagetest and/or YellowLab Tools
+### Page Speed
 
-###### Page is mobile friendly
-##### Help tools: https://search.google.com/test/mobile-friendly
-  - [ ] Check if your site is mobile-friendly through Google's Mobile Friendly test
+Use leading performance checking tools to evaluate performance.
 
-###### Broken Internal links and 404s
-#### Enable crawlers to efficiently crawl the page without wasting its time and resources crawling 404s or redirect loops
+- [ ] Check your site speed on [Google Page Speed](https://developers.google.com/speed/pagespeed/insights/)
+- [ ] Check your site speed on [Webpagetest](http://www.webpagetest.org/)
+- [ ] Check your site speed on [YellowLab Tools](http://yellowlab.tools/)
 
-  - [ ] Page does not contain any broken links
-  - [ ] Page does not contain any links that redirect loops
+### Mobile friendly
+
+Use leading compatibility checking tools to evaluate mobile friendliness
+
+- [ ] Check if your site is mobile-friendly through Google's [Mobile Friendly](https://search.google.com/test/mobile-friendly) test
+
+### Broken links
+
+Enable crawlers to efficiently crawl the page without wasting its time and resources crawling 404s or redirect loops.
+
+- [ ] Page does not contain any broken links (returning `404 Not Found`)
+- [ ] Page does not contain any links that result in redirect loops
  
-###### Annotations
-#### Allow crawlers to discover alternate translations of the page content. 
-#### Help documentation: https://support.google.com/webmasters/answer/189077?hl=en, 
+### Annotations
+
+Allow crawlers to discover alternate translations of the page content. For more information see [this documentation](https://support.google.com/webmasters/answer/189077?hl=en).
 
 - `<link rel="alternate">`
   - [ ] element should exist
-  - [ ] element hreflang attribute should exist 
-  - [ ] element hreflang should reference other language variations of the page
+  - [ ] element `hreflang` attribute should exist 
+  - [ ] element `hreflang` should reference other language variations of the page
   
-###### Pagination
-#### Ensure your paginated content ie "load more" is not hidden from bots
-#### Help documentation: https://support.google.com/webmasters/answer/1663744?hl=en
-  - [ ] Ensure a "View All" page exists or use rel="next" and rel="prev" links to indicate the relationship between component URLs
+### Pagination
 
-###### Structured Data 
-##### Structured data is a standardized format for providing information about a page and classifying the page content; for example, for product pages, what are the price, stock availability and review ratings, and so on.
-##### Help documentation: https://developers.google.com/search/docs/guides/intro-structured-data
+Ensure your paginated content ie "load more" is not hidden from bots. Cf. [Google Content Guidelines](https://support.google.com/webmasters/answer/1663744?hl=en).
 
-#### For product detail pages ie phones and accessories
+- [ ] Ensure a "View All" page exists or use `rel="next"` and `rel="prev"` links to indicate the relationship between component URLs
+
+### Structured Data
+
+Structured data is a standardized format for providing information about a page and classifying the page content; for example, for product pages: what are the price, stock availability, review ratings, and so on.
+
+Cf. [Introduction to Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
+
+#### For product detail pages, i.e. phones and accessories:
 
 - `"@type": "Product"`
   - [ ] element should exist
@@ -141,7 +157,7 @@ TELUS maintains an "SEO Checklist" for best practices and requirements, the foll
 - `"uploadDate"`
   - [ ] element should exist and in ISO 8601 format
 
-###### Social Meta Tags
+### Social meta tags
 
 - `<meta property="og:title">`
   - [ ] element should exists and be unique
