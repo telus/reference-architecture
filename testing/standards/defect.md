@@ -14,7 +14,7 @@ We need a standard process of how to
 
 To accomplish the above, we use [JIRA][JIRA] for issue tracking, and align on using the issue type `TD Defect` for all production and staging defect reports.
 
-This specific issue type contains useful fields for diagnosis, it also enables data collection and visualization through domo, so that we can do data analytis on defects across all teams.
+This specific issue type contains useful fields for diagnosis, it also enables data collection and visualization through domo, so that we can do data analysis on defects across all teams.
 
 ## How
 
@@ -24,13 +24,11 @@ Make sure the issue type `TD Defect` is enabled for your project by following th
 
 When logging defects, make sure to provide as much information as possible, such as:
 
-- Defect Priority
 - Testing environment
-- Method of discovery
 - Defect nature
-- Breakpoint/Screensize
 - Browser type
-- Operating system 
+
+etc...
 
 So that application owners can easily identify and investigate the problem.
 
@@ -49,7 +47,7 @@ A: That’s because it’s not configured for your project, refer to the documen
 
 ## Reference
 * [How to enable your JIRA project to use TD Defect](https://drive.google.com/open?id=1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k)
-* [TD Defect initialtive doc](https://docs.google.com/document/d/1kupC2NN8nfqjnRILcpYNbeiDbMOye9ngK0T8hL3wqw8)
+* [TD Defect initiative doc](https://docs.google.com/document/d/1kupC2NN8nfqjnRILcpYNbeiDbMOye9ngK0T8hL3wqw8)
 * [TD Defect onboarding tracker](https://drive.google.com/open?id=1Wk4Ap_eaUIdess_sZUlIrBTxwzrwdM8NX0wkvXOiAhg)
 
 [Enable TD Defect]: https://docs.google.com/document/d/1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k
