@@ -22,6 +22,12 @@ By writing the test first:
 - Implement the feature that makes the test pass
 - Avoid [fragile tests](https://www.youtube.com/watch?v=URSWYvyc42M) and tight coupling
 
+### Code quality metrics
+
+We use [Sonarqube][Sonarqube] for static code analysis purposes.
+
+For details on what value it adds to reference architecture and how to have it set up for your project, check out [Sonarqube in TELUS Digital][Sonarqube in TELUS Digital]
+
 ## When
 
 - Writing unit tests: ideally, before you write the actual code, as we want to follow the [TDD][TDD] practice
@@ -56,3 +62,5 @@ ie: Given a `Card` that gets wrapped in an HoC, the directory structure should l
 
 [Starter-kit: unit test]: https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/DOCKER.md#unit-testing
 [TDD]: https://en.wikipedia.org/wiki/Test-driven_development
+[Sonarqube]: https://github.com/SonarSource/sonarqube
+[Sonarqube in TELUS Digital]: https://github.com/telusdigital/sonarqube
