@@ -28,10 +28,10 @@ Once specific context paths are created in BTO F5 to route to TELUS digital inbo
 
 ### Locale
 
-The `[/locale]` segment describes what locale the content is intended for. The locale can contain the language and region.  Language is mandatory, and region is optional.  Example URL:
+The `[/locale]` segment describes what locale the content is intended for. The locale can contain the language and region.  Language is mandatory, and region is optional.  Example URLs:
 
-`www.telus.com/en/bc/internet`
-`www.telus.com/en/business` 
+- `www.telus.com/en/bc/internet`
+- `www.telus.com/en/business`
 
 The desired behaviour on the Reference Architecture is for applications to set the locale through the `[/locale]` URL segments.  Do **not use cookies** to set the locale.
 
@@ -42,6 +42,7 @@ Historically, the `[/locale]` was set through cookies on the Java & PHP stack.  
 Currently, only `en` and `fr` are supported by the [F5 routing][f5-www.telus.com].
 
 For the regions, the following URI segments are supported: 
+
 | Region | Region URI Segment |
 | :---: | :---: |
 | British Columbia | `bc` |
@@ -57,7 +58,6 @@ For the regions, the following URI segments are supported:
 | Quebec | `qc` |
 | Saskatchewan | `sk` |
 | Yukon | `yt` |
-
 
 ### Routing for www.wcstage.telus.com
 
