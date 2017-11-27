@@ -25,6 +25,7 @@ What belongs in `[/locale][/path]` portion of URI?
 Once specific context paths are created in BTO F5 to route to TELUS digital inbound proxies, from there we have control to route to our different applications. This diagram describes the routing for a telus.com request:
 
 ![F5 routing diagram](./_assets/f5.svg)
+Source: https://docs.google.com/drawings/d/1yUxOCdKRciYD7TvY_IXwzO2zW2G3ka4cdcX8SJfhSDA/edit
 
 ### Locale
 
