@@ -1,6 +1,6 @@
 # Web Configuration
 
-- Website must implement strict CORS policy. If content is intended to be shared by other websites, then those websites must be explicitly defined and access allowed only to the those websites. Do not allow arbitrary origins access as it invalidates the same origin security policy.
+- Website must implement strict CORS policy. If content is intended to be shared by other websites, then those websites must be explicitly defined and access allowed only to those websites. Do not allow arbitrary origins access as it invalidates the same origin security policy.
 https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
 
 - HSTS (HTTP Strict Transport Security) header to ensure browser doesn’t downgrade to HTTP protocol in subsequent requests to defend against Man in the Middle attacks.
