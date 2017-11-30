@@ -12,23 +12,59 @@ The purpose of this document is to drive consistency for structuring our urls an
 
 Every HTTP URL conforms to the syntax of a generic URI.
 
-`scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]`
+`scheme:[//[user[:password]@]host[:port]][/locale][/path][?query][#fragment]`
 
-This document will be concerned with `[/path][?query]` when routing from our TELUS inbound proxies to applications on AWS / OpenShift.
+This document will be concerned with `[/locale][/path][?query]` when routing from our TELUS inbound proxies to applications on AWS / OpenShift.
 
 ## How
 
-What belongs in `[/path]` portion of URI?
+What belongs in `[/locale][/path]` portion of URI?
 
 ### Routing
 
-Once specific context paths are created in BTO F5 to route to TELUS digital inbound proxies, from there we have control to route to our different applications.
+Once specific context paths are created in BTO F5 to route to TELUS digital inbound proxies, from there we have control to route to our different applications. This diagram describes the routing for a telus.com request:
 
-#### www.wcstage.telus.com
+![F5 routing diagram](./_assets/f5.svg)
+Source: https://docs.google.com/drawings/d/1yUxOCdKRciYD7TvY_IXwzO2zW2G3ka4cdcX8SJfhSDA/edit
+
+### Locale
+
+The `[/locale]` segment describes what locale the content is intended for. The locale can contain the language and region.  Language is mandatory, and region is optional.  Example URLs:
+
+- `www.telus.com/en/bc/internet`
+- `www.telus.com/en/business`
+
+The desired behaviour on the Reference Architecture is for applications to set the locale through the `[/locale]` URL segments.  Do **not use cookies** to set the locale.
+
+Historically, the `[/locale]` was set through cookies on the Java & PHP stack.  The cookies would overwrite the locale that is provided through the URL.  
+
+#### Available Locales
+
+Currently, only `en` and `fr` are supported by the [F5 routing][f5-www.telus.com].
+
+For the regions, the following URI segments are supported: 
+
+| Region | Region URI Segment |
+| :---: | :---: |
+| British Columbia | `bc` |
+| Alberta | `ab` |
+| Manitoba | `mb` |
+| New Brunswick | `nb` |
+| Newfoundland | `nl` |
+| Northwest Territories | `nt` |
+| Nova Scotia | `ns` |
+| Nunavut | `nu` |
+| Ontario | `on` |
+| Prince Edward Island | `pe` |
+| Quebec | `qc` |
+| Saskatchewan | `sk` |
+| Yukon | `yt` |
+
+### Routing for www.wcstage.telus.com
 
 We first test such routes on www.wcstage.telus.com and the configurations are maintained in the inbound.telus-gateway-staging-config [repository][telus-gateway-staging-config].
 
-#### www.telus.com
+### Routing for www.telus.com
 
 Once we have tested our rotes on www.wcstage.telus.com we can then update configurations for production.  The configurations for production are maintained in the inbound.telus-gateway-production-config [repository][telus-gateway-production-config]
 
@@ -46,6 +82,7 @@ Any teams deploying to www.telus.com:
 - Home Marketing
 - Mobility Marketing
 - My Account
+- Business
 
 ## References
 
