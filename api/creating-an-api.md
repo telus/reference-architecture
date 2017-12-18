@@ -10,7 +10,7 @@ To create an API that's part of the TELUS Digital API platform, there are a numb
 * APIs should be deployed to the `api-platform` project in OpenShift. If you need access, follow the steps described [here](https://github.com/telusdigital/openshift-cluster-provisioning/).
 APIs that need to call services behind SDF or other digital APIs should be behind [Auth Proxy](authorization-proxy.md). To use Auth Proxy you'll need to:
   * Configure your API as a [new target](https://github.com/telusdigital/authorization-proxy/blob/master/src/config/api-targets/production.js)
-  * Make sure the Oauth scope required by the service you want to call has been added to the [ configuration](https://github.com/telusdigital/authorization-proxy/blob/master/src/config/sdf-env/prod.js)
+  * Make sure the Oauth scope required by the service you want to call has been added to the [configuration](https://github.com/telusdigital/authorization-proxy/blob/master/src/config/sdf-env/prod.js)
 * Update the [Platform API docs](https://github.com/telusdigital/api-platform-docs) to include the [Swagger](https://swagger.io/) documentation for your service
 
 ## How
