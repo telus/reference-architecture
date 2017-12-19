@@ -9,8 +9,9 @@
     "ipadmini4": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPad_Mini4"},
     "ipadair2": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPad_Air2"},
     "ipadpro": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPad_Pro"},
+    "iphonese": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPhoneSE"},
+    "iphone6s": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPhone6s"},
     "iphone7": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPhone7"},
     "iphone7p": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPhone7Plus"},
-    "iphonese": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPhoneSE"},
-    "iphone6s": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPhone6s"}
+    "iphonex": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPhoneX"}   
 }
