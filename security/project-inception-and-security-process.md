@@ -12,7 +12,7 @@ A high-level overview of TELUS security process that a project team is required 
 
 ### Security Assessment Process:
 
-The standard engagement of the TELUS security and privacy teams for a digital initiative is done through internal processes that must be coordinated by a TELUS prime.
+The standard engagement of the TELUS security and privacy teams for a digital initiative is done through internal processes that must be coordinated by a TELUS prime. TELUS prime is typically a PO or tech lead who must also be a TELUS employee (not vendor), as he/she would require access to corporate network to access, submit and make changes to required online forms.
 
 - Privacy Impact Assessment (PIA): Complete the form found at go/PIA. 
   - Allow 2 weeks to have a PIA prime assigned to work with you.
