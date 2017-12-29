@@ -1,6 +1,16 @@
-# Personal Information (PI) Security:
+# Personal Information (PI) Security
 
-## Definition of PI:
+## Why
+
+Special care needs to be given to handling of PI - Personal Information - in order to comply with [TELUS privacy and security policy](https://www.telus.com/en/bc/support/privacy-policy).
+
+## What
+
+Definition of what constitutes PI and measures to protect it.
+
+## How
+
+### Definition of PI:
 
 Personal Information is any and all information about an identifiable individual. Personal information includes publicly available information, which can be found in a number of ways such as through social media sites and telephone directories. 
 
@@ -32,7 +42,7 @@ The examples below are just a fraction of what can be considered personal inform
 - Phone Number
 - Call & Text History
 
-## Safeguarding PI:
+### Safeguarding PI:
 
 Special care needs to be given to handling of PI data.
  
