@@ -1,5 +1,15 @@
 # Web Configuration
 
+## Why
+
+Proper web security configuration helps secure websites by mitigating risks such as personal information exposure, session hijacking, man in the middle etc.
+
+## What
+
+HTTP headers and cookie security configuration information.
+
+## How
+
 - Website must implement strict CORS policy. If content is intended to be shared by other websites, then those websites must be explicitly defined and access allowed only to those websites. Do not allow arbitrary origins access as it invalidates the same origin security policy.
 https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
 
@@ -17,8 +27,6 @@ https://www.owasp.org/index.php/HttpOnly
 - Ensure that sensitive content is not cached by the browser (or proxies) by utilizing the appropriate caching directives. To ensure that content is not cached use the following:
   - Cache-Control: no-store, no-cache
   - Pragma: no-cache
-
-- Sensitive data must not be transmitted via URL parameters.
 
 - X-Frame-Options header to restrict use of content in an iframe of another site to defend against Clickjacking
 https://en.wikipedia.org/wiki/Clickjacking
