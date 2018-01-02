@@ -17,7 +17,7 @@ Circuit breakers are especially relevant for TELUS Digital APIs because many of 
 
 ## How
 #### Implementation
-You can write your own circuit breaker, or use an existing npm library; many of them are based on Netflix's [Hystrix](https://github.com/Netflix/Hystrix) library and adapted for JavaScript. 
+You can write your own circuit breaker, or use an [existing npm library](https://www.npmjs.com/search?q=circuit%20breaker&page=1&ranking=optimal); many of them are based on Netflix's [Hystrix](https://github.com/Netflix/Hystrix) library and adapted for JavaScript. 
 
 Each downstream call can be wrapped in a circuit breaker, with configurable options that make sense for that specific call. Example options include: 
 * the threshold at which the circuit trips, for e.g. if 50% of calls result in errors
