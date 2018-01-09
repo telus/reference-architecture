@@ -24,8 +24,8 @@ TELUS Security Standards are intended to serve as guidelines to which we should 
 
 Owners or stakeholders of TELUS projects should use the TELUS Security Standards as follows:
 - review at project inception
-- use as reference or checklist during SDLC
-- adhere to throughout the project progress
+- use as reference or checklist during system/software development life cycle
+- adhere to throughout the system/software development life cycle
 - ensure the standards are met prior to launch
 - if any deviations of the standards are required contact digital security team for consultation: dldigitalsecurity@telus.com
 
