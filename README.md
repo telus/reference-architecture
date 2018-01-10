@@ -15,6 +15,7 @@ For new and existing team members & partners, a single place where all the techn
 - [API Platform](api/)
 - [Testing](testing/)
 - [Delivery](delivery/)
+- [Security](security/)
 - [Performance](performance/)
 
 ## How
@@ -32,3 +33,4 @@ The format should follow [this template](.template.md)
 ### Conformance
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.faqs.org/rfcs/rfc2119.html).
+
