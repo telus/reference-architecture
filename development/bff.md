@@ -34,7 +34,7 @@ For web teams, it might be simpler just to think of this as "your application". 
 
 ### What should go in a BFF?
 
-Presentation logic, orchestration, and aggregation are usually the stock and trade of the BFF. Generally, if you're setting up an endpoint that other squads might need, consider getting it in to an [API instead][apis]
+Presentation logic, orchestration, and aggregation are usually the stock and trade of the BFF. Generally, if you're setting up an endpoint that other squads might need, consider getting it in to an [API instead][apis].
 
 
 ### Deloyment & Separation
@@ -43,7 +43,7 @@ In the [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isom
  
 ### When should a BFF be shared amongst teams or squads?
 
-The main point of the BFF is to unblock teams - instead of requesting that a services team creates a "hybrid" service that orchestrates or aggregates, the team can do this themselves.  When the BFF becomes shared, release independence is harmed, as you need to check with the other squad before you can ship. In general, to avoid this **you wouldn't want to share a BFF between squads.** consider [building an API instead][apis]
+The main point of the BFF is to unblock teams - instead of requesting that a services team creates a "hybrid" service that orchestrates or aggregates, the team can do this themselves.  When the BFF becomes shared, release independence is harmed, as you need to check with the other squad before you can ship. In general, to avoid this **you wouldn't want to share a BFF between squads.** consider [building an API instead][apis].
 
 ## References
 
@@ -55,5 +55,5 @@ The main point of the BFF is to unblock teams - instead of requesting that a ser
 [soundcloud]: https://www.thoughtworks.com/insights/blog/bff-soundcloud "BFF @ SoundCloud"
 [tw-tech-radar]: https://www.thoughtworks.com/radar/techniques/bff-backend-for-frontends "ThoughtWorks Tech Radar"
 [sam-newman]: http://samnewman.io/patterns/architectural/bff/ "Pattern: Backends For Frontends"
-[apis]: (../../api/README.md) "API Platform"
+[apis]: ../api/README.md
 [srp]: https://en.wikipedia.org/wiki/Single_responsibility_principle "Single Responsibility Principle"
