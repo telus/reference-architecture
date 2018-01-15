@@ -43,6 +43,7 @@ Please include the following in your email to dldigitalsecurity@telus.com:
   - domain
   - manager name
   - cost center
+  - number of servers on which the certificate will be installed
 
 ### DNS requests:
 
