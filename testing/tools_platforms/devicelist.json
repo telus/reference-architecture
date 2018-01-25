@@ -5,6 +5,7 @@
     "nexus6p": {"browserName": "chrome", "platformName":"android", "deviceName":"Nexus6P"},
     "pixel": {"browserName": "chrome", "platformName":"android", "deviceName":"Pixel"},
     "pixelxl": {"browserName": "chrome", "platformName":"android", "deviceName":"PixelXL"},
+    "pixel2xl": {"browserName": "chrome", "platformName":"android", "deviceName":"Pixel2XL"},
     "samsungtab": {"browserName": "chrome", "platformName":"android", "deviceName":"SM-T377W"},
     "ipadmini4": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPad_Mini4"},
     "ipadair2": {"browserName": "safari", "platformName":"ios", "deviceName":"TOR_iPad_Air2"},
