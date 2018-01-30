@@ -23,8 +23,10 @@ Images that cannot be seen by crawlers should have short and descriptive alterna
 
 - `<img>`
   - [ ] element alt attribute exists and is short and descriptive
-  - [ ] element src attribute should be separated by underscores
-  - [ ] image filename appropriately named and separated by underscores ("_")
+  - [ ] element src attribute should be separated by hyphens
+  - [ ] image filename appropriately named and separated by hyphens ("-")
+  - [ ] src: https://support.google.com/webmasters/answer/76329?hl=en#
+
 
 ### Meta tags
 
