@@ -100,7 +100,9 @@ Allow crawlers to discover alternate translations of the page content. For more 
   - [ ] element should exist
   - [ ] element `hreflang` attribute should exist 
   - [ ] element `hreflang` should reference all language variations of the page
-  - [ ] For example, if the current canonical URL is https://www.telus.com/en/about/. Our hreflang tag would be rel="alternate" href="https://www.telus.com/fr/about/" hreflang="fr-ca" /> and rel="alternate" href="https://www.telus.com/en/about/" hreflang="en-ca"
+      - if the current canonical URL is `https://www.telus.com/en/about/` the `hreflang` attributes would be:
+          - `<link rel="alternate" href="https://www.telus.com/fr/about/" hreflang="fr-ca" />`
+          - `<link rel="alternate" href="https://www.telus.com/en/about/" hreflang="en-ca" />`
   
 ### Pagination
 
