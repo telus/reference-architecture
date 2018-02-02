@@ -31,13 +31,18 @@ Images that cannot be seen by crawlers should have short and descriptive alterna
 Meta titles and descriptions may be included in search results to concisely inform users of a page's content.
 
 - `<title>`
-  - [ ] element exist and be unique
-  - [ ] element is within 65 characters with spaces
-  - [ ] element should conform to pattern including (- TELUS.com) where "TELUS.com" equals the agreed upon Brand
+  - [ ] element exists and is unique
+  - [ ] element is between 20 and 65 characters including spaces
+  - [ ] each word in the title should be unique
+  - [ ] For example, a title tag of "Events - About TELUS - About TELUS" is not valid
+  - [ ] element should conform to pattern: [Keyword] - [Brand] - TELUS.com
+  - [ ] Consumer pages (ie Mobility and Home Solutions) do not need a "Brand" indicator 
+  - [ ] For example, Business bundle page's title tag would be "Business Phone and Internet - Business - TELUS.com"  
+  - [ ] For example, About Events page's title tag would be "Events - About - TELUS.com"  
 
 - `<meta name="description">`
   - [ ] element is unique
-  - [ ] element is within a min of 150 to 155 characters with spaces
+  - [ ] element is within a min of 160 to 320 characters with spaces
 
 ### URL structure
 
@@ -84,7 +89,7 @@ Use leading compatibility checking tools to evaluate mobile friendliness
 
 Enable crawlers to efficiently crawl the page without wasting its time and resources crawling 404s or redirect loops.
 
-- [ ] Page does not contain any broken links (returning `404 Not Found`)
+- [ ] Page does not contain any broken links (returning `404 Not Found` or `410 Gone`)
 - [ ] Page does not contain any links that result in redirect loops
  
 ### Annotations
@@ -94,7 +99,8 @@ Allow crawlers to discover alternate translations of the page content. For more 
 - `<link rel="alternate">`
   - [ ] element should exist
   - [ ] element `hreflang` attribute should exist 
-  - [ ] element `hreflang` should reference other language variations of the page
+  - [ ] element `hreflang` should reference all language variations of the page
+  - [ ] For example, if the current canonical URL is https://www.telus.com/en/about/. Our hreflang tag would be rel="alternate" href="https://www.telus.com/fr/about/" hreflang="fr-ca" /> and rel="alternate" href="https://www.telus.com/en/about/" hreflang="en-ca"
   
 ### Pagination
 
