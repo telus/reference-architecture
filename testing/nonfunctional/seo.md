@@ -19,14 +19,12 @@ Page headings should properly reflect the title of the page.
 
 ### Images
 
-Images that cannot be seen by crawlers should have short and descriptive alternate text.
+Images that cannot be seen by crawlers should have short and descriptive alternate text, and be named descriptively. Cf. [Google Content Guidelines](https://support.google.com/webmasters/answer/76329?hl=en#):
 
 - `<img>`
   - [ ] element alt attribute exists and is short and descriptive
-  - [ ] element src attribute should be separated by hyphens
-  - [ ] image filename appropriately named and separated by hyphens ("-")
-  - [ ] src: https://support.google.com/webmasters/answer/76329?hl=en#
-
+  - [ ] element src attribute should be separated by hyphens ("-")
+  - [ ] image file descriptively named and separated by hyphens ("-")
 
 ### Meta tags
 
@@ -45,7 +43,7 @@ Meta titles and descriptions may be included in search results to concisely info
 
 URLs should be consistent, concise, and human-readable.
 
-- [ ] URL phrase should be separated with dashes (`-`) 
+- [ ] URL phrase should be separated with dashes (`-`)
 
 - `<link rel="canonical">`
   - [ ] element should exist
