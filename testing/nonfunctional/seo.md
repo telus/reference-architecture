@@ -34,15 +34,15 @@ Meta titles and descriptions may be included in search results to concisely info
   - [ ] element exists and is unique
   - [ ] element is between 20 and 65 characters including spaces
   - [ ] each word in the title should be unique
-  - [ ] For example, a title tag of "Events - About TELUS - About TELUS" is not valid
+      - a title tag of "Events - About TELUS - About TELUS" is not valid
   - [ ] element should conform to pattern: [Keyword] - [Brand] - TELUS.com
-  - [ ] Consumer pages (ie Mobility and Home Solutions) do not need a "Brand" indicator 
-  - [ ] For example, Business bundle page's title tag would be "Business Phone and Internet - Business - TELUS.com"  
-  - [ ] For example, About Events page's title tag would be "Events - About - TELUS.com"  
+      - the Business bundle page's title tag would be "Business Phone and Internet - Business - TELUS.com"  
+      - the About Events page's title tag would be "Events - About - TELUS.com"  
+  - [ ] Consumer pages (i.e. Mobility and Home Solutions) do not need a "Brand" indicator 
 
 - `<meta name="description">`
   - [ ] element is unique
-  - [ ] element is within a min of 160 to 320 characters with spaces
+  - [ ] element content is within 160 to 320 characters, with spaces
 
 ### URL structure
 
