@@ -10,6 +10,7 @@ For new and existing team members & partners, a single place where all the techn
 
 ### Table of Content
 
+<<<<<<< HEAD
 - [Development](development/README.md)
 - [Process](process/README.md)
 - [API Platform](api/README.md)
@@ -17,6 +18,20 @@ For new and existing team members & partners, a single place where all the techn
 - [Delivery](delivery/README.md)
 - [Security](security/README.md)
 - [Performance](performance/README.md)
+=======
+- [Development](development/)
+- [Process](process/)
+- [API Platform](api/)
+- [Testing](testing/)
+- [Delivery](delivery/)
+- [Security](security/)
+- [Performance](performance/)
+- [How do I...](how-do-i/)
+
+### How do I...
+
+The documentation linked above is very deep and detailed, which isn't always the best way to find what you're looking for. Make sure to check the [How do I...](how-do-i/) section to find direct answers to objective questions!
+>>>>>>> Adding the "How do I..." section
 
 ## How
 
@@ -33,4 +48,3 @@ The format should follow [this template](.template.md)
 ### Conformance
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.faqs.org/rfcs/rfc2119.html).
-
