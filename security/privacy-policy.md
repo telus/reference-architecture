@@ -10,7 +10,7 @@ The Privacy Policy is meant to help our users understand what data we collect, w
 
 ## How
 
-Owners or stakeholders of TELUS applications, including both web and mobile, must highlight or link to the TELUS pirvacy policy from within their application.
+Owners or stakeholders of TELUS applications, including both web and mobile, must highlight or link to the TELUS privacy policy from within their application.
 
 The user must be able to access the TELUS privacy policy at any stage when using the application.
 
