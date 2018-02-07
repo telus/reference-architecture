@@ -10,13 +10,13 @@ For new and existing team members & partners, a single place where all the techn
 
 ### Table of Content
 
-- [Development](development/)
-- [Process](process/)
-- [API Platform](api/)
-- [Testing](testing/)
-- [Delivery](delivery/)
-- [Security](security/)
-- [Performance](performance/)
+- [Development](development/README.md)
+- [Process](process/README.md)
+- [API Platform](api/README.md)
+- [Testing](testing/README.md)
+- [Delivery](delivery/README.md)
+- [Security](security/README.md)
+- [Performance](performance/README.md)
 
 ## How
 
