@@ -20,6 +20,7 @@ TELUS Security Standards are intended to serve as guidelines to which we should 
 - [Web Configuration](web-configuration.md)
 - [Domain Management](domain-management.md)
 - [Password Policy](password-policy.md)
+- [Privacy Policy](privacy-policy.md)
 
 
 Owners or stakeholders of TELUS projects should use the TELUS Security Standards as follows:
