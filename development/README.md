@@ -18,6 +18,7 @@
   - [Express](express.md)
   - [React](react.md)
   - [Redux](redux.md)
+    - [Redux-Details](/redux)
 - [YAML](yaml.md)
 
 ### Tooling & Libraries
