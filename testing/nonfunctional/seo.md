@@ -32,7 +32,7 @@ Meta titles and descriptions may be included in search results to concisely info
 
 - `<title>`
   - [ ] element exists and is unique
-  - [ ] element is between 20 and 65 characters including spaces
+  - [ ] element is between 45 and 65 characters including spaces
   - [ ] each word in the title should be unique
       - a title tag of "Events - About TELUS - About TELUS" is not valid
   - [ ] element should conform to pattern: [Keyword] - [Brand] - TELUS.com
