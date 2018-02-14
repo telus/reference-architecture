@@ -11,20 +11,6 @@ This document will only cover testing practices focused on HTML & the DOM.
 
 TELUS maintains an "SEO Checklist" for best practices and requirements, the following is a subset that covers @developer & @qa concerns **that can be automated**:
 
-### Page headings
-
-Page headings should properly reflect the title of the page.
-
-- [ ] `<h1 />` element should be unique and found only once per page
-
-### Images
-
-Images that cannot be seen by crawlers should have short and descriptive alternate text, and be named descriptively. Cf. [Google Content Guidelines](https://support.google.com/webmasters/answer/76329?hl=en#):
-
-- `<img>`
-  - [ ] element alt attribute exists and is short and descriptive
-  - [ ] element src attribute should be separated by hyphens ("-")
-  - [ ] image file descriptively named and separated by hyphens ("-")
 
 ### Meta tags
 
@@ -46,9 +32,15 @@ Meta titles and descriptions may be included in search results to concisely info
 
 ### URL structure
 
-URLs should be consistent, concise, and human-readable.
+URLs should be consistent, human-readable, and include targeted keywords.
 
 - [ ] URL phrase should be separated with dashes (`-`)
+- [ ] URL phrase must include one or more of the comma-separated values found in the meta keywords element.
+
+For example, for the following `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
+  - URL: `https://www.telus.com/en/mobility/phones/apple-iphone-x/`
+
+### Canonical URL
 
 - `<link rel="canonical">`
   - [ ] element should exist
@@ -56,6 +48,43 @@ URLs should be consistent, concise, and human-readable.
   - [ ] element href attribute should exclude provincial parameters, tracking codes and any other extra parameters & query strings
   - [ ] element `href` attribute is not broken and/or do not fall in an infinite loop (i.e. canonicals pointing to each other)
 
+For example, for the following URL `https://www.telus.com/en/ab/mobility/phones/iphone-x`
+  - Canonical: `<link rel="canonical" href="https://www.telus.com/en/mobility/phones/iphone-x/">`
+
+More info at [Google Support](https://support.google.com/webmasters/answer/139066)
+
+### Page headings
+
+Page headings should properly reflect the title of the page.
+
+- [ ] `<h1 />` element should be unique and found only once per page
+
+### Internal Links
+
+Internal linking plays a critical role in Googlebot's ability to find our site's pages and ensures that our visitors can navigate and enjoy your site.
+
+- [ ] Use descriptive anchor text. Do not use "click here", learn more", or similar phrases as anchor text - these phrases provide no context to search crawlers or screeen readers.
+
+- [ ] Page does not contain any broken links (returning `404 Not Found` or `410 Gone`)
+- [ ] Page does not contain any links that result in redirect loops
+
+Sub-optimal
+```<a href="https://www.telus.com/en/mobility/phones/iphone-x/">click here</a>```
+
+Desired
+```<a href="https://www.telus.com/en/mobility/phones/iphone-x/">Apple iPhone X on Canada's fastest network</a>```
+
+More info at [Google Support](https://support.google.com/webmasters/answer/139066)
+
+### Images
+
+Images that cannot be seen by crawlers should have short and descriptive alternate text, and be named descriptively. Cf. [Google Content Guidelines](https://support.google.com/webmasters/answer/76329?hl=en#):
+
+- `<img>`
+  - [ ] element alt attribute exists and is short and descriptive
+  - [ ] element src attribute should be separated by hyphens ("-")
+  - [ ] image file descriptively named and separated by hyphens ("-")
+  
 ### Indexability checks
 
 Ensure page is not being blocked from crawler discovery and indexing.
@@ -84,13 +113,6 @@ Use leading performance checking tools to evaluate performance.
 Use leading compatibility checking tools to evaluate mobile friendliness
 
 - [ ] Check if your site is mobile-friendly through Google's [Mobile Friendly](https://search.google.com/test/mobile-friendly) test
-
-### Broken links
-
-Enable crawlers to efficiently crawl the page without wasting its time and resources crawling 404s or redirect loops.
-
-- [ ] Page does not contain any broken links (returning `404 Not Found` or `410 Gone`)
-- [ ] Page does not contain any links that result in redirect loops
  
 ### Annotations
 
