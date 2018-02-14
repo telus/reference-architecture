@@ -12,23 +12,39 @@ This document will only cover testing practices focused on HTML & the DOM.
 TELUS maintains an "SEO Checklist" for best practices and requirements, the following is a subset that covers @developer & @qa concerns **that can be automated**:
 
 
-### Meta tags
-
-Meta titles and descriptions may be included in search results to concisely inform users of a page's content.
+### Document Title
 
 - `<title>`
   - [ ] element exists and is unique
-  - [ ] element is between 20 and 65 characters including spaces
+  - [ ] element is between 40 and 65 characters including spaces
   - [ ] each word in the title should be unique
       - a title tag of "Events - About TELUS - About TELUS" is not valid
-  - [ ] element should conform to pattern: [Keyword] - [Brand] - TELUS.com
+  - [ ] element should conform to pattern: [Keywords] - [Brand] - TELUS.com
       - the Business bundle page's title tag would be "Business Phone and Internet - Business - TELUS.com"  
       - the About Events page's title tag would be "Events - About - TELUS.com"  
   - [ ] Consumer pages (i.e. Mobility and Home Solutions) do not need a "Brand" indicator 
+    - e.g. "Apple iPhone X on Canada's fastest phone network - TELUS.com"
+
+### Meta Keywords
+
+While meta keywords are ignored by Google (and other search engines), we require them to validate our content strategy.
+
+- `<meta name="keywords">`
+  - [ ] element exists
+  - [ ] element content is between 10 and 150 including spaces and commas
+    - `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
+
+### Meta Description
 
 - `<meta name="description">`
-  - [ ] element is unique
-  - [ ] element content is within 160 to 320 characters, with spaces
+  - [ ] element exists
+  - [ ] element content is between 150 and 320 characters including spaces
+  - [ ] element must include one or more of the comma-separated values found in the meta keywords element. For example:
+    - `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
+    - `<meta name="description" content="The future of the smartphone. The Apple iPhone X offers an edge to edge display, Face ID sensors and wireless charging in an all-glass design. Now at TELUS!">`
+
+More info from [Google Support](https://support.google.com/webmasters/answer/35624)
+
 
 ### URL structure
 
