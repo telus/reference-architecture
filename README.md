@@ -17,6 +17,11 @@ For new and existing team members & partners, a single place where all the techn
 - [Delivery](delivery/README.md)
 - [Security](security/README.md)
 - [Performance](performance/README.md)
+- [How do I...](how-do-i/README.md)
+
+### How do I...
+
+The documentation linked above is very deep and detailed, which isn't always the best way to find what you're looking for. Make sure to check the [How do I...](how-do-i/) section to find direct answers to objective questions!
 
 ## How
 
