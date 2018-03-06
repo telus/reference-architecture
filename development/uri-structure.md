@@ -66,7 +66,7 @@ We first test such routes on www.wcstage.telus.com and the configurations are ma
 
 ### Routing for www.telus.com
 
-Once we have tested our roles on www.wcstage.telus.com we can then update configurations for production.  The configurations for production are maintained in the inbound.telus-gateway-production-config [repository][telus-gateway-production-config].
+Once we have tested our routes on www.wcstage.telus.com we can then update configurations for production.  The configurations for production are maintained in the inbound.telus-gateway-production-config [repository][telus-gateway-production-config].
 
 ### Selecting Specific Resources
 
