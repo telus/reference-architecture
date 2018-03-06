@@ -87,7 +87,7 @@ Any teams deploying to www.telus.com:
 ## References
 
 - [RFC 6570][rfc-6570]
-- [Inbound proxies](../delivery/inbound-proxies/.md)
+- [Inbound proxies](../delivery/inbound-proxies.md)
 - [inbound.telus-gateway-staging-config][telus-gateway-staging-config]
 - [inbound.telus-gateway-production-config][telus-gateway-production-config]
 
