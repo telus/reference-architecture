@@ -40,7 +40,7 @@ Historically, the `[/locale]` was set through cookies on the Java & PHP stack.  
 
 #### Available Locales
 
-All locales are currently supported by the [F5 routing][f5-www.telus.com].
+All locales are currently supported by the F5 routing.
 
 For the regions, the following URI segments are supported: 
 
