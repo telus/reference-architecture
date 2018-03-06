@@ -42,5 +42,5 @@ Where `CERT`, `KEY`, and `CA_CERT` are [secrets](secrets.md) that come from Hash
 
 ## References
 
-- [Openshift Routes Developer Guide](https://docs.openshift.com/container-platform/3.5/dev_guide/routes.html)
-- [OpenShift Routes Architecture Concepts](https://docs.openshift.com/container-platform/3.5/architecture/core_concepts/routes.html)
+- [Openshift Routes Developer Guide](https://docs.openshift.com/container-platform/3.6/dev_guide/routes.html)
+- [OpenShift Routes Architecture Concepts](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/routes.html)
