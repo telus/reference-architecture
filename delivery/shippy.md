@@ -6,7 +6,7 @@ We want a common tool to access our delivery infrastructure and development envi
 
 ## What
 
-A simple Python script, `ship.py`, will allow us to log into our platform tools ([OpenShift](openshift.md), [HashiCorp Vault](secrets.md)).
+An npm package, `shippy-cli`, will allow us to log into our platform tools ([OpenShift](openshift.md), [HashiCorp Vault](secrets.md)).
 
 It will help us automate the cloning from [Starter Kit](../development/starter-kits.md) templates, by creating the GitHub repo, granting access to your squad, deploying it in OpenShift, connecting the webhook, and kicking off your delivery pipeline.
 
@@ -46,4 +46,5 @@ Shippy core values:
 
 ## References
 
-- [ship.py](https://github.com/telusdigital/ship.py)
+- [shippy-cli](https://github.com/telusdigital/shippy-cli)
+- [@telusdigital/shippy-cli](https://www.npmjs.com/package/@telusdigital/shippy-cli)
