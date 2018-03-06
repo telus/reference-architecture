@@ -2,7 +2,7 @@
 
 ## Why
 
-TELUS digital does not fully control www.telus.com domain.  www.telus.com currently resolves to an F5 load balancer appliance that is owned by BTO.  The F5 acts as a reverse proxy and all of our routes are defined in the [inbound proxies](../delivery/inbound-proxies/.md) that TELUS digital maintains.
+TELUS digital does not fully control www.telus.com domain.  www.telus.com currently resolves to an F5 load balancer appliance that is owned by BTO.  The F5 acts as a reverse proxy and all of our routes are defined in the [inbound proxies](../delivery/inbound-proxies.md) that TELUS digital maintains.
 
 We've been routing various paths in our inbound proxies to our applications deployed on AWS / OpenShift without any guidelines and conventions.
 
