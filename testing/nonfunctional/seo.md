@@ -115,7 +115,7 @@ The HTTP status code tells crawlers whether a URL leads to a valid page or not. 
 
   - [ ] Page's status codes is not in the range of [400, 600]
   - [ ] Development and staging environments should be blocked from Googlebots via `robots.txt`, `<meta name="robots">` tag and/or return a `401 Unauthorized` HTTP response
-  
+
 ### Page Speed
 
 Use leading performance checking tools to evaluate performance.
@@ -130,9 +130,9 @@ Use leading compatibility checking tools to evaluate mobile friendliness
 
 - [ ] Check if your site is mobile-friendly through Google's [Mobile Friendly](https://search.google.com/test/mobile-friendly) test
  
-### Annotations
+### hreflang
 
-Allow crawlers to discover alternate translations of the page content. For more information see [this documentation](https://support.google.com/webmasters/answer/189077?hl=en).
+Allow crawlers to discover alternate translations of the page content.
 
 - `<link rel="alternate">`
   - [ ] element should exist
@@ -142,11 +142,36 @@ Allow crawlers to discover alternate translations of the page content. For more 
           - `<link rel="alternate" href="https://www.telus.com/fr/about/" hreflang="fr-ca" />`
           - `<link rel="alternate" href="https://www.telus.com/en/about/" hreflang="en-ca" />`
   
-### Pagination
+For more information see [this documentation](https://support.google.com/webmasters/answer/189077?hl=en)
 
-Ensure your paginated content ie "load more" is not hidden from bots. Cf. [Google Content Guidelines](https://support.google.com/webmasters/answer/1663744?hl=en).
+### Facebook Open Graph Markup
 
-- [ ] Ensure a "View All" page exists or use `rel="next"` and `rel="prev"` links to indicate the relationship between component URLs
+- `<meta property="og:title">`
+  - Should be identical to the page [Document Title] (https://github.com/telusdigital/reference-architecture/blob/master/testing/nonfunctional/seo.md#document-title)
+
+- `<meta property="og:description">`
+  - Should be identical to the page [Meta Description] (https://github.com/telusdigital/reference-architecture/blob/master/testing/nonfunctional/seo.md#meta-description)
+  
+- `<meta property="og:url">`
+  - Should be identical to the page [ref=canonical] (https://github.com/telusdigital/reference-architecture/blob/master/testing/nonfunctional/seo.md#canonical-url)
+ 
+- `<meta property="og:image">`
+  - [ ] element should exist and be unique
+  - [ ] element should contain an image URL that best represents the page
+
+### Page Speed
+
+Use leading performance checking tools to evaluate performance.
+
+- [ ] Check your site speed on [Google Page Speed](https://developers.google.com/speed/pagespeed/insights/)
+- [ ] Check your site speed on [Webpagetest](http://www.webpagetest.org/)
+- [ ] Check your site speed on [YellowLab Tools](http://yellowlab.tools/)
+
+### Mobile friendly
+
+Use leading compatibility checking tools to evaluate mobile friendliness
+
+- [ ] Check if your site is mobile-friendly through Google's [Mobile Friendly](https://search.google.com/test/mobile-friendly) test
 
 ### Structured Data
 
@@ -203,46 +228,17 @@ Cf. [Introduction to Structured Data](https://developers.google.com/search/docs/
 - `"uploadDate"`
   - [ ] element should exist and in ISO 8601 format
 
-### Social meta tags
 
-- `<meta property="og:title">`
-  - [ ] element should exists and be unique
-  - [ ] element should contain company domain name (`TELUS.com`)
-  - [ ] element should use a spaced dash (` - `) to separate sections
-  - [ ] element content length should be not exceed `65` characters
+### Pagination
 
-- `<meta property="og:description">`
-  - [ ] element should exists and be unique
-  - [ ] element content length should not exceed `155` characters
-  
-- `<meta property="og:url">`
-  - [ ] element should exists and be unique
-  - [ ] element `content` attribute should not be empty
-  - [ ] element `content` attribute should exclude provincial parameters, tracking codes and any other extra parameters & query strings
- 
-- `<meta property="og:image">`
-  - [ ] element should exist and be unique
-  - [ ] element should contain an image URL that best represents the page
+Ensure your paginated content ie "load more" is not hidden from bots. Cf. [Google Content Guidelines](https://support.google.com/webmasters/answer/1663744?hl=en).
+
+- [ ] Ensure a "View All" page exists or use `rel="next"` and `rel="prev"` links to indicate the relationship between component URLs
+
 
 ## How
 
-In our [isomorphic starter kit](../development/starter-kits.md), we validate the rules above in the [e2e](e2e.md) testing phase using [nightwatch](http://nightwatchjs.org/) custom assertion library.
-
-These are automated [gating](../process/continuous-delivery.md#automated-gating) tests. If the tests fail the delivery pipeline will be halted.
-
-## When
-
-Writing SEO tests: The SEO checklist is updated in the starter-kit, teams should make sure their app has the latest incorporated
-
-Running SEO tests: As part of the delivery pipeline
-
-## Standards
-
-SEO team to instill and maintain the SEO checklist based on these standards
-
-## TODO
-
-- [ ] separate the logic from the starter kit into a standalone `nightwatch-seo` library
+Incorporate [Telus Lighthouse](https://github.com/telusdigital/telus-lighthouse) in your application. Telus Lighthouse will validate your pages and ensure compiance with the SEO standards above. Easy :)
 
 ## Who
 
