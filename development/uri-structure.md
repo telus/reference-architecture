@@ -2,7 +2,7 @@
 
 ## Why
 
-TELUS digital does not fully control www.telus.com domain.  www.telus.com currently resolves to an F5 load balancer appliance that is owned by BTO.  We have specific context [paths][f5-www.telus.com] we route to [inbound proxies](../delivery/inbound-proxies/.md) that TELUS digital maintains.
+TELUS digital does not fully control www.telus.com domain.  www.telus.com currently resolves to an F5 load balancer appliance that is owned by BTO.  The F5 acts as a reverse proxy and all of our routes are defined in the [inbound proxies](../delivery/inbound-proxies.md) that TELUS digital maintains.
 
 We've been routing various paths in our inbound proxies to our applications deployed on AWS / OpenShift without any guidelines and conventions.
 
@@ -22,7 +22,7 @@ What belongs in `[/locale][/path]` portion of URI?
 
 ### Routing
 
-Once specific context paths are created in BTO F5 to route to TELUS digital inbound proxies, from there we have control to route to our different applications. This diagram describes the routing for a telus.com request:
+This diagram describes the routing for a telus.com request:
 
 ![F5 routing diagram](./_assets/f5.svg)
 Source: https://docs.google.com/drawings/d/1yUxOCdKRciYD7TvY_IXwzO2zW2G3ka4cdcX8SJfhSDA/edit
@@ -40,7 +40,7 @@ Historically, the `[/locale]` was set through cookies on the Java & PHP stack.  
 
 #### Available Locales
 
-Currently, only `en` and `fr` are supported by the [F5 routing][f5-www.telus.com].
+All locales are currently supported by the F5 routing.
 
 For the regions, the following URI segments are supported: 
 
@@ -66,7 +66,7 @@ We first test such routes on www.wcstage.telus.com and the configurations are ma
 
 ### Routing for www.telus.com
 
-Once we have tested our rotes on www.wcstage.telus.com we can then update configurations for production.  The configurations for production are maintained in the inbound.telus-gateway-production-config [repository][telus-gateway-production-config]
+Once we have tested our routes on www.wcstage.telus.com we can then update configurations for production.  The configurations for production are maintained in the inbound.telus-gateway-production-config [repository][telus-gateway-production-config].
 
 ### Selecting Specific Resources
 
@@ -86,13 +86,11 @@ Any teams deploying to www.telus.com:
 
 ## References
 
-- [F5 Context Paths to AWS for www.telus.com][f5-www.telus.com]
 - [RFC 6570][rfc-6570]
-- [Inbound proxies](../delivery/inbound-proxies/.md)
+- [Inbound proxies](../delivery/inbound-proxies.md)
 - [inbound.telus-gateway-staging-config][telus-gateway-staging-config]
 - [inbound.telus-gateway-production-config][telus-gateway-production-config]
 
-[f5-www.telus.com]: https://telusdigital.atlassian.net/wiki/spaces/TOS/pages/44236901/F5+Context+Paths+to+AWS "F5 Context Paths to AWS for www.telus.com"
 [rfc-6570]: https://tools.ietf.org/html/rfc6570 "RFC 6570"
 [telus-gateway-staging-config]: https://github.com/telusdigital/inbound.telus-gateway-staging-config "inbound.telus-gateway-staging-config"
 [telus-gateway-production-config]: https://github.com/telusdigital/inbound.telus-gateway-production-config "inbound.telus-gateway-production-config"

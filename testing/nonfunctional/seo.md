@@ -11,11 +11,86 @@ This document will only cover testing practices focused on HTML & the DOM.
 
 TELUS maintains an "SEO Checklist" for best practices and requirements, the following is a subset that covers @developer & @qa concerns **that can be automated**:
 
+
+### Document Title
+
+- `<title>`
+  - [ ] element exists and is unique
+  - [ ] element is between 40 and 65 characters including spaces
+  - [ ] each word in the title should be unique
+      - a title tag of "Events - About TELUS - About TELUS" is not valid
+  - [ ] element should conform to pattern: [Keywords] - [Brand] - TELUS.com
+      - the Business bundle page's title tag would be "Business Phone and Internet - Business - TELUS.com"  
+      - the About Events page's title tag would be "Events - About - TELUS.com"  
+  - [ ] Consumer pages (i.e. Mobility and Home Solutions) do not need a "Brand" indicator 
+    - e.g. "Apple iPhone X on Canada's fastest phone network - TELUS.com"
+
+### Meta Keywords
+
+While meta keywords are ignored by Google (and other search engines), we require them to validate our content strategy.
+
+- `<meta name="keywords">`
+  - [ ] element exists
+  - [ ] element content is between 10 and 150 including spaces and commas
+    - `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
+
+### Meta Description
+
+- `<meta name="description">`
+  - [ ] element exists
+  - [ ] element content is between 150 and 320 characters including spaces
+  - [ ] element must include one or more of the comma-separated values found in the meta keywords element. For example:
+    - `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
+    - `<meta name="description" content="The future of the smartphone. The Apple iPhone X offers an edge to edge display, Face ID sensors and wireless charging in an all-glass design. Now at TELUS!">`
+
+More info from [Google Support](https://support.google.com/webmasters/answer/35624)
+
+
+### URL structure
+
+URLs should be consistent, human-readable, and include targeted keywords.
+
+- [ ] URL phrase should be separated with dashes (`-`)
+- [ ] URL phrase must include one or more of the comma-separated values found in the meta keywords element.
+
+For example, for the following `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
+  - URL: `https://www.telus.com/en/mobility/phones/apple-iphone-x/`
+
+### Canonical URL
+
+- `<link rel="canonical">`
+  - [ ] element should exist
+  - [ ] element href attribute should not be empty
+  - [ ] element href attribute should exclude provincial parameters, tracking codes and any other extra parameters & query strings
+  - [ ] element `href` attribute is not broken and/or do not fall in an infinite loop (i.e. canonicals pointing to each other)
+
+For example, for the following URL `https://www.telus.com/en/ab/mobility/phones/iphone-x`
+  - Canonical: `<link rel="canonical" href="https://www.telus.com/en/mobility/phones/iphone-x/">`
+
+More info at [Google Support](https://support.google.com/webmasters/answer/139066)
+
 ### Page headings
 
 Page headings should properly reflect the title of the page.
 
 - [ ] `<h1 />` element should be unique and found only once per page
+
+### Internal Links
+
+Internal linking plays a critical role in Googlebot's ability to find our site's pages and ensures that our visitors can navigate and enjoy your site.
+
+- [ ] Use descriptive anchor text. Do not use "click here", learn more", or similar phrases as anchor text - these phrases provide no context to search crawlers or screeen readers.
+
+- [ ] Page does not contain any broken links (returning `404 Not Found` or `410 Gone`)
+- [ ] Page does not contain any links that result in redirect loops
+
+Sub-optimal
+```<a href="https://www.telus.com/en/mobility/phones/iphone-x/">click here</a>```
+
+Desired
+```<a href="https://www.telus.com/en/mobility/phones/iphone-x/">Apple iPhone X on Canada's fastest network</a>```
+
+More info at [Google Support](https://support.google.com/webmasters/answer/139066)
 
 ### Images
 
@@ -25,37 +100,7 @@ Images that cannot be seen by crawlers should have short and descriptive alterna
   - [ ] element alt attribute exists and is short and descriptive
   - [ ] element src attribute should be separated by hyphens ("-")
   - [ ] image file descriptively named and separated by hyphens ("-")
-
-### Meta tags
-
-Meta titles and descriptions may be included in search results to concisely inform users of a page's content.
-
-- `<title>`
-  - [ ] element exists and is unique
-  - [ ] element is between 20 and 65 characters including spaces
-  - [ ] each word in the title should be unique
-      - a title tag of "Events - About TELUS - About TELUS" is not valid
-  - [ ] element should conform to pattern: [Keyword] - [Brand] - TELUS.com
-      - the Business bundle page's title tag would be "Business Phone and Internet - Business - TELUS.com"  
-      - the About Events page's title tag would be "Events - About - TELUS.com"  
-  - [ ] Consumer pages (i.e. Mobility and Home Solutions) do not need a "Brand" indicator 
-
-- `<meta name="description">`
-  - [ ] element is unique
-  - [ ] element content is within 160 to 320 characters, with spaces
-
-### URL structure
-
-URLs should be consistent, concise, and human-readable.
-
-- [ ] URL phrase should be separated with dashes (`-`)
-
-- `<link rel="canonical">`
-  - [ ] element should exist
-  - [ ] element href attribute should not be empty
-  - [ ] element href attribute should exclude provincial parameters, tracking codes and any other extra parameters & query strings
-  - [ ] element `href` attribute is not broken and/or do not fall in an infinite loop (i.e. canonicals pointing to each other)
-
+  
 ### Indexability checks
 
 Ensure page is not being blocked from crawler discovery and indexing.
@@ -70,14 +115,20 @@ The HTTP status code tells crawlers whether a URL leads to a valid page or not. 
 
   - [ ] Page's status codes is not in the range of [400, 600]
   - [ ] Development and staging environments should be blocked from Googlebots via `robots.txt`, `<meta name="robots">` tag and/or return a `401 Unauthorized` HTTP response
-  
 
-### Broken links
+### Page Speed
 
-Enable crawlers to efficiently crawl the page without wasting its time and resources crawling 404s or redirect loops.
+Use leading performance checking tools to evaluate performance.
 
-- [ ] Page does not contain any broken links (returning `404 Not Found` or `410 Gone`)
-- [ ] Page does not contain any links that result in redirect loops
+- [ ] Check your site speed on [Google Page Speed](https://developers.google.com/speed/pagespeed/insights/)
+- [ ] Check your site speed on [Webpagetest](http://www.webpagetest.org/)
+- [ ] Check your site speed on [YellowLab Tools](http://yellowlab.tools/)
+
+### Mobile friendly
+
+Use leading compatibility checking tools to evaluate mobile friendliness
+
+- [ ] Check if your site is mobile-friendly through Google's [Mobile Friendly](https://search.google.com/test/mobile-friendly) test
  
 ### hreflang
 
