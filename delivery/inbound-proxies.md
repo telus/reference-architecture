@@ -12,9 +12,10 @@ We have a proprietary nginx-based inbound proxy, which routes ALL requests to TE
 
 We present www.telus.com and a few subdomains used to route to application environments:
 
-- wcdevelopment.telus.com
-- www.wctest.telus.com
-- www.wcstage.telus.com
+- [www.wcstage.telus.com](https://www.wcstage.telus.com)
+- [www.wctest.telus.com](https://www.wctest.telus.com)
+- [wcdevelopment.telus.com](https://wcdevelopment.telus.com)
+- [wcpreview.telus.com](https://wcpreview.telus.com)
 
 ### Develop, test, staging
 
