@@ -33,7 +33,7 @@ In this way teams are encouraged to adopt a hybrid approach:
  
 ### Commit Template
 
-For standardized git commits, projects may use Commitizen with conventional-changelog adapter. This can be hooked into your commit-msg git-hook to ensure all commit messages utilize this format. Commitizen is optional; contributors may alternatively reference the [Karma Format][karma] document and write out their commits ordinarily.
+For standardized git commits, projects may use Commitizen with conventional-changelog adapter. This can be hooked into your commit-msg git-hook to ensure all commit messages utilize this format. Commitizen is optional; contributors may alternatively reference the [Karma Format][karma] document (summarized below) and write out their commits ordinarily.
 
 This can be set up by running the following in a project's root:
 
@@ -49,7 +49,33 @@ Once installed, git commits using the commitizen tool can be made with:
 ```bash
 git cz
 ```
- 
+
+### Commit Template Reference
+
+```
+<type>: <subject>
+
+<body>
+
+<footer>
+```
+
+Optionally, the commit message header can be: `<type>(<scope>): <subject>`
+
+`<type>` can be `feat`, `fix`, `docs`, `style`, `refactor`, `test`, or `chore`
+
+`<scope>` can be a short identifier of the component that was changed, e.g. `init`, `runner`, `watcher`, etc.
+
+`<body>` should use the imperative present tense. E.g., `Add foo to bar`, not `Added foo to bar`. Should also explain why _this_ change was made (as opposed to other changes).
+
+`<footer>`, if any, should reference the issue(s) that this commit was in relation to, e.g.:
+
+```
+Closes ABC-123
+(or)
+Closes ABC-456, ABC-457
+```
+
 ## References
 - [Open Source Guides][open-source-guides]
 - [Trunk Based Development - History][trunk-based-development]
