@@ -36,3 +36,7 @@
 - [Code formatting](code-formatting.md)
 - [ESLint](eslint.md)
 - [Gitignore](gitignore.md)
+
+### Guidelines
+
+ - [Accessibility](accessibility.md)
