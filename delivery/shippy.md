@@ -18,7 +18,12 @@ The indefatigable TELUS digital delivery platform assistant.
 
 ## How
 
+### Shippy OpenShift Policy
+
 ![Shippy OpenShift Policy](./_assets/shippy-openshift-policy.svg)
+
+### Shippy Vault Policy
+
 ![Shippy Vault Policy](./_assets/shippy-vault-policy.svg)
 
 Shippy core values:
