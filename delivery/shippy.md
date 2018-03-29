@@ -6,11 +6,25 @@ We want a common tool to access our delivery infrastructure and development envi
 
 ## What
 
-An npm package, `shippy-cli`, will allow us to log into our platform tools ([OpenShift](openshift.md), [HashiCorp Vault](secrets.md)).
+The indefatigable TELUS digital delivery platform assistant.
 
-It will help us automate the cloning from [Starter Kit](../development/starter-kits.md) templates, by creating the GitHub repo, granting access to your squad, deploying it in OpenShift, connecting the webhook, and kicking off your delivery pipeline.
+- Clone and deploy [reference architecture](https://github.com/telusdigital/reference-architecture) starter kits
+- Onboard users into OpenShift & HashiCorp Vault
+- Create squads & assign tech leads & members
+- Create projects & assign them to squads
+- Toggle between environments & projects
+- Edit Vault secrets & policies
+- Bonanza of memes & laffs
 
 ## How
+
+### Shippy OpenShift Policy
+
+![Shippy OpenShift Policy](./_assets/shippy-openshift-policy.svg)
+
+### Shippy Vault Policy
+
+![Shippy Vault Policy](./_assets/shippy-vault-policy.svg)
 
 Shippy core values:
 
@@ -21,7 +35,7 @@ Shippy core values:
 - Tests: unit, integration, e2e, (opt: contract, device)
 - Code Standards: follows reference architecture
 - Practices: e.g. TDD, CI/CD, etc.
-- Tools: Slack, Jira, GitHub, OpenShift, Jenkins, Kibana, NewRelic, PagerDuty, Swagger, Elasticache, multi-az RDS, (Hashi+Ansible) Vault
+- Tools: Slack, Jira, GitHub, OpenShift, Jenkins, Kibana, NewRelic, PagerDuty, Swagger, Elasticache, multi-az RDS, HashiCorp Vault
 
 ### Security
 
