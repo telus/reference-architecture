@@ -1,15 +1,34 @@
 # Search Engine Optimization (SEO) Testing
 
+
 ## Why
 
-We want our applications to get a good page ranking, when queried by search engine providers.
-SEO considerations also include concerns such as performance, render speed, bundle size, etc ...
+We want our web pages (and native apps) to rank well when queried in search engines.
+SEO considerations include properly tagged, optimized content and page speed.
 
-This document will only cover testing practices focused on HTML & the DOM.
+This document will only cover testing practices focused on the User Interface; specifically, the Document Object Model (DOM).
 
 ## What
 
-TELUS maintains an "SEO Checklist" for best practices and requirements, the following is a subset that covers @developer & @qa concerns **that can be automated**:
+TELUS maintains an "SEO Checklist" for best practices and requirements. The following is a subset that covers @developer & @qa concerns **that can be automated**.
+
+## SEO Checklist
+- [Document Title](#document-title)
+- [Meta Keywords](#meta-keywords)
+- [Meta Description](#meta-description)
+- [URL Structure](#url-structure)
+- [Canonical URL](#canonical-url)
+- [Page Headings](#page-headings)
+- [Internal Links](#internal-links)
+- [Images](#images)
+- [hreflang](#hreflang)
+- [Facebook Open Graph Markup](#facebook-open-graph-markup)
+- [Status Codes](#status-codes)
+- [Mobile friendly](#mobile-friendly)
+- [Page Speed](#page-speed)
+- [Indexability](#indexability-checks)
+- [Structured Data](#structured-data)
+- [Pagination](#pagination)
 
 
 ### Document Title
@@ -101,34 +120,6 @@ Images that cannot be seen by crawlers should have short and descriptive alterna
   - [ ] element src attribute should be separated by hyphens ("-")
   - [ ] image file descriptively named and separated by hyphens ("-")
   
-### Indexability checks
-
-Ensure page is not being blocked from crawler discovery and indexing.
-
-- [ ] The `robots.txt` file does not prevent the page from being indexed
-- [ ] element <meta name="robots" content="noindex"> does not exist 
-- [ ] HTTPS response does not return an "X-Robots-Tag: noindex" 
-
-### Status codes
-
-The HTTP status code tells crawlers whether a URL leads to a valid page or not. Pages with unsuccessful status codes may not be indexed properly.
-
-  - [ ] Page's status codes is not in the range of [400, 600]
-  - [ ] Development and staging environments should be blocked from Googlebots via `robots.txt`, `<meta name="robots">` tag and/or return a `401 Unauthorized` HTTP response
-
-### Page Speed
-
-Use leading performance checking tools to evaluate performance.
-
-- [ ] Check your site speed on [Google Page Speed](https://developers.google.com/speed/pagespeed/insights/)
-- [ ] Check your site speed on [Webpagetest](http://www.webpagetest.org/)
-- [ ] Check your site speed on [YellowLab Tools](http://yellowlab.tools/)
-
-### Mobile friendly
-
-Use leading compatibility checking tools to evaluate mobile friendliness
-
-- [ ] Check if your site is mobile-friendly through Google's [Mobile Friendly](https://search.google.com/test/mobile-friendly) test
  
 ### hreflang
 
@@ -159,13 +150,14 @@ For more information see [this documentation](https://support.google.com/webmast
   - [ ] element should exist and be unique
   - [ ] element should contain an image URL that best represents the page
 
-### Page Speed
 
-Use leading performance checking tools to evaluate performance.
+### Status codes
 
-- [ ] Check your site speed on [Google Page Speed](https://developers.google.com/speed/pagespeed/insights/)
-- [ ] Check your site speed on [Webpagetest](http://www.webpagetest.org/)
-- [ ] Check your site speed on [YellowLab Tools](http://yellowlab.tools/)
+The HTTP status code tells crawlers whether a URL leads to a valid page or not. Pages with unsuccessful status codes may not be indexed properly.
+
+  - [ ] Page's status codes is not in the range of [400, 600]
+  - [ ] Development and staging environments should be blocked from Googlebots via `robots.txt`, `<meta name="robots">` tag and/or return a `401 Unauthorized` HTTP response
+
 
 ### Mobile friendly
 
@@ -173,13 +165,33 @@ Use leading compatibility checking tools to evaluate mobile friendliness
 
 - [ ] Check if your site is mobile-friendly through Google's [Mobile Friendly](https://search.google.com/test/mobile-friendly) test
 
+### Page Speed
+
+All Telus web apps should have [Telus Lighthouse](https://github.com/telusdigital/telus-lighthouse) running in the build pipeline for continuous performance monitoring. We also run Telus Lighthouse against production URLs, and surface the results in DOMO.
+
+If using the Chrome browser, you can run Lighthouse at any time - and against any environment - by browsing to a page, opening the DevTools, and selecting the Audit tab.
+
+Additionally, there are several online performance testing tools:
+
+- [ ] Mobile and Desktop speed tests on [Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/)
+- [ ] Mobile Page Speed test on [Think With Google](https://testmysite.thinkwithgoogle.com/)
+
+
+### Indexability checks
+
+Ensure page is not being blocked from crawler discovery and indexing.
+
+- [ ] The `robots.txt` file does not prevent the page from being indexed
+- [ ] element <meta name="robots" content="noindex"> does not exist 
+- [ ] HTTPS response does not return an "X-Robots-Tag: noindex" 
+
 ### Structured Data
 
 Structured data is a standardized format for providing information about a page and classifying the page content; for example, for product pages: what are the price, stock availability, review ratings, and so on.
 
 Cf. [Introduction to Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
 
-#### For product detail pages, i.e. phones and accessories:
+#### Product & Service Detail pages: e.g., phones and accessories.
 
 - `"@type": "Product"`
   - [ ] element should exist
@@ -210,6 +222,10 @@ Cf. [Introduction to Structured Data](https://developers.google.com/search/docs/
 
 - `"url"`
   - [ ] element should exist
+
+#### Product Catalogue pages (*that do not link directly to products)
+
+Use the product schema as noted above, but EXCLUDE the URL property.
 
 #### For video content types
 
