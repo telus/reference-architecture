@@ -2,14 +2,21 @@
 
 ## Why
 
-In order to maintain customer trust and ensure a consistent experience when visiting TELUS digital properties it is important that the domains we use represent our brand in a positive way. We must also ensure that our domains are highly rated by search engines, easy for customers to communicate to others, and easy to remember themselves.
+In order to maintain customer trust and ensure a consistent experience when visiting TELUS digital properties it is important that the domains we use represent our brand in a positive way. We must also ensure that our domains have centralized security and operational controls, are highly rated by search engines, easy for customers to communicate to others, and easy to remember themselves.
 
 ## What
 
-TELUS digital properties are *strongly discouraged* from hosting on subdomains barring unusual circumstances requiring an exception. External TELUS digital properties and microsites must follow our standard subdomain substructure. We do not support the use of unique domains (e.g. `telusrocks.com`) and no domains should ever be registered by third party and digital partner groups.
+Scenario 1: TELUS digital properties that are on Digital Platform (RA) are to be routed through [inbound proxy](https://github.com/telusdigital/inbound.telus-gateway-production-config) in order to be hosted as a context path under www.telus.com domain - example: www.telus.com/app
+
+Scenario 2: Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform) must follow our standard subdomain substructure. We do not support the use of unique domains (e.g. `telusrocks.com`) and no domains should ever be registered by third party and digital partner groups.
 
 ## How
 
+Scenario 1: Application must be confirgured to be routed through the inbound proxy:<br>
+- Staging: https://github.com/telusdigital/inbound.telus-gateway-staging-config<br>
+- Production: https://github.com/telusdigital/inbound.telus-gateway-production-config
+
+Scenario 2: Follow standard subdomain substructure:
 When requesting a TELUS subdomain, keep in mind the following:
 - Subdomains must have the following format: `x.telus.com`, e.g. `community.telus.com`
 - The subdomain should represent the product or campaign name as clearly as possible
