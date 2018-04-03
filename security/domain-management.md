@@ -13,8 +13,8 @@ Scenario 2: Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform
 ## How
 
 Scenario 1: Application must be confirgured to be routed through the inbound proxy:<br>
-- Staging: https://github.com/telusdigital/inbound.telus-gateway-staging-config<br>
-- Production: https://github.com/telusdigital/inbound.telus-gateway-production-config
+- [Staging inbound proxy](https://github.com/telusdigital/inbound.telus-gateway-staging-config)<br>
+- [Production inbound proxy](https://github.com/telusdigital/inbound.telus-gateway-production-config)
 
 Scenario 2: Follow standard subdomain substructure:
 When requesting a TELUS subdomain, keep in mind the following:
