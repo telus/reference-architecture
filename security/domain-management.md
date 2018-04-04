@@ -16,7 +16,7 @@ Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform) must follo
 
 ### TELUS digital properties that are on Digital Platform (RA):
 
-Application must be confirgured to be routed through the [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md)<br>
+Application must be configured to be routed through the [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md)<br>
 
 ### Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform):
 
