@@ -6,15 +6,14 @@ In order to maintain customer trust and ensure a consistent experience when visi
 
 ## What
 
-Scenario 1: TELUS digital properties that are on Digital Platform (RA) are to be routed through [inbound proxy](https://github.com/telusdigital/inbound.telus-gateway-production-config) in order to be hosted as a context path under www.telus.com domain - example: www.telus.com/app
+Scenario 1: TELUS digital properties that are on Digital Platform (RA) are to be routed through [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md) in order to be hosted as a context path under www.telus.com domain - example: www.telus.com/app
 
 Scenario 2: Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform) must follow our standard subdomain substructure. We do not support the use of unique domains (e.g. `telusrocks.com`) and no domains should ever be registered by third party and digital partner groups.
 
 ## How
 
-Scenario 1: Application must be confirgured to be routed through the inbound proxy:<br>
-- [Staging inbound proxy](https://github.com/telusdigital/inbound.telus-gateway-staging-config)<br>
-- [Production inbound proxy](https://github.com/telusdigital/inbound.telus-gateway-production-config)
+Scenario 1: Application must be confirgured to be routed through the [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md)<br>
+Note: staging environment must be configured through staging ibound proxy.
 
 Scenario 2: Follow standard subdomain substructure:
 When requesting a TELUS subdomain, keep in mind the following:
