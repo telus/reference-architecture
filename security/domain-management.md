@@ -6,16 +6,21 @@ In order to maintain customer trust and ensure a consistent experience when visi
 
 ## What
 
-Scenario 1: TELUS digital properties that are on Digital Platform (RA) are to be routed through [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md) in order to be hosted as a context path under www.telus.com domain - example: www.telus.com/app
+### TELUS digital properties that are on Digital Platform (RA):
+TELUS digital properties that are on Digital Platform (RA) are to be routed through [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md) in order to be hosted as a context path under www.telus.com domain - example: www.telus.com/app
 
-Scenario 2: Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform) must follow our standard subdomain substructure. We do not support the use of unique domains (e.g. `telusrocks.com`) and no domains should ever be registered by third party and digital partner groups.
+### Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform):
+Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform) must follow our standard subdomain substructure. We do not support the use of unique domains (e.g. `telusrocks.com`) and no domains should ever be registered by third party and digital partner groups.
 
 ## How
 
-Scenario 1: Application must be confirgured to be routed through the [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md)<br>
-Note: staging environment must be configured through staging ibound proxy.
+### TELUS digital properties that are on Digital Platform (RA):
 
-Scenario 2: Follow standard subdomain substructure:
+Application must be confirgured to be routed through the [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md)<br>
+
+### Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform):
+
+#### 1) Follow standard subdomain substructure:
 When requesting a TELUS subdomain, keep in mind the following:
 - Subdomains must have the following format: `x.telus.com`, e.g. `community.telus.com`
 - The subdomain should represent the product or campaign name as clearly as possible
@@ -29,7 +34,24 @@ When requesting a TELUS subdomain, keep in mind the following:
   - `Telusmobility.com` - should be capitalized and limited to existing services already using it. Storefronts have already migrated over to `telus.com`     	
   - `Mobility.ca` - domain to be used when brand agnostic domain is needed, such as on MMS client that can be installed on TELUS or Koodo devices.
   
-For DNS requests see [Project Inception and Security Process](project-inception-and-security-process.md)
+#### 2) Requesting Digital Certificates:
+To request SSL certificate, the TELUS prime should email dldigitalsecurity@telus.com who will create CSR request on behalf of the application owner. The cost of a new cert is $150 USD. If the upper level domain does not exist in Symantec then there is a one time $250 USD charge to get it created (additional $150 charge per server where cert is installed).
+Please include the following in your email to dldigitalsecurity@telus.com:
+  - domain
+  - manager name
+  - cost center
+  - number of servers on which the certificate will be installed
+
+#### 3) DNS requests:
+
+To request a new TELUS subdomain (or modify an existing one), a TELUS prime should follow the following internal process:
+- Step 1
+Email CIDC.change@telus.com with the request, it can simply state the following:
+“We would like to add/remove DNS record for xyz.telus.com”
+- Step 2
+You will receive a response from CIDC.change@telus.com which will include the incident number (IN#).
+- Step 3
+Visit GO/SensitiveDNSchange and complete the form found within the site. Add the IN# received from the CIDC team in the appropriate field.
 
 ## Who
 
