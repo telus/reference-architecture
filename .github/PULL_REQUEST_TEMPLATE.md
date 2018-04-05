@@ -2,6 +2,10 @@
 
 Your rationale.
 
+### Is this a TELUS digital initiative?
+
+- [yes/no]
+
 ### Features
 
 - add [something] to [doc]
@@ -17,6 +21,7 @@ Your rationale.
 
 - [ ] provide a descriptive topic
 - [ ] provide an overview of contribution
+- [ ] answered yes/no question on type of initiative
 - [ ] no sensitive content included, such as:
   - security & privacy policy violating content
   - content considered competitive intelligence
