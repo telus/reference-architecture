@@ -38,11 +38,8 @@ TELUS maintains an "SEO Checklist" for best practices and requirements. The foll
   - [ ] element is between 40 and 65 characters including spaces
   - [ ] each word in the title should be unique
       - a title tag of "Events - About TELUS - About TELUS" is not valid
-  - [ ] element should conform to pattern: [Keywords] - [Brand] - TELUS.com
-      - the Business bundle page's title tag would be "Business Phone and Internet - Business - TELUS.com"  
-      - the About Events page's title tag would be "Events - About - TELUS.com"  
-  - [ ] Consumer pages (i.e. Mobility and Home Solutions) do not need a "Brand" indicator 
-    - e.g. "Apple iPhone X on Canada's fastest phone network - TELUS.com"
+  - [ ] element should conform to pattern: [Keyword rich page title] - TELUS.com
+      - e.g. "Apple iPhone X on Canada's fastest phone network - TELUS.com"
 
 ### Meta Keywords
 
