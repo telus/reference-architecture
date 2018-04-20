@@ -5,6 +5,7 @@ This section contains documentation related to APIs within TELUS Digital.
 - [Creating an API](creating-an-api.md)
 - [Authorization Proxy](authorization-proxy.md)
 - [Schema Validation](schema-validation.md)
+- [Problem Details](problem-details.md): how to add extra, machine-readable, details to error responses.
 
 ## APIs Outside of Digital
 
