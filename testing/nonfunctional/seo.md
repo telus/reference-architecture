@@ -38,8 +38,8 @@ TELUS maintains an "SEO Checklist" for best practices and requirements. The foll
   - [ ] element is between 40 and 65 characters including spaces
   - [ ] each word in the title should be unique
       - a title tag of "Events - About TELUS - About TELUS" is not valid
-  - [ ] element should conform to pattern: [Keyword rich page title] - TELUS.com
-      - e.g. "Apple iPhone X on Canada's fastest phone network - TELUS.com"
+  - [ ] element should conform to pattern: [Keyword rich page title] | TELUS
+      - e.g. "Apple iPhone X on Canada's fastest phone network | TELUS"
 
 ### Meta Keywords
 
