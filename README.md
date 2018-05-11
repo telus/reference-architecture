@@ -16,7 +16,7 @@ This documentation outlines the different methods available to the creators at T
 ## Redaction
 
 Redaction is the process of partially masking-out fields deemed sensitive or identifying. A common example of redaction is a credit card number masked with asterisks. This method can reduce the referential integrity of data as syntactic correctness is lost and statistical correctness is reduced. Redaction is not reversible unless a mapping to the original data has been made. Redaction is often used when the values are not needed downstream.
-![](https://picasaweb.google.com/106537257627713171880/6554378206724728129#6554378204962887970)
+![](https://lh3.googleusercontent.com/3HXBGL8mZwtjkzBHyMQvPi071RvLOkFDnE1URebfcYcq-CXtHSukxX0YTu15fZa36NSvqioLwpE)
 
 | Attribute | Rating | Explanation                                                       |
 |:---------:|:------:|-------------------------------------------------------------------|
@@ -50,6 +50,8 @@ Shuffling is the process of moving elements around in a dataset. This breaks the
 |  Utility  |  **FAIR**  | Syntactic correctness can be maintained. Statistical correctness may be maintained. Semantic correctness is hard to maintain.                      |
 
 [Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]
+
+
 ## Generalization
 
 Generalization is the process replacing exact values with value ranges to preserve privacy. For example, it may not be necessary to know an individual's exact birthday but rather they are in their 50s. This can only be done to certain types of data; fields like gender, names, and credit card information cannot be generalized.
@@ -62,7 +64,8 @@ Generalization is the process replacing exact values with value ranges to preser
 |  Privacy  |  **FAIR**  | Properly done, privacy can be preserved, but many approaches have proven to be weak or poorly thought out. |
 |  Utility  |  **GOOD**  | Preserves many of the functional requirements.                      |
 
-[Contents of above taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]
+[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]
+
 
 ## Suppression
 
@@ -76,7 +79,8 @@ Suppression is the complete removal of sensitive fields. No place holders are us
 |  Privacy  |  **BEST**  | Complete elimination of sensitive data. |
 |  Utility  |  **POOR**  | Functionality related to sensitive data is completely lost.                      |
 
-[Contents of above taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]
+[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]
+
 
 ## Randomization
 
@@ -91,6 +95,7 @@ Randomization is the process of replacing sensitive values with randomized value
 |  Utility  |  **POOR**  | Data loses many of it’s functional properties.                      |
 
 [Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]
+
 
 
 ## Data Attributes of Masking Methods
