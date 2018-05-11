@@ -42,7 +42,7 @@ Pseudonymization or Substitution is the process of replacing identifying data wi
 ## Shuffling
 Shuffling is the process of moving elements around in a dataset. This breaks the correlations between individuals and their identifying data, however, the sensitive data is still contained in the set. Shuffling allows for the analysis of statistical distribution but the correlation between fields is lost.
 
-![](./Shufffling.png)
+![](./Shuffling.png)
 
 | Attribute | Rating | Explanation                                                       |
 |:---------:|:------:|-------------------------------------------------------------------|
@@ -100,7 +100,7 @@ Randomization is the process of replacing sensitive values with randomized value
 
 
 ## Data Attributes of Masking Methods
-![](./Attributes.png)
+![](./Data_Attributes.png)
 
 
 
