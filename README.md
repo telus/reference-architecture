@@ -16,7 +16,7 @@ This documentation outlines the different methods available to the creators at T
 ## Redaction
 
 Redaction is the process of partially masking-out fields deemed sensitive or identifying. A common example of redaction is a credit card number masked with asterisks. This method can reduce the referential integrity of data as syntactic correctness is lost and statistical correctness is reduced. Redaction is not reversible unless a mapping to the original data has been made. Redaction is often used when the values are not needed downstream.
-![](https://picasaweb.google.com/106537257627713171880/6554383530914345233#6554383534875889570)
+![TEST](https://photos.app.goo.gl/agYPBv6x3ijhcjJa2)
 
 | Attribute | Rating | Explanation                                                       |
 |:---------:|:------:|-------------------------------------------------------------------|
