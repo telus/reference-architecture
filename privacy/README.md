@@ -25,7 +25,7 @@ Redaction is the process of partially masking-out fields deemed sensitive or ide
 |  Privacy  |  **FAIR**  | Still allows for correlation of transactions with the individual. |
 |  Utility  |  **FAIR**  | Allows significant secondary production uses                      |
 
-<sub>[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
+<sub>[Contents of table above taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
 
 <br>
 
@@ -44,7 +44,7 @@ Pseudonymization or Substitution is the process of replacing identifying data wi
 |  Privacy  |  **POOR**  | By preserving consistency, correlation of the substituted value still allows tracking of the individual. |
 |  Utility  |  **FAIR**  | It preserves referential integrity and can be used to preserve syntactic and semantic correctness.                      |
 
-<sub>[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
+<sub>[Contents of table above taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
 
 <br>
 
@@ -63,7 +63,7 @@ Shuffling is the process of moving elements around in a dataset. This breaks the
 |  Privacy  |  **FAIR**  | Obscures the context for sensitive data |
 |  Utility  |  **FAIR**  | Syntactic correctness can be maintained. Statistical correctness may be maintained. Semantic correctness is hard to maintain.                      |
 
-<sub>[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
+<sub>[Contents of table above taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
 
 <br>
 
@@ -83,7 +83,7 @@ Generalization is the process replacing exact values with value ranges to preser
 |  Privacy  |  **FAIR**  | Properly done, privacy can be preserved, but many approaches have proven to be weak or poorly thought out. |
 |  Utility  |  **GOOD**  | Preserves many of the functional requirements.                      |
 
-<sub>[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
+<sub>[Contents of table above taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
 
 <br>
 
@@ -102,7 +102,7 @@ Suppression is the complete removal of sensitive fields. No place holders are us
 |  Privacy  |  **BEST**  | Complete elimination of sensitive data. |
 |  Utility  |  **POOR**  | Functionality related to sensitive data is completely lost.                      |
 
-<sub>[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
+<sub>[Contents of table above taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
 
 <br>
 
@@ -122,7 +122,7 @@ Randomization is the process of replacing sensitive values with randomized value
 |  Privacy  |  **BEST**  | Done properly this breaks the connection between the data element and the individual. |
 |  Utility  |  **POOR**  | Data loses many of it’s functional properties.                      |
 
-<sub>[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
+<sub>[Contents of table above taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
 
 <br>
 
