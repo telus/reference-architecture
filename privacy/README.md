@@ -23,7 +23,7 @@ Redaction is the process of partially masking-out fields deemed sensitive or ide
 |  Privacy  |  **FAIR**  | Still allows for correlation of transactions with the individual. |
 |  Utility  |  **FAIR**  | Allows significant secondary production uses                      |
 
-[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]
+<sub>[Contents of table taken from “_Data Masking Guidelines - Chief Security Office - Habitat Communities”_ by Neil McKellar]</sub>
 
 ![](./Redaction.png)
 
