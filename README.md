@@ -16,6 +16,7 @@ This documentation outlines the different methods available to the creators at T
 ## Redaction
 
 Redaction is the process of partially masking-out fields deemed sensitive or identifying. A common example of redaction is a credit card number masked with asterisks. This method can reduce the referential integrity of data as syntactic correctness is lost and statistical correctness is reduced. Redaction is not reversible unless a mapping to the original data has been made. Redaction is often used when the values are not needed downstream.
+
 ![](https://lh3.googleusercontent.com/DYybyJtZU8x1NPshHtUTHAMcU8Olc2ld9T3Ais3rBl3e43nbGk30HdLy4GwIDYcoJGjfn9BwFSg)
 
 | Attribute | Rating | Explanation                                                       |
@@ -28,6 +29,7 @@ Redaction is the process of partially masking-out fields deemed sensitive or ide
 ## Pseudonymization/Substitution
 
 Pseudonymization or Substitution is the process of replacing identifying data with alternative values (often partially randomized), these values can be tokenized so that the pseudonymized data can be linked back to the original dataset. This method provides a good degree of protection as, unlike with encryption, no information is stored in the pseudonymized values themselves. Pseudonymization preserves a favourable amount of utility as the correlations between values are maintained.
+
 ![](https://lh3.googleusercontent.com/p26giuYZsdJ3byx6yvhJ_KjqSLLmsPjLMHDxzQ6J8BbKRMXJfXBjOlu8WeAM_ekRzqNsCQ7rnnE)
 
 | Attribute | Rating | Explanation                                                       |
@@ -54,6 +56,7 @@ Shuffling is the process of moving elements around in a dataset. This breaks the
 ## Generalization
 
 Generalization is the process replacing exact values with value ranges to preserve privacy. For example, it may not be necessary to know an individual's exact birthday but rather they are in their 50s. This can only be done to certain types of data; fields like gender, names, and credit card information cannot be generalized.
+
 ![](https://lh3.googleusercontent.com/l52XmmQ4T2J2NBPcC0lrtKmm9mAbS9nNlRY5ccjTuHyytv5cKjQzPJGWCMYYWNVdDtTZ-KgXsI4)
 
 | Attribute | Rating | Explanation                                                       |
@@ -68,6 +71,7 @@ Generalization is the process replacing exact values with value ranges to preser
 ## Suppression
 
 Suppression is the complete removal of sensitive fields. No place holders are used and there is no evidence of the original values. Suppression has strong negative impacts impacts on the utility of a dataset but is an effective way of eliminating PII.
+
 ![](https://lh3.googleusercontent.com/GwhVueV3DJR9YA6rUHn_cnOEiOFhzprU5YSadFYvrmZmGd-JuLrkDQJapav9GWFsLYlWj3eAF0I)
 
 | Attribute | Rating | Explanation                                                       |
@@ -82,6 +86,7 @@ Suppression is the complete removal of sensitive fields. No place holders are us
 ## Randomization
 
 Randomization is the process of replacing sensitive values with randomized values which bear no relationship to the original fields. This reduces both the semantic and the statistical correctness of the values but effectively protects the privacy and secrecy of the data. Randomization is useful when the values being masked have low context in the analysis being done.
+
 ![](https://lh3.googleusercontent.com/E2RJGh5MvRubgjrK1iHgXcu_I52j1FKnMzB5Oor6_JMe9jMYyqOyv1mR8Pl2Pk0NqO3u0EwJD5E)
 
 | Attribute | Rating | Explanation                                                       |
