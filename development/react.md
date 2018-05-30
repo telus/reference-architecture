@@ -14,7 +14,7 @@ Not only can React code be used on the server and client side, there's also [Rea
 
 ## How
 
-[TELUS Deisgn System](http://tds.telus.com/) is our standard library of React components. Where possible, these should be used, rather than creating your own components, so that we can have a consistent design language across all of our pages.
+[TELUS Design System](http://tds.telus.com/) is our standard library of React components. Where possible, these should be used, rather than creating your own components, so that we can have a consistent design language across all of our pages.
 
 The [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit) is a standard boilerplate for building a Node.js isomorphic React application. It uses [webpack](webpack.md), and [babel](babel.md) to transpile the React JSX & ES2015 code into browser-native ES5. Using isomorphism, it pre-renders the React components on a page before sending the content to the browser client. After the browser receives the rendered application, it is able to render all further React components on the client side, using AJAX requests to populate it with data.
 
