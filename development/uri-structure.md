@@ -60,6 +60,14 @@ For the regions, the following URI segments are supported:
 | Saskatchewan | `sk` |
 | Yukon | `yt` |
 
+### URL Fragment
+
+The `[#fragment]` segment typically identifies a part of the view within the document object model. In order to reflect user selection within our sites, it is recommended to update the url fragment programmatically. This method will improve support for Personalization and A/B testing.
+
+`eg. /mobility/phones/iphone-x#size=256&colour=black`
+
+To above will indicate a selection of an Iphone X with 256gb in black.
+
 ### Routing for www.wcstage.telus.com
 
 We first test such routes on www.wcstage.telus.com and the configurations are maintained in the inbound.telus-gateway-staging-config [repository][telus-gateway-staging-config].
