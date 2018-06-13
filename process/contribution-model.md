@@ -66,7 +66,7 @@ Optionally, the commit message header can be: `<type>(<scope>): <subject>`
 
 `<scope>` can be a short identifier of the component that was changed, e.g. `init`, `runner`, `watcher`, etc.
 
-`<body>` should use the imperative present tense. E.g., `Add foo to bar`, not `Added foo to bar`. Should also explain why _this_ change was made (as opposed to other changes).
+`<body>` should use the imperative present tense and in all lowercase. E.g., `add foo to bar`, not `Added foo to bar`. Should also explain why _this_ change was made (as opposed to other changes).
 
 `<footer>`, if any, should reference the issue(s) that this commit was in relation to, e.g.:
 
