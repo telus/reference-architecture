@@ -18,6 +18,7 @@ TELUS Security Standards are intended to serve as guidelines to which we should 
 - [Project Inception and Security Process](project-inception-and-security-process.md)
 - [PI security](pi.md)
 - [Web Configuration](web-configuration.md)
+- [Input Validation and Output Encoding](input-validation-and-output-encoding.md)
 - [Domain Management](domain-management.md)
 - [Password Policy](password-policy.md)
 - [Privacy Policy](privacy-policy.md)
