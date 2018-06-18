@@ -54,7 +54,6 @@ The following is a generic list of best practices around web security.
 - [ ] Use random CSRF tokens and expose business logic APIs as HTTP POST requests. Do not expose CSRF tokens over HTTP for example in an initial request upgrade phase.
 - [ ] Do not use critical data or tokens in GET request parameters. Exposure of server logs or a machine/stack processing them would expose user data in turn.  
   
-  
 ##### SANITIZATION OF INPUT
 - [ ] `Sanitize` all user inputs or any input parameters exposed to user to prevent [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting).
 - [ ] Always use parameterized queries to prevent [SQL Injection](https://en.wikipedia.org/wiki/SQL_injection).  
@@ -62,7 +61,10 @@ The following is a generic list of best practices around web security.
 - [ ] `Sanitize` user input for special cases like robots.txt as profile names in case you are using a url pattern like coolcorp.io/username. 
 - [ ] Do not hand code or build JSON by string concatenation ever, no matter how small the object is. Use your language defined libraries or framework.
 - [ ] Sanitize inputs that take some sort of URLs to prevent [SSRF](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit#heading=h.t4tsk5ixehdd).
-- [ ] Sanitize Outputs before displaying to users.
+
+##### OUTPUT ENCODING
+- [ ] Anytime when user-controlled data is reflected to browser, it should be properly encoded for the syntax of the target interpreter.
+- [ ] ReactJS contains built-in protection for most XSS vulnerabilities. However, when untrusted data is reflected to browser's DOM as JSON (for example, as part of initial state), it is interpreted by HTML. If it contains malicious script and not properly encoded it will be executed resulting in XSS. Therefore it is important that JSON string is encoded using pre-existing library [serialize-javascript](https://github.com/yahoo/serialize-javascript). More details: [Most Common XSS Vulnerability in React JS](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0)
 
 ##### OPERATIONS
 - [ ] If you are small and inexperienced, evaluate using AWS elasticbeanstalk or a PaaS to run your code.
