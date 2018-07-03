@@ -6,12 +6,14 @@ To create an API that's part of the TELUS Digital API platform, there are a numb
 
 ## What
 
-* APIs should start from the [API starter kit](https://github.com/telusdigital/api-starter-kit)
-* APIs should be deployed to the `api-platform` project in OpenShift. If you need access, follow the steps described [here](https://github.com/telusdigital/openshift-cluster-provisioning/).
-APIs that need to call services behind SDF or other digital APIs should be behind [Auth Proxy](authorization-proxy.md). To use Auth Proxy you'll need to:
-  * Configure your API as a [new target](https://github.com/telusdigital/authorization-proxy/blob/master/src/config/api-targets/production.js)
-  * Make sure the Oauth scope required by the service you want to call has been added to the [configuration](https://github.com/telusdigital/authorization-proxy/blob/master/src/config/sdf-env/prod.js)
-* Update the [Platform API docs](https://github.com/telusdigital/api-platform-docs) to include the [Swagger](https://swagger.io/) documentation for your service
+* APIs should be created using the [API starter kit](https://github.com/telusdigital/api-starter-kit)
+* If your API requires the use of SDF, it must be deployed to the `o-api-platform` project in OpenShift. To get it deployed there, follow instructions using the [shippy-cli](https://github.com/telus/shippy-cli). Otherwise, the API may be hosted in a different OpenShift project.
+APIs that need to call services behind SDF or other digital APIs needs to be behind [Auth Proxy](authorization-proxy.md). To use Auth Proxy you'll need to:
+  * Configure your API as a [new target](https://github.com/telus/authorization-proxy/tree/master/src/config/application-wide) in all required environments.
+  * If your API is outside the `o-api-platform`, use the openshift URL of your service as the target.
+  * If your API requires to be authenticated, you must add your API name to the default.js file under the proper domain (Telus, koodo, etc) [here](https://github.com/telusdigital/authorization-proxy/blob/master/src/config/request-context)
+* Ensure that you have updated documentation in your API's GitHub repository under /swagger.
+You will need to link your documentation from the [main hub](https://github.com/telus/api-platform-docs/tree/master/src/config) under the appropriate environment.
 
 ## How
 
