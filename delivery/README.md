@@ -1,6 +1,6 @@
 ## Delivery
 
-- [Testing Rationale](https://www.youtube.com/watch?v=wAKllf94xvU) 
+- [Testing Rationale](https://www.youtube.com/watch?v=wAKllf94xvU)
 - [Docker](docker.md)
 - [Kubernetes](kubernetes.md)
 - [OpenShift](openshift.md)
