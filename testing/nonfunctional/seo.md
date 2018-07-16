@@ -40,6 +40,7 @@ TELUS maintains an "SEO Checklist" for best practices and requirements. The foll
       - a title tag of "Events - About TELUS - About TELUS" is not valid
   - [ ] element should conform to pattern: [Keyword rich page title] | TELUS
       - e.g. "Apple iPhone X on Canada's fastest phone network | TELUS"
+  - [ ] element must include one or more of the comma-separated values found in the meta keywords element.
 
 ### Meta Keywords
 
@@ -64,16 +65,19 @@ More info from [Google Support](https://support.google.com/webmasters/answer/356
 
 ### URL structure
 
-URLs should be consistent, human-readable, and include targeted keywords. URLs are very important Search Relevance signal.
+**URLs must be selected by your SEO Prime**.
 
+URLs should be consistent, human-readable, and include targeted keywords. URLs are very important Search Relevance signal.
 
 - [ ] each word in the URL phrase should be separated by a dash (`-`). 
 - [ ] URL phrase must include one or more of the comma-separated values found in the meta keywords element.
+- [ ] URLs should be short and easy to remember. Practicing this will prevent the need for additional vanity URLs.
 
 For example, for the following `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
-  - URL: `https://www.telus.com/en/mobility/phones/apple-iphone-x/`
+  - URL (following current state pathing): `https://www.telus.com/en/mobility/phones/apple-iphone-x/`
+  - URL (following desired state pathing): `https://www.telus.com/apple-iphone-x/`
   
-When constructing URLs, consider how a user would search on Google - "appleiphonex" or "apple iphone x"? Presumably the latter. Effectively, the dash represents a space in a user search.
+When considering URLs, ask how a user would search on Google - "appleiphonex" or "apple iphone x"? Presumably the latter. Effectively, the dash represents a space in a user search. 
 
 ### Canonical URL
 
@@ -93,6 +97,7 @@ More info at [Google Support](https://support.google.com/webmasters/answer/13906
 Page headings should properly reflect the title of the page.
 
 - [ ] `<h1 />` element should be unique and found only once per page
+- [ ] `<h1 />` element must include one or more of the comma-separated values found in the meta keywords element.
 
 ### Internal Links
 
