@@ -60,11 +60,11 @@ For the regions, the following URI segments are supported:
 | Saskatchewan | `sk` |
 | Yukon | `yt` |
 
-### URL Fragment
+### URL Pathname
 
-The `[#fragment]` segment typically identifies a part of the view within the document object model. In order to reflect user selection within our sites, it is recommended to update the url fragment programmatically. This method will improve support for Personalization and A/B testing.
+The url path is the path to the resource on the Web server. In the early days of the Web, a path represented a physical file location on the Web server. Nowadays, it is mostly an abstraction handled by Web servers without any physical reality. In order to reflect user selection within our sites, it is recommended to update the url path programmatically. This method will improve support for Personalization and A/B testing.
 
-`eg. /mobility/phones/iphone-x#size=256&colour=black`
+`eg. /mobility/phones/iphone-x/256/black`
 
 To above will indicate a selection of an Iphone X with 256gb in black.
 
