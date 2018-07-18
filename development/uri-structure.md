@@ -60,6 +60,14 @@ For the regions, the following URI segments are supported:
 | Saskatchewan | `sk` |
 | Yukon | `yt` |
 
+### URL Pathname
+
+The url path is the path to the resource on the Web server. In the early days of the Web, a path represented a physical file location on the Web server. Nowadays, it is mostly an abstraction handled by Web servers without any physical reality. In order to reflect user selection within our sites, it is recommended to update the url path programmatically. This method will improve support for Personalization and A/B testing.
+
+`eg. /mobility/phones/iphone-x/256/black`
+
+To above will indicate a selection of an Iphone X with 256gb in black.
+
 ### Routing for www.wcstage.telus.com
 
 We first test such routes on www.wcstage.telus.com and the configurations are maintained in the inbound.telus-gateway-staging-config [repository][telus-gateway-staging-config].
@@ -90,6 +98,7 @@ Any teams deploying to www.telus.com:
 - [Inbound proxies](../delivery/inbound-proxies.md)
 - [inbound.telus-gateway-staging-config][telus-gateway-staging-config]
 - [inbound.telus-gateway-production-config][telus-gateway-production-config]
+- [Adobe Target](//marketing.adobe.com/resources/help/en_US/target/target/c_spa-visual-experience-composer.html)
 
 [rfc-6570]: https://tools.ietf.org/html/rfc6570 "RFC 6570"
 [telus-gateway-staging-config]: https://github.com/telusdigital/inbound.telus-gateway-staging-config "inbound.telus-gateway-staging-config"
