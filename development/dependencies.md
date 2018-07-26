@@ -17,10 +17,23 @@ The only setup necessary to get started with Renovate is to create a config file
     {
         "extends": [
             "@telusdigital"
-              ]
+        ]
     }
 
-Every Sunday night, PRs will be made to your project with changes to `package.json`, and `yarn.lock`. The PR body will describe the proposed version number, have a link to the module's webpage, and changelogs/release notes corresponding to the updates between the current version and proposed version. 
+This config refers to a centralized TELUS Digital [configuration](https://github.com/telus/renovate-config/blob/master/package.json) for Renovate Bot. See the `package.json` file in that repository. Following the [Renovate Config Docs](https://renovatebot.com/docs/configuration-options/), we have configured it to:
+
+- not pin specific Docker image digests in Dockerfiles,
+- run weekly every Sunday night,
+- rebase stale PRs,
+- not recreate an updated `yarn.lock` file every week separate from dependency updates,
+- preserve semantic version ranges,
+- make separate PRs for patch releases,
+- and use semantic commit messages.
+
+### What You CAn Expect
+
+Pull Requests will be made to your project with changes to `package.json`, and `yarn.lock`. The PR body will describe the proposed version number, have a link to the module's webpage, and changelogs/release notes corresponding to the updates between the current version and proposed version.
+
 
 ### Managing Updates
 
