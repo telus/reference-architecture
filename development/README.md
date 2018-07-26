@@ -7,6 +7,7 @@
 - [BFF](bff.md) _(Backend-for-frontend)_
 - [URI Templates & Structure](uri-structure.md)
 - [Application Configuration](application-configuration.md)
+- [Dependency Management](dependencies.md)
 
 ### Languages & Frameworks
 
