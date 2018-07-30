@@ -7,3 +7,4 @@
 - [CSS Optimization](css-optimization.md)
 - [Resource Hinting](resource-hinting.md)
 - [Page Speed Insights](page-speed-insights.md)
+- [API Performance Standards](api-performance-standards.md)
