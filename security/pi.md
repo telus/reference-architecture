@@ -2,9 +2,9 @@
 
 ## Why
 
-It's important to Telus that a TELUS customer's Personal Identifiers are protected from Telus users and 3rd party platform providers, so that we can further build on our brand's trust and reliability. We are committed to respecting our [customers' privacy](https://www.telus.com/en/bc/support/privacy-policy) and safeguarding their information. In a time where the threat to our industry continues to increase in various forms of fraudulent behaviour and cybercrime, the emphasis on a customer's privacy and security also increases.
+It's important to TELUS that a TELUS customer's Personal Identifiers are protected from TELUS users and 3rd party platform providers, so that we can further build on our brand's trust and reliability. We are committed to respecting our [customers' privacy](https://www.telus.com/en/bc/support/privacy-policy) and safeguarding their information. In a time where the threat to our industry continues to increase in various forms of fraudulent behaviour and cybercrime, the emphasis on a customer's privacy and security also increases.
 
-For more clarity, for any development work that Telus customers' Personal Identifiers are accessed, developers need to block these personal info via snippets in Telus pages. For more information
+For more clarity, for any development work that TELUS customers' Personal Identifiers are accessed, developers need to block these personal info via snippets in TELUS pages. For more information
 
 ## What
 
@@ -20,7 +20,7 @@ The goal is to mitigate business risks and provide customer solutions that take 
 
 ## How
 
-To protect customer privacy, Telus Privacy team requires all these Personal Identifiers to be blocked in all Reference Architecture pages at all times.
+To protect customer privacy, TELUS Privacy team requires all these Personal Identifiers entered by TELUS customer, to be blocked to TELUS employees and vendors, in all Reference Architecture pages at all times. Personal Identifiers, as entered by TELUS customers, should only be visible to TELUS customer, and no one else.
 
 To mask these PI information using masking snippet, either provided by 3rd-party provider, or creating masking class internally at Telus.
 
