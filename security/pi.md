@@ -20,7 +20,7 @@ The goal is to mitigate business risks and provide customer solutions that take 
 
 ## How
 
-To protect customer privacy, TELUS Privacy team requires all these Personal Identifiers entered by TELUS customer, to be blocked to TELUS employees and vendors, in all Reference Architecture pages at all times. Personal Identifiers, as entered by TELUS customers, should only be visible to TELUS customer, and no one else.
+To protect customer privacy, TELUS Privacy team requires all these Personal Identifiers entered by TELUS customer, to be blocked to TELUS employees and vendors, in all TELUS github repositories at all times. Personal Identifiers, as entered by TELUS customers, should only be visible to TELUS customer, and no one else.
 
 To mask these PI information using masking snippet, either provided by 3rd-party provider, or creating masking class internally at Telus.
 
