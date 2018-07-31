@@ -15,7 +15,8 @@ Ensure dataLayer for products are loaded as expected and only call the functions
 ```javascript
 var s = _satellite.getToolsByType('sc')[0].getS();
 s.events="scAdd"
-s.track('add_to_cart');```
+s.track('add_to_cart');
+```
 
 - Remove from Cart
 ```javascript
