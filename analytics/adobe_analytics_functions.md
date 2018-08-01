@@ -13,7 +13,9 @@ This section will be updated as we extend more functionality.
   (we will enable the same function in Adobe Launch in near future)
 - Check `dataLayer.product` is populated as expected
 - Use try-catch just in case Adobe DTM is not loaded to prevent bad user experience(someone did not read ^^)
-- Ensure `dataLayer` is **updated first** before calling the functions below. 
+- Ensure there is no updates to `dataLayer.event` when using any functions below.
+- Check `dataLayer` is **updated first** before calling the functions below. 
+
 E.g., 
 	1. user lands on product detail page 
 	2. `dataLayer` is present with page level info
