@@ -4,7 +4,7 @@ _Last updated: August 2018_
 
 ### Why
 
-We don't currently have a list of requirements to refer to when we hire a new developer and need to work with People Experience to prepare for his first day. This means we are rarely consistent with what we offer our developers in terms of hardware and/or software, and often times our people end up bringing their own personal equipment to the office to help them increase their productivity. Not only can this be a potential security issue, but inconsistencies in what we provide our devs can cause frustration.
+We don't currently have a list of requirements to refer to when we hire a new developer and need to work with People Experience to prepare for their first day. This means we are rarely consistent with what we offer our developers in terms of hardware and/or software, and often times our people end up bringing their own personal equipment to the office to help them increase their productivity. Not only can this be a potential security issue, but inconsistencies in what we provide our devs can cause frustration.
 
 ### How
 
