@@ -21,7 +21,7 @@ The majority of our applications call **a minimum of 2 APIs** for the initial pa
 ![TTFB](ttfb_api_performance.jpg "Logo Title Text 1")
 
 
-Considering the time also required by our own application logic, routing, database queries, etc., in order to remain under 600 ms for TTFB, **our APIs to should have an <u>average total response time of under 200ms</u> for a <u>throughput of up to 2500 rpm</u><sup>5</sup> (requests per minute)**.
+Considering the time also required by our own application logic, routing, database queries, etc., in order to remain under 600 ms for TTFB, **our APIs should have an <u>average total response time of under 200ms</u> for a <u>throughput of up to 2500 rpm</u><sup>5</sup> (requests per minute)**.
 
 ## How
 
