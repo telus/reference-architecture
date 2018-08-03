@@ -4,11 +4,12 @@ _Last updated: August 2018_
 
 ### Why
 
-We don't currently have a list of requirements to refer to when we hire a new developer and need to work with People Experience to prepare for their first day. This means we are rarely consistent with what we offer our developers in terms of hardware and/or software, and often times our people end up bringing their own personal equipment to the office to help them increase their productivity. Not only can this be a potential security issue, but inconsistencies in what we provide our devs can cause frustration.
+
+We want to ensure consistency in what we offer our developers in terms of hardware and software, so as to allow for maximum productivity. At the same time, by offering our employees all of the equipment and tooling needed, we will make it unlikely for them to have to bring their own personal equipment to the office and hence avoid any potential security issues.
 
 ### How
 
-We need a list of minimum hardware & software requirements that all of our developers should have access to to allow for a good, highly productive setup.
+We need a list of minimum hardware & software requirements that all of our developers should have access to to allow for a good, highly productive setup. Our People Experience team should refer to this list as they prepare for on-boarding our new developer hires.
 
 ### What
 
@@ -51,7 +52,3 @@ Optional (depending on laptop model and preferred setup):
 -   USB or Thunderbolt Ethernet Adapter
 -   USB-C Digital AV Multiport Adapter and/or USB-C VGA Multiport Adapter
 -   Other adapters or cables
-
-#### Notes:
-
-- See [Slack thread](https://telusdigital.slack.com/archives/C02BV4LTA/p1532015303000324) on `#g-developers` about preferred dev setup.
