@@ -17,7 +17,9 @@ For new and existing team members & partners, a single place where all the techn
 - [Delivery](delivery/README.md)
 - [Security](security/README.md)
 - [Performance](performance/README.md)
+- [Analytics](analytics/README.md)
 - [Hardware & Tooling](equipment/README.md)
+
 
 ## How
 
