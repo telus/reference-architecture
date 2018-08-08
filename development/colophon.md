@@ -7,6 +7,7 @@ It's very often useful to know who the owner of a repository is and who to conta
 - which environments exist for that projects and how to access them,
 - where the project management happens,
 - and start and end dates (if applicable).
+
 The `README` file is a typical place where this information can be found. This works for humans who want to read it, but there are no rules about the format of the data or what should be present. Having a standardized, machine-readable way to store this data in GitHub can help to keep information consistent across all of our projects and allow for accurate statistics to be collected.
 
 ## What
