@@ -9,21 +9,22 @@ To avoid delaying when we set `datalayer`, we are exposing few methods to call t
 ## Caveat
 This section will be updated as we extend more functionality.
 
-- Check page is loading **Adobe DTM**, and not Adobe Launch(look for scripts src containing `adobedtm` and not `launch`)
-  (we will enable the same function in Adobe Launch in near future)
+- Check page is loading **Adobe DTM**, and not Adobe Launch. This is verified by looking for scripts src containing `adobedtm` and not `launch`.
+  We will enable the same function in Adobe Launch in near future.
 - Check `dataLayer.product` is populated as expected
-- Use try-catch just in case Adobe DTM is not loaded to prevent bad user experience(someone did not read ^^)
+- Use try-catch just in case Adobe DTM is not loaded.
 - Ensure there is no updates to `dataLayer.event` when using any functions below.
 - Check `dataLayer` is **updated first** before calling the functions below. 
 
-E.g., 
-	1. user lands on product detail page 
-	2. `dataLayer` is present with page level info
-	3. a pageview hit is sent  
-	4. user clicks to add product to cart
-	5. `dataLayer` is updated with product info
-	6. a function such as `add_to_cart` from list below is called
-	7. an event hit is sent 
+E.g.,
+
+1. user lands on product detail page 
+2. `dataLayer` is present with page level info
+3. a pageview hit is sent  
+4. user clicks to add product to cart
+5. `dataLayer` is updated with product info
+6. a function such as `add_to_cart` from list below is called
+7. an event hit is sent 
 
 
 ## Functions
