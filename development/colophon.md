@@ -4,6 +4,7 @@
 
 It's very often useful to know who the owner of a repository is and who to contact with questions. There is lots of other useful metadata about a project that someone may want to know such as:
 - where documentation can be found,
+- which project is serving up a URL on the TELUS website,
 - which environments exist for that projects and how to access them,
 - where the project management happens,
 - and start and end dates (if applicable).
@@ -31,6 +32,12 @@ contacts:
   humans: Widget Maker <widgets@telus.com>
 
 environments:
+  - type: production
+    title: URL
+    uri: "https://www.telus.com/widgets"
+  - type: test
+    title: URL
+    uri: "https://www.wctest.telus.com/widgets"
   - type: git
     title: Source Code
     uri: https://github.com/telus/widgets
