@@ -4,6 +4,7 @@
 
 - [Starter Kits](starter-kits.md)
 - [Versioning](versioning.md)
+- [Colophon](colophon.md)
 - [BFF](bff.md) _(Backend-for-frontend)_
 - [URI Templates & Structure](uri-structure.md)
 - [Application Configuration](application-configuration.md)
