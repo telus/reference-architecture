@@ -6,6 +6,7 @@ Begin by following the steps as outlined below. If further clarity is required, 
 As well, a top-level note that will help throughout this process is that if your Terminal is misbehaving, closing and restarting it can help. This guide is strives to catch all the possible errors that can be encountered and propose solutions to get around them, but if for some reason you encounter an issue beyond what is covered, restarting your Terminal session is often helpful. And while we're on the topic of Terminal, using the in-built Mac Terminal is fine, but if for some reason you want to use a third party Terminal, you can explore [iTerm2](https://www.iterm2.com/). 
 
 **Device setup**
+
 0.	[Setup Homebrew (Note: highly recommended)](#step0)
 1.	[Corporate Proxy Detection and Authorizing and Adding SSH Keys](#step1)
 1.	[Install Node and NPM](#step2)
