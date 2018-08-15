@@ -2,6 +2,7 @@
 
 This section contains documentation related to APIs within TELUS Digital.
 
+- [API creation quickstart guide](quickstart.md)
 - [Creating an API](creating-an-api.md)
 - [Authorization Proxy](authorization-proxy.md)
 - [Schema Validation](schema-validation.md)
