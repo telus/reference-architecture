@@ -558,9 +558,9 @@ However, to deploy the application to OpenShift, go about the following steps:
   * ```shippy project o-api-platform```
   * ```shippy create pipeline api-starter-kit```
   You should see the following: 
-    ```
-    Your GitHub repository build pipeline will be deployed shortly. It may take a up to a minute for the pipeline to be installed into the OpenShift project. Once it is ready, you can set up a webhook to automatically build your commits it with 'shippy create webhook api-starter-kit'.
-    ```
+  ```
+Your GitHub repository build pipeline will be deployed shortly. It may take a up to a minute for the pipeline to be installed into the OpenShift project. Once it is ready, you can set up a webhook to automatically build your commits it with 'shippy create webhook api-starter-kit'.
+  ```
   * ```shippy create webhook api-starter-kit```
 
 To see your starter kit deploy, login to OpenShift via your TELUS g-suite credentials at the following link: https://console.telusdigital.openshift.com/console/project/o-api-platform/overview
