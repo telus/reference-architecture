@@ -1,5 +1,5 @@
 # _Fly, You Fools!_
-The aim of this QuickStart guide is to provide a comprehensive navigation tool for the main starter kit found in the TELUS GitHub repository, and provide a straightforward path to setting up core applications needed to create a simple API that’s integrated with the TELUS specifications. Prior to following this guide, ensure that you have set-up your computer with the basic TELUS suite of applications needed. Confirm your initial Mac setup [here](https://github.com/telus/OSXlaptop_provisioning). 
+The aim of this Lord of the Rings themed QuickStart guide is to provide a comprehensive navigation tool for the main starter kit found in the TELUS GitHub repository, and provide a straightforward path to setting up core applications needed to create a simple API that’s integrated with the TELUS specifications. Prior to following this guide, ensure that you have set-up your computer with the basic TELUS suite of applications needed. Confirm your initial Mac setup [here](https://github.com/telus/OSXlaptop_provisioning). 
 
 Begin by following the steps as outlined below. If further clarity is required, click on each step for more details regarding it. The guide is broken into 2 portions: Initial device setup and API construction.
 
