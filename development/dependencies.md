@@ -3,7 +3,7 @@
 ## Why
 
 - Outdated libraries expose security risks, performance impacts, and business loss due to low adoption.
-- Continusouly checking multiple dependencies for updates can be a large mental burden for developers.
+- Continuously checking multiple dependencies for updates can be a large mental burden for developers.
 - Developers want to easily pick upgrades one at a time without breaking their applications.
 
 ## What
