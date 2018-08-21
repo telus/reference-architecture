@@ -1,3 +1,7 @@
+##QUICKSTART 
+
+[READ THIS GUIDE TO SHIP AN API TO PRODUCTION AS FAST AS POSSIBLE FROM SCRATCH](fly-you-fools.md)
+
 ## API Platform
 
 This section contains documentation related to APIs within TELUS Digital.
