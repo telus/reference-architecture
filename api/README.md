@@ -12,6 +12,13 @@ This section contains documentation related to APIs within TELUS Digital.
 - [Service API structure guidelines](service-api-structure-guidelines.md)
 - [Problem Details](problem-details.md): how to add extra, machine-readable, details to error responses.
 
+## Design Guidelines
+
+- Favour stateless over stateful connections.
+- Define the bounded context of your APIs and baseline your data models within the domain.
+- Define your business requirements, map them to logical services, and then to physical.
+- Your build backlog is the adjustments needed to the set of physical services to achieve the business requirements.
+
 ## APIs Outside of Digital
 
 This section contains documentation related to APIs outside of TELUS Digital.
