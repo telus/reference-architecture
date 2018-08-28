@@ -1,0 +1,10 @@
+addReviewers: true
+
+addAssignees: true
+
+reviewers: 
+  - ruxandrafed
+  - kspaans
+  - ahmadnassri
+
+numberOfReviewers: 2
