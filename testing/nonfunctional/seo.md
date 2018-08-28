@@ -41,6 +41,7 @@ TELUS maintains an "SEO Checklist" for best practices and requirements. The foll
   - [ ] element should conform to pattern: [Keyword rich page title] | TELUS
       - e.g. "Apple iPhone X on Canada's fastest phone network | TELUS"
   - [ ] element must include one or more of the comma-separated values found in the meta keywords element.
+  - [ ] title should reflect the content on the page to help customers that use screen readers and other assistive technology.
 
 ### Meta Keywords
 
@@ -98,6 +99,7 @@ Page headings should properly reflect the title of the page.
 
 - [ ] `<h1 />` element should be unique and found only once per page
 - [ ] `<h1 />` element must include one or more of the comma-separated values found in the meta keywords element.
+- [ ] `<h1 />` element should reflect the content on the page and complement the `<title>` to help customers that use screen readers and other assistive technology.
 
 ### Internal Links
 
