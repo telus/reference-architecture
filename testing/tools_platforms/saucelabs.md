@@ -2,8 +2,8 @@
 
 ## Why
 
-- Ensure good test coverage with multiple browser/platform combinations
-- Using a cloud service instead of in-house dev to be more cost-effective from a maintainence and scalability point of view
+-   Ensure good test coverage with multiple browser/platform combinations
+-   Using a cloud service instead of in-house dev to be more cost-effective from a maintainence and scalability point of view
 
 
 ## What
@@ -25,4 +25,4 @@ Slack: #g-automation
 
 ## References
 
-* [Saucelabs](https://saucelabs.com)
+*   [Saucelabs](https://saucelabs.com)

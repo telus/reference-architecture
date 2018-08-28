@@ -24,6 +24,6 @@ Developers, developers, developers, developers.
 
 ## References
 
-- [AirBnB Isomorphism](https://medium.com/airbnb-engineering/isomorphic-javascript-the-future-of-web-apps-10882b7a2ebc)
-- [Isomorphism vs Universal](https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb)
-- [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit)
+-   [AirBnB Isomorphism](https://medium.com/airbnb-engineering/isomorphic-javascript-the-future-of-web-apps-10882b7a2ebc)
+-   [Isomorphism vs Universal](https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb)
+-   [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit)

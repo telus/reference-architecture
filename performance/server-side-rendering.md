@@ -1,4 +1,4 @@
-# Server Side Rendering
+  # Server Side Rendering
 
 ## Why
 
@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 
 To triage poor SSR do the following:
 
-- Log the total time to response (ie. implement the above)
-- Remove all of your API calls
-- Compare the difference
-- Look for any type of blocking loop you may be doing over a large or unknown dataset that could be slowing down your SSR
+-   Log the total time to response (ie. implement the above)
+-   Remove all of your API calls
+-   Compare the difference
+-   Look for any type of blocking loop you may be doing over a large or unknown dataset that could be slowing down your SSR

@@ -9,10 +9,10 @@ As we are striving to build better and richer experiences for our customers and 
 ## What
 
 How does a performant application look like<sup>2</sup>? Using [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/):
-- Overall Performance Score > 70
-- First Meaningful Paint < 3 seconds
-- Time to Interactive (TTI) < 5 seconds
-- Time to First Byte (TTFB) < 600 milliseconds<sup>3</sup>
+-   Overall Performance Score > 70
+-   First Meaningful Paint < 3 seconds
+-   Time to Interactive (TTI) < 5 seconds
+-   Time to First Byte (TTFB) < 600 milliseconds<sup>3</sup>
 
 In order to achieve the metrics mentioned above, we need to ensure that our web applications are built on top of **high performing APIs**. Slow server response times are often the cause for long page loads.
 
@@ -35,8 +35,8 @@ Ensuring that the **performance standards are being met is the responsibility of
 
 ***
 
-1. For more on the importance of performance and its impact on our business, check out the [2018 Performance Playbook](https://docs.google.com/presentation/d/1dWiRTzLcAdMEyKUXvj2MlvT_8lZnLkQNmPOl-Ux2Xn4/edit#slide=id.g3d730d9bd0_12_132).
-2. For more information about our current web standards and the rationale behind them, check out the [2018 Performance Playbook](https://docs.google.com/presentation/d/1dWiRTzLcAdMEyKUXvj2MlvT_8lZnLkQNmPOl-Ux2Xn4/edit#slide=id.g3d730d9bd0_12_132).
-3. Based on Lighthouse [TTFB recommendations](https://developers.google.com/web/tools/lighthouse/audits/ttfb).
-4. For experiences that rely on a greater number of APIs, consider deferring calls, prefetching or using a caching layer.
-5. Based on [max throughput registered](https://rpm.newrelic.com/accounts/648105/applications/28787546/optimize/scalability_analysis#tab-metric=response_time) for Customer API, our [most requested API](https://datastudio.google.com/reporting/1Z5rJGInewNcO9WwgSkCbJY0Ts2Rmj2Wc/page/agRT).
+1.  For more on the importance of performance and its impact on our business, check out the [2018 Performance Playbook](https://docs.google.com/presentation/d/1dWiRTzLcAdMEyKUXvj2MlvT_8lZnLkQNmPOl-Ux2Xn4/edit#slide=id.g3d730d9bd0_12_132).
+2.  For more information about our current web standards and the rationale behind them, check out the [2018 Performance Playbook](https://docs.google.com/presentation/d/1dWiRTzLcAdMEyKUXvj2MlvT_8lZnLkQNmPOl-Ux2Xn4/edit#slide=id.g3d730d9bd0_12_132).
+3.  Based on Lighthouse [TTFB recommendations](https://developers.google.com/web/tools/lighthouse/audits/ttfb).
+4.  For experiences that rely on a greater number of APIs, consider deferring calls, prefetching or using a caching layer.
+5.  Based on [max throughput registered](https://rpm.newrelic.com/accounts/648105/applications/28787546/optimize/scalability_analysis#tab-metric=response_time) for Customer API, our [most requested API](https://datastudio.google.com/reporting/1Z5rJGInewNcO9WwgSkCbJY0Ts2Rmj2Wc/page/agRT).

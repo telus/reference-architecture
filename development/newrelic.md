@@ -42,7 +42,7 @@ While APM monitors our application containers, the New Relic infrastructure moni
 
 ## References
 
-- [APM Docs](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-new-relic-apm)
-- [Browser Docs](https://docs.newrelic.com/docs/browser/new-relic-browser/getting-started/introduction-new-relic-browser)
-- [Synthetics Docs](https://docs.newrelic.com/docs/synthetics/new-relic-synthetics/getting-started/introduction-new-relic-synthetics)
-- [Infrastructure Docs](https://docs.newrelic.com/docs/infrastructure/new-relic-infrastructure/getting-started/introduction-new-relic-infrastructure)
+-   [APM Docs](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-new-relic-apm)
+-   [Browser Docs](https://docs.newrelic.com/docs/browser/new-relic-browser/getting-started/introduction-new-relic-browser)
+-   [Synthetics Docs](https://docs.newrelic.com/docs/synthetics/new-relic-synthetics/getting-started/introduction-new-relic-synthetics)
+-   [Infrastructure Docs](https://docs.newrelic.com/docs/infrastructure/new-relic-infrastructure/getting-started/introduction-new-relic-infrastructure)

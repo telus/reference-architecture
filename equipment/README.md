@@ -52,3 +52,4 @@ Optional (depending on laptop model and preferred setup):
 -   USB or Thunderbolt Ethernet Adapter
 -   USB-C Digital AV Multiport Adapter and/or USB-C VGA Multiport Adapter
 -   Other adapters or cables
+ß

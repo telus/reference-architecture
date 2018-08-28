@@ -6,10 +6,10 @@ Our [continuous integration](continuous-integration.md) build pipeline asserts t
 
 Benefits: 
 
-- Quicker defect fixes
-- Accelerated time to market
-- Test new ideas against consumers
-- Quickly pivot on designs based on immediate feedback (build the right product)
+-   Quicker defect fixes
+-   Accelerated time to market
+-   Test new ideas against consumers
+-   Quickly pivot on designs based on immediate feedback (build the right product)
 
 ## What
 
@@ -21,14 +21,14 @@ Definitions of Continuous Delivery vs Continuous Deployment are still up for deb
 
 Our delivery pipeline standards currently automate the deployment all the way to production:
 
-- Build the artifact
-- Unit test
-- Optional: mock integration test
-- Security scan
-- Deploy to staging environment
-- Integration/E2E test against staging environment
-- Deploy to production
-- Integration/E2E test against production environment
+-   Build the artifact
+-   Unit test
+-   Optional: mock integration test
+-   Security scan
+-   Deploy to staging environment
+-   Integration/E2E test against staging environment
+-   Deploy to production
+-   Integration/E2E test against production environment
 
 You should also feel secure knowing that our platform also allows for immediate rollbacks of any prior deployed version. In OpenShift/Kubernetes, you would simply select the previous deployment of your application (or any one before it), and click the "Roll-back" link.
 
@@ -46,6 +46,6 @@ If you find yourself not clicking the button to deploy to production, ask yourse
 
 ## References
 
-- [Continuous Delivery (Jez Humble)](https://continuousdelivery.com/)
-- [Stackoverflow](https://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment)
-- [Wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)
+-   [Continuous Delivery (Jez Humble)](https://continuousdelivery.com/)
+-   [Stackoverflow](https://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment)
+-   [Wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)

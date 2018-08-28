@@ -21,15 +21,15 @@ Use the [HTTP Strict Transport Security](https://en.wikipedia.org/wiki/HTTP_Stri
 ### Cookies
 
 Ensure that cookies containing sensitive information are properly secured:
-- add the [Secure](https://en.wikipedia.org/wiki/Secure_cookies) tag on cookies that may only be transmitted via HTTPS
-- add the [HttpOnly](https://www.owasp.org/index.php/HttpOnly) tag on cookies to prevent script access as a defense against [cross-site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting)
-- restrict cookie scope (domain and path tags) for cookies containing sensitive information
+-   add the [Secure](https://en.wikipedia.org/wiki/Secure_cookies) tag on cookies that may only be transmitted via HTTPS
+-   add the [HttpOnly](https://www.owasp.org/index.php/HttpOnly) tag on cookies to prevent script access as a defense against [cross-site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting)
+-   restrict cookie scope (domain and path tags) for cookies containing sensitive information
 
 ### Caching
 
-- Ensure that sensitive content is not cached by the browser (or proxies) by utilizing the appropriate caching directives. To ensure that content is not cached use the following:
-  - `Cache-Control: no-store, no-cache`
-  - `Pragma: no-cache`
+-   Ensure that sensitive content is not cached by the browser (or proxies) by utilizing the appropriate caching directives. To ensure that content is not cached use the following:
+    -   `Cache-Control: no-store, no-cache`
+    -   `Pragma: no-cache`
 
 ### Clickjacking
 
@@ -37,6 +37,6 @@ A [Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Polic
 
 The OWASP project also defines a collection of additional [Secure Headers](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project): 
 
-- use the [X-Frame-Options](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xfo) header to restrict use of content in an iframe of another site
-- use the [X-XSS-Protection](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xxxsp) header to enable XSS scripting filter in browser
-- use the [X-Content-Type-Options](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xcto) header to prevent browser from MIME-sniffing
+-   use the [X-Frame-Options](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xfo) header to restrict use of content in an iframe of another site
+-   use the [X-XSS-Protection](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xxxsp) header to enable XSS scripting filter in browser
+-   use the [X-Content-Type-Options](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xcto) header to prevent browser from MIME-sniffing

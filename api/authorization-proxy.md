@@ -12,13 +12,13 @@ With centralized session, we can also implement authenticated components on any 
 
 The Authorization Proxy handles:
 
-* managing of OAuth2 login & logout redirections
-* exchanging of OAuth2 code for Access and Refresh token
-* refreshing of Access token based on Access token TTL
-* manaing client id & certificate to SDF
-* creating of authenticated and unauthenticated session
-* aliging session id across applications
-* provinding an easy way to register and deployment of APIs
+*   managing of OAuth2 login & logout redirections
+*   exchanging of OAuth2 code for Access and Refresh token
+*   refreshing of Access token based on Access token TTL
+*   manaing client id & certificate to SDF
+*   creating of authenticated and unauthenticated session
+*   aliging session id across applications
+*   provinding an easy way to register and deployment of APIs
 
 ## How
 

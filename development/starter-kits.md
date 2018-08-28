@@ -13,14 +13,14 @@ Starter kits are a reference implementation of our reference architecture. A liv
 Our starter kits are autonomous GitHub repositories, with all of the functional implementation for a full [Continuous Integration](../process/continuous-integration.md) and [Continuous Delivery](../process/continuous-delivery.md) build pipeline. They implement our best practices for [Node.js](node.md), [React](react.md), [Redux](redux.md), [Express](express.md), [Jenkins](../delivery/jenkins.md), [Docker](../delivery/docker.md), [Kubernetes](../delivery/kubernetes.md), [OpenShift](../delivery/openshift.md), [Secrets](../delivery/secrets.md), [Logging](logging.md), [New Relic](newrelic.md), [Code Formatting](code-formatting.md), [BFFs](bff.md), and much, much more.
 
 They have been developed in a collaborative partnership with the following teams:
-- Delivery
-- Security
-- API Platform
-- Content Platform
-- Telus Design System
-- Quality Assurance
-- Incident Management
-- etc.
+-   Delivery
+-   Security
+-   API Platform
+-   Content Platform
+-   Telus Design System
+-   Quality Assurance
+-   Incident Management
+-   etc.
 
 ### Ownership and updating
 
@@ -32,15 +32,15 @@ The starter kit projects are designed to be [named anything](https://github.com/
 
 To make a change to a starter kit:
 
-- Make your changes to a branch
-- Once changes are ready, it is recommended that you merge any changes from master, and run `yarn upgrade` to ensure you are up to date
-- Use shippy to test your branch on the sandbox environment, all the way to "production"
-- If your pipeline fails in sandbox, make the appropriate fixes
-- Once tested end to end, open a pull request (add a link to your sandbox namespace in the comments)
-- For pull requests that are not intended to be merged immediately, make sure you label them as WIP (work in progress)
-- The pull request can be reviewed and completed by members of the Delivery team and/or [Digital Architects](https://github.com/orgs/telusdigital/teams/digital-architecture/members)
-- The pull request should be *SQUASHED*, not merged, so that there's one easy-to-follow commit for developers who are merging changes from the starter kit to their older projects
-- If there are any pipeline failures in master, either revert your change, or fix it immediately! This is of paramount importance, as people will be cloning it in a broken state, if it is not fixed.
+-   Make your changes to a branch
+-   Once changes are ready, it is recommended that you merge any changes from master, and run `yarn upgrade` to ensure you are up to date
+-   Use shippy to test your branch on the sandbox environment, all the way to "production"
+-   If your pipeline fails in sandbox, make the appropriate fixes
+-   Once tested end to end, open a pull request (add a link to your sandbox namespace in the comments)
+-   For pull requests that are not intended to be merged immediately, make sure you label them as WIP (work in progress)
+-   The pull request can be reviewed and completed by members of the Delivery team and/or [Digital Architects](https://github.com/orgs/telusdigital/teams/digital-architecture/members)
+-   The pull request should be *SQUASHED*, not merged, so that there's one easy-to-follow commit for developers who are merging changes from the starter kit to their older projects
+-   If there are any pipeline failures in master, either revert your change, or fix it immediately! This is of paramount importance, as people will be cloning it in a broken state, if it is not fixed.
 
 ## Who
 
@@ -48,6 +48,6 @@ Everyone!
 
 ## References
 
-- [Telus Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit)
-- [API Starter Kit](https://github.com/telusdigital/api-starter-kit)
-- [Starter Kit Starter Kit](https://github.com/telusdigital/starter-kit-starter-kit)
+-   [Telus Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit)
+-   [API Starter Kit](https://github.com/telusdigital/api-starter-kit)
+-   [Starter Kit Starter Kit](https://github.com/telusdigital/starter-kit-starter-kit)

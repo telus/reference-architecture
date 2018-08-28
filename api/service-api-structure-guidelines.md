@@ -4,9 +4,9 @@ Structure guideline for API help to formalize structure and conventions of reque
 Note that it provides guideline on structures like naming conventions, formats and request response skeleton preferences 
 and *does not* dictate REST design of API like use of verbs and resources.
 
-goal of these guidelines is to
-1. Bring consistency in interface so that there is potential to write common code and runtime (like common parser, validator and logging). 
-2. promote best practices in interface design
+The goal of these guidelines is to:
+1.  Bring consistency in interface so that there is potential to write common code and runtime (like common parser, validator and logging). 
+2.  Promote best practices in interface design
 
 ## What
 This document provides central place for set of service api guidelines that can be reference at time of new service/feature implementation.
@@ -18,13 +18,13 @@ Service API providers and Consumers should contribute and debate on these guidel
 
 ### 1. Use primitive data types
 Use primitive JSON data type for attributes, avoid using string values to represent all attributes.
-Prefer simple data types from swagger interface definition as follows
-+	string
-+	number
-+	integer
-+	boolean
-+	array
-+	object
+Prefer simple data types from swagger interface definition as follows:
+-   string
+-   number
+-   integer
+-   boolean
+-   array
+-   object
 
 ### 1. Use null value instead of suppressing fields
 Use
@@ -35,7 +35,7 @@ Use
 		"first": null,
 		"last": "Turner"
 	},
-	“address”: null
+	ï¿½addressï¿½: null
 }
 ```
 Instead of
@@ -86,25 +86,25 @@ Having textual date format also helps in debugging and investigations as they ar
 It is important not to mention time zone when date or timestamp does not indicate absolute time. Implementation and consumer systems could be running in different default timezone of their own and qualifying timezone info usually add complexity to parsing logic
 Always check if given attribute can be shared without timezone information
 Use following formats
-Date: “yyyy-MM-dd”
-Time: “yyyy-MM-dd'T'HH:mm:ss.SSS”
+Date: ï¿½yyyy-MM-ddï¿½
+Time: ï¿½yyyy-MM-dd'T'HH:mm:ss.SSSï¿½
 
 #### Date and timestamp with timezone
 When request or response attribute information has to have timezone information to qualify; use following formats
-Date: “yyyy-MM-ddZ”
-Time: “yyyy-MM-dd'T'HH:mm:ss.SSSZ”
+Date: ï¿½yyyy-MM-ddZï¿½
+Time: ï¿½yyyy-MM-dd'T'HH:mm:ss.SSSZï¿½
 
 #### Formatting symbols
 
 Formatting placeholder|	description|	example/s
 ---|---|---
 yyyy|	4 digit year value|	2018, 1999, 2005
-MM|	Month in year [01..12]|	04, 10, 12
-dd|	Day in month [01..31]|	05, 12, 30
-‘T’|	Literal symbol| T	
-HH|	Hours in a day [00..23]|	02, 18, 22
-mm|	Minutes in hour [00..59]|	45, 20, 03
-ss|	Seconds in minutes [00..59]|	00, 23, 50
+MM|	Month in year `[01..12]`|	04, 10, 12
+dd|	Day in month `[01..31]`|	05, 12, 30
+ï¿½Tï¿½|	Literal symbol| T	
+HH|	Hours in a day `[00..23]`|	02, 18, 22
+mm|	Minutes in hour `[00..59]`|	45, 20, 03
+ss|	Seconds in minutes `[00..59]`|	00, 23, 50
 SSS|	milliseconds in seconds| 	999, 204, 735
 Z|	RFC 822 timezone format (+/-HHmm) represent time offset in hours and minutes to represent time zone|	-0400,-0500,+0530,Z (represent UTC)
 
@@ -137,12 +137,12 @@ And use success response to any method that should return JSON payload as
 
 ```javascript
 {
-	“response”:{
+	ï¿½responseï¿½:{
 		"attr1":"val1",
 		"attr2":234
 	},
 	status:{
-		…
+		ï¿½
 	}
 }
 ```
@@ -153,18 +153,18 @@ Instead of
 	"attr1":"val1",
 	"attr2":234,
 	status:{
-		…
+		ï¿½
 	}
 }
 ```
 Implication - 
-1. Wrapping response with anonymous object gives opportunity to name object structure in response (in above case ‘status’ and ‘response’ respectively)
+1. Wrapping response with anonymous object gives opportunity to name object structure in response (in above case ï¿½statusï¿½ and ï¿½responseï¿½ respectively)
 2. In case of errors in intermediate layers - like SDF - response structure can be maintain consistent (TODO: ask SDF to change attribute name to systemErrorTs)
 3. In case of success value 'response' can be directly used in consumer layer by dropping 'status' object which is related to API invocation. 
 
 ### Use standard definition of status object across services
 Status object in response that is typically useful in error conditions should be using same schema across services for consistency and to allow tooling
-YAML definition of ‘Status’
+YAML definition of ï¿½Statusï¿½
 
 ```yaml
 Status:
@@ -212,10 +212,11 @@ Status:
 ### Use limited HTTP methods
 For API designing use HTTP methods that are supported across all layers of service delivery. Currently SOA policy manager (v 6.1) supports narrowest set of HTTP methods
 All api should be designed only with following HTTP methods
-+	GET
-+	POST
-+	PUT
-+	DELETE
+
+-   GET
+-   POST
+-   PUT
+-   DELETE
 
 ### Response body is required only for GET method
 JSON payload in response is optional for POST, PUT and DELETE method. Requests with these methods can get empty body with HTTP status code 200 if operation execution is successful.
@@ -225,7 +226,7 @@ If operation execution has failed and service is returning non HTTP 200 response
 
 ```javascript
 {
-	“status”:{
+	ï¿½statusï¿½:{
 	//status object describing error
 	}
 }
@@ -254,17 +255,17 @@ If operation execution is successful and service is returning HTTP 200 response 
 
 ```javascript
 {
-	“status”:{
-		“statusCd”: “200”,
+	ï¿½statusï¿½:{
+		ï¿½statusCdï¿½: ï¿½200ï¿½,
 		"systemErrorTimeStamp":"2018-02-09T18:13:21.345-05:00"
 	},
-	“response”:{
+	ï¿½responseï¿½:{
 	//operation specific response object
 	}
 }
 ```
 
-### Use ‘filter’ parameter to allow partial response
+### Use ï¿½filterï¿½ parameter to allow partial response
 Avoid use of ad hoc boolean flags to partially return response. Use fields parameter as per [TMF630_REST_API_Design_Guidelines](https://projects.tmforum.org/wiki/display/API/API+Design+Guidelines?preview=/43253967/43221039/TMF630_REST_API_Design_Guidelines_Part_1_R14.5.1.pdf) to allow partial data response. 
 All path constants allowed in fields list should be documented.
 

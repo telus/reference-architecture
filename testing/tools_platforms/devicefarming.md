@@ -63,8 +63,8 @@ to kick off the test
 We also have implemented an shell script `run-devicefarm.sh` in the [starter-kit/e2e section][sk]
 
 The purpose of the script is:
-- To provide an easy and out-of-the-box integration for teams to test in the Devicefarm
-- To consolidate and centralize the list of [devices][devicelist] available in the devicefarm for maintainence purposes 
+-   To provide an easy and out-of-the-box integration for teams to test in the Devicefarm
+-   To consolidate and centralize the list of [devices][devicelist] available in the devicefarm for maintainence purposes 
 (e.g: when new devices are added or old devices removed, there won't be a need to do manual updates on your end!)
 
 To use the script, run:

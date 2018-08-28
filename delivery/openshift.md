@@ -60,8 +60,8 @@ Templates are also exposed through the OpenShift Web UI, so that you can instant
 
 We use two types of OpenShift build strategies: `JenkinsPipeline` and `Docker`:
 
-- The `Docker` build, when triggered, will pull your git repo and compile its `Dockerfile`.
-- The `JenkinsPipeline` uses an ephemeral jenkins container, deployed within your project. It sets up a jenkins job that runs the `Jenkinsfile`. We use this to automate our delivery pipeline.
+-   The `Docker` build, when triggered, will pull your git repo and compile its `Dockerfile`.
+-   The `JenkinsPipeline` uses an ephemeral jenkins container, deployed within your project. It sets up a jenkins job that runs the `Jenkinsfile`. We use this to automate our delivery pipeline.
 
 #### Routes
 
@@ -84,25 +84,25 @@ A DeploymentConfig is _roughly_ analogous to a Kubernetes Deployment (in fact, i
 #### Standard Upgrade Process
 
 Red Hat will communicate with TELUS digital via email (DL List here) with a possible list of times to perform an upgrade to our *sandbox* cluster first.  This window should be:
-- In off hours (after 8PM PST and before 5AM EST)
-- Communication should be provided 2 weeks in advance
-- There should be an option for multiple windows
-- Red Hat will provide a single time which may be rescheduled if it does not work (we are working with Red Hat to provide a few possibilities)
-- Red Hat will also provide any expectations of outages so we may plan accordingly
+-   In off hours (after 8PM PST and before 5AM EST)
+-   Communication should be provided 2 weeks in advance
+-   There should be an option for multiple windows
+-   Red Hat will provide a single time which may be rescheduled if it does not work (we are working with Red Hat to provide a few possibilities)
+-   Red Hat will also provide any expectations of outages so we may plan accordingly
 
 Our Sandbox cluster will be upgraded first as it has no production applications running on it and will allow us to validate any impacts an upgrade or patch will have on our products.  Once the sandbox upgrade is complete:
-- Any issues will be raised to Red Hat via ticketing
-- If there are any production impacting issues upgrade to production will be waved off until fixed
-- Once fixed a new window will be provided to TELUS via email as per standard process
+-   Any issues will be raised to Red Hat via ticketing
+-   If there are any production impacting issues upgrade to production will be waved off until fixed
+-   Once fixed a new window will be provided to TELUS via email as per standard process
 
 Red Hat will perform their upgrade at the scheduled time, TDIM will monitor for any unexpected issues, should any unexpected issues occur TELUS digital will call Red Hat to resolve.  Once upgrade is complete TELUS digital will verify all applications have come back up otherwise engage the Delivery team via (XYZ).
 
 #### Emergency / Critical Patching
 
 Occasionally Red Hat may need to deploy a critical release to ensure our environment is safe from high profile vulnerabilities.  When this happens:
-- Red Hat will patch both *sandbox* and *main* clusters notification should be provided at least 1 hour in advance
-- Notice must be provided via email and telephone call to <XYZ> to inform them an emergency patch is going to happen ASAP
-- Any issues as a result of the patching process should result in tickets being opened with Red Hat via the Customer Support Portal
+-   Red Hat will patch both *sandbox* and *main* clusters notification should be provided at least 1 hour in advance
+-   Notice must be provided via email and telephone call to <XYZ> to inform them an emergency patch is going to happen ASAP
+-   Any issues as a result of the patching process should result in tickets being opened with Red Hat via the Customer Support Portal
 
 TDIM will verify the stability of applications within OpenShift and engage teams as required once the patching process is complete
 
@@ -155,11 +155,11 @@ Once minishift is running, you can log in, create projects, and install your Jen
 
 ## References
 
-- [OpenShift docs](https://docs.openshift.com/container-platform/3.5/welcome/index.html)
-- [OpenShift vs Kubernetes](https://www.slideshare.net/SamuelTerburg/openshift-enterprise-31-vs-kubernetes)
-- [OpenShift Sandbox Console](http://console.telusdigital.openshift.com) 
-- [OpenShift Main Console](http://console.telusdigital.openshift.com)
-- [Red Hat Customer Support Portal](https://access.redhat.com/support/cases/#/case/list)
-- [Openshift Status Dashboard](https://status-dedicated.openshift.com/)
-- [OpenShift SLA Table](https://access.redhat.com/support/offerings/production/sla) Note: We have PREMIUM support
-- [Minishift](https://github.com/minishift/minishift)
+-   [OpenShift docs](https://docs.openshift.com/container-platform/3.5/welcome/index.html)
+-   [OpenShift vs Kubernetes](https://www.slideshare.net/SamuelTerburg/openshift-enterprise-31-vs-kubernetes)
+-   [OpenShift Sandbox Console](http://console.telusdigital.openshift.com) 
+-   [OpenShift Main Console](http://console.telusdigital.openshift.com)
+-   [Red Hat Customer Support Portal](https://access.redhat.com/support/cases/#/case/list)
+-   [Openshift Status Dashboard](https://status-dedicated.openshift.com/)
+-   [OpenShift SLA Table](https://access.redhat.com/support/offerings/production/sla) Note: We have PREMIUM support
+-   [Minishift](https://github.com/minishift/minishift)

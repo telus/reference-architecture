@@ -10,17 +10,17 @@ As part of our [Continuous Integration](../process/continuous-integration.md) pr
 
 By writing the test first:
 
-- Ensures the code is loosely coupled
-- Your code evolves in small steps
-- You get automated regression testing
-- You get living documentation as to how the system works
-- etc.
+-   Ensures the code is loosely coupled
+-   Your code evolves in small steps
+-   You get automated regression testing
+-   You get living documentation as to how the system works
+-   etc.
 
 ## How
 
-- Start with your test first, to ensure that the test fails
-- Implement the feature that makes the test pass
-- Avoid [fragile tests](https://www.youtube.com/watch?v=URSWYvyc42M) and tight coupling
+-   Start with your test first, to ensure that the test fails
+-   Implement the feature that makes the test pass
+-   Avoid [fragile tests](https://www.youtube.com/watch?v=URSWYvyc42M) and tight coupling
 
 ### Code quality metrics
 
@@ -30,9 +30,9 @@ For details on what value it adds to reference architecture and how to have it s
 
 ## When
 
-- Writing unit tests: ideally, before you write the actual code, as we want to follow the [TDD][TDD] practice
+-   Writing unit tests: ideally, before you write the actual code, as we want to follow the [TDD][TDD] practice
 
-- Running unit tests: before each commit, and as part of the delivery pipeline
+-   Running unit tests: before each commit, and as part of the delivery pipeline
 
 ## Standards
 
@@ -57,10 +57,8 @@ ie: Given a `Card` that gets wrapped in an HoC, the directory structure should l
 
 ## References
 
-- [Magic tricks of unit testing](https://www.youtube.com/watch?v=URSWYvyc42M) _Ruby, but excellent concepts_
+-   [Magic tricks of unit testing](https://www.youtube.com/watch?v=URSWYvyc42M) _Ruby, but excellent concepts_
 
-
-[Starter-kit: unit test]: https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/DOCKER.md#unit-testing
 [TDD]: https://en.wikipedia.org/wiki/Test-driven_development
 [Sonarqube]: https://github.com/SonarSource/sonarqube
 [Sonarqube in TELUS Digital]: https://github.com/telusdigital/sonarqube

@@ -2,9 +2,9 @@
 
 ## Why
 
-- Outdated libraries expose security risks, performance impacts, and business loss due to low adoption.
-- Continuously checking multiple dependencies for updates can be a large mental burden for developers.
-- Developers want to easily pick upgrades one at a time without breaking their applications.
+-   Outdated libraries expose security risks, performance impacts, and business loss due to low adoption.
+-   Continuously checking multiple dependencies for updates can be a large mental burden for developers.
+-   Developers want to easily pick upgrades one at a time without breaking their applications.
 
 ## What
 
@@ -22,13 +22,13 @@ The only setup necessary to get started with Renovate is to create a config file
 
 This config refers to a centralized TELUS Digital [configuration](https://github.com/telus/renovate-config) for Renovate Bot. See the `package.json` file in that repository. Following the [Renovate Config Docs](https://renovatebot.com/docs/configuration-options/), we have configured it to:
 
-- not pin specific Docker image digests in Dockerfiles,
-- run weekly every Sunday night,
-- rebase stale PRs,
-- not recreate an updated `yarn.lock` file every week separate from dependency updates,
-- preserve semantic version ranges,
-- make separate PRs for patch releases,
-- and use semantic commit messages.
+-   not pin specific Docker image digests in Dockerfiles,
+-   run weekly every Sunday night,
+-   rebase stale PRs,
+-   not recreate an updated `yarn.lock` file every week separate from dependency updates,
+-   preserve semantic version ranges,
+-   make separate PRs for patch releases,
+-   and use semantic commit messages.
 
 ### What You Can Expect
 
@@ -45,5 +45,5 @@ Developers.
 
 ## References
 
-- [Renovate Config](https://github.com/telus/renovate-config)
-- [Renovate Bot](https://renovatebot.com/)
+-   [Renovate Config](https://github.com/telus/renovate-config)
+-   [Renovate Bot](https://renovatebot.com/)

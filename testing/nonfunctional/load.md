@@ -36,4 +36,4 @@ Running load/stress tests: As part of the delivery pipeline
 
 ## References
 
-- [Artillery docs](https://artillery.io/docs/gettingstarted.html)
+-   [Artillery docs](https://artillery.io/docs/gettingstarted.html)

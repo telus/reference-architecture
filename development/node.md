@@ -2,10 +2,10 @@
 
 ## Why
 
-- Developers want to be able to work on any code, from front-end to back-end, in the same language, with the same paradigms
-- Developers want a performant language that is good at asynchronous coding
-- Developers want a suite of available libraries, plugins and addons
-- Developers want a good support community
+-   Developers want to be able to work on any code, from front-end to back-end, in the same language, with the same paradigms
+-   Developers want a performant language that is good at asynchronous coding
+-   Developers want a suite of available libraries, plugins and addons
+-   Developers want a good support community
 
 
 ## What
@@ -30,5 +30,5 @@ Developers, developers, developers, developers.
 
 ## References
 
-- [Node.js LTS charts](https://github.com/nodejs/LTS#lts-schedule1)
-- [Node compatability table](http://node.green/)
+-   [Node.js LTS charts](https://github.com/nodejs/LTS#lts-schedule1)
+-   [Node compatability table](http://node.green/)

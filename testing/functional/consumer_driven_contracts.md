@@ -9,9 +9,9 @@ Let’s say you have applications: A phone catalogue page (the Client) and a Pro
 If you don’t have tests in place you can break these interactions (or contracts).
 
 Examples:
-* Changing the URL of the endpoint (changing the URL from /products to /phones
-* Change in required parameters
-* Change in response payload
+*   Changing the URL of the endpoint (changing the URL from /products to /phones
+*   Change in required parameters
+*   Change in response payload
 
 Sometimes the above changes are minor backwards-compatible changes, and sometimes these are major breaking changes. To be confident, this requires is testing for both the consumer and for the provider.
 

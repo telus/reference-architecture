@@ -25,14 +25,14 @@ What belongs in `[/locale][/path]` portion of URI?
 This diagram describes the routing for a telus.com request:
 
 ![F5 routing diagram](./_assets/f5.svg)
-Source: https://docs.google.com/drawings/d/1yUxOCdKRciYD7TvY_IXwzO2zW2G3ka4cdcX8SJfhSDA/edit
+[Source](https://docs.google.com/drawings/d/1yUxOCdKRciYD7TvY_IXwzO2zW2G3ka4cdcX8SJfhSDA/edit)
 
 ### Locale
 
 The `[/locale]` segment describes what locale the content is intended for. The locale can contain the language and region.  Language is mandatory, and region is optional.  Example URLs:
 
-- `www.telus.com/en/bc/internet`
-- `www.telus.com/en/business`
+-   `www.telus.com/en/bc/internet`
+-   `www.telus.com/en/business`
 
 The desired behaviour on the Reference Architecture is for applications to set the locale through the `[/locale]` URL segments.  Do **not use cookies** to set the locale.
 
@@ -78,27 +78,27 @@ Once we have tested our routes on www.wcstage.telus.com we can then update confi
 
 ### Selecting Specific Resources
 
-- eg. `my-account/transactions/account/:ban/subscriber/:sub`
+-   eg. `my-account/transactions/account/:ban/subscriber/:sub`
 
 What belongs in `[?query]` portion of URI?
 
-- Used once resources have been selected and we want to filter/sort them
+-   Used once resources have been selected and we want to filter/sort them
 
 ## Who
 
 Any teams deploying to www.telus.com:
-- Home Marketing
-- Mobility Marketing
-- My Account
-- Business
+-   Home Marketing
+-   Mobility Marketing
+-   My Account
+-   Business
 
 ## References
 
-- [RFC 6570][rfc-6570]
-- [Inbound proxies](../delivery/inbound-proxies.md)
-- [inbound.telus-gateway-staging-config][telus-gateway-staging-config]
-- [inbound.telus-gateway-production-config][telus-gateway-production-config]
-- [Adobe Target](//marketing.adobe.com/resources/help/en_US/target/target/c_spa-visual-experience-composer.html)
+-   [RFC 6570][rfc-6570]
+-   [Inbound proxies](../delivery/inbound-proxies.md)
+-   [inbound.telus-gateway-staging-config][telus-gateway-staging-config]
+-   [inbound.telus-gateway-production-config][telus-gateway-production-config]
+-   [Adobe Target](//marketing.adobe.com/resources/help/en_US/target/target/c_spa-visual-experience-composer.html)
 
 [rfc-6570]: https://tools.ietf.org/html/rfc6570 "RFC 6570"
 [telus-gateway-staging-config]: https://github.com/telusdigital/inbound.telus-gateway-staging-config "inbound.telus-gateway-staging-config"

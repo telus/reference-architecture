@@ -34,6 +34,6 @@ TODO
 
 ## References
 
-- [Node security platform](https://nodesecurity.io/)
-- [Twistlock](https://www.twistlock.com)
-- [Clair](https://coreos.com/clair/docs/latest/)
+-   [Node security platform](https://nodesecurity.io/)
+-   [Twistlock](https://www.twistlock.com)
+-   [Clair](https://coreos.com/clair/docs/latest/)

@@ -50,5 +50,5 @@ To configure secrets on Kubernetes, you'll need to use Vault to store them. See 
 
 ## References
 
-- [Kubernetes docs](https://kubernetes.io/docs/home/)
-- [Kubernetes as a platform](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#how-is-kubernetes-a-platform)
+-   [Kubernetes docs](https://kubernetes.io/docs/home/)
+-   [Kubernetes as a platform](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#how-is-kubernetes-a-platform)

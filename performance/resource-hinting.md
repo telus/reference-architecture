@@ -23,15 +23,15 @@ Once set up, resource hints will download assets or perform server handshakes de
 
 When you use the isomorphic starter kit for single-page React applications, you can pass an array of resource hints (see server.js example). **Order matters**, it is recommended to organise your hints in this order, based on their `rel` attribute and intention:
 
-1. `dns-prefetch` - if you fully expect certain external items to download near the middle or end of `<body>` such as analytics, Google fonts, or CDN assets, you can use this to perform the DNS lookup ahead of time. It is cheap, and encouraged.
-2. `preconnect` - similar to dns-prefetch, but also performs the TCP handshake. It is not widely adopted by browsers, so dns-prefetch is preferred for now.
-3. `prefetch` - asynchronously load assets before the document reaches them near the middle or end of `<body>` such as scripts, images, fonts, or analytics. It has wide browser adoption and is encouraged, though should only be used for assets the page will need soon or shortly after rendering. Try not to overuse, and avoid prefetching assets the user's browser won't likely need.
-4. `preload` - similar to prefetch, but gives resources high download priority. **Be sure to provide an `as` attribute** otherwise you may unintentionally direct the browser to download items twice. For JS assets, use `as="script"`.
-5. `prerender` - download and prerender a page, having it ready to view instantly. **This is a heavy hint**, and should be used carefully.
+1.  `dns-prefetch` - if you fully expect certain external items to download near the middle or end of `<body>` such as analytics, Google fonts, or CDN assets, you can use this to perform the DNS lookup ahead of time. It is cheap, and encouraged.
+2.  `preconnect` - similar to dns-prefetch, but also performs the TCP handshake. It is not widely adopted by browsers, so dns-prefetch is preferred for now.
+3.  `prefetch` - asynchronously load assets before the document reaches them near the middle or end of `<body>` such as scripts, images, fonts, or analytics. It has wide browser adoption and is encouraged, though should only be used for assets the page will need soon or shortly after rendering. Try not to overuse, and avoid prefetching assets the user's browser won't likely need.
+4.  `preload` - similar to prefetch, but gives resources high download priority. **Be sure to provide an `as` attribute** otherwise you may unintentionally direct the browser to download items twice. For JS assets, use `as="script"`.
+5.  `prerender` - download and prerender a page, having it ready to view instantly. **This is a heavy hint**, and should be used carefully.
 
 ## References
 
-- [Resource Hints](https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d)
-- [Preload, Prefetch, and Priorities in Chrome](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
-- [Preload webpack plugin](https://github.com/googlechrome/preload-webpack-plugin)
-- [Resource Hints (caniuse)](http://caniuse.com/#search=resource%20hints)
+-   [Resource Hints](https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d)
+-   [Preload, Prefetch, and Priorities in Chrome](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
+-   [Preload webpack plugin](https://github.com/googlechrome/preload-webpack-plugin)
+-   [Resource Hints (caniuse)](http://caniuse.com/#search=resource%20hints)

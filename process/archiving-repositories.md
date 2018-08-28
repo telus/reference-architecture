@@ -10,13 +10,13 @@ Our code is hosted on Github, and includes scope beyond the code itself, an arch
 
 This includes:
 
-- Git Data (Commit History, Branches, Tags, etc...)
-- Github Wikis
-- Github Issues
-- Github Releases
-- Github Projects
-- Github Pull Requests
-- Commit Metrics
+-   Git Data (Commit History, Branches, Tags, etc...)
+-   Github Wikis
+-   Github Issues
+-   Github Releases
+-   Github Projects
+-   Github Pull Requests
+-   Commit Metrics
 
 ## How
 
@@ -24,12 +24,12 @@ We created a separate Github organization: [`telusdigital-archive`][archive] tha
 
 Once repo is transferred, the following actions need to be taken:
 
-- remove all collaborators and teams
-- remove all webhooks 
-- remove all integrations and services
-- remove all deploy keys
-- ensure repo is made private
-- disable GitHub Pages _(if enabled)_
+-   remove all collaborators and teams
+-   remove all webhooks 
+-   remove all integrations and services
+-   remove all deploy keys
+-   ensure repo is made private
+-   disable GitHub Pages _(if enabled)_
 
 [eol]: https://en.wikipedia.org/wiki/End-of-life_(product)
 [archive]: https://github.com/telusdigital-archive

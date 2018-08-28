@@ -39,38 +39,38 @@ response.set('Cache-Control', 'no-cache, max-age=0, must-revalidate, no-store')
 
 If you need a new Elasticache instance, accessible to either sandbox or main clusters, submit a pull request to our Data VPC Terraform repositories, respectively:
 
-- [Data VPC MAIN][terraform-openshift-datavpc-main]
-- [Data VPC SANDBOX][terraform-openshift-datavpc-sandbox]
+-   [Data VPC MAIN][terraform-openshift-datavpc-main]
+-   [Data VPC SANDBOX][terraform-openshift-datavpc-sandbox]
 
 To gain access to Amazon IAM, you can submit a pull request to the Data VPC IAM Terraform repository:
 
-- [Data VPC IAM][terraform-openshift-datavpc-iam]
+-   [Data VPC IAM][terraform-openshift-datavpc-iam]
 
 ### Best practices
 
-- Treat this like a cache, not a database. Assume all data is ephemeral and can be wiped at any moment.
-- Encrypt any sensitive data using `AES-256`
-- Set an expiry time to live (`TTL`), to ensure data is purged often
+-   Treat this like a cache, not a database. Assume all data is ephemeral and can be wiped at any moment.
+-   Encrypt any sensitive data using `AES-256`
+-   Set an expiry time to live (`TTL`), to ensure data is purged often
 
 ## References
 
 ### Specs
 
-- [RFC 7234: `Cache-Control`][cache-control-spec]
-- [MDN Cache Control](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)
-- [Redis protocol](https://redis.io/commands)
+-   [RFC 7234: `Cache-Control`][cache-control-spec]
+-   [MDN Cache Control](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)
+-   [Redis protocol](https://redis.io/commands)
 
 ### Articles
 
-- [HTTP Caching (article)](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
+-   [HTTP Caching (article)](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
 
 ### Resources
 
-- [Elasticache Docs](http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/WhatIs.html)
-- [Terraform Elasticache Module](https://github.com/telusdigital/terraform-aws_elasticache_cluster)
-- [Data VPC MAIN][terraform-openshift-datavpc-main]
-- [Data VPC SANDBOX][terraform-openshift-datavpc-sandbox]
-- [Data VPC IAM][terraform-openshift-datavpc-iam]
+-   [Elasticache Docs](http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/WhatIs.html)
+-   [Terraform Elasticache Module](https://github.com/telusdigital/terraform-aws_elasticache_cluster)
+-   [Data VPC MAIN][terraform-openshift-datavpc-main]
+-   [Data VPC SANDBOX][terraform-openshift-datavpc-sandbox]
+-   [Data VPC IAM][terraform-openshift-datavpc-iam]
 
 [cache-control-spec]: http://httpwg.org/specs/rfc7234.html#header.cache-control
 [terraform-openshift-datavpc-main]: https://github.com/telusdigital/terraform-openshift-datavpc-main

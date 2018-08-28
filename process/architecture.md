@@ -31,4 +31,4 @@ If "Solution Architecture" focuses on each individual Application,  Enterprise A
 
 
 
-* As a note, I don't like construction or real estate development analogies for software, [I consider them harmful](http://www.developerdotstar.com/mag/articles/reeves_design.html). I much prefer *gardening* analogies for software development, likely a habit I picked up reading ["Growing Object Oriented Software Guided by Tests"](http://www.growing-object-oriented-software.com/). 
+*   As a note, I don't like construction or real estate development analogies for software, [I consider them harmful](http://www.developerdotstar.com/mag/articles/reeves_design.html). I much prefer *gardening* analogies for software development, likely a habit I picked up reading ["Growing Object Oriented Software Guided by Tests"](http://www.growing-object-oriented-software.com/). 

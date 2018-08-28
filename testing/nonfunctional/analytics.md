@@ -8,8 +8,8 @@ Our [Analytics](../analytics/) practice relies on a `dataLayer` object that is i
 
 Validate the object in the [e2e](e2e.md) testing phase using [JSON Schema][json-schema]
 
-1. validate structure & format _(consistent across **all** implementations)_
-2. validate values across pages per project _(custom schemas needed in each project)_
+1.  validate structure & format _(consistent across **all** implementations)_
+2.  validate values across pages per project _(custom schemas needed in each project)_
 
 ## How
 
@@ -31,20 +31,20 @@ Analytics team to set
 
 ## TODO
 
-- [ ] create a standalone `nightwatch-json-schema` OSS package that implements the logic above
-- [ ] if the `dataLayer` schema can be shared publicly, we should separate that into it's own package  
+-   [ ] create a standalone `nightwatch-json-schema` OSS package that implements the logic above
+-   [ ] if the `dataLayer` schema can be shared publicly, we should separate that into it's own package  
 
 ## Who
 
-- @analytics: `dataLayer` definition and schema ownership
-- @delivery, @developers, @qa: tooling & implementation
+-   @analytics: `dataLayer` definition and schema ownership
+-   @delivery, @developers, @qa: tooling & implementation
 
 ## References
 
-- [JSON Schema][json-schema]
+-   [JSON Schema][json-schema]
   > Spec documentation
 
-- [AJV][ajv]
+-   [AJV][ajv]
   > node based JSON Schema Validator, proven to be the fastest at the time of writing.
 
 [ajv]: https://github.com/epoberezkin/ajv

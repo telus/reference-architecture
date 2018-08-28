@@ -18,4 +18,4 @@ Developers, developers, developers, developers.
 
 ## References
 
-- [Jest](https://facebook.github.io/jest/)
+-   [Jest](https://facebook.github.io/jest/)

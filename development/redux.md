@@ -20,6 +20,6 @@ Front-end developers
 
 ## References
 
-- [Redux](http://redux.js.org/)
-- [Getting started with Redux](https://egghead.io/courses/getting-started-with-redux)
-- [Redux Devtools](https://github.com/gaearon/redux-devtools)
+-   [Redux](http://redux.js.org/)
+-   [Getting started with Redux](https://egghead.io/courses/getting-started-with-redux)
+-   [Redux Devtools](https://github.com/gaearon/redux-devtools)

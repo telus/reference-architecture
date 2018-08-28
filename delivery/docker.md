@@ -47,11 +47,11 @@ The Dockerfile is an iterative list of commands that a developer uses to build a
 
 #### Best practices
 
-- Order dependencies to optimize caching, e.g. copy your source code AFTER you've installed dependencies via `apt-get`, otherwise those dependencies must be installed whenver you modify your code
-- Minimize number of layers, e.g. if many successive RUN commands, combine them with &&
-- Avoid installing unnecessary packages
-- Each container should only have one application process (e.g. don't run nginx and php-fpm in the same container)
-- Optimize startup speed and resource consumption: where possible, run all static compilation steps at build time, rather than loading them on startup
+-   Order dependencies to optimize caching, e.g. copy your source code AFTER you've installed dependencies via `apt-get`, otherwise those dependencies must be installed whenver you modify your code
+-   Minimize number of layers, e.g. if many successive RUN commands, combine them with &&
+-   Avoid installing unnecessary packages
+-   Each container should only have one application process (e.g. don't run nginx and php-fpm in the same container)
+-   Optimize startup speed and resource consumption: where possible, run all static compilation steps at build time, rather than loading them on startup
 
 #### The difference between `CMD` and `ENTRYPOINT`
 
@@ -144,6 +144,6 @@ coverage     // generated code
 
 ## References
 
-- [Docker Docs](https://docs.docker.com/)
-- [Dockerfile Docs](https://docs.docker.com/engine/reference/builder/)
-- [Docker Compose Docs](https://docs.docker.com/compose/)
+-   [Docker Docs](https://docs.docker.com/)
+-   [Dockerfile Docs](https://docs.docker.com/engine/reference/builder/)
+-   [Docker Compose Docs](https://docs.docker.com/compose/)

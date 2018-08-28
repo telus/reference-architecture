@@ -22,39 +22,39 @@ Application must be configured to be routed through the [inbound proxy](https://
 
 #### 1) Follow standard subdomain substructure:
 When requesting a TELUS subdomain, keep in mind the following:
-- Subdomains must have the following format: `x.telus.com`, e.g. `community.telus.com`
-- The subdomain should represent the product or campaign name as clearly as possible
-- The product/campaign name as part of the subdomain should be no more than **12** characters long
-- Abbreviations and hyphens SHOULD be avoided
-- The use of the brand name in the first part of the subdomain is not permitted (e.g. `teluscampaign.telus.com`)
-- All product names must be approved through proper Brand/Marketing channels before a subdomain is set up
-- The same structure requirements apply for other TELUS-owned brands (e.g. `koodo.com`, `publicmobile.ca`, `telushealth.com`, `telusinternational.com`, etc.)
-- Some exceptional cases:
-  - `Telus.net` - should be capitalized and limited to existing services already using it such as e-mail, TV and HSIA 
-  - `Telusmobility.com` - should be capitalized and limited to existing services already using it. Storefronts have already migrated over to `telus.com`     	
-  - `Mobility.ca` - domain to be used when brand agnostic domain is needed, such as on MMS client that can be installed on TELUS or Koodo devices.
+-   Subdomains must have the following format: `x.telus.com`, e.g. `community.telus.com`
+-   The subdomain should represent the product or campaign name as clearly as possible
+-   The product/campaign name as part of the subdomain should be no more than **12** characters long
+-   Abbreviations and hyphens SHOULD be avoided
+-   The use of the brand name in the first part of the subdomain is not permitted (e.g. `teluscampaign.telus.com`)
+-   All product names must be approved through proper Brand/Marketing channels before a subdomain is set up
+-   The same structure requirements apply for other TELUS-owned brands (e.g. `koodo.com`, `publicmobile.ca`, `telushealth.com`, `telusinternational.com`, etc.)
+-   Some exceptional cases:
+    -   `Telus.net` - should be capitalized and limited to existing services already using it such as e-mail, TV and HSIA 
+    -   `Telusmobility.com` - should be capitalized and limited to existing services already using it. Storefronts have already migrated over to `telus.com`     	
+    -   `Mobility.ca` - domain to be used when brand agnostic domain is needed, such as on MMS client that can be installed on TELUS or Koodo devices.
   
 #### 2) Requesting Digital Certificates:
 To request SSL certificate, the TELUS prime should email dldigitalsecurity@telus.com who will create CSR request on behalf of the application owner. The cost of a new cert is $150 USD. If the upper level domain does not exist in Symantec then there is a one time $250 USD charge to get it created (additional $150 charge per server where cert is installed).
 Please include the following in your email to dldigitalsecurity@telus.com:
-  - domain
-  - manager name
-  - cost center
-  - number of servers on which the certificate will be installed
+-   domain
+-   manager name
+-   cost center
+-   number of servers on which the certificate will be installed
 
 #### 3) DNS requests:
 
 To request a new TELUS subdomain (or modify an existing one), a TELUS prime should follow the following internal process:
-- Step 1
+-   Step 1
 Email CIDC.change@telus.com with the request, it can simply state the following:
 “We would like to add/remove DNS record for xyz.telus.com”
-- Step 2
+-   Step 2
 You will receive a response from CIDC.change@telus.com which will include the incident number (IN#).
-- Step 3
+-   Step 3
 Visit GO/SensitiveDNSchange and complete the form found within the site. Add the IN# received from the CIDC team in the appropriate field.
 
 ## Who
 
-- `@delivery`
-- `@security`
-- `@seo`
+-   `@delivery`
+-   `@security`
+-   `@seo`

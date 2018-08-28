@@ -36,9 +36,9 @@ Running visual regression tests: As part of the delivery pipeline
 
 ## Who
 
-- @design: Baseline Images
-- @delivery @qa @developers: tooling & automation
+-   @design: Baseline Images
+-   @delivery @qa @developers: tooling & automation
 
 ## References
 
-- [node-resemble-js](https://www.npmjs.com/package/node-resemble-js)
+-   [node-resemble-js](https://www.npmjs.com/package/node-resemble-js)

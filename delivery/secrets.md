@@ -38,8 +38,8 @@ Rather than provisioning the secrets from HashiCorp Vault into Kubernetes, and e
 
 ## References
 
-- [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
-- [OpenShift Secrets](https://docs.openshift.com/container-platform/3.4/dev_guide/secrets.html)
-- [Ansible Vault](http://docs.ansible.com/ansible/playbooks_vault.html)
-- [HashiCorp Vault](https://www.vaultproject.io/)
-- [Turtles all the way down](https://www.youtube.com/watch?v=OUSvv2maMYI)
+-   [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
+-   [OpenShift Secrets](https://docs.openshift.com/container-platform/3.4/dev_guide/secrets.html)
+-   [Ansible Vault](http://docs.ansible.com/ansible/playbooks_vault.html)
+-   [HashiCorp Vault](https://www.vaultproject.io/)
+-   [Turtles all the way down](https://www.youtube.com/watch?v=OUSvv2maMYI)

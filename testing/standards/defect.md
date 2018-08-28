@@ -2,15 +2,15 @@
 
 ## Why
 
-- We want to provide sufficient and wholistic information to developers on defects/issues found, in order to properly diagnose, reproduce, and resolve them.
+-   We want to provide sufficient and wholistic information to developers on defects/issues found, in order to properly diagnose, reproduce, and resolve them.
 
-- We want to be able to monitor and measure production and staging defects to see the application health and trend, in order to make informed decisions on specific areas for improvement.
+-   We want to be able to monitor and measure production and staging defects to see the application health and trend, in order to make informed decisions on specific areas for improvement.
 
 ## What
 
 We need a standard process of how to
-- Properly report defects
-- Properly monitor defects
+-   Properly report defects
+-   Properly monitor defects
 
 To accomplish the above, we use [JIRA][JIRA] for issue tracking, and align on using the issue type `TD Defect` for all production and staging defect reports.
 
@@ -24,9 +24,9 @@ Make sure the issue type `TD Defect` is enabled for your project by following th
 
 When logging defects, make sure to provide as much information as possible, such as:
 
-- Testing environment
-- Defect nature
-- Browser type
+-   Testing environment
+-   Defect nature
+-   Browser type
 
 etc.
 
@@ -47,9 +47,9 @@ A: That’s because it’s not configured for your project, refer to the documen
 @qa
 
 ## Reference
-* [How to enable your JIRA project to use TD Defect](https://drive.google.com/open?id=1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k)
-* [TD Defect initiative doc](https://docs.google.com/document/d/1kupC2NN8nfqjnRILcpYNbeiDbMOye9ngK0T8hL3wqw8)
-* [TD Defect onboarding tracker](https://drive.google.com/open?id=1Wk4Ap_eaUIdess_sZUlIrBTxwzrwdM8NX0wkvXOiAhg)
+*   [How to enable your JIRA project to use TD Defect](https://drive.google.com/open?id=1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k)
+*   [TD Defect initiative doc](https://docs.google.com/document/d/1kupC2NN8nfqjnRILcpYNbeiDbMOye9ngK0T8hL3wqw8)
+*   [TD Defect onboarding tracker](https://drive.google.com/open?id=1Wk4Ap_eaUIdess_sZUlIrBTxwzrwdM8NX0wkvXOiAhg)
 
 [Enable TD Defect]: https://docs.google.com/document/d/1RnsCCp0q7grCmi2nRqOB0-Cnhd1mMBox7uhUSg1EB2k
 [JIRA]: https://telusdigital.atlassian.net
