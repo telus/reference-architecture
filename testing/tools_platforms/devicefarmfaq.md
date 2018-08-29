@@ -23,7 +23,7 @@ Let's look at the following points
 <details><summary>Q: Why hosting in-house instead of utilizing cloud services (Perfecto, Saucelabs testobject, Amazon device-farm, Google firebase)</summary><p> 
 
 1. Resources: As mentioned in the previous question, we are a telecom, we have good access to physical devices. (We already have lots of devices in both [Toronto](https://podio.com/teluscom/uet-8mxsl9/apps/device-shelf) and [Vancouver](https://docs.google.com/document/d/1imE-Q3JGlJBLPMDJ9Cx4quES7NVos2avCZNr73t15yQ) Why not take advantage of such by building on top of what we have?
-1. Pricing, we cannot justify spending 300k per year on a hosted device lab just yet, without proving value and defining long-term scaling strategy.
+2. Pricing, we cannot justify spending 300k per year on a hosted device lab just yet, without proving value and defining long-term scaling strategy.
 
 </p></details>
 
@@ -48,7 +48,6 @@ There's also a [live stream][nest stream] broadcasting the wall mount 24/7 (for 
 ---
 
 <details><summary>Q: How much % of user devices does Devicefarm cover</summary><p>
-
 
 Currently(08/17) with the 14 devices, ~ 70% based on [Top 25 mobile devices card in DOMO][top 25 device]
 
@@ -152,9 +151,9 @@ The rationale is that a farm can be "grown" or scaled up, whereas a lab is perce
 
 <details><summary>Q: I can't find the answer I want!</summary><p> 
 
--  Ask in #devicefarm on Slack
--  Contact @Nintendot / Slack: @benexpress / Email: ben.chen@telus.com
--  Contact @telusdigital/digital-farmers 
+- Ask in #devicefarm on Slack
+- Contact @Nintendot / Slack: @benexpress / Email: ben.chen@telus.com
+- Contact @telusdigital/digital-farmers 
 
 </p></details>
 

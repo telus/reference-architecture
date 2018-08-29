@@ -58,16 +58,16 @@ has a lot of information about how we use Redux.
 1. Describe an event via Actions-
 2. Actions describes a need as a fact or an event already happened without dictating how to fulfill the need.
 3. Eg. Need => `TIME_TO_TRAVEL_ARRIVED`
-  1. `personOneSaga` reacts by => `startWalking()`
-  2. `personTwoSaga` reacts by => `callTaxi()`
+  - `personOneSaga` reacts by => `startWalking()`
+  - `personTwoSaga` reacts by => `callTaxi()`
 
 ### Store
 
 1. Responsible for application state (immutability, persisting to disk, etc).
-1. The [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth).
-1. Keeper of state information, should not keep business logic.
-1. Can only be affected by actions.
-1. Prevent unintentional modifications by other methods via Object Reference, or Directly Accessing Store Members.
+2. The [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth).
+3. Keeper of state information, should not keep business logic.
+4. Can only be affected by actions.
+5. Prevent unintentional modifications by other methods via Object Reference, or Directly Accessing Store Members.
 
 ```ts
 //Reducer
@@ -84,8 +84,8 @@ export const people = (state = [], action) => {
 ### The Saga Library
 
 1. Responsible for Business Logic and Async actions (HTTP Calls).
-1. Does not keep local state.
-1. Typical use is take user input, make an HTTP call, and provide output to go into the store.
+2. Does not keep local state.
+3. Typical use is take user input, make an HTTP call, and provide output to go into the store.
 
 ### Redux Dataflow
 
