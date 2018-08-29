@@ -44,8 +44,7 @@ has a lot of information about how we use Redux.
 ### React Component
 
 1. Responsible for Presentation and User Interractions.
-2. It is blind to the complexities of the app (Doesn't know what happens after
-   action is broadcasted).
+2. It is blind to the complexities of the app (Doesn't know what happens after action is broadcasted).
 3. React to state change via `connect`.
 
 ### Actions
@@ -57,11 +56,10 @@ has a lot of information about how we use Redux.
 ### Reactive Style
 
 1. Describe an event via Actions-
-2. Actions describes a need as a fact or an event already happened without
-   dictating how to fulfill the need.
+2. Actions describes a need as a fact or an event already happened without dictating how to fulfill the need.
 3. Eg. Need => `TIME_TO_TRAVEL_ARRIVED`
-   1. `personOneSaga` reacts by => `startWalking()`
-   2. `personTwoSaga` reacts by => `callTaxi()`
+  1. `personOneSaga` reacts by => `startWalking()`
+  2. `personTwoSaga` reacts by => `callTaxi()`
 
 ### Store
 
@@ -69,8 +67,7 @@ has a lot of information about how we use Redux.
 2. The [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth).
 3. Keeper of state information, should not keep business logic.
 4. Can only be affected by actions.
-5. Prevent unintentional modifications by other methods via Object Reference,
-   or Directly Accessing Store Members.
+5. Prevent unintentional modifications by other methods via Object Reference, or Directly Accessing Store Members.
 
 ```js
 //Reducer
@@ -88,8 +85,7 @@ export const people = (state = [], action) => {
 
 1. Responsible for Business Logic and Async actions (HTTP Calls).
 2. Does not keep local state.
-3. Typical use is take user input, make an HTTP call, and provide output to go
-   into the store.
+3. Typical use is take user input, make an HTTP call, and provide output to go into the store.
 
 ### Redux Dataflow
 

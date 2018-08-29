@@ -37,11 +37,11 @@ Use
 
 ```javascript
 {
-	"name": {
-		"first": null,
-		"last": "Turner"
-	},
-	"address": null
+  "name": {
+    "first": null,
+    "last": "Turner"
+  },
+  "address": null
 }
 ```
 
@@ -49,16 +49,16 @@ Instead of
 
 ```javascript
 {
-	"name": {
-		"last": "Turner"
-	}
+  "name": {
+    "last": "Turner"
+  }
 }
 ```
 
 Implication - 
-1.	Populating null values makes initial integration efforts easier for consumer and response schema always available in response
-2.	It is always easier for consumer to check field for nullability than to check for fields existence and then check for valid value.
-3.	Consumers need to code for ignoring additional fields. As new minor version are introduced additional attributes may be returned while maintaining backward compatibility these should not result in parsing errors.
+1.  Populating null values makes initial integration efforts easier for consumer and response schema always available in response
+2.  It is always easier for consumer to check field for nullability than to check for fields existence and then check for valid value.
+3.  Consumers need to code for ignoring additional fields. As new minor version are introduced additional attributes may be returned while maintaining backward compatibility these should not result in parsing errors.
 
 ### Return empty array instead of null value
 
@@ -66,11 +66,11 @@ Use
 
 ```javascript
 {
-	"name": {
-		"first": null,
-		"last": "Turner"
-	},
-	"alias": []
+  "name": {
+    "first": null,
+    "last": "Turner"
+  },
+  "alias": []
 }
 ```
 
@@ -78,11 +78,11 @@ Instead of
 
 ```javascript
 {
-	"name": {
-		"first": null,
-		"last": "Turner"
-	},
-	"alias": null
+  "name": {
+    "first": null,
+    "last": "Turner"
+  },
+  "alias": null
 }
 ```
 
@@ -130,13 +130,13 @@ Use error response as
 
 ```javascript
 {
-	"status": {
-		"statusCd": "404",
-		"statusSubCd": "ACNF",
-		"statusTxt": "Customer not found by accountNumber",
-		"systemErrorCd": "DG_CCMS_0001",
-		"systemErrorTs": "2018-02-20T03:04:15.234-0000"
-	}
+  "status": {
+    "statusCd": "404",
+    "statusSubCd": "ACNF",
+    "statusTxt": "Customer not found by accountNumber",
+    "systemErrorCd": "DG_CCMS_0001",
+    "systemErrorTs": "2018-02-20T03:04:15.234-0000"
+  }
 }
 ```
 
@@ -144,11 +144,11 @@ Instead of
 
 ```javascript
 {
-   "statusCd": "404",
-   "statusSubCd": "ACNF",
-   "statusTxt": "Customer not found by accountNumber",
-   "systemErrorCd": "DG_CCMS_0001",
-   "systemErrorTs": "2018-02-20T03:04:15.234-0000"
+  "statusCd": "404",
+  "statusSubCd": "ACNF",
+  "statusTxt": "Customer not found by accountNumber",
+  "systemErrorCd": "DG_CCMS_0001",
+  "systemErrorTs": "2018-02-20T03:04:15.234-0000"
 }
 ```
 
@@ -156,13 +156,11 @@ And use success response to any method that should return JSON payload as
 
 ```javascript
 {
-	"response":{
-		"attr1":"val1",
-		"attr2":234
-	},
-	status:{
-		"
-	}
+  "response":{
+    "attr1":"val1",
+    "attr2":234
+  },
+  status:{}
 }
 ```
 
@@ -170,11 +168,9 @@ Instead of
 
 ```javascript
 {
-	"attr1":"val1",
-	"attr2":234,
-	status:{
-		"
-	}
+  "attr1":"val1",
+  "attr2":234,
+  status: {}
 }
 ```
 
@@ -190,45 +186,45 @@ YAML definition of "Status"
 
 ```yaml
 Status:
-    type: object
-    required:
-      - statusCd
-      - systemErrorTs
-    properties:
-      statusCd:
-        type: string
-        example: '404'
-        description: response code that corresponds to HTTP response code 
-      statusSubCd:
-        type: string
-        example: IB
-        description: |-
-         Api specific error code constant. Constant values per operation response
-         should always be document since it can be used by consumer for conditional 
-         error processing.
-      statusTxt:
-        type: string
-        example: 'Could not find customer'
-        description: Short description of status
-      systemErrorCd:
-        type: string
-        description: |-
-          error identifier from dependent system. error identifier that can be
-          useful for problem diagnosis
-      systemErrorTxt:
-        type: string
-        description: |-
-         error text from dependent system. detailed message that can be useful for
-         probleam diagnosis
-      systemErrorTs:
-        type: string
-        format: date
-        example: "2017-07-20T20:45:31.345-0400"
-        description: |- 
-         system error timestamp qualified with default timezone of system 
-         hosting service implementation. qualifying timestamp with timezone
-         helps to correlate error events across multiple systems.
-         timestamp format is 'yyyy-MM-dd'T'HH:mm:ss.SSSZ'
+  type: object
+  required:
+    - statusCd
+    - systemErrorTs
+  properties:
+    statusCd:
+      type: string
+      example: '404'
+      description: response code that corresponds to HTTP response code 
+    statusSubCd:
+      type: string
+      example: IB
+      description: |-
+        Api specific error code constant. Constant values per operation response
+        should always be document since it can be used by consumer for conditional 
+        error processing.
+    statusTxt:
+      type: string
+      example: 'Could not find customer'
+      description: Short description of status
+    systemErrorCd:
+      type: string
+      description: |-
+        error identifier from dependent system. error identifier that can be
+        useful for problem diagnosis
+    systemErrorTxt:
+      type: string
+      description: |-
+        error text from dependent system. detailed message that can be useful for
+        probleam diagnosis
+    systemErrorTs:
+      type: string
+      format: date
+      example: "2017-07-20T20:45:31.345-0400"
+      description: |- 
+        system error timestamp qualified with default timezone of system 
+        hosting service implementation. qualifying timestamp with timezone
+        helps to correlate error events across multiple systems.
+        timestamp format is 'yyyy-MM-dd'T'HH:mm:ss.SSSZ'
 ```
 
 ### Use limited HTTP methods
@@ -250,9 +246,9 @@ If operation execution has failed and service is returning non HTTP 200 response
 
 ```javascript
 {
-	"status":{
-	//status object describing error
-	}
+  "status":{
+    //status object describing error
+  }
 }
 ```
 
@@ -262,14 +258,14 @@ Following is sample of how SDF response is generated today
 
 ```javascript
 {
-	"status":{
-		"statusCd":"403",
-		"statusSubCd":"SDF",
-		"statusTxt":"HomePhoneManagement call failed.  Unauthorized request.  BAN is not found or invalid. ",
-		"systemErrorTimeStamp":"2018-02-09T18:13:21.345-05:00",
-		"systemErrorTxt":"Unauthorized BAN",
-		"X-TELUS-SDF-TraceId":"225f820e-ebe2-4d2b-af6f-32e1e6fed2d9"
-	}
+  "status":{
+    "statusCd":"403",
+    "statusSubCd":"SDF",
+    "statusTxt":"HomePhoneManagement call failed.  Unauthorized request.  BAN is not found or invalid. ",
+    "systemErrorTimeStamp":"2018-02-09T18:13:21.345-05:00",
+    "systemErrorTxt":"Unauthorized BAN",
+    "X-TELUS-SDF-TraceId":"225f820e-ebe2-4d2b-af6f-32e1e6fed2d9"
+  }
 }
 ```
 
@@ -280,13 +276,13 @@ If operation execution is successful and service is returning HTTP 200 response 
 
 ```javascript
 {
-	"status":{
-		"statusCd": "200",
-		"systemErrorTimeStamp":"2018-02-09T18:13:21.345-05:00"
-	},
-	"response":{
-	//operation specific response object
-	}
+  "status":{
+    "statusCd": "200",
+    "systemErrorTimeStamp":"2018-02-09T18:13:21.345-05:00"
+  },
+  "response":{
+  //operation specific response object
+  }
 }
 ```
 

@@ -2,7 +2,7 @@ addReviewers: true
 
 addAssignees: true
 
-reviewers: 
+reviewers:
   - ruxandrafed
   - kspaans
   - ahmadnassri

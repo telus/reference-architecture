@@ -25,7 +25,7 @@ The pieces we might need:
 - An idea of what the DSL might look like. For instance, the Rails [Active Record DSL](http://edgeguides.rubyonrails.org/active_record_migrations.html) for content migration is one approach, but wouldn't fit what we'd need for content.
 - An idea of what the migration runner tool might look like. Perhaps something like [DBDeploy](http://dbdeploy.com/)
 - Documentation and guidelines around how the DSL and tools should be used, specifically covering the engineering discipline needed to ensure that squads building apps test those apps against not only the "vcurrent" version of the content schema which is in prod today, but also the "vnext" version of the schema that will be published next
- 
+
 Currently, the "About" team is making use of the engineering approach above.
 
 ## How
@@ -55,7 +55,7 @@ Currently, the "About" team is making use of the engineering approach above.
 ## References
 
 <a name="#dbdeploy">1</a> Systems like [DBDeploy](http://dbdeploy.com/) make this capability available generically to several languages and database systems, SQL and NoSQL alike.
- 
+
 [Martin Fowler's article](https://martinfowler.com/articles/evodb.html) on the concept of database evolution, which includes the migrations concept
 
 More on [applications which embed](https://martinfowler.com/articles/two-stack-cms/) their own custom CMS implementation

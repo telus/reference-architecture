@@ -32,12 +32,12 @@ In our isomorphic [starter kit](starter-kits.md), we want to support per-environ
 
 ```js
 if (process.env.BROWSER) {
- envConfig = window.__APP_CONFIG__
+  envConfig = window.__APP_CONFIG__
 } else {
- // This will only happen on the server side
- const env = process.env.APP_ENV || 'development'
+  // This will only happen on the server side
+  const env = process.env.APP_ENV || 'development'
 
- envConfig = require(`./${env}`).default
+  envConfig = require(`./${env}`).default
 }
 ```
 
