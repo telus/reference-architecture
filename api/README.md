@@ -17,3 +17,4 @@ This section contains documentation related to APIs outside of TELUS Digital.
 ## Useful Tools
 
 - Simplify your local development! [Telepresence](https://blog.openshift.com/telepresence-local-development/) lets you proxy a local process running on your laptop to a Kubernetes cluster.
+- [Live Swagger documentation](https://www.telus.com/api-platform) exists for Digital APIs!
