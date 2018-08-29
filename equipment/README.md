@@ -23,7 +23,8 @@ List of minimum hardware & software requirements that all of our developers shou
 
 **[13‑inch MacBook Pro - Space Grey](https://www.apple.com/ca/shop/buy-mac/macbook-pro/13-inch-space-grey-2.3ghz-256gb#)**
 
-> 2.5GHz dual-core 7th generation Intel Core i7 processor, Turbo Boost up to 4.0GHz, RAM 16GB or more, 256/512GB SSD storage
+> 2.5GHz dual-core 7th
+-generation Intel Core i7 processor, Turbo Boost up to 4.0GHz, RAM 16GB or more, 256/512GB SSD storage
 
 **[ThinkPad X1 Carbon (5th Gen)](https://www.lenovo.com/ca/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Carbon-5th-Gen/p/22TP2TXX15G)**
 
@@ -60,7 +61,7 @@ We do not enforce any specific IDE or software tooling beyond the application ar
 | ---------- | --------------------- |
 | Size       | `23"` to `27"`        |
 | Resolution | `FHD` _(`1920x1080`)_ |
-| Panel      | `IPS`                 |
+| Panel      | `IPS`                   |
 
 > - Should support vertical orientation allow for height adjustment
 > - Possible options: `HP EliteDisplay E233`, `HP EliteDisplay E273m`, `LG 24MB35PY-B`

@@ -64,12 +64,12 @@ has a lot of information about how we use Redux.
 ### Store
 
 1. Responsible for application state (immutability, persisting to disk, etc).
-2. The [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth).
-3. Keeper of state information, should not keep business logic.
-4. Can only be affected by actions.
-5. Prevent unintentional modifications by other methods via Object Reference, or Directly Accessing Store Members.
+1. The [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth).
+1. Keeper of state information, should not keep business logic.
+1. Can only be affected by actions.
+1. Prevent unintentional modifications by other methods via Object Reference, or Directly Accessing Store Members.
 
-```js
+```ts
 //Reducer
 export const people = (state = [], action) => {
   switch (action.type) {
@@ -84,8 +84,8 @@ export const people = (state = [], action) => {
 ### The Saga Library
 
 1. Responsible for Business Logic and Async actions (HTTP Calls).
-2. Does not keep local state.
-3. Typical use is take user input, make an HTTP call, and provide output to go into the store.
+1. Does not keep local state.
+1. Typical use is take user input, make an HTTP call, and provide output to go into the store.
 
 ### Redux Dataflow
 
