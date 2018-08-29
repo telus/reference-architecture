@@ -1,0 +1,67 @@
+repository:
+  name: reference-architecture
+  description: TELUS Reference Architecture Documentation
+  topics: architecture, documentation, standards
+  homepage: https://telus.com/digital
+  private: false
+  has_issues: true
+  has_wiki: false
+  has_downloads: false
+  has_projects: false
+  default_branch: master
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: true
+
+labels:
+  - name: security
+    description: Security related topic
+    color: EE3F46
+
+  - name: chore
+    description: Changes that don't modify core files
+    color: FEF2C0
+
+  - name: discussion
+    description: A discussion thread
+    color: CC317C
+
+  - name: question
+    description: Generic question
+    color: CC317C
+
+  - name: enhancement
+    description: New feature or request
+    color: 5EBEFF
+
+  - name: optimizaiton
+    description: Performance or Code Optimization
+    color: 5EBEFF
+
+  - name: feature
+    description: New Feature
+    color: 91CA55
+
+  - name: in progress
+    description: Currently being worked on
+    color: FBCA04
+
+  - name: watchlist
+    description: Keep an eye on these
+    color: FBCA04
+
+  - name: invalid
+    description: Something doesn't seem right
+    color: D2DAE1
+
+  - name: wontfix
+    description: This will not be worked on
+    color: D2DAE1
+
+  - name: duplicate
+    description: This issue or pull request already exists
+    color: D2DAE1
+
+  - name: on hold
+    description: No work planned on this for now
+    color: D2DAE1
