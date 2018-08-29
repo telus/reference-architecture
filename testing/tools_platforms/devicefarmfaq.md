@@ -1,5 +1,5 @@
 <details><summary>Q: Wait...why are we building this again?</summary><p> 
-        
+
 Check out the [Why](devicefarm.md#why) section
 
 </p></details>
@@ -21,7 +21,7 @@ Let's look at the following points
 ---
 
 <details><summary>Q: Why hosting in-house instead of utilizing cloud services (Perfecto, Saucelabs testobject, Amazon device-farm, Google firebase)</summary><p> 
-        
+
 1. Resources: As mentioned in the previous question, we are a telecom, we have good access to physical devices. (We already have lots of devices in both [Toronto](https://podio.com/teluscom/uet-8mxsl9/apps/device-shelf) and [Vancouver](https://docs.google.com/document/d/1imE-Q3JGlJBLPMDJ9Cx4quES7NVos2avCZNr73t15yQ) Why not take advantage of such by building on top of what we have?
 1. Pricing, we cannot justify spending 300k per year on a hosted device lab just yet, without proving value and defining long-term scaling strategy.
 
@@ -30,7 +30,7 @@ Let's look at the following points
 ---
 
 <details><summary>Q: Is this only for Toronto?</summary><p>
-        
+
 It will be in both TOR and VAN.
 
 We are currently piloting in TOR to promote the concept, gather feedback and make sure it provides value for teams. Once we have a good turnout, it will be much easier to obtain backing to establish devicefarm in Vancouver as well.
@@ -48,7 +48,7 @@ There's also a [live stream][nest stream] broadcasting the wall mount 24/7 (for 
 ---
 
 <details><summary>Q: How much % of user devices does Devicefarm cover</summary><p>
-        
+
 
 Currently(08/17) with the 14 devices, ~ 70% based on [Top 25 mobile devices card in DOMO][top 25 device]
 
@@ -57,7 +57,7 @@ Currently(08/17) with the 14 devices, ~ 70% based on [Top 25 mobile devices card
 ---
 
 <details><summary>Q: How does it work from a tech perspective?</summary><p>
-        
+
 Long story short: Mac minis power devices as Appium nodes, connects to a Selenium grid/server, which handles requests and delegate to nodes based on desired capabilities.
 
 </p></details>
@@ -65,7 +65,7 @@ Long story short: Mac minis power devices as Appium nodes, connects to a Seleniu
 ---
 
 <details><summary>Q: How can I start using devicefarm for running my automated tests?</summary><p> 
-        
+
 For web automation, if you are using Nightwatch.js, or you are still on the Ruby/Cucumber automation stack that we had previously implemented(yes it's still supported), then you are in luck! You can point to the Selenium server dedicated for devicefarm in your Selenium config. Where is this Selenium server you ask? Checkout our [starter-kit:e2e devicefarm config](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.devicefarm.conf.js#L42)!
 
 </p></details>
@@ -73,7 +73,7 @@ For web automation, if you are using Nightwatch.js, or you are still on the Ruby
 ---
 
 <details><summary>Q: Why Appium?</summary><p> 
-        
+
 - Open source 
 - Supports both iOS and Android native or hybrid
 - Most popular in market = higher chance support
@@ -85,7 +85,7 @@ For web automation, if you are using Nightwatch.js, or you are still on the Ruby
 ---
 
 <details><summary>Q: Why Mac minis?</summary><p> 
-        
+
 - iOS automation needs macOS (the operating system that Macs runs)
 - Mac minis are the cheapest among all Mac machines
 
@@ -94,7 +94,7 @@ For web automation, if you are using Nightwatch.js, or you are still on the Ruby
 ---
 
 <details><summary>Q: How many devices does one Mac mini support?</summary><p> 
-        
+
 Currently: 4
 
 Reason being: Each mini has 4 USB slots, and we want to avoid using USB adapters to plug in more, which will introduce performance impact
@@ -106,7 +106,7 @@ FYI [Perfecto][perfecto] (who specializes in physical device testing) recommends
 ---
 
 <details><summary>Q: How are the devices managed?</summary><p> 
-        
+
 - Software layer: For a short-term strategy, we currently just use selenium grid's console, as well as some shell scripts to manage the devices.  For a long term strategy, a proper MDM (mobile device management) system [needs to be established](https://github.com/telusdigital/farmville/issues/18).
 
 - Hardware / infrastructure: Currently manually managed
@@ -132,7 +132,7 @@ For software:
 ---
 
 <details><summary>Q: How many devices do you plan to have? How do you scale?</summary><p> 
-        
+
 To start, we will have around 16-24 devices on the wall fixture (phase 1), once we prove out the value and identify the need, we can either 
 
 1. Go to phase 2 to craft out the [device cabinet](https://drive.google.com/open?id=0B-bqF6r0I5YgVFIxR3RxYjNpZDBhejZBSXRjS09MWHZzcUJF), which will host around 50-60 devices. 
@@ -143,7 +143,7 @@ To start, we will have around 16-24 devices on the wall fixture (phase 1), once 
 ---
 
 <details><summary>Q: Why "Devicefarm:, not "Devicelab" or anything else?</summary><p> 
-        
+
 The rationale is that a farm can be "grown" or scaled up, whereas a lab is perceived as a confined space and a static image, a farm can be nurtured by the inspiration of its farmers (us all) where as a lab is more of a ... ok I can't BS any longer, it really doesn't matter so call it whatever you like.
 
 </p></details>
@@ -151,7 +151,7 @@ The rationale is that a farm can be "grown" or scaled up, whereas a lab is perce
 ---
 
 <details><summary>Q: I can't find the answer I want!</summary><p> 
-        
+
 -  Ask in #devicefarm on Slack
 -  Contact @Nintendot / Slack: @benexpress / Email: ben.chen@telus.com
 -  Contact @telusdigital/digital-farmers 

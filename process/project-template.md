@@ -8,7 +8,7 @@
   - Run unit tests
   - Build / execute a development environment
   - Commit / Contribute back to it
-    
+
 ## What
 This document defines a standard project template for Telus Digital that provides the following benefits:
 
@@ -20,7 +20,7 @@ It covers:
 - Readme Template
 - Git Hooks
 - Commit Standards
-    
+
 ## How
 
 ### GitHub Readme
@@ -83,7 +83,7 @@ The following is a basic example
 ### Git Hooks 
 
 Git hooks should not exist as a replacement for good practices, education or mentorship. 
- 
+
 These are the guidelines for git-hooks:
 
 - **commit-msg: standard** 
@@ -92,7 +92,7 @@ These are the guidelines for git-hooks:
   - run linting and in-process tests before publishing to master branch
 - **all others: non-standard** 
   - unless used to meet special project requirements (talk to your lead)
- 
+
 ## References
 
 - [How to use Git Hooks][git-hook-guide]

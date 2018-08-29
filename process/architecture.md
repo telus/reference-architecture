@@ -6,7 +6,7 @@
 
 > Are we building a condo tower?
 
- We're _not_ building condos, of course - and we're not making blueprints, or designing grand entryways - we're making software. So, what do we mean when we say "Architecture" in Software Development* 
+We're _not_ building condos, of course - and we're not making blueprints, or designing grand entryways - we're making software. So, what do we mean when we say "Architecture" in Software Development* 
 
 We're generally referring to software _design_ decisions - but generally, when we say architecture we mean the design decisions that will be [difficult to change later](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf). Sometimes when we say architecture we also mean software design decisions that we feel are important - perhaps they effect privacy, or have other regulatory impact. 
 
