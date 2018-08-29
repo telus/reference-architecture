@@ -7,11 +7,11 @@ We have to be mindful of browser-level caching _(including scenarios after the u
 
 ## What
 
-### Server-side
+### On The Server
 
 Our OpenShift cluster is peered with our "Data VPC", AKA "Virtual Private Cloud". We have Terraform playbooks that manage the use of [Amazon Elasticache](http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/WhatIs.html) to create performant, in-memory distributed caching environments, using the [Redis protocol](https://redis.io/commands).
 
-### Client-side
+### In the Browser
 
 The browser needs to know caching rules to apply, The [`Cache-Control`][cache-control-spec] header field is used to specify directives for caching mechanisms to be applied by the browser.
 
@@ -27,13 +27,13 @@ If an incoming request contains a `Cache-Control` directive, parse and process a
 
 Ensure appropriate `Cache-Control` directives are set on outgoing responses that represent the data & user state.
 
-###### Example
-
+> ###### Example
+>
 > on Logout / Terminate Session
-
-```js
-response.set('Cache-Control', 'no-cache, max-age=0, must-revalidate, no-store')
-```
+> 
+> ```js
+> response.set('Cache-Control', 'no-cache, max-age=0, must-revalidate, no-store')
+> ```
 
 ### Server-side
 

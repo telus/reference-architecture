@@ -14,11 +14,13 @@ Renovate Bot, a service that automatically notifies projects of updates to their
 
 The only setup necessary to get started with Renovate is to create a config file called `renovate.json` with the following content:
 
-    {
-        "extends": [
-            "@telusdigital"
-        ]
-    }
+```json
+{
+  "extends": [
+    "@telusdigital"
+  ]
+}
+```
 
 This config refers to a centralized TELUS Digital [configuration](https://github.com/telus/renovate-config) for Renovate Bot. See the `package.json` file in that repository. Following the [Renovate Config Docs](https://renovatebot.com/docs/configuration-options/), we have configured it to:
 
@@ -34,10 +36,13 @@ This config refers to a centralized TELUS Digital [configuration](https://github
 
 Pull Requests will be made to your project with changes to `package.json`, and `yarn.lock`. The PR body will describe the proposed version number, have a link to the module's webpage, and changelogs/release notes corresponding to the updates between the current version and proposed version.
 
-
 ### Managing Updates
 
-Renovate Bot, by default, will look for updates for all dependencies in your `package.json` file. After a PR has been made for a particular dependency, you can tell Renovate that you don't want any more updates for that package by closing the PR. *Renovate Bot uses the names of open and closed PRs to remember your update preferences.* If you leave the PR open and unmerged, the bot will also leave the dependency alone and not give you new updates. If you change your mind about a package, simply rename the closed PR and Renovate will reopen a new one in its next update cycle.
+Renovate Bot, by default, will look for updates for all dependencies in your `package.json` file. After a PR has been made for a particular dependency, you can tell Renovate that you don't want any more updates for that package by closing the PR.
+
+> **Renovate Bot uses the names of open and closed PRs to remember your update preferences.**
+
+If you leave the PR open and unmerged, the bot will also leave the dependency alone and not give you new updates. If you change your mind about a package, simply rename the closed PR and Renovate will reopen a new one in its next update cycle.
 
 ## Who
 

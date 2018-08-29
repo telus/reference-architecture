@@ -15,6 +15,7 @@ Secured routes specify the TLS termination of the route and provide a key and ce
 ### Openshiftapps.com routes
 
 For standard routes on `www.telus.com`, we can use our [inbound proxy](inbound-proxies.md) to link to our default `openshiftapps.com` routes. All of our communication must be over TLS, which OpenShift can easily add to our route using its own certificate:
+
 ```yaml
 tls:
   termination: edge
@@ -25,7 +26,7 @@ tls:
 
 To create a secured HTTPS route outside of `www.telus.com` encrypted with a custom key and certificate (PEM-format files which you must generate and sign separately), you can use the create route command and provide certificates and a key.
 
-```
+```bash
 $ oc create route edge ${ROUTE_NAME}\
     --service=${SERVICE_NAME} \
     --cert=${CERT} \

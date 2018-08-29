@@ -7,7 +7,6 @@
 - Developers want a suite of available libraries, plugins and addons
 - Developers want a good support community
 
-
 ## What
 
 Node.js is JavaScript, which was traditionally only used in the browser, but now tailored for running on the server. It uses the Google V8 JavaScript engine, which is a single threaded, non-blocking, event-driven bus. It is extremely performant with Asynchronous tasks that are highly common in modern web applications/APIs. All I/O intensive operations in Node are performed asynchronously through callbacks. For example, it does not consume a thread to wait for an external API to respond.

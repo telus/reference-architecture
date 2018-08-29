@@ -24,7 +24,7 @@ To protect customer privacy, TELUS Privacy team requires all these Personal Iden
 
 To mask these PI information using masking snippet, either provided by 3rd-party provider, or creating masking class internally at Telus.
 
-### TELUS PI-blocking Requirement:
+### TELUS PI-blocking Requirement
 
 - Customer First Name
 - Customer Last Name

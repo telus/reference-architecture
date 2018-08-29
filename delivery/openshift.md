@@ -83,7 +83,7 @@ A DeploymentConfig is _roughly_ analogous to a Kubernetes Deployment (in fact, i
 
 #### Standard Upgrade Process
 
-Red Hat will communicate with TELUS digital via email (DL List here) with a possible list of times to perform an upgrade to our *sandbox* cluster first.  This window should be:
+Red Hat will communicate with TELUS digital via email (DL List here) with a possible list of times to perform an upgrade to our `sandbox` cluster first.  This window should be:
 - In off hours (after 8PM PST and before 5AM EST)
 - Communication should be provided 2 weeks in advance
 - There should be an option for multiple windows
@@ -100,7 +100,7 @@ Red Hat will perform their upgrade at the scheduled time, TDIM will monitor for 
 #### Emergency / Critical Patching
 
 Occasionally Red Hat may need to deploy a critical release to ensure our environment is safe from high profile vulnerabilities.  When this happens:
-- Red Hat will patch both *sandbox* and *main* clusters notification should be provided at least 1 hour in advance
+- Red Hat will patch both `sandbox` and `main` clusters notification should be provided at least 1 hour in advance
 - Notice must be provided via email and telephone call to <XYZ> to inform them an emergency patch is going to happen ASAP
 - Any issues as a result of the patching process should result in tickets being opened with Red Hat via the Customer Support Portal
 
@@ -135,14 +135,21 @@ A ticket can be created via the [Red Hat Customer Support Portal](https://access
 To test OpenShift locally, we recommend using [minishift](https://docs.openshift.org/latest/minishift/getting-started/quickstart.html).
 
 On Mac we can install minishift with brew:
-```
-$ brew update
-$ brew install docker-machine-driver-xhyve
-$ sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-$ sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-$ brew cask install minishift
-$ minishift config set memory 8192
-$ minishift start
+
+```bash
+brew update
+
+brew install docker-machine-driver-xhyve
+
+sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+
+sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+
+brew cask install minishift
+
+minishift config set memory 8192
+
+minishift start
 ``` 
 
 On other platforms: [see instructions](https://docs.openshift.org/latest/minishift/getting-started/installing.html#installing-instructions)

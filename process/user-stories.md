@@ -5,9 +5,9 @@
 When developers don't have a clear understanding of what work they're supposed to do, they'll end up spending a lot of their time figuring out what to do next. This is expensive, as developers are often the bottleneck in software development.
 
 Old-fashioned concepts like the "Business Requirements document" and "Functional Requirements" have been found to be harmful to an agile / lean / open source oriented approach to software development for a number of reasons:
- - They take forever to write
- - They take forever for developers to try to parse in to something useful
- - They don't at all facilitate iterative process
+- They take forever to write
+- They take forever for developers to try to parse in to something useful
+- They don't at all facilitate iterative process
 
 ## What
 
@@ -59,20 +59,20 @@ Once a story has stabilized, and before its picked up by developers, it's common
 >
 > Finally the 'then' section describes the changes you expect due to the specified behavior.
 >
-Example:
-~~~
-Feature: User trades stocks
- Scenario: User requests a sell before close of trading
-   Given I have 100 shares of MSFT stock
-      And I have 150 shares of APPL stock
-      And the time is before close of trading
-
-   When I ask to sell 20 shares of MSFT stock
-     
-    Then I should have 80 shares of MSFT stock
-     And I should have 150 shares of APPL stock
-     And a sell order for 20 shares of MSFT stock should have been executed
-~~~
+> Example:
+> ```plain
+> Feature: User trades stocks
+>  Scenario: User requests a sell before close of trading
+>    Given I have 100 shares of MSFT stock
+>       And I have 150 shares of APPL stock
+>       And the time is before close of trading
+> 
+>    When I ask to sell 20 shares of MSFT stock
+>      
+>     Then I should have 80 shares of MSFT stock
+>      And I should have 150 shares of APPL stock
+>      And a sell order for 20 shares of MSFT stock should have been executed
+> ```
 
 Stories often have their own life cycle. They may start out as literal 3x5 cards or sticky notes; be entered later in to JIRA, and later still enhanced with acceptance criteria pairing with a QA. 
 
@@ -85,4 +85,3 @@ Mike Cohn wrote what is now the [standard book on writing user stories](https://
 Bill Wake came up with the [INVEST mnemonic](http://xp123.com/articles/invest-in-good-stories-and-smart-tasks/) described above.
 
 Martin Fowler's article on [Given When Then](https://martinfowler.com/bliki/GivenWhenThen.html) explains its roots in the BDD approach to software development.
-

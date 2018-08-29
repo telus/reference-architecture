@@ -1,4 +1,5 @@
 # Consumer-Driven Contract Tests
+
 Modern web architecture is moving away from monoliths, patterns such as BFFs and micro services. In these modern patterns we have APIs being exposed, and as such it is very important to adopt a pattern of “Consumer-Driven Contract Tests”.
 
 ## Illustrating the problem
@@ -9,9 +10,10 @@ Let’s say you have applications: A phone catalogue page (the Client) and a Pro
 If you don’t have tests in place you can break these interactions (or contracts).
 
 Examples:
-* Changing the URL of the endpoint (changing the URL from /products to /phones
-* Change in required parameters
-* Change in response payload
+
+- Changing the URL of the endpoint (changing the URL from /products to /phones
+- Change in required parameters
+- Change in response payload
 
 Sometimes the above changes are minor backwards-compatible changes, and sometimes these are major breaking changes. To be confident, this requires is testing for both the consumer and for the provider.
 
@@ -31,4 +33,5 @@ Running contract tests: As part of the delivery pipeline
 ## Standards
 
 ## Who
+
 @devs @delivery

@@ -20,7 +20,6 @@ The majority of our applications call **a minimum of 2 APIs** for the initial pa
 
 ![TTFB](ttfb_api_performance.jpg "Logo Title Text 1")
 
-
 Considering the time also required by our own application logic, routing, database queries, etc., in order to remain under 600 ms for TTFB, **our APIs should have an <u>average total response time of under 200ms</u> for a <u>throughput of up to 2500 rpm</u><sup>5</sup> (requests per minute)**.
 
 ## How
@@ -33,7 +32,7 @@ Ensuring that the **performance standards are being met is the responsibility of
 
 <br />
 
-***
+---
 
 1. For more on the importance of performance and its impact on our business, check out the [2018 Performance Playbook](https://docs.google.com/presentation/d/1dWiRTzLcAdMEyKUXvj2MlvT_8lZnLkQNmPOl-Ux2Xn4/edit#slide=id.g3d730d9bd0_12_132).
 2. For more information about our current web standards and the rationale behind them, check out the [2018 Performance Playbook](https://docs.google.com/presentation/d/1dWiRTzLcAdMEyKUXvj2MlvT_8lZnLkQNmPOl-Ux2Xn4/edit#slide=id.g3d730d9bd0_12_132).

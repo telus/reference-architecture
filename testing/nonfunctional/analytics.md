@@ -42,12 +42,16 @@ Analytics team to set
 ## References
 
 - [JSON Schema][json-schema]
+
   > Spec documentation
 
 - [AJV][ajv]
   > node based JSON Schema Validator, proven to be the fastest at the time of writing.
 
 [ajv]: https://github.com/epoberezkin/ajv
+
 [json-schema]: http://json-schema.org/
+
 [starter-kit]: https://github.com/telusdigital/telus-isomorphic-starter-kit
+
 [nightwatch]: https://github.com/nightwatchjs/nightwatch

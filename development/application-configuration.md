@@ -32,12 +32,12 @@ In our isomorphic [starter kit](starter-kits.md), we want to support per-environ
 
 ```js
 if (process.env.BROWSER) {
- envConfig = window.__APP_CONFIG__
+  envConfig = window.__APP_CONFIG__
 } else {
- // This will only happen on the server side
- const env = process.env.APP_ENV || 'development'
+  // This will only happen on the server side
+  const env = process.env.APP_ENV || 'development'
 
- envConfig = require(`./${env}`).default
+  envConfig = require(`./${env}`).default
 }
 ```
 
@@ -47,9 +47,9 @@ What this means is that when the code executes on the client (i.e. through bundl
 
 NODE_ENV is a special environment variable used by Express.js, React, Redux and Webpack. It should not be confused with APP_ENV, even though it has similar values:
 
-- *test*: used when running unit tests
-- *development*: used when running dynamic development code locally
-- *production*: used when running in a static production-like environment
+- `test`: used when running unit tests
+- `development`: used when running dynamic development code locally
+- `production`: used when running in a static production-like environment
 
 Note that all of our Docker environments, whether local or remote, are using the production NODE_ENV. We typically hardcode this value in the `npm start` command, while hardcoding NODE_ENV as development in the `npm run dev` command.
 
@@ -86,4 +86,3 @@ If your team wants to use `.env` files, this is a fine practice on its own. Howe
 - [12 factor configuration](https://12factor.net/config)
 - [autoenv](https://github.com/ahmadnassri/autoenv)
 - [OpenShift env-file, param-file](https://github.com/openshift/origin/pull/12164)
-```

@@ -5,8 +5,8 @@ Existing analytics tagging depends on an out-of-box Adobe functionality to detec
 This detection is a black-box and does not meet our requirements as users can trigger many changes quickly. 
 To avoid delaying when we set `datalayer`, we are exposing few methods to call to trigger hits directly.
 
-
 ## Caveat
+
 This section will be updated as we extend more functionality.
 
 - Check page is loading **Adobe DTM**, and not Adobe Launch. This is verified by looking for scripts src containing `adobedtm` and not `launch`.
@@ -26,22 +26,21 @@ E.g.,
 6. a function such as `add_to_cart` from list below is called
 7. an event hit is sent 
 
-
 ## Functions
+
 - Add to Cart
-```javascript
-var s = _satellite.getToolsByType('sc')[0].getS();
-s.events="scAdd"
-s.track('add_to_cart');
-```
+  ```js
+  var s = _satellite.getToolsByType('sc')[0].getS();
+  s.events="scAdd"
+  s.track('add_to_cart');
+  ```
 
 - Remove from Cart
-```javascript
-var s = _satellite.getToolsByType('sc')[0].getS();
-s.events="scRemove"
-s.track('remove_from_cart');
-```
-
+  ```js
+  var s = _satellite.getToolsByType('sc')[0].getS();
+  s.events="scRemove"
+  s.track('remove_from_cart');
+  ```
 
 ## Notes
 - Naming conventions for values inside `s.events` are all out-of-box and can't be changed. 

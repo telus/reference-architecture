@@ -5,7 +5,6 @@
 - Ensure good test coverage with multiple browser/platform combinations
 - Using a cloud service instead of in-house dev to be more cost-effective from a maintainence and scalability point of view
 
-
 ## What
 
 Saucelabs is a cloud-based PaaS vendor that provides us testing environments 
@@ -25,4 +24,4 @@ Slack: #g-automation
 
 ## References
 
-* [Saucelabs](https://saucelabs.com)
+- [Saucelabs](https://saucelabs.com)

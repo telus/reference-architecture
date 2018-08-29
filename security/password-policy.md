@@ -24,5 +24,3 @@ Owners or stakeholders of TELUS projects that handle user registration that incl
 ## Who
 
 @everyone
-
-

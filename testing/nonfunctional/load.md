@@ -26,8 +26,6 @@ Writing load/stress tests: Upon story completion
 
 Running load/stress tests: As part of the delivery pipeline
 
-
-
 ## Standards
 
 ## Who

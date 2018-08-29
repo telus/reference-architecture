@@ -2,11 +2,13 @@
 
 The following is a generic list of best practices around web security.
 
-###### TODO:
-- [ ] update per TELUS security standards
-- [ ] improve in context of Single Page Applications
+> **TODO**
+> - [ ] update per TELUS security standards
+> - [ ] improve in context of Single Page Applications
 
-##### AUTHENTICATION SYSTEMS (Signup/Signin/2 Factor/Password reset) 
+### AUTHENTICATION SYSTEMS 
+
+> (Signup/Signin/2 Factor/Password reset) 
 
 - [ ] Use HTTPS everywhere.
 - [ ] Store password hashes using `Bcrypt` (no salt necessary - `Bcrypt` does it for you).
@@ -22,27 +24,27 @@ The following is a generic list of best practices around web security.
 - [ ] Set an expiration on the reset password token for a reasonable period.
 - [ ] Expire the reset token after it has been successfully used.
 
-##### USER DATA & AUTHORIZATION
+### USER DATA & AUTHORIZATION
 
 - [ ] Any resource access like, `cart`, `account` should check the logged in user's ownership of the resource using session id.
 - [ ] Serially iterable resource id should be avoided. Use `/me/orders` instead of `/user/37153/orders`. This acts as a sanity check in case you forgot to check for authorization token. 
 - [ ] `Edit email/phone number` feature should be accompanied by a verification email to the owner of the account. 
 - [ ] Any upload feature should sanitize the filename provided by the user. Also, for generally reasons apart from security, upload to something like S3 (and post-process using lambda) and not your own server capable of executing code.  
 - [ ] `Profile photo upload` feature should sanitize all the `EXIF` tags also if not required.
-- [ ] For user ids and other ids, use [RFC compliant ](http://www.ietf.org/rfc/rfc4122.txt) `UUID` instead of integers. You can find an implementation for this for your language on Github.
+- [ ] For user ids and other ids, use [RFC compliant](http://www.ietf.org/rfc/rfc4122.txt) `UUID` instead of integers. You can find an implementation for this for your language on Github.
 - [ ] JWT are awesome. Use them if required for your single page app/APIs.
 
+### ANDROID / IOS APP
 
-##### ANDROID / IOS APP
 - [ ] `salt` from payment gateways should not be hardcoded.
 - [ ] `secret` / `auth token` from 3rd party SDK's should not be hardcoded.
 - [ ] API calls intended to be done `server to server` should not be done from the app.
 - [ ] In Android, all the granted  [permissions](https://developer.android.com/guide/topics/security/permissions.html) should be carefully evaluated.
-- [ ] On iOS, store sensitive information (authentication tokens, API keys, etc.) in the system keychain. Do __not__ store this kind of information in the user defaults.
+- [ ] On iOS, store sensitive information (authentication tokens, API keys, etc.) in the system keychain. Do **not** store this kind of information in the user defaults.
 - [ ] [Certificate pinning](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) is highly recommended.
 
+### SECURITY HEADERS & CONFIGURATIONS
 
-##### SECURITY HEADERS & CONFIGURATIONS
 - [ ] `Add` [CSP](https://en.wikipedia.org/wiki/Content_Security_Policy) header to mitigate XSS and data injection attacks. This is important.
 - [ ] `Add` [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery) header to prevent cross site request forgery. Also add [SameSite](https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site-00) attributes on cookies.
 - [ ] `Add` [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security) header to prevent SSL stripping attack.
@@ -53,8 +55,9 @@ The following is a generic list of best practices around web security.
 - [ ] Add [subresource integrity checks](https://en.wikipedia.org/wiki/Subresource_Integrity) if loading your JavaScript libraries from a third party CDN. For extra security, add the [require-sri-for](https://w3c.github.io/webappsec-subresource-integrity/#parse-require-sri-for) CSP-directive so you don't load resources that don't have an SRI sat.  
 - [ ] Use random CSRF tokens and expose business logic APIs as HTTP POST requests. Do not expose CSRF tokens over HTTP for example in an initial request upgrade phase.
 - [ ] Do not use critical data or tokens in GET request parameters. Exposure of server logs or a machine/stack processing them would expose user data in turn.  
-  
-##### SANITIZATION OF INPUT
+
+### SANITIZATION OF INPUT
+
 - [ ] `Sanitize` all user inputs or any input parameters exposed to user to prevent [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting).
 - [ ] Always use parameterized queries to prevent [SQL Injection](https://en.wikipedia.org/wiki/SQL_injection).  
 - [ ] Sanitize user input if using it directly for functionalities like CSV import.
@@ -62,11 +65,13 @@ The following is a generic list of best practices around web security.
 - [ ] Do not hand code or build JSON by string concatenation ever, no matter how small the object is. Use your language defined libraries or framework.
 - [ ] Sanitize inputs that take some sort of URLs to prevent [SSRF](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit#heading=h.t4tsk5ixehdd).
 
-##### OUTPUT ENCODING
+### OUTPUT ENCODING
+
 - [ ] Anytime when user-controlled data is reflected to browser, it should be properly encoded for the syntax of the target interpreter.
 - [ ] ReactJS contains built-in protection for most XSS vulnerabilities. However, when untrusted data is reflected to browser's DOM as JSON (for example, as part of initial state), it is interpreted by HTML. If it contains malicious script and not properly encoded it will be executed resulting in XSS. Therefore it is important that JSON string is encoded using pre-existing library [serialize-javascript](https://github.com/yahoo/serialize-javascript). More details: [Most Common XSS Vulnerability in React JS](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0)
 
-##### OPERATIONS
+### OPERATIONS
+
 - [ ] If you are small and inexperienced, evaluate using AWS elasticbeanstalk or a PaaS to run your code.
 - [ ] Use a decent provisioning script to create VMs in the cloud.
 - [ ] Check for machines with unwanted publicly `open ports`.
@@ -79,8 +84,9 @@ The following is a generic list of best practices around web security.
 - [ ] Set up monitoring for your systems, and log stuff (use [New Relic](https://newrelic.com/) or something like that).
 - [ ] If developing for enterprise customers, adhere to compliance requirements. If AWS S3, consider using the feature to [encrypt data](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html). If using AWS EC2, consider using the feature to use encrypted volumes (even boot volumes can be encrypted now).
 
-##### PEOPLE
-- [ ] Set up an email (e.g. security@coolcorp.io) and a page for security researchers to report vulnerabilities.
+### PEOPLE
+
+- [ ] Set up an email (e.g. `security@coolcorp.io`) and a page for security researchers to report vulnerabilities.
 - [ ] Depending on what you are making, limit access to your user databases.
 - [ ] Be polite to bug reporters.
 - [ ] Have your code review done by a fellow developer from a secure coding perspective. (More eyes)

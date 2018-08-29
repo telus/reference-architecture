@@ -24,14 +24,13 @@ By writing the test first:
 
 ### Code quality metrics
 
-We use [Sonarqube][Sonarqube] for static code analysis purposes.
+We use [Sonarqube][sonarqube] for static code analysis purposes.
 
-For details on what value it adds to reference architecture and how to have it set up for your project, check out [Sonarqube in TELUS Digital][Sonarqube in TELUS Digital]
+For details on what value it adds to reference architecture and how to have it set up for your project, check out [Sonarqube in TELUS Digital][telus-sonarqube]
 
 ## When
 
-- Writing unit tests: ideally, before you write the actual code, as we want to follow the [TDD][TDD] practice
-
+- Writing unit tests: ideally, before you write the actual code, as we want to follow the [TDD][tdd]
 - Running unit tests: before each commit, and as part of the delivery pipeline
 
 ## Standards
@@ -41,7 +40,8 @@ For details on what value it adds to reference architecture and how to have it s
 For testing React higher order components, it is preferred to keep the presentational component and the enhancing container in separate source files, then wrap in `index.js` to export the enhanced component. This way, testing can be done separately on the presentational component, and then the higher order component, without adding in extra named exports.
 
 ie: Given a `Card` that gets wrapped in an HoC, the directory structure should look as follows:
-```
+
+```plain
 - Card/
   - __tests__/
     - Card.spec.jsx
@@ -59,8 +59,6 @@ ie: Given a `Card` that gets wrapped in an HoC, the directory structure should l
 
 - [Magic tricks of unit testing](https://www.youtube.com/watch?v=URSWYvyc42M) _Ruby, but excellent concepts_
 
-
-[Starter-kit: unit test]: https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/DOCKER.md#unit-testing
-[TDD]: https://en.wikipedia.org/wiki/Test-driven_development
-[Sonarqube]: https://github.com/SonarSource/sonarqube
-[Sonarqube in TELUS Digital]: https://github.com/telusdigital/sonarqube
+[tdd]: https://en.wikipedia.org/wiki/Test-driven_development
+[sonarqube]: https://github.com/SonarSource/sonarqube
+[telus-sonarqube]: https://github.com/telusdigital/sonarqube

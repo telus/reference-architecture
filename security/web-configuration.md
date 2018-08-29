@@ -28,8 +28,8 @@ Ensure that cookies containing sensitive information are properly secured:
 ### Caching
 
 - Ensure that sensitive content is not cached by the browser (or proxies) by utilizing the appropriate caching directives. To ensure that content is not cached use the following:
-  - `Cache-Control: no-store, no-cache`
-  - `Pragma: no-cache`
+    - `Cache-Control: no-store, no-cache`
+    - `Pragma: no-cache`
 
 ### Clickjacking
 

@@ -17,7 +17,7 @@ This document provides a standard for practices around the contribution model fo
 - Reduce the time required to onboard new developers
 - Reduce friction for developers contributing to other projects
 - Provide clarity on expectations for leads in how to model new projects, and coach their teams in contributing
-    
+
 ## How
 
 There has been a constant swing between Trunk Based Development and Branch style development for many years. Reasonably so, both are seen to have advantages and disadvantages.
@@ -28,9 +28,9 @@ There has been a constant swing between Trunk Based Development and Branch style
 In this way teams are encouraged to adopt a hybrid approach:
 
 - Each project should have core owners that oversee the vision of the project, and can reject/approve Pull Requests and are responsible for supporting and communicating with interested contributors.
-- Teams should be comfortable using small branches with PRs, and should practice this as a way of creating transparency in the codebase and encouraging external contributors to participate
+- Should be comfortable using small branches with PRs, and should practice this as a way of creating transparency in the codebase and encouraging external contributors to participate
 - Trunk based development is acceptable, but more as a philosophical approach to reducing internal day to day frictions for the core team, not as a mandate
- 
+
 ### Commit Template
 
 For standardized git commits, projects may use Commitizen with conventional-changelog adapter. This can be hooked into your commit-msg git-hook to ensure all commit messages utilize this format. Commitizen is optional; contributors may alternatively reference the [Karma Format][karma] document (summarized below) and write out their commits ordinarily.
@@ -52,7 +52,7 @@ git cz
 
 ### Commit Template Reference
 
-```
+```plain
 <type>: <subject>
 
 <body>
@@ -70,7 +70,7 @@ Optionally, the commit message header can be: `<type>(<scope>): <subject>`
 
 `<footer>`, if any, should reference the issue(s) that this commit was in relation to, e.g.:
 
-```
+```plain
 Closes ABC-123
 (or)
 Closes ABC-456, ABC-457

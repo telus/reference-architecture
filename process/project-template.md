@@ -3,12 +3,12 @@
 ## Why
 
 - Developers should be able to easily:
-    - Understand a project's purpose and scope
-    - Setup / Install dependancies
-    - Run unit tests
-    - Build / execute a development environment
-    - Commit / Contribute back to it
-    
+  - Understand a project's purpose and scope
+  - Setup / Install dependancies
+  - Run unit tests
+  - Build / execute a development environment
+  - Commit / Contribute back to it
+
 ## What
 This document defines a standard project template for Telus Digital that provides the following benefits:
 
@@ -20,23 +20,25 @@ It covers:
 - Readme Template
 - Git Hooks
 - Commit Standards
-    
+
 ## How
 
 ### GitHub Readme
+
 Every project should have a readme that clearly expresses the following:
 - The purpose, scope and goals of the project
 - The author / current owners
 - Clear up to date instructions on:
-    - Setup and installation
-    - Running your app (if applicable)
-    - Basic usage (API, Endpoints, etc)
-    - List of bundled scripts, such as:
-        - How to run tests
-        - How to run linting
-        - etc
+  - Setup and installation
+  - Running your app (if applicable)
+  - Basic usage (API, Endpoints, etc)
+  - List of bundled scripts, such as:
+    - How to run tests
+    - How to run linting
+    - etc
 
 The following is a basic example
+
 ```markdown
 # Project Title
 
@@ -78,18 +80,19 @@ The following is a basic example
 > Project leads/maintainers (who somebody should ask if they want to get involved, are going to be making a PR, etc)
 ```
 
-
 ### Git Hooks 
- Git hooks should not exist as a replacement for good practices, education or mentorship. 
- 
- These are the guidelines for git-hooks:
- - **commit-msg: standard** 
-    - standardize commit messages
- - **pre-push: standard**
-    - run linting and in-process tests before publishing to master branch
- - **all others: non-standard** 
-    - unless used to meet special project requirements (talk to your lead)
- 
+
+Git hooks should not exist as a replacement for good practices, education or mentorship. 
+
+These are the guidelines for git-hooks:
+
+- **commit-msg: standard** 
+  - standardize commit messages
+- **pre-push: standard**
+  - run linting and in-process tests before publishing to master branch
+- **all others: non-standard** 
+  - unless used to meet special project requirements (talk to your lead)
+
 ## References
 
 - [How to use Git Hooks][git-hook-guide]

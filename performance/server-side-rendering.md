@@ -1,4 +1,4 @@
-# Server Side Rendering
+  # Server Side Rendering
 
 ## Why
 
@@ -12,7 +12,7 @@ The purpose of this document is to provide some guidelines on when/how to triage
 
 React Server Side Rendering is fast. Large complex applications, when optimized can be server side rendered quite easily under 50ms.
 
-**IMPORTANT: IF YOUR APPLICATION IS RESPONDING SLOWLY IT IS PROBABLY NOT REACT**
+> **IMPORTANT: IF YOUR APPLICATION IS RESPONDING SLOWLY IT IS PROBABLY NOT REACT**
 
 This means the solution is not utilizing another tool or library, or attempting to add caching, or streaming to React to solve signficant slowness you may be experience, but instead looking at how your application is executing and where it may be blocking the Server Side Render.
 

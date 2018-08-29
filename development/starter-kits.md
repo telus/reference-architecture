@@ -39,7 +39,7 @@ To make a change to a starter kit:
 - Once tested end to end, open a pull request (add a link to your sandbox namespace in the comments)
 - For pull requests that are not intended to be merged immediately, make sure you label them as WIP (work in progress)
 - The pull request can be reviewed and completed by members of the Delivery team and/or [Digital Architects](https://github.com/orgs/telusdigital/teams/digital-architecture/members)
-- The pull request should be *SQUASHED*, not merged, so that there's one easy-to-follow commit for developers who are merging changes from the starter kit to their older projects
+- The pull request should be **SQUASHED**, not merged, so that there's one easy-to-follow commit for developers who are merging changes from the starter kit to their older projects
 - If there are any pipeline failures in master, either revert your change, or fix it immediately! This is of paramount importance, as people will be cloning it in a broken state, if it is not fixed.
 
 ## Who

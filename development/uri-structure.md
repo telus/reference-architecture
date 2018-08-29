@@ -25,7 +25,7 @@ What belongs in `[/locale][/path]` portion of URI?
 This diagram describes the routing for a telus.com request:
 
 ![F5 routing diagram](./_assets/f5.svg)
-Source: https://docs.google.com/drawings/d/1yUxOCdKRciYD7TvY_IXwzO2zW2G3ka4cdcX8SJfhSDA/edit
+[Source](https://docs.google.com/drawings/d/1yUxOCdKRciYD7TvY_IXwzO2zW2G3ka4cdcX8SJfhSDA/edit)
 
 ### Locale
 
@@ -44,21 +44,21 @@ All locales are currently supported by the F5 routing.
 
 For the regions, the following URI segments are supported: 
 
-| Region | Region URI Segment |
-| :---: | :---: |
-| British Columbia | `bc` |
-| Alberta | `ab` |
-| Manitoba | `mb` |
-| New Brunswick | `nb` |
-| Newfoundland | `nl` |
-| Northwest Territories | `nt` |
-| Nova Scotia | `ns` |
-| Nunavut | `nu` |
-| Ontario | `on` |
-| Prince Edward Island | `pe` |
-| Quebec | `qc` |
-| Saskatchewan | `sk` |
-| Yukon | `yt` |
+|        Region        | Region URI Segment |
+| -------------------- | ------------------ |
+|   British Columbia   |        `bc`        |
+|       Alberta        |        `ab`        |
+|       Manitoba       |        `mb`        |
+|    New Brunswick     |        `nb`        |
+|     Newfoundland     |        `nl`        |
+| orthwest Territories |        `nt`        |
+|     Nova Scotia      |        `ns`        |
+|       Nunavut        |        `nu`        |
+|       Ontario        |        `on`        |
+| Prince Edward Island |        `pe`        |
+|        Quebec        |        `qc`        |
+|     Saskatchewan     |        `sk`        |
+|        Yukon         |        `yt`        |
 
 ### URL Pathname
 
@@ -87,6 +87,7 @@ What belongs in `[?query]` portion of URI?
 ## Who
 
 Any teams deploying to www.telus.com:
+
 - Home Marketing
 - Mobility Marketing
 - My Account
@@ -101,5 +102,7 @@ Any teams deploying to www.telus.com:
 - [Adobe Target](//marketing.adobe.com/resources/help/en_US/target/target/c_spa-visual-experience-composer.html)
 
 [rfc-6570]: https://tools.ietf.org/html/rfc6570 "RFC 6570"
+
 [telus-gateway-staging-config]: https://github.com/telusdigital/inbound.telus-gateway-staging-config "inbound.telus-gateway-staging-config"
+
 [telus-gateway-production-config]: https://github.com/telusdigital/inbound.telus-gateway-production-config "inbound.telus-gateway-production-config"

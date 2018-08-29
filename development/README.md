@@ -42,4 +42,4 @@
 
 ### Guidelines
 
- - [Accessibility](accessibility.md)
+- [Accessibility](accessibility.md)
