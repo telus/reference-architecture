@@ -12,7 +12,7 @@ The purpose of this document is to provide some guidelines on when/how to triage
 
 React Server Side Rendering is fast. Large complex applications, when optimized can be server side rendered quite easily under 50ms.
 
-**IMPORTANT: IF YOUR APPLICATION IS RESPONDING SLOWLY IT IS PROBABLY NOT REACT**
+> **IMPORTANT: IF YOUR APPLICATION IS RESPONDING SLOWLY IT IS PROBABLY NOT REACT**
 
 This means the solution is not utilizing another tool or library, or attempting to add caching, or streaming to React to solve signficant slowness you may be experience, but instead looking at how your application is executing and where it may be blocking the Server Side Render.
 
@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 
 To triage poor SSR do the following:
 
--   Log the total time to response (ie. implement the above)
--   Remove all of your API calls
--   Compare the difference
--   Look for any type of blocking loop you may be doing over a large or unknown dataset that could be slowing down your SSR
+- Log the total time to response (ie. implement the above)
+- Remove all of your API calls
+- Compare the difference
+- Look for any type of blocking loop you may be doing over a large or unknown dataset that could be slowing down your SSR

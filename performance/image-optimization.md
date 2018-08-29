@@ -24,4 +24,4 @@ Finally (and this might be irrelevant for Contentful) is to ensure that we are o
 
 ## References
 
--   [Google PageSpeed Insights reference on Images](https://developers.google.com/speed/docs/insights/OptimizeImages)
+- [Google PageSpeed Insights reference on Images](https://developers.google.com/speed/docs/insights/OptimizeImages)

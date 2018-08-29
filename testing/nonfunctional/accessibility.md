@@ -31,6 +31,6 @@ Running analytics tests: As part of the delivery pipeline
 
 ## References
 
--   [Nightwatch.js](http://nightwatchjs.org/)
--   [Nightwatch-Accessibility](https://github.com/ahmadnassri/nightwatch-accessibility)
--   [NVDA](https://www.nvaccess.org/)
+- [Nightwatch.js](http://nightwatchjs.org/)
+- [Nightwatch-Accessibility](https://github.com/ahmadnassri/nightwatch-accessibility)
+- [NVDA](https://www.nvaccess.org/)

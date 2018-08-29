@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "version": "0.0.0-development",
+  "name": "@telus/reference-architecture",
+  "description": "TELUS Reference Architecture Documentation",
+  "author": "Ahmad Nassri <ahmad.nassri@telus.com> (https://telus.com/digital/)",
+  "homepage": "https://github.com/telus/reference-architecture",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telus/reference-architecture.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "wiki",
+    "architecture"
+  ],
+  "bugs": {
+    "url": "https://github.com/telus/reference-architecture/issues"
+  },
+  "scripts": {
+    "test": "remark --quiet --frail ."
+  },
+  "devDependencies": {
+    "remark-cli": "^5.0.0",
+    "@telus/remark-preset-lint-markdown": "*"
+  }
+}

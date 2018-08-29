@@ -18,8 +18,8 @@ As an API implementor, use a module like [node-error][node-error] to decorate yo
 
 ## References
 
--   [RFC7807: Problem Details for HTTP APIs][rfc7807]
--   [node-error: Ahmad's implementation of RFC7807](node-error)
+- [RFC7807: Problem Details for HTTP APIs][rfc7807]
+- [node-error: Ahmad's implementation of RFC7807](node-error)
 
 [rfc7807]: https://tools.ietf.org/html/rfc7807
 [node-error]: https://github.com/ahmadnassri/node-error

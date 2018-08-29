@@ -26,9 +26,9 @@ Everyone!
 
 ## References
 
--   [React.js](https://facebook.github.io/react/)
--   [React tutorials](https://egghead.io/technologies/react)
--   [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit)
--   [React Developer Tools](https://github.com/facebook/react-devtools)
--   [React Native](https://facebook.github.io/react-native/)
--   [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/languages-and-frameworks/react-js)
+- [React.js](https://facebook.github.io/react/)
+- [React tutorials](https://egghead.io/technologies/react)
+- [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit)
+- [React Developer Tools](https://github.com/facebook/react-devtools)
+- [React Native](https://facebook.github.io/react-native/)
+- [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/languages-and-frameworks/react-js)

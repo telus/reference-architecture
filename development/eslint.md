@@ -14,9 +14,9 @@ Our [starter kit](starter-kits.md) projects define a standard `.eslintrc` file, 
 
 For the most part, we use AirBnB standards as-is, yet we override some things:
 
--   TODO
--   List overrides & rationale...
--   `;)`
+- TODO
+- List overrides & rationale...
+- `;)`
 
 ## Who
 
@@ -24,5 +24,5 @@ Developers, developers, developers, developers.
 
 ## References
 
--   [General standards](code-formatting.md)
--   [AirBnB JavaScript standards](https://github.com/airbnb/javascript)
+- [General standards](code-formatting.md)
+- [AirBnB JavaScript standards](https://github.com/airbnb/javascript)

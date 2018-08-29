@@ -20,5 +20,5 @@ For user interfaces that are presented to the web browser, we use [webpack](http
 
 ## References
 
--   [Babel.js](https://babeljs.io/)
--   [Webpack](https://webpack.github.io/docs/)
+- [Babel.js](https://babeljs.io/)
+- [Webpack](https://webpack.github.io/docs/)

@@ -2,21 +2,18 @@
 
 ## Why
 
--   In a Microservices & API centric environment:
-    -   Achieve release independence for front-end and mobile applications from API and backend systems.
-    
-    -   Ability to **filter** and **transform** large datasets to fit the UI model
+- In a Microservices & API centric environment:
+  - Achieve release independence for front-end and mobile applications from API and backend systems.    
+  - Ability to **filter** and **transform** large datasets to fit the UI model
     Domain APIs are likely to be chatty and verbose, which introduces additional processing responsibilities on front-end and mobile applications
-
-    -   Limit expensive HTTP traffic
+  - Limit expensive HTTP traffic
     Battery and performance consideration in mobile web and native mobile applications are usually not addressable through API strategy alone.
-
--   For Web Services (LEGACY):
-    -   Provide **abstraction of SOAP services** as a transition step into API centric approach.
-    -   Act as the early prototype for a RESTFUL TELUS API.
-    -   Web Friendly:
-        -   JSON transformation from XML
-        -   RESTFUL Interface
+- For Web Services (LEGACY):
+  - Provide **abstraction of SOAP services** as a transition step into API centric approach.
+  - Act as the early prototype for a RESTFUL TELUS API.
+  - Web Friendly:
+    - JSON transformation from XML
+    - RESTFUL Interface
 
 ## What
 
@@ -24,9 +21,9 @@ BFF stands for "Backend For Frontend". It's a term that's been discussed a lot a
 
 In the mobile app world, often the BFF is a microservice that helps the app orchestrate and aggregate other domain services.
 
--   The team that makes the app can control this service
--   They can put presentation logic in there that they want to change without re-publishing
--   If they are releasing both iOS and Android versions, some of the logic can go in the BFF _(see: [Single Responsibility Principle][srp])_
+- The team that makes the app can control this service
+- They can put presentation logic in there that they want to change without re-publishing
+- If they are releasing both iOS and Android versions, some of the logic can go in the BFF _(see: [Single Responsibility Principle][srp])_
 
 For web teams, it might be simpler just to think of this as "your application". Especially if you're building a standard web app - its going to orchestrate and aggregate access to various back end services to assemble view models, and could also provide endpoints for AJAX scripts or an SPA.
 
@@ -35,7 +32,6 @@ For web teams, it might be simpler just to think of this as "your application". 
 ### What should go in a BFF?
 
 Presentation logic, orchestration, and aggregation are usually the stock and trade of the BFF. Generally, if you're setting up an endpoint that other squads might need, consider getting it in to an [API instead][apis].
-
 
 ### Deloyment & Separation
 
@@ -47,10 +43,9 @@ The main point of the BFF is to unblock teams - instead of requesting that a ser
 
 ## References
 
--   [BFF @ SoundCloud][soundcloud]: 
--   [ThoughtWorks Tech Radar][tw-tech-radar]
--   [Pattern: Backends For Frontends By Sam Newman][sam-newman]
-
+- [BFF @ SoundCloud][soundcloud]: 
+- [ThoughtWorks Tech Radar][tw-tech-radar]
+- [Pattern: Backends For Frontends By Sam Newman][sam-newman]
 
 [soundcloud]: https://www.thoughtworks.com/insights/blog/bff-soundcloud "BFF @ SoundCloud"
 [tw-tech-radar]: https://www.thoughtworks.com/radar/techniques/bff-backend-for-frontends "ThoughtWorks Tech Radar"

@@ -13,8 +13,8 @@ PageSpeed Insights checks to see if a page has applied common performance best p
 
 PageSpeed Insights measures how the page can improve its performance on:
 
--   *time to above-the-fold load*: Elapsed time from the moment a user requests a new page and to the moment the above-the-fold content is rendered by the browser.
--   *time to full page load*: Elapsed time from the moment a user requests a new page to the moment the page is fully rendered by the browser.
+- _time to above-the-fold load_: Elapsed time from the moment a user requests a new page and to the moment the above-the-fold content is rendered by the browser.
+- _time to full page load_: Elapsed time from the moment a user requests a new page to the moment the page is fully rendered by the browser.
 
 **Note:** PageSpeed Insights checks to see if a page has applied common performance best practices but does not account for all the factors that can affect a page's speed - e.g. type of the device used to access the page, network speed, and cache reuse of shared resources. As a result, while the score is correlated with the speed of a page, it is not completely representative of the real world user experience.
 
@@ -31,6 +31,5 @@ All Telus Digital developers, of course!
 
 ## References
 
--   [PageSpeed Insights UI](https://developers.google.com/speed/pagespeed/insights/)
--   [Starter Kit - Automated load & performance tests](https://github.com/telusdigital/telus-isomorphic-starter-kit/tree/master/load-test)
-
+- [PageSpeed Insights UI](https://developers.google.com/speed/pagespeed/insights/)
+- [Starter Kit - Automated load & performance tests](https://github.com/telusdigital/telus-isomorphic-starter-kit/tree/master/load-test)

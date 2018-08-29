@@ -44,5 +44,5 @@ TODO
 
 ## References
 
--   [Nightwatch.js](http://nightwatchjs.org/)
--   [Sauce Labs](https://saucelabs.com/)
+- [Nightwatch.js](http://nightwatchjs.org/)
+- [Sauce Labs](https://saucelabs.com/)

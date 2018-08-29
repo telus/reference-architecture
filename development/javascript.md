@@ -6,15 +6,15 @@ As part of our reference architecture goals, we want to standardize on one langu
 
 Developers have lots of needs for a programming language:
 
--   Easy to use
--   Easy to learn
--   Ubiquitous
--   Has a strong community
--   Has many libraries available
--   Has package management
--   Is a current and high-demand skill
--   Is expressive
--   Is powerful
+- Easy to use
+- Easy to learn
+- Ubiquitous
+- Has a strong community
+- Has many libraries available
+- Has package management
+- Is a current and high-demand skill
+- Is expressive
+- Is powerful
 
 ## What
 
@@ -32,5 +32,4 @@ Developers, developers, developers, developers.
 
 ## References
 
--   [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/languages-and-frameworks/javascript-as-a-platform)
-
+- [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/languages-and-frameworks/javascript-as-a-platform)

@@ -20,10 +20,10 @@ Keeping this pattern in mind, TELUS can architect software ahead of time in orde
 
 This integration pattern only applies to:
 
-*   vendors external to TELUS, that 
-*   provide capabilities to TELUS, that
-*   are accessed in a logically synchronous manner, and that
-*   are useful to more than one TELUS business unit (i.e. outside of just Digital, e.g. to Digital and to BTO).
+- vendors external to TELUS, that 
+- provide capabilities to TELUS, that
+- are accessed in a logically synchronous manner, and that
+- are useful to more than one TELUS business unit (i.e. outside of just Digital, e.g. to Digital and to BTO).
 
 ### Logical Integration Architecture
 
@@ -51,4 +51,4 @@ Ideally, the selected vendor for a given capability natively implements a releva
 
 #### SDF Onboarding
 
-*   See [the SDF API Governance documentation](http://habitat.tmi.telus.com/collaborate/display/sdf/API+Governance).
+- See [the SDF API Governance documentation](http://habitat.tmi.telus.com/collaborate/display/sdf/API+Governance).

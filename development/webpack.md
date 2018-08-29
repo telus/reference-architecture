@@ -30,4 +30,4 @@ Front-end developers
 
 ## References
 
--   [Webpack docs](https://webpack.js.org/)
+- [Webpack docs](https://webpack.js.org/)

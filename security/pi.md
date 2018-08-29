@@ -15,8 +15,8 @@ In today's technology driven world, the information that can be classified as pe
 
 The goal is to mitigate business risks and provide customer solutions that take every opportunity to protect:
 
--   Customer information that is entrusted to us
--   The TELUS brand and customer trust
+- Customer information that is entrusted to us
+- The TELUS brand and customer trust
 
 ## How
 
@@ -24,47 +24,47 @@ To protect customer privacy, TELUS Privacy team requires all these Personal Iden
 
 To mask these PI information using masking snippet, either provided by 3rd-party provider, or creating masking class internally at Telus.
 
-### TELUS PI-blocking Requirement:
+### TELUS PI-blocking Requirement
 
--   Customer First Name
--   Customer Last Name
--   Email Address
--   Gender(title Mr., Ms, etc)
--   Home Phone number
--   Mobile Phone Number
--   Payment Card # (Credit Card, Debit)
--   Driver’s License
--   BAN
--   Delinquency status
--   Balance Amount
--   Transaction History
--   Mailing address
--   Billing Address
--   Password
--   PIN
--   Chat session/transcript
--   Usage details (numbers called/texted, how much usage),
--   Preauth banking
--   Security Question in Account profile section
--   Security Answer in Account profile section
--   Number of users in the Account
+- Customer First Name
+- Customer Last Name
+- Email Address
+- Gender(title Mr., Ms, etc)
+- Home Phone number
+- Mobile Phone Number
+- Payment Card # (Credit Card, Debit)
+- Driver’s License
+- BAN
+- Delinquency status
+- Balance Amount
+- Transaction History
+- Mailing address
+- Billing Address
+- Password
+- PIN
+- Chat session/transcript
+- Usage details (numbers called/texted, how much usage),
+- Preauth banking
+- Security Question in Account profile section
+- Security Answer in Account profile section
+- Number of users in the Account
 
 ### Safeguarding PI Data
 
 Special care needs to be given to handling of PI data.
 
--   Collect PI data only on “as needed" basis.
--   Ensure appropriate access controls are in place for PI data.
--   PI data must be handled with extra precaution when sent to client:
-    -   masking of credit card number
-    -   must instruct browser to not cache
-    -   must not be passed as part of URL
-    -   must not be passed in a cookie
-    -   must not be stored in client-side database, config or log file.
--   PI data must be encrypted if stored. (see [Data Security and Encryption](data-security-and-encryption.md) )
--   PI data must be encrypted in transit. (see [Data Security and Encryption](data-security-and-encryption.md) )
--   PI data must not be logged.
--   Discard PI data when no longer required or at expiry.
+- Collect PI data only on “as needed" basis.
+- Ensure appropriate access controls are in place for PI data.
+- PI data must be handled with extra precaution when sent to client:
+  - masking of credit card number
+  - must instruct browser to not cache
+  - must not be passed as part of URL
+  - must not be passed in a cookie
+  - must not be stored in client-side database, config or log file.
+- PI data must be encrypted if stored. (see [Data Security and Encryption](data-security-and-encryption.md) )
+- PI data must be encrypted in transit. (see [Data Security and Encryption](data-security-and-encryption.md) )
+- PI data must not be logged.
+- Discard PI data when no longer required or at expiry.
 
 ## Who
 

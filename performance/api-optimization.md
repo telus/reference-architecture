@@ -25,8 +25,8 @@ return someRequestPromise.then((response)=>{
 
 Some recommendations:  
 
--   Try not to make calls that will block Server Side Render
--   Maintain clear visibility on the number of calls that are made by the server and how long they take.
--   If your API call is slow, escalate to your friendly API team! (APIs should not be slow)
--   Cache reasonably static data on server with safe expiry! (ie. 5 minutes)
--   Use internal network routing on the server side.
+- Try not to make calls that will block Server Side Render
+- Maintain clear visibility on the number of calls that are made by the server and how long they take.
+- If your API call is slow, escalate to your friendly API team! (APIs should not be slow)
+- Cache reasonably static data on server with safe expiry! (ie. 5 minutes)
+- Use internal network routing on the server side.

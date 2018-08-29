@@ -74,6 +74,6 @@ Minimizing the differences between development and production also decreases the
 
 ## References
 
--   [Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html)
--   [Thoughtworks CI](https://www.thoughtworks.com/continuous-integration)
--   [Wikipedia](https://en.wikipedia.org/wiki/Continuous_integration)
+- [Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html)
+- [Thoughtworks CI](https://www.thoughtworks.com/continuous-integration)
+- [Wikipedia](https://en.wikipedia.org/wiki/Continuous_integration)

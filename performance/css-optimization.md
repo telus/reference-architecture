@@ -14,6 +14,6 @@ In your applications, only include the CSS or SCSS you need from TDS. This can b
 
 ## References
 
--   [Purify CSS Plugin for Webpack](https://github.com/webpack-contrib/purifycss-webpack)
--   [Styled Components](https://github.com/styled-components/styled-components)
--   [CSS Modules](https://github.com/css-modules/css-modules)
+- [Purify CSS Plugin for Webpack](https://github.com/webpack-contrib/purifycss-webpack)
+- [Styled Components](https://github.com/styled-components/styled-components)
+- [CSS Modules](https://github.com/css-modules/css-modules)

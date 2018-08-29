@@ -29,13 +29,12 @@ We use DockerHub (the canonical Docker image source), to pull our base Alpine Li
 Currently we only support official base images, which are maintained by the application publishers. You should avoid using random 3rd party images whenever possible, as they could include malicious/exploitable code.
 
 Supported base images include:
-```
-node:6-alpine
-ruby:2-alpine
-php:7-fpm-alpine
-nginx:alpine
-redis:alpine
-```
+
+- `node:6-alpine`
+- `ruby:2-alpine`
+- `php:7-fpm-alpine`
+- `nginx:alpine`
+- `redis:alpine`
 
 Programming language distributions should track the stable "LTS" versions. For example, we will start using Node 8 [when it becomes "LTS"](https://github.com/nodejs/LTS#lts-schedule1). You should avoid using Node 7, unless explicitly necessary, as it will lack future support.
 
@@ -47,11 +46,11 @@ The Dockerfile is an iterative list of commands that a developer uses to build a
 
 #### Best practices
 
--   Order dependencies to optimize caching, e.g. copy your source code AFTER you've installed dependencies via `apt-get`, otherwise those dependencies must be installed whenver you modify your code
--   Minimize number of layers, e.g. if many successive RUN commands, combine them with &&
--   Avoid installing unnecessary packages
--   Each container should only have one application process (e.g. don't run nginx and php-fpm in the same container)
--   Optimize startup speed and resource consumption: where possible, run all static compilation steps at build time, rather than loading them on startup
+- Order dependencies to optimize caching, e.g. copy your source code AFTER you've installed dependencies via `apt-get`, otherwise those dependencies must be installed whenver you modify your code
+- Minimize number of layers, e.g. if many successive RUN commands, combine them with &&
+- Avoid installing unnecessary packages
+- Each container should only have one application process (e.g. don't run nginx and php-fpm in the same container)
+- Optimize startup speed and resource consumption: where possible, run all static compilation steps at build time, rather than loading them on startup
 
 #### The difference between `CMD` and `ENTRYPOINT`
 
@@ -66,7 +65,8 @@ By default, a Docker container runs as root. This can be hazardous if you are mo
 Our current OpenShift platform therefore does not allow us to run containers as the root user, but we can still be a user in the root group. This means during the Dockerfile build process, we also need to create a user, grant them access to the source code, and switch to using that user at the end of the `Dockerfile`, before the source code is run.
 
 For example:
-```
+
+```dockerfile
 ENV HOME=/root
 RUN useradd -u 1001 -g root -d $HOME --shell /bin/false nodeuser && \
     chmod -R g+rw /app $HOME && \
@@ -83,6 +83,7 @@ This creates a `nodeuser` user that gains access to the `/app` and `/root` direc
 `docker-compose` is a tool for running one or more Docker applications, together as an aggregate wholistic webapp. We currently use version 3 of the yaml format (and try to keep this up-to-date with the latest version).
 
 A minimal example would be:
+
 ```yaml
 version: '3'
 services:
@@ -116,6 +117,7 @@ Now the `nginx` container is available to the app container on the `nginx` URL, 
 To add volumes to our application (typically used for mounting secrets, or for getting data out of a container), we can define a `volume` block. For secrets we want to use `:ro` to mount it as read-only.
 
 For example, to mount some secret certs into our running container:
+
 ```yaml
 services:
   app:
@@ -131,7 +133,8 @@ Volumes can also be used to create a development workspace with live code reload
 To speed up the build, ignore things that are irrelevant to the Docker image artifact. For example, you definitely want to ignore any 3rd party dependencies that would be installed with `npm`, `bundler` or `composer` (this has a SIGNIFICANT effect on build time). We also want to ignore IDE metadata, readmes, or any generated code.
 
 Example `.dockerignore`:
-```
+
+```plain
 node_modules // installed 3rd party deps
 *.md         // readmes
 .idea        // IDE metadata
@@ -144,6 +147,6 @@ coverage     // generated code
 
 ## References
 
--   [Docker Docs](https://docs.docker.com/)
--   [Dockerfile Docs](https://docs.docker.com/engine/reference/builder/)
--   [Docker Compose Docs](https://docs.docker.com/compose/)
+- [Docker Docs](https://docs.docker.com/)
+- [Dockerfile Docs](https://docs.docker.com/engine/reference/builder/)
+- [Docker Compose Docs](https://docs.docker.com/compose/)

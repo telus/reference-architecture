@@ -2,7 +2,7 @@
 
 ## Why
 
-Our applications require secrets, e.g. login/database credentials, license keys, certificates, etc. Currently, all users in our GitHub organization get read access to ALL repositories. Formerly, our secrets were simply committed to Git. As more users join our GitHub organization, including external vendors, our exposure to malware and phishing grows, and so does the risk of exposing these secrets. With access to this information, a hacker could impersonate our production applications and gain access to users personal information. This would be *BAD NEWS*.
+Our applications require secrets, e.g. login/database credentials, license keys, certificates, etc. Currently, all users in our GitHub organization get read access to ALL repositories. Formerly, our secrets were simply committed to Git. As more users join our GitHub organization, including external vendors, our exposure to malware and phishing grows, and so does the risk of exposing these secrets. With access to this information, a hacker could impersonate our production applications and gain access to users personal information. This would be **BAD NEWS**.
 
 ## What
 
@@ -38,8 +38,8 @@ Rather than provisioning the secrets from HashiCorp Vault into Kubernetes, and e
 
 ## References
 
--   [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
--   [OpenShift Secrets](https://docs.openshift.com/container-platform/3.4/dev_guide/secrets.html)
--   [Ansible Vault](http://docs.ansible.com/ansible/playbooks_vault.html)
--   [HashiCorp Vault](https://www.vaultproject.io/)
--   [Turtles all the way down](https://www.youtube.com/watch?v=OUSvv2maMYI)
+- [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
+- [OpenShift Secrets](https://docs.openshift.com/container-platform/3.4/dev_guide/secrets.html)
+- [Ansible Vault](http://docs.ansible.com/ansible/playbooks_vault.html)
+- [HashiCorp Vault](https://www.vaultproject.io/)
+- [Turtles all the way down](https://www.youtube.com/watch?v=OUSvv2maMYI)

@@ -5,9 +5,9 @@
 When developers don't have a clear understanding of what work they're supposed to do, they'll end up spending a lot of their time figuring out what to do next. This is expensive, as developers are often the bottleneck in software development.
 
 Old-fashioned concepts like the "Business Requirements document" and "Functional Requirements" have been found to be harmful to an agile / lean / open source oriented approach to software development for a number of reasons:
--   They take forever to write
--   They take forever for developers to try to parse in to something useful
--   They don't at all facilitate iterative process
+- They take forever to write
+- They take forever for developers to try to parse in to something useful
+- They don't at all facilitate iterative process
 
 ## What
 
@@ -40,12 +40,12 @@ Bill Wake's [article on the INVEST mnemonic](http://xp123.com/articles/invest-in
 
 > Characteristics of good stories:
 >
-> -   **Independent**: the stories can be delivered in any order
-> -   **Negotiable**: the details of what's in the story are co-created by the programmers and customer during development.
-> -   **Valuable**: the functionality is seen as valuable by the customers or users of the software.
-> -   **Estimable**: the programmers can come up with a reasonable estimate for building the story
-> -   **Small**: stories should be built in a small amount of time, usually a matter of person-days. Certainly you should be able to build several stories within one iteration.
-> -   **Testable**: you should be able to write tests to verify the software for this story works correctly.
+> - **Independent**: the stories can be delivered in any order
+> - **Negotiable**: the details of what's in the story are co-created by the programmers and customer during development.
+> - **Valuable**: the functionality is seen as valuable by the customers or users of the software.
+> - **Estimable**: the programmers can come up with a reasonable estimate for building the story
+> - **Small**: stories should be built in a small amount of time, usually a matter of person-days. Certainly you should be able to build several stories within one iteration.
+> - **Testable**: you should be able to write tests to verify the software for this story works correctly.
 
 For more on the importance and practical advice on how to achieve small stories, check out the article on [smaller stories](process/small-stories-are-faster.md).
 
@@ -60,7 +60,7 @@ Once a story has stabilized, and before its picked up by developers, it's common
 > Finally the 'then' section describes the changes you expect due to the specified behavior.
 >
 > Example:
-> ~~~
+> ```plain
 > Feature: User trades stocks
 >  Scenario: User requests a sell before close of trading
 >    Given I have 100 shares of MSFT stock
@@ -72,7 +72,7 @@ Once a story has stabilized, and before its picked up by developers, it's common
 >     Then I should have 80 shares of MSFT stock
 >      And I should have 150 shares of APPL stock
 >      And a sell order for 20 shares of MSFT stock should have been executed
-> ~~~
+> ```
 
 Stories often have their own life cycle. They may start out as literal 3x5 cards or sticky notes; be entered later in to JIRA, and later still enhanced with acceptance criteria pairing with a QA. 
 
@@ -85,4 +85,3 @@ Mike Cohn wrote what is now the [standard book on writing user stories](https://
 Bill Wake came up with the [INVEST mnemonic](http://xp123.com/articles/invest-in-good-stories-and-smart-tasks/) described above.
 
 Martin Fowler's article on [Given When Then](https://martinfowler.com/bliki/GivenWhenThen.html) explains its roots in the BDD approach to software development.
-

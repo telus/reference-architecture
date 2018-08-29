@@ -20,15 +20,15 @@ In the [TELUS digital GitHub organisation][org], it is required that all members
 
 Team members utilising Git and contributing to project repositories can follow [this guide on our contributing model][contribution]. It includes details on writing commit messages, git workflows, and suggests tools that facilitate writing commit messages. It helps TELUS developers achieve:
 
--   More concise commit subjects
--   Parseable commit subjects for generating documentation or changelogs
--   Fuller details available in line-by-line annotations
--   Breaking changes and ticket references are also documented within code annotations
+- More concise commit subjects
+- Parseable commit subjects for generating documentation or changelogs
+- Fuller details available in line-by-line annotations
+- Breaking changes and ticket references are also documented within code annotations
 
 ## References
 
--   [Git][git]
--   [GitHub][github]
+- [Git][git]
+- [GitHub][github]
 
 [org]: https://github.com/orgs/telusdigital/people
 [contribution]: ../process/contribution-model.md

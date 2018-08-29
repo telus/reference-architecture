@@ -48,14 +48,14 @@ This step runs a functional integration test against the deployed environment. F
 
 #### Best practices
 
--   Do your work on OpenShift, as opposed to on Jenkins. Do not write a custom Jenkins image that has a tool installed on it; instead, Dockerize your tool and run it on OpenShift with `oc run`.
--   Use Jenkinsfile, as opposed to the older Job DSL and/or Build Pipeline plugin
--   Always wrap your pipeline in a try/catch block
--   Send slack notifications at key points in your pipeline (e.g. when failed, when waiting for input, when deployed to production)
--   Ensure you wrap the discrete steps in your pipeline in `stage` blocks, to promote visibility
--   If you can parallelize something, do it! In the default starter kits, all of our OpenShift Docker container builds will run in parallel.
--   Do all of your work within a `node` block (exception: things like waiting for user input should be left outside of a `node`, as we don't want to consume a Jenkins node while we wait for a user to click to go to production)
--   Use a timeout for user input, so you don't block builds indefinitely
+- Do your work on OpenShift, as opposed to on Jenkins. Do not write a custom Jenkins image that has a tool installed on it; instead, Dockerize your tool and run it on OpenShift with `oc run`.
+- Use Jenkinsfile, as opposed to the older Job DSL and/or Build Pipeline plugin
+- Always wrap your pipeline in a try/catch block
+- Send slack notifications at key points in your pipeline (e.g. when failed, when waiting for input, when deployed to production)
+- Ensure you wrap the discrete steps in your pipeline in `stage` blocks, to promote visibility
+- If you can parallelize something, do it! In the default starter kits, all of our OpenShift Docker container builds will run in parallel.
+- Do all of your work within a `node` block (exception: things like waiting for user input should be left outside of a `node`, as we don't want to consume a Jenkins node while we wait for a user to click to go to production)
+- Use a timeout for user input, so you don't block builds indefinitely
 
 ## Who
 
@@ -63,9 +63,9 @@ This step runs a functional integration test against the deployed environment. F
 
 ## References
 
--   [Standard Jenkinsfile functions](https://jenkins.io/doc/pipeline/steps/)
--   [OpenShift Jenkinsfile functions](https://jenkins.io/doc/pipeline/steps/openshift-pipeline/)
--   [OpenShift pipeline strategy](https://docs.openshift.com/container-platform/3.5/architecture/core_concepts/builds_and_image_streams.html#pipeline-build)
--   [OpenShift pipeline strategy configuration](https://docs.openshift.com/container-platform/3.5/dev_guide/builds/build_strategies.html#pipeline-strategy-options)
--   [Slack notifications](https://jenkins.io/blog/2016/07/18/pipline-notifications/)
--   [Best practices](https://www.cloudbees.com/blog/top-10-best-practices-jenkins-pipeline-plugin)
+- [Standard Jenkinsfile functions](https://jenkins.io/doc/pipeline/steps/)
+- [OpenShift Jenkinsfile functions](https://jenkins.io/doc/pipeline/steps/openshift-pipeline/)
+- [OpenShift pipeline strategy](https://docs.openshift.com/container-platform/3.5/architecture/core_concepts/builds_and_image_streams.html#pipeline-build)
+- [OpenShift pipeline strategy configuration](https://docs.openshift.com/container-platform/3.5/dev_guide/builds/build_strategies.html#pipeline-strategy-options)
+- [Slack notifications](https://jenkins.io/blog/2016/07/18/pipline-notifications/)
+- [Best practices](https://www.cloudbees.com/blog/top-10-best-practices-jenkins-pipeline-plugin)
