@@ -10,7 +10,7 @@ While there a host of characteristics that impact user experience, crafting digi
 
 To support teams in achieving performance excellence throughout telus.com, we principally rely on a custom implementation of [Google’s Lighthouse](https://developers.google.com/web/tools/lighthouse/) for automated performance testing. 
 
-Lighthouse is a framework for testing web pages against a host of performance best practices. When run, it provides detailed scoring across several KPIs along with actionable insights into what were doing well and areas for improvement.
+Lighthouse is a framework for testing web pages against a host of performance best practices. When run, it provides detailed scoring across several KPIs along with actionable insights into what we're doing well and areas for improvement.
 
 At present, we largely monitor three Lighthouse performance metrics and associated targets:
 
