@@ -25,6 +25,7 @@
 
 ### Tooling & Libraries
 
+- [Libraries](libraries.md)
 - [Caching](caching.md)
 - [Databases](databases.md)
 - [Git & GitHub](git.md)
@@ -43,3 +44,4 @@
 ### Guidelines
 
 - [Accessibility](accessibility.md)
+- [Supported Browers](supported-browsers.md)

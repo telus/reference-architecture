@@ -44,21 +44,21 @@ All locales are currently supported by the F5 routing.
 
 For the regions, the following URI segments are supported: 
 
-|        Region        | Region URI Segment |
-| -------------------- | ------------------ |
-|   British Columbia   |        `bc`        |
-|       Alberta        |        `ab`        |
-|       Manitoba       |        `mb`        |
-|    New Brunswick     |        `nb`        |
-|     Newfoundland     |        `nl`        |
-| orthwest Territories |        `nt`        |
-|     Nova Scotia      |        `ns`        |
-|       Nunavut        |        `nu`        |
-|       Ontario        |        `on`        |
-| Prince Edward Island |        `pe`        |
-|        Quebec        |        `qc`        |
-|     Saskatchewan     |        `sk`        |
-|        Yukon         |        `yt`        |
+|        Region         | Region URI Segment |
+| --------------------- | ------------------ |
+|   British Columbia    |        `bc`        |
+|       Alberta         |        `ab`        |
+|       Manitoba        |        `mb`        |
+|    New Brunswick      |        `nb`        |
+|     Newfoundland      |        `nl`        |
+| Northwest Territories |        `nt`        |
+|     Nova Scotia       |        `ns`        |
+|       Nunavut         |        `nu`        |
+|       Ontario         |        `on`        |
+| Prince Edward Island  |        `pe`        |
+|        Quebec         |        `qc`        |
+|     Saskatchewan      |        `sk`        |
+|        Yukon          |        `yt`        |
 
 ### URL Pathname
 

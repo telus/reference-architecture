@@ -89,7 +89,7 @@ export const people = (state = [], action) => {
 
 ### Redux Dataflow
 
-<img src="redux/redux-and-data-flow.png" width="50%"/>
+<img src="redux-and-data-flow.png" width="50%"/>
 
 ## Who
 
