@@ -1,58 +1,59 @@
-# Performance Baseline (for Isomorphic Single Page Apps)
+# Performance Baseline (for Web Pages)
 
 ## Why
 
-Performance is critical to the success of modern web applications, and has been shown to impact many metrics such as:
+Online users have a myriad of options available to complete their desired goals, quickly. User expectations are further heightened by best-in-class experiences throughout the digital landscape. 
 
-- User Experience
-- User Engagement
-- Conversion Rate
+While there a host of characteristics that impact user experience, crafting digital experiences that are performant (fast) is critical to driving traffic, generating leads, improving conversion rates, increasing revenue, and ultimately increasing user satisfaction.
 
-As our applications become more complex, it can be difficult for teams to know when and how they need to be responsible for performance.
-
-To support teams in their success we have established a baseline for Reference Architecture applications to measure themselves against, during development and as part of production readiness.
 
 ## What
 
-To diagnose Performance in the Reference Architecture we look in 3 separate places in order to evaluate key problem areas:
+To support teams in achieving performance excellence throughout telus.com, we principally rely on a custom implementation of [Google’s Lighthouse](https://developers.google.com/web/tools/lighthouse/) for automated performance testing. 
 
-- Server.js response time (in ms)
-- Chrome Developer tools:
-    - Dom Content Loaded
-    - Loaded
-    - Finished
-- Google Page Speed Insights
 
-Each of the above tools provides a key insight into identifying how to improve your applications performance. Long-term performance is measured using New Relic.
+Lighthouse is a framework for testing web pages against a host of performance best practices. When run, it provides detailed scoring across several KPIs along with actionable insights into what were doing well and areas for improvement.
+
+At present, we largely monitor three Lighthouse performance metrics and associated targets:
+
+- Overall Performance Score >= 70
+- First Meaningful Paint < 3 seconds
+- Time to Interactive < 5 seconds
+
 
 ## How
 
-### Baselines
+Lighthouse can be run as a Chrome browser extension, in the Chrome Dev Tools Audit panel, and as a CLI tool.
 
-- Server Side Rendering: < 100ms
-- DOM Content Loaded < 1s
-- Loaded < 2s
-- Finished < 2s
-- Page Speed Insights: 80+
+For consistent results, and to enable audits for other Digital Basics (e.g. Content, SEO, Accessibility, …), we employ a custom Lighthouse implementation (TELUS-Lighthouse) which is integrated in the Isomorphic Starter Kit and other Digital Platform applications. 
 
-### Server Side Rendering
-To assist in understanding and triaging SSR, the following guides are here to help.
-- [API Optimization](./api-optimization.md)
-- [Server Side Rendering](./server-side-rendering.md)
+TELUS-Lighthouse is configured to run in our build pipeline and, optionally, with Git hooks (e.g. pre-push). Thresholds can be enabled and modified, if desired by teams, to ensure underperforming web pages fail the build, or in the case of git hooks, prevent merging into master altogether.
 
-### Browser Performance Metrics
-To assist in understanding and triaging DOM Content Loaded, Loaded and Finished, the following guides are here to help.
-- [Resource Hinting](./resource-hinting.md)
 
-### Page Speed Metrics
-To assist in understanding and triaging Page Speed Insights, the following guides are here to help.
-- [Page Speed Insights](./page-speed-insights.md)
-- [CSS Optimization](./css-optimization.md)
-- [Image Optimization](./image-optimization.md)
+TELUS-Lighthouse is also run against all customer-facing URLs each day; the results of which are surfaced in our internal analytics dashboards.
+
+For additional performance reporting, we also encourage the use of [New Relic](https://newrelic.com/products/application-monitoring).
+
 
 ## References
-- [[Page Speed Rules](https://developers.google.com/speed/docs/insights/rules)]
-- [[Chome Dev Tools Performanc Analysis](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)]
-- [[Web Performance Tooling](https://www.youtube.com/watch?v=iMqi55rcR00&feature=youtu.be)]
-- [[Browser Rendering Optimization](https://www.udacity.com/course/browser-rendering-optimization--ud860)]
-- [[Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)]
+
+### Performance Testing / Monitoring
+
+
+- [[Lighthouse v2](https://developers.google.com/web/tools/lighthouse/): all things Google Lighthouse]
+- [[Chome Dev Tools Performance Analysis](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/): in-depth instructions on using Chrome’s Performance tooling]
+- [[Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/): online web page testing resource]
+
+
+### Performance Definitions, Strategy and Tactics
+- [[Google Performance Tactics](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint) - a comprehensive list of performance considerations and tactics]
+- [[Think with Google](https://www.thinkwithgoogle.com/)]
+
+
+### Performance People
+
+While performance expertise abounds, the following individuals are credible and very knowledgeable resources.
+
+- [Paul Irish](https://twitter.com/paul_irish)
+- [Addy Osmani Irish](https://twitter.com/addyosmani)
+- [Ilya Grigorik](https://twitter.com/igrigorik)
