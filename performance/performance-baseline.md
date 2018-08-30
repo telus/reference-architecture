@@ -38,12 +38,11 @@ For additional performance reporting, we also encourage the use of [New Relic](h
 - [[Chome Dev Tools Performance Analysis](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/): in-depth instructions on using Chrome’s Performance tooling]
 - [[Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/): online web page testing resource]
 
-
 ### Performance Definitions, Strategy and Tactics
 
-- [[Google Performance Tactics](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint) - a comprehensive list of performance considerations and tactics]
+- [[Google Web Fundamentals](https://developers.google.com/web/fundamentals/performance/why-performance-matters/)]
+- [[Lighthouse Performance Audits](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint) - a comprehensive list of performance considerations and tactics]
 - [[Think with Google](https://www.thinkwithgoogle.com/)]
-
 
 ### Performance People
 
