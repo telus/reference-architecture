@@ -6,7 +6,9 @@ To optimize for maximum productivity we need to ensure consistency in what we of
 
 ## How
 
-List of minimum hardware & software requirements that all of our developers should have access to to allow for a good, highly productive setup. Our People Experience team & Hiring Managers should refer to this list as they prepare for on-boarding our new developer hires.
+List of recommended hardware & software requirements that all of our developers should have access to to allow for a good, highly productive setup. Our People Experience team & Hiring Managers should refer to this list as they prepare for on-boarding our new developer hires.
+
+The hardware and tooling requirements below reflect an evolving standard. At TELUS Digital, we make ongoing efforts to refresh hardware where possible to adhere to revisions in our standards for existing team members.
 
 ## What
 
