@@ -1,4 +1,4 @@
-# Performance Baseline (for Web Pages)
+# Performance Overview 
 
 ## Why
 
@@ -6,11 +6,9 @@ Online users have a myriad of options available to complete their desired goals,
 
 While there a host of characteristics that impact user experience, crafting digital experiences that are performant (fast) is critical to driving traffic, generating leads, improving conversion rates, increasing revenue, and ultimately increasing user satisfaction.
 
-
 ## What
 
 To support teams in achieving performance excellence throughout telus.com, we principally rely on a custom implementation of [Google’s Lighthouse](https://developers.google.com/web/tools/lighthouse/) for automated performance testing. 
-
 
 Lighthouse is a framework for testing web pages against a host of performance best practices. When run, it provides detailed scoring across several KPIs along with actionable insights into what were doing well and areas for improvement.
 
@@ -20,7 +18,6 @@ At present, we largely monitor three Lighthouse performance metrics and associat
 - First Meaningful Paint < 3 seconds
 - Time to Interactive < 5 seconds
 
-
 ## How
 
 Lighthouse can be run as a Chrome browser extension, in the Chrome Dev Tools Audit panel, and as a CLI tool.
@@ -29,16 +26,13 @@ For consistent results, and to enable audits for other Digital Basics (e.g. Cont
 
 TELUS-Lighthouse is configured to run in our build pipeline and, optionally, with Git hooks (e.g. pre-push). Thresholds can be enabled and modified, if desired by teams, to ensure underperforming web pages fail the build, or in the case of git hooks, prevent merging into master altogether.
 
-
 TELUS-Lighthouse is also run against all customer-facing URLs each day; the results of which are surfaced in our internal analytics dashboards.
 
 For additional performance reporting, we also encourage the use of [New Relic](https://newrelic.com/products/application-monitoring).
 
-
 ## References
 
 ### Performance Testing / Monitoring
-
 
 - [[Lighthouse v2](https://developers.google.com/web/tools/lighthouse/): all things Google Lighthouse]
 - [[Chome Dev Tools Performance Analysis](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/): in-depth instructions on using Chrome’s Performance tooling]
@@ -46,6 +40,7 @@ For additional performance reporting, we also encourage the use of [New Relic](h
 
 
 ### Performance Definitions, Strategy and Tactics
+
 - [[Google Performance Tactics](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint) - a comprehensive list of performance considerations and tactics]
 - [[Think with Google](https://www.thinkwithgoogle.com/)]
 
