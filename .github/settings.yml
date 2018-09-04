@@ -65,3 +65,27 @@ labels:
   - name: on hold
     description: No work planned on this for now
     color: D2DAE1
+
+branches:
+  - name: master
+    protection:
+      required_pull_request_reviews:
+        # disable until this issue is closed: https://github.com/probot/settings/issues/87
+        # required_approving_review_count: 1
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: true
+        dismissal_restrictions:
+          users: []
+          teams:
+            - architecture-support
+
+      required_status_checks:
+        strict: true
+        contexts: []
+
+      enforce_admins: true
+
+      restrictions:
+        users: []
+        teams:
+          - architecture-support
