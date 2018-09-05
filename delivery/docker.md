@@ -2,7 +2,7 @@
 
 ## Why
 
-Previously when we would develop applications, the developers would be required to install their own local dependencies, to be able to run the apps. The production servers were being built specifically for the application, either by hand or by using Ansible. It typically took days for developers to be onboarded, and weeks to set up production environments. Once these environments are running, they are also very hard to update, without risking breaking the code.
+Previously when we would develop applications, the developers would be required to install their own local dependencies in order to be able to run the apps. The production servers were being built specifically for the application, either by hand or by using Ansible. It typically took days for developers to be onboarded, and weeks to set up production environments. Once these environments are running, they are also very hard to update, without risking breaking the code.
 
 Over the last decade there has been a switch in mindset towards using virtual machines, both for local development and for production. This way, the differences with local environments and production environments are kept to a minimum. Also, creating new production environments is as simple as deploying a virtual server image to the cloud. However, traditional virtual machines work by emulating everything from the kernel to the application process. This makes them slow to build, slow to run, etc.
 
