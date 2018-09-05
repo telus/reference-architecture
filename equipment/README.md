@@ -14,12 +14,12 @@ The hardware and tooling requirements below reflect an evolving standard. At TEL
 
 ### Laptops
 
-| Component        | Minimum requirements            |
-| ---------------- | ------------------------------- |
-| Processor        | `Intel Core i7` @ `2.5GHz`      |
-| RAM              | `16GB`                          |
-| Storage          | `SSD` - `256GB`                 |
-| Operating System | `macOs` or `Linux` distribution |
+| Component        | Recommended requirements            |
+| ---------------- | -------------------------------     |
+| Processor        | `Intel Core i7` @ `2.5GHz`          |
+| RAM              | `16GB`                              |
+| Storage          | `SSD` - `256GB`                     |
+| Operating System | `macOs` or `Linux` distribution     |
 
 #### Options
 
@@ -47,22 +47,22 @@ We do not enforce any specific IDE or software tooling beyond the application ar
 
 ##### Single Monitor _(Split Screen)_
 
-| Property   | Minimum Spec            |
-| ---------- | ----------------------- |
-| Size       | `27"`                   |
-| Resolution | `QHD` _(`2560 x 1440`)_ |
-| Panel      | `IPS`                   |
+| Property   | Recommended Spec            |
+| ---------- | --------------------------- |
+| Size       | `27"`                       |
+| Resolution | `QHD` _(`2560 x 1440`)_     |
+| Panel      | `IPS`                       |
 
 > - Should support vertical orientation allow for height adjustment
 > - Possible options: `ASUS PA279Q`
 
 ##### Dual Monitor Setup
 
-| Property   | Minimum Spec          |
-| ---------- | --------------------- |
-| Size       | `23"` to `27"`        |
-| Resolution | `FHD` _(`1920x1080`)_ |
-| Panel      | `IPS`                 |
+| Property   | Recommended Spec          |
+| ---------- | ------------------------- |
+| Size       | `23"` to `27"`            |
+| Resolution | `FHD` _(`1920x1080`)_     |
+| Panel      | `IPS`                     |
 
 > - Should support vertical orientation allow for height adjustment
 > - Possible options: `HP EliteDisplay E233`, `HP EliteDisplay E273m`, `LG 24MB35PY-B`
