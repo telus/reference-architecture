@@ -1,4 +1,4 @@
-# ![Reference Architecture Wiki Logo](logo.png "Reference Architecture Wiki")
+# ![Reference Architecture](assets/logo.svg "Reference Architecture")
 
 > This is a collaborative effort to document our digital standards, tooling and process, you are welcome to contribute and suggest changes, please follow the [contribution guidelines](.github/CONTRIBUTING.md)
 
