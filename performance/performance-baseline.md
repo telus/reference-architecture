@@ -34,20 +34,20 @@ For additional performance reporting, we also encourage the use of [New Relic](h
 
 ### Performance Testing / Monitoring
 
-- [[Lighthouse v2](https://developers.google.com/web/tools/lighthouse/): all things Google Lighthouse]
-- [[Chome Dev Tools Performance Analysis](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/): in-depth instructions on using Chrome’s Performance tooling]
-- [[Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/): online web page testing resource]
+- [Lighthouse v2](https://developers.google.com/web/tools/lighthouse/): all things Google Lighthouse
+- [Chome Dev Tools Performance Analysis](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/): in-depth instructions on using Chrome’s Performance tooling
+- [Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/): online web page testing resource useful for highlighting performance opportunities
 
 ### Performance Definitions, Strategy and Tactics
 
-- [[Google Web Fundamentals](https://developers.google.com/web/fundamentals/performance/why-performance-matters/)]
-- [[Lighthouse Performance Audits](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint) - a comprehensive list of performance considerations and tactics]
-- [[Think with Google](https://www.thinkwithgoogle.com/)]
+- [Google Web Fundamentals](https://developers.google.com/web/fundamentals/performance/why-performance-matters/) - a comprehensive list of performance considerations and tactics
+- [Lighthouse Performance Audits](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint) - the complete set of Lighthouse Performance Audits including considerations and tactics
+- [Think with Google](https://www.thinkwithgoogle.com/)
 
 ### Performance People
 
 While performance expertise abounds, the following individuals are credible and very knowledgeable resources.
 
 - [Paul Irish](https://twitter.com/paul_irish)
-- [Addy Osmani Irish](https://twitter.com/addyosmani)
+- [Addy Osmani](https://twitter.com/addyosmani)
 - [Ilya Grigorik](https://twitter.com/igrigorik)
