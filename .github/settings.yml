@@ -4,7 +4,7 @@ repository:
   topics: architecture, documentation, standards
   homepage: https://telus.com/digital
   private: false
-  has_issues: true
+  has_issues: false
   has_wiki: false
   has_downloads: false
   has_projects: false
@@ -22,14 +22,6 @@ labels:
     description: Changes that don't modify core files
     color: FEF2C0
 
-  - name: discussion
-    description: A discussion thread
-    color: CC317C
-
-  - name: question
-    description: Generic question
-    color: CC317C
-
   - name: enhancement
     description: New feature or request
     color: 5EBEFF
@@ -44,10 +36,6 @@ labels:
 
   - name: in progress
     description: Currently being worked on
-    color: FBCA04
-
-  - name: watchlist
-    description: Keep an eye on these
     color: FBCA04
 
   - name: invalid

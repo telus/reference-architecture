@@ -1,30 +1,36 @@
 ## Overview
 
-Your rationale.
+> Describe your change in detail
 
-### Features
+**Forum Issue #** `telus/technology-forum#0`
+> Link to the [Technology Forum][technology-forum] where this issue was discussed _(optional)_.
 
-- add [something] to [doc]
-- create [new doc]
+### Details
 
-### Fixes
-
-- adjust grammar in [doc]
+> e.g.
+> - add something to existing topic
+> - create new topic
+> - adjust grammar & typos
 
 ---
 
 #### Meta
 
-- [ ] provide a descriptive topic
-- [ ] provide an overview of contribution
+> Please read and confirm each of the following:
+
+- [ ] this topic was discussed in the [Technology Forum][technology-forum] _(ignore if the pull request represents small changes)_
+- [ ] provided a descriptive topic and overview of contribution
+- [ ] documentation format follows the [topic template][template]
+- [ ] fork is up to date _(Hint: ["Syncing a Fork"][guide-forks])_
+- [ ] "work in progress" commits are squashed _(Hint: ["Squashing Commits"][guide-squash])_
+- [ ] commits follow the [Conventional ChangeLog][conventional-changelog] format
 - [ ] no sensitive content included, such as:
-  - security & privacy policy violating content
   - content considered competitive intelligence
+  - security & privacy policy violating content
   - keys, tokens or credentials
-- [ ] documentation format follows [this template][template]
-- [ ] fork is up to date ([see this guide from github](https://help.github.com/articles/syncing-a-fork/))
-- [ ] "work in progress" commits are squashed ([see "Squashing Commits"](https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History))
-- [ ] commits follow the [Karma][karma-format] or [Commitizen](https://www.npmjs.com/package/commitizen) format
 
 [template]: https://github.com/telus/reference-architecture/blob/master/.template.md
-[karma-format]: https://karma-runner.github.io/1.0/dev/git-commit-msg.html
+[conventional-changelog]: https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular
+[guide-forks]: https://help.github.com/articles/syncing-a-fork/
+[guide-squash]: https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History
+[technology-forum]: https://github.com/telus/technology-forum]

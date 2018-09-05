@@ -54,29 +54,29 @@ Before doing anything, do a quick check to make sure your contribution hasn't be
 
 If you can't find any reference to your contribution, you're ready to make a move. You'll likely communicate by opening an issue or pull request:
 
-* **Issues** are like starting a conversation or discussion
-* **Pull requests** are for starting work on a standards proposal
-* **For lightweight communication,** such as a clarifying or how-to question, try asking on Slack.
+- **Issues** are like starting a conversation or discussion
+- **Pull requests** are for starting work on a standards proposal
+- **For lightweight communication,** such as a clarifying or how-to question, try asking on Slack.
 
 ## Opening an issue
 
 You should usually open an issue in the following situations:
 
-* Report an problem you or your squad has faced and can't solve yourself
-* Discuss a high-level topic or idea (ex. standards, policies)
+- Report an problem you or your squad has faced and can't solve yourself
+- Discuss a high-level topic or idea (ex. standards, policies)
 
 Tips for communicating on issues:
 
-* **If you see an open issue that you want to tackle,** comment on the issue to let people know you're on it. That way, people are less likely to duplicate your work.
-* **If an issue was opened a while ago,** it's possible that it's being addressed somewhere else, or has already been resolved, so comment to ask for confirmation before starting work.
-* **If you opened an issue, but figured out the answer later on your own,** comment on the issue to let people know, then close the issue. Even documenting that outcome is a contribution to the project.
+- **If you see an open issue that you want to tackle,** comment on the issue to let people know you're on it. That way, people are less likely to duplicate your work.
+- **If an issue was opened a while ago,** it's possible that it's being addressed somewhere else, or has already been resolved, so comment to ask for confirmation before starting work.
+- **If you opened an issue, but figured out the answer later on your own,** comment on the issue to let people know, then close the issue. Even documenting that outcome is a contribution to the project.
 
 ## Opening a pull request
 
 You should usually open a pull request in the following situations:
 
-* Submit trivial fixes (ex. a typo, broken link, or obvious error)
-* Start work on a contribution that was already asked for, or that you've already discussed, in an issue
+- Submit trivial fixes (ex. a typo, broken link, or obvious error)
+- Start work on a contribution that was already asked for, or that you've already discussed, in an issue
 
 A pull request doesn't have to represent finished work. It's usually better to open a pull request early on, so others can watch or give feedback on your progress. Just mark it as a "WIP" (Work in Progress) in the subject line. You can always add more commits later.
 
@@ -88,13 +88,13 @@ You did it! Congratulations on becoming a contributor. We hope it's the first of
 
 After you submit a contribution, one of the following will happen:
 
-### 😭 You don't get a response.
+### 😭 You don't get a response
 
 If you haven't gotten a response in over a week, it's fair to politely respond in that same thread, asking someone for a review. If you know the name of the right person to review your contribution, you can @-mention them in that thread.
 
 **Don't** reach out to that person privately; remember that public communication is vital to increased productivity and visibility.
 
-### 🚧 Someone requests changes to your contribution.
+### 🚧 Someone requests changes to your contribution
 
 It's common that you'll be asked to make changes to your contribution, whether that's feedback on the scope of your idea, or changes to your writing.
 
@@ -102,11 +102,11 @@ When someone requests changes, be responsive. They've taken the time to review y
 
 If you don't have time to work on the issue anymore (for example, if the conversation has been going on for a while, and your circumstances have changed), let the team know so they're not expecting a response. Someone else may be happy to take over.
 
-### 👎 Your contribution doesn't get accepted.
+### 👎 Your contribution doesn't get accepted
 
 Your contribution may or may not be accepted in the end. Hopefully you didn't put too much work into it already. If you're not sure why it wasn't accepted, it's perfectly reasonable to ask for feedback and clarification. Ultimately, however, you'll need to respect that this is the team's decision.
 
-### 🎉 Your contribution gets accepted.
+### 🎉 Your contribution gets accepted
 
 Hooray! You've successfully made a contribution!
 
