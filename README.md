@@ -6,7 +6,7 @@
 
 This wiki acts as a source of truth for all the technical knowledge, software specifications, standards and architecture evolution.
 
-This is a collaborative effort to **documented**, **track**, and **discuss** digital software standards, tooling and practices, you are welcome to contribute and suggest changes, please follow the [contribution guidelines](.github/CONTRIBUTING.md) and keep in mind: _this repository is [**Open Source**](#open-source)_.
+This is a collaborative effort to **document**, **track**, and **discuss** digital software standards, tooling and practices, you are welcome to contribute and suggest changes, please follow the [contribution guidelines](.github/CONTRIBUTING.md) and keep in mind: _this repository is [**Open Source**](#open-source)_.
 
 ## Who
 
@@ -54,6 +54,7 @@ A _thin_ and simple documentation format for technical resources, tools, platfor
 
 Because we love our customers and we love our technology, we are evolving it, in full transparency!
 
+<!--lint disable no-emphasis-as-heading-->
 **We do all of this in public to truly embrace our _customer first_ principles**
 
 In order to achieve this, we ensure no sensitive content ins included, such as:
