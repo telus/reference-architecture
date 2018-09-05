@@ -1,0 +1,58 @@
+sequenceDiagram
+  IDEA->>Technology Forum: initialize new topic
+
+  alt 👎
+    Technology Forum->>IDEA: not aligned
+  else 👍
+    Technology Forum->>CONCEPT: proceed
+  end
+
+  CONCEPT->>CONCEPT: develop concept
+
+  CONCEPT->>Technology Forum: present concept details
+
+  alt 👎
+    Technology Forum->>IDEA: not aligned
+  else ✋
+    Technology Forum->>CONCEPT: more data needed
+  else 👍
+    Technology Forum->>DISCOVERY: proceed
+  end
+
+  DISCOVERY->>DISCOVERY: research & analysis
+
+  DISCOVERY->>Technology Forum: present research results
+
+  alt 👎
+    Technology Forum->>IDEA: research shows no value
+  else ✋
+    Technology Forum->>DISCOVERY: more data needed
+  else 👍
+    Technology Forum->>PROTOTYPE: proceed
+  end
+
+  PROTOTYPE->>PROTOTYPE: Develop Prototype
+
+  alt 👎
+    Architecture Review->>DISCOVERY: not aligned
+  else ✋
+    Architecture Review->>PROTOTYPE: more data needed
+  else 👍
+    Architecture Review->>POC: proceed
+  end
+
+  POC->>POC: develop POC
+
+  alt 👎
+    TDLT->>POC: not aligned
+  else ✋
+    TDLT->>POC: more data needed
+  else 👍
+    TDLT->>SCALE: proceed
+  end
+
+  SCALE->>SCALE: roll out solution
+
+  SCALE->>TDLT: report on results
+
+  SCALE->>MAINTAIN: track KPIs
