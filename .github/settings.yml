@@ -4,7 +4,7 @@ repository:
   topics: architecture, documentation, standards
   homepage: https://telus.com/digital
   private: false
-  has_issues: true
+  has_issues: false
   has_wiki: false
   has_downloads: false
   has_projects: false
