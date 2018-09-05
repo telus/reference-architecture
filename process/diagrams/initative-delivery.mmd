@@ -1,9 +1,9 @@
 sequenceDiagram
   IDEA->>Technology Forum: initialize new topic
 
-  alt 👎
+  alt ✖
     Technology Forum->>IDEA: not aligned
-  else 👍
+  else ✔
     Technology Forum->>CONCEPT: proceed
   end
 
@@ -11,11 +11,11 @@ sequenceDiagram
 
   CONCEPT->>Technology Forum: present concept details
 
-  alt 👎
+  alt ✖
     Technology Forum->>IDEA: not aligned
-  else ✋
+  else ‼️
     Technology Forum->>CONCEPT: more data needed
-  else 👍
+  else ✔
     Technology Forum->>DISCOVERY: proceed
   end
 
@@ -23,31 +23,31 @@ sequenceDiagram
 
   DISCOVERY->>Technology Forum: present research results
 
-  alt 👎
+  alt ✖
     Technology Forum->>IDEA: research shows no value
-  else ✋
+  else ‼️
     Technology Forum->>DISCOVERY: more data needed
-  else 👍
+  else ✔
     Technology Forum->>PROTOTYPE: proceed
   end
 
   PROTOTYPE->>PROTOTYPE: Develop Prototype
 
-  alt 👎
+  alt ✖
     Architecture Review->>DISCOVERY: not aligned
-  else ✋
+  else ‼️
     Architecture Review->>PROTOTYPE: more data needed
-  else 👍
+  else ✔
     Architecture Review->>POC: proceed
   end
 
   POC->>POC: develop POC
 
-  alt 👎
+  alt ✖
     TDLT->>POC: not aligned
-  else ✋
+  else ‼️
     TDLT->>POC: more data needed
-  else 👍
+  else ✔
     TDLT->>SCALE: proceed
   end
 
