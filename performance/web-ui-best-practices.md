@@ -1,5 +1,9 @@
 # Web UI Performance Best Practices
 
+## Why
+See [Performance Overview](performance-overview.md)
+
+## How
 The performance best practices below should be considered and applied to every web interface we develop.
 
 For detailed insights into the importance of these practices, it is essential to understand the [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/); the practices and tactics below are designed to optimize the critical rendering path.
@@ -16,6 +20,6 @@ Compression |
 | Avoid render blocking requests | Javascript files (and CSS and fonts) are render blocking by default. This means, until these files have been downloaded and parsed, no other processing can occur. See [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/)<br><br>Use [async or defer script attributes](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer) to prevent render blocking<br><br>OR<br><br>load prior to the closing body tag if load order is critical | Use the [HTML component in Isomorphic Core library](https://github.com/telus/isomorphic-core/blob/master/src/components/Html.jsx) |
 | Resource Hints | Preload assets that are essential to the rendering of a given route: e.g., [fonts](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#customize_the_text_rendering_delay), CSS, and Javascript files. See [Resource Prioritization](https://developers.google.com/web/fundamentals/performance/resource-prioritization) | Use the [HTML component in Isomorphic Core library](https://github.com/telus/isomorphic-core/blob/master/src/components/Html.jsx) | 
 
-The best practices above provide a solid foundation towards achieving our overall performance standards. However, each application will have its own unique opportunities and challenges. 
+The best practices above provide a solid foundation towards achieving our [overall performance goals](performance-overview.md). However, each application will have its own unique opportunities and challenges. 
 
 As such, it is highly recommended that you read the Performance Reports produced by Lighthouse for the details on how best to address your unique performance opportunities.
