@@ -61,8 +61,8 @@ Special care needs to be given to handling of PI data.
   - must not be passed as part of URL
   - must not be passed in a cookie
   - must not be stored in client-side database, config or log file.
-- PI data must be encrypted if stored. (see [Data Security and Encryption](data-security-and-encryption.md) )
-- PI data must be encrypted in transit. (see [Data Security and Encryption](data-security-and-encryption.md) )
+- PI data must be encrypted if stored.
+- PI data must be encrypted in transit.
 - PI data must not be logged.
 - Discard PI data when no longer required or at expiry.
 
