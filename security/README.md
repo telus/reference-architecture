@@ -2,7 +2,7 @@
 
 ## Why
 
-It's important to us that a TELUS customer’s journey is protected so that we can further build on our brand's trust and reliability. We are committed to respecting our customers’ privacy and safeguarding their information. In a time where the threat to our industry continues to increase in various forms of fraudulent behaviour and cybercrime, the emphasis on a customer's privacy and security also increases.
+It's important to us that a TELUS customer's journey is protected so that we can further build on our brand's trust and reliability. We are committed to respecting our customers' privacy and safeguarding their information. In a time where the threat to our industry continues to increase in various forms of fraudulent behaviour and cybercrime, the emphasis on a customer's privacy and security also increases.
 
 ## What
 

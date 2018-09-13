@@ -4,14 +4,13 @@
 
 It's important to TELUS that a TELUS customer's Personal Identifiers are protected from TELUS users and 3rd party platform providers, so that we can further build on our brand's trust and reliability. We are committed to respecting our [customers' privacy](https://www.telus.com/en/bc/support/privacy-policy) and safeguarding their information. In a time where the threat to our industry continues to increase in various forms of fraudulent behaviour and cybercrime, the emphasis on a customer's privacy and security also increases.
 
-For more clarity, for any development work that TELUS customers' Personal Identifiers are accessed, developers need to block these personal info via snippets in TELUS pages. For more information
+For more clarity, for any development work that TELUS customers' Personal Identifiers are accessed, developers need to block these personal info via snippets in TELUS pages.
 
 ## What
 
 Personal Information is any and all information about an identifiable individual. Personal information includes publicly available information, which can be found in a number of ways such as through social media sites and telephone directories.
 
-Sensitive personal information requires a higher degree of responsible care and safeguarding. In Canada, any personal information can be considered sensitive based on the context.
-In today's technology driven world, the information that can be classified as personal information is growing and evolving at a rapid pace.
+Sensitive personal information requires a higher degree of responsible care and safeguarding. In Canada, any personal information can be considered sensitive based on the context. In today's technology driven world, the information that can be classified as personal information is growing and evolving at a rapid pace.
 
 The goal is to mitigate business risks and provide customer solutions that take every opportunity to protect:
 
@@ -20,20 +19,20 @@ The goal is to mitigate business risks and provide customer solutions that take 
 
 ## How
 
-To protect customer privacy, TELUS Privacy team requires all these Personal Identifiers entered by TELUS customer, to be blocked to TELUS employees and vendors, in all TELUS github repositories at all times. Personal Identifiers, as entered by TELUS customers, should only be visible to TELUS customer, and no one else.
+To protect customer privacy the TELUS Privacy team requires all these Personal Identifiers entered by TELUS customers to be blocked to TELUS employees and vendors, in all TELUS GitHub repositories at all times. Personal Identifiers, as entered by TELUS customers, should only be visible to TELUS customer, and no one else.
 
-To mask these PI information using masking snippet, either provided by 3rd-party provider, or creating masking class internally at Telus.
+To mask PI information use a masking snippet, either provided by 3rd-party provider, or create a masking class internally at Telus.
 
-### TELUS PI-blocking Requirement
+### TELUS PI-blocking Requirements
 
 - Customer First Name
 - Customer Last Name
 - Email Address
-- Gender(title Mr., Ms, etc)
+- Gender (title Mr., Ms, etc)
 - Home Phone number
 - Mobile Phone Number
-- Payment Card # (Credit Card, Debit)
-- Driver’s License
+- Payment Card # (Credit Card, Debit Card)
+- Driver's License
 - BAN
 - Delinquency status
 - Balance Amount
@@ -43,7 +42,7 @@ To mask these PI information using masking snippet, either provided by 3rd-party
 - Password
 - PIN
 - Chat session/transcript
-- Usage details (numbers called/texted, how much usage),
+- Usage details (numbers called/texted, how much usage)
 - Preauth banking
 - Security Question in Account profile section
 - Security Answer in Account profile section
@@ -53,10 +52,10 @@ To mask these PI information using masking snippet, either provided by 3rd-party
 
 Special care needs to be given to handling of PI data.
 
-- Collect PI data only on “as needed" basis.
+- Collect PI data only on "as needed" basis.
 - Ensure appropriate access controls are in place for PI data.
 - PI data must be handled with extra precaution when sent to client:
-  - masking of credit card number
+  - masking of credit card numbers
   - must instruct browser to not cache
   - must not be passed as part of URL
   - must not be passed in a cookie

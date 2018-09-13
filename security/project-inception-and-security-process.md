@@ -12,7 +12,7 @@ A high-level overview of TELUS security process that a project team is required 
 
 ### Security Assessment Process
 
-The standard engagement of the TELUS security and privacy teams for a digital initiative is done through internal processes that must be coordinated by a TELUS prime. TELUS prime is typically a PO or tech lead who must also be a TELUS employee (not vendor), as he/she would require access to corporate network to access, submit and make changes to required online forms.
+The standard engagement of the TELUS security and privacy teams for a digital initiative is done through internal processes that must be coordinated by a TELUS prime. A TELUS prime is typically a PO or tech lead who must also be a TELUS employee (not a vendor). They would require access to the corporate network in order to access, submit and make changes to required online forms.
 
 - Environment security configuration:
   - TELUS digital initiatives - staging and production environments must be configured to route through staging and production inbound proxy respectively as per [instructions](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md).
@@ -36,9 +36,9 @@ The standard engagement of the TELUS security and privacy teams for a digital in
   - For TELUS digital initiatives - contact security consultant assigned for your outcome team to conduct security assessment.
     - TELUS digital security prime will work with you to conduct appropriate security test.
   - For Vendor solutions leveraging RA - contact your DRB team to have security prime assigned to work with you to conduct appropriate security test.
-  - For Vendor hosted/whitelabel TELUS solutions, complete Security Analysis Engagement (SAE) form found at GO/SAE, and select “Security Analysis Engagement” link.
+  - For Vendor hosted/whitelabel TELUS solutions, complete Security Analysis Engagement (SAE) form found at go/SAE, and select "Security Analysis Engagement" link.
     - Allow 2 weeks to have SAE prime assigned to work with you.
-    - SAE prime will review your submission and will conduct appropriate security test. Depending on nature of your project this maybe a vulnerability scan or a full penetration test.
+    - SAE prime will review your submission and will conduct an appropriate security test. Depending on the nature of your project this may be a vulnerability scan or a full penetration test.
 
 Any Critical/High severity findings must be remediated prior to launch and Med/Low severity findings may be prioritized for remediation post launch.
 
