@@ -57,7 +57,7 @@ Because we love our customers and we love our technology, we are evolving it, in
 <!--lint disable no-emphasis-as-heading-->
 **We do all of this in public to truly embrace our _customer first_ principles**
 
-In order to achieve this, we ensure no sensitive content ins included, such as:
+In order to achieve this, we ensure no sensitive content is included, such as:
 
 - security & privacy policy violating content
 - content considered competitive intelligence
