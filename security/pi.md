@@ -33,7 +33,7 @@ To mask PI information use a masking snippet, either provided by 3rd-party provi
 - Mobile Phone Number
 - Payment Card # (Credit Card, Debit Card)
 - Driver's License
-- BAN
+- BAN and SUB
 - Delinquency status
 - Balance Amount
 - Transaction History
@@ -50,7 +50,7 @@ To mask PI information use a masking snippet, either provided by 3rd-party provi
 
 ### Safeguarding PI Data
 
-Special care needs to be given to handling of PI data.
+Special care needs to be given to handling of PI data. Keep this in mind whenever you're using an online service (email, Google Drive, Slack, etc.), as they will frequently both store and transit any messages or data you give them.
 
 - Collect PI data only on "as needed" basis.
 - Ensure appropriate access controls are in place for PI data.
@@ -64,6 +64,10 @@ Special care needs to be given to handling of PI data.
 - PI data must be encrypted in transit.
 - PI data must not be logged.
 - Discard PI data when no longer required or at expiry.
+
+### Encrypting BANs and SUBs
+
+If it's necessary to transit BANs and SUBs, you can make use of an existing TELUS digital library for encrypting them: [Prime Cryptography](https://github.com/telus/prime-cryptography). It was originally built to support interacting with the Prime system which expects the BAN and SUB to be encrypted using the customer's email address as a salt. For general purpose use any string value can be used instead of an email address. You can import the library as an [NPM package](https://www.npmjs.com/package/@telusdigital/prime-cryptography) for use in NodeJS projects or one-off scripts. To share a BAN on Slack, for example, you can arrange a pre-shared key to use as the salt (the email parameter in the library) and encrypt the BAN before pasting in a direct message conversation or channel.
 
 ## Who
 
