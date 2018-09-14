@@ -54,6 +54,16 @@ labels:
     description: No work planned on this for now
     color: D2DAE1
 
+teams:
+  - name: architecture-support
+    permission: admin
+
+  - name: telus
+    permission: write
+
+  - name: vendor-partners
+    permission: write
+
 branches:
   - name: master
     protection:
