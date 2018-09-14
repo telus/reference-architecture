@@ -47,8 +47,8 @@ or if already created:
 shippy edit secret my-secrets
 ```
 With
-* Key: field value (e.g. `billing`)
-* Value: json content, e.g.:
+- Key: field value (e.g. `billing`)
+- Value: json content, e.g.:
 ```json
 module.exports = {
     defaultCustomer: {
@@ -71,8 +71,10 @@ module.exports = {
   }
 ```
 
-#### Update the Openshift installation file to get the secrets added to the project
-```
+#### Update the Openshift installation file
+Purpose is to get the secrets added to the project
+
+```bash
 mkdir fixtures \
   && shippy get secret my-secrets --my-project --field=billing > fixtures/billing.js \
   && shippy get secret my-secrets --my-project --field=login > fixtures/login.js \
@@ -80,8 +82,10 @@ mkdir fixtures \
 rm -rf fixtures
 ```
 
-#### Update the Openshift script file to get the secrets mounted in the container
-```bash
+#### Update the Openshift script file
+Purpose is to get the secrets mounted in the container
+
+```json
         "volumeMounts":[{
           "name": "customers-volume",
           "readOnly": true,
@@ -96,7 +100,7 @@ rm -rf fixtures
       }]
 ```
 or the Openshift template:
-```
+```yml
               volumeMounts:
                 - name: customers-volume
                   mountPath: /app/fixtures/customers
@@ -107,7 +111,9 @@ or the Openshift template:
                 secretName: customer-secret
 ```
 
-#### Update the [init.sh](init.sh) file that will pull the secrets and generate a json file locally
+#### Update the [init.sh](init.sh) file 
+Purpose is to pull the secrets and generate a json file locally
+
 ```bash
 mkdir -p e2e/fixtures/customers
 shippy get secret my-secrets --my-project --field=billing > e2e/fixtures/customers/billing.js
