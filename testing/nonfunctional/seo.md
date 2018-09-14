@@ -68,14 +68,15 @@ More info from [Google Support](https://support.google.com/webmasters/answer/356
 
 URLs should be consistent, human-readable, and include targeted keywords. URLs are very important Search Relevance signal.
 
+- [ ] base URL is the main URL without product variations or facets
 - [ ] each word in the URL phrase should be separated by a dash (`-`). 
 - [ ] URL phrase must include one or more of the comma-separated values found in the meta keywords element.
-- [ ] URLs should be short and easy to remember. Practicing this will prevent the need for additional vanity URLs.
+- [ ] URLs should be short and easy to remember with a URL length of 90 characters or less 
+- [ ] Max of 3 paths excluding language and region parameters
 
 For example, for the following `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
 
-- URL (following current state pathing): `https://www.telus.com/en/mobility/phones/apple-iphone-x/`
-- URL (following desired state pathing): `https://www.telus.com/apple-iphone-x/`
+- Current pathing: `https://www.telus.com/en/mobility/phones/apple-iphone-x/`
 
 When considering URLs, ask how a user would search on Google - "appleiphonex" or "apple iphone x"? Presumably the latter. Effectively, the dash represents a space in a user search. 
 
