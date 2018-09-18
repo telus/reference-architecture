@@ -70,12 +70,13 @@ URLs should be consistent, human-readable, and include targeted keywords. URLs a
 
 - [ ] each word in the URL phrase should be separated by a dash (`-`). 
 - [ ] URL phrase must include one or more of the comma-separated values found in the meta keywords element.
-- [ ] URLs should be short and easy to remember. Practicing this will prevent the need for additional vanity URLs.
+- [ ] Maximum 90 character length - URLs should be short and easy to remember
+- [ ] Max of 3 paths excluding language and region parameters
+- [ ] base url does not include variants (facets / dimensions), query strings, or fragments
 
-For example, for the following `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
+For example, for the following `<meta name="keywords" content="Apple iPhone X, iphone x, phones, iphone x canada">`
 
-- URL (following current state pathing): `https://www.telus.com/en/mobility/phones/apple-iphone-x/`
-- URL (following desired state pathing): `https://www.telus.com/apple-iphone-x/`
+- Optimized URL: `https://www.telus.com/en/mobility/phones/apple-iphone-x/`
 
 When considering URLs, ask how a user would search on Google - "appleiphonex" or "apple iphone x"? Presumably the latter. Effectively, the dash represents a space in a user search. 
 
