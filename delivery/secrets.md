@@ -32,6 +32,93 @@ Secrets can be nested in a tree, and users/groups can be given access to specifi
 
 Rather than provisioning the secrets from HashiCorp Vault into Kubernetes, and exposing them to the app, the app can instead get a Vault access token and query it directly for secrets. We have not tested this capability yet, but it's where we'd like to go `:)`.
 
+### HowTo: create and consume secrets in json format
+
+#### Create secret into Vault via Shippy
+
+```bash
+shippy project my-project
+```
+```bash
+shippy create secret my-secrets
+```
+or if already created:
+```bash
+shippy edit secret my-secrets
+```
+With
+- Key: field value (e.g. `billing`)
+- Value: json content, e.g.:
+```json
+module.exports = {
+    defaultCustomer: {
+      username: 'blablabla@telusinternal.com',
+      password: 'bliblibli',
+      encryptedBAN: 'TchoukTchouk',
+      BAN: '12345678',
+      BanType: 'Mobility'
+    },
+    ownerBillingSummary: {
+      username: 'blublublu@telusinternal.com',
+      password: 'blobloblo',
+      encryptedBAN: 'TchickTchick',
+      BAN: '87654321',
+      BanType: 'Mobility',
+      accountOwner: 'BILLING SUMMARY OWNER (account owner)',
+      billFormat: 'Paper bill enabled',
+      billingAddressValue: '300 CONSILIUM PLACE, TORONTO ON, M1H3J3'
+    }
+  }
+```
+
+#### Update the Openshift installation file
+Purpose is to get the secrets added to the project
+
+```bash
+mkdir fixtures \
+  && shippy get secret my-secrets --my-project --field=billing > fixtures/billing.js \
+  && shippy get secret my-secrets --my-project --field=login > fixtures/login.js \
+  && oc create secret generic customer-secret --from-file=fixtures --dry-run -o yaml | oc apply -f -
+rm -rf fixtures
+```
+
+#### Update the Openshift script file
+Purpose is to get the secrets mounted in the container
+
+```json
+        "volumeMounts":[{
+          "name": "customers-volume",
+          "readOnly": true,
+          "mountPath": "/app/fixtures/customers"
+        }]
+      }],
+      "volumes":[{
+        "name":"customers-volume",
+        "secret":{
+            "secretName":"customer-secret"
+        }
+      }]
+```
+or the Openshift template:
+```yml
+              volumeMounts:
+                - name: customers-volume
+                  mountPath: /app/fixtures/customers
+                  readOnly: true
+          volumes:
+            - name: customers-volume
+              secret:
+                secretName: customer-secret
+```
+
+#### Update the [init.sh](init.sh) file 
+Purpose is to pull the secrets and generate a json file locally
+
+```bash
+mkdir -p e2e/fixtures/customers
+shippy get secret my-secrets --my-project --field=billing > e2e/fixtures/customers/billing.js
+```
+
 ## Who
 
 @delivery
