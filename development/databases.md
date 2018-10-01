@@ -23,6 +23,7 @@ To gain access to Amazon IAM, you can submit a pull request to the Data VPC IAM 
 
 - Any databases storing personal information must go through a security review
 - Avoid "database integration" by ensuring that you aren't sharing one database between multiple apps. Instead, front it with a shared microservice that provides a contract for communicating with the database.
+- To access your database, run a container in OpenShift containing the CLI interface for the database you have provisioned, e.g. run a container containing `psql` to access your [PostgreSQL](https://www.postgresql.org) instance.
 - TODO... more!
 
 ## Who
