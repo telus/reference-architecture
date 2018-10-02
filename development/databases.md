@@ -46,6 +46,8 @@ To access your database to manually load some data you can run a container in Op
 - Select the "Terminal" tab to launch a terminal inside the running pod
 - Once the shell spawns, run `psql` to begin your session
 
+Please note: you'll need to create an IAM user to obtain access to your database instance(s). This is accomplished by adding an entry to the [Data VPC IAM](https://github.com/telus/terraform-openshift-datavpc-iam) repository. Once provisioned, the credentials for this IAM account can be used to connect to the database.
+
 ## Who
 
 @delivery
