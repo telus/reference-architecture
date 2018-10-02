@@ -12,12 +12,12 @@ Our OpenShift cluster is peered with our "Data VPC", AKA "Virtual Private Cloud"
 
 If you need a new RDS instance, accessible to either sandbox or main clusters, submit a pull request to our Data VPC Terraform repositories, respectively:
 
-- [Data VPC MAIN](https://github.com/telusdigital/terraform-openshift-datavpc-main)
-- [Data VPC SANDBOX](https://github.com/telusdigital/terraform-openshift-datavpc-sandbox)
+- [Data VPC MAIN](https://github.com/telus/terraform-openshift-datavpc-main)
+- [Data VPC SANDBOX](https://github.com/telus/terraform-openshift-datavpc-sandbox)
 
 To gain access to Amazon IAM, you can submit a pull request to the Data VPC IAM Terraform repository:
 
-- [Data VPC IAM](https://github.com/telusdigital/terraform-openshift-datavpc-iam)
+- [Data VPC IAM](https://github.com/telus/terraform-openshift-datavpc-iam)
 
 ### Best practices
 
@@ -53,7 +53,7 @@ To access your database to manually load some data you can run a container in Op
 ## References
 
 - [RDS Docs](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
-- [Terraform RDS module](https://github.com/telusdigital/terraform-aws_rds_cluster)
-- [Data VPC MAIN](https://github.com/telusdigital/terraform-openshift-datavpc-main)
-- [Data VPC SANDBOX](https://github.com/telusdigital/terraform-openshift-datavpc-sandbox)
-- [Data VPC IAM](https://github.com/telusdigital/terraform-openshift-datavpc-iam)
+- [Terraform RDS module](https://github.com/telus/terraform-aws_rds_cluster)
+- [Data VPC MAIN](https://github.com/telus/terraform-openshift-datavpc-main)
+- [Data VPC SANDBOX](https://github.com/telus/terraform-openshift-datavpc-sandbox)
+- [Data VPC IAM](https://github.com/telus/terraform-openshift-datavpc-iam)
