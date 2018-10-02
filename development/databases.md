@@ -23,8 +23,27 @@ To gain access to Amazon IAM, you can submit a pull request to the Data VPC IAM 
 
 - Any databases storing personal information must go through a security review
 - Avoid "database integration" by ensuring that you aren't sharing one database between multiple apps. Instead, front it with a shared microservice that provides a contract for communicating with the database.
-- To access your database, run a container in OpenShift containing the CLI interface for the database you have provisioned, e.g. run a container containing `psql` to access your [PostgreSQL](https://www.postgresql.org) instance.
 - TODO... more!
+
+### Database access
+
+To access your database to manually load some data you can run a container in OpenShift containing the CLI interface for the database you have provisioned. For example, to run a container containing `psql` to access your [PostgreSQL](https://www.postgresql.org) instance using the OpenShift web console you can:
+
+- visit the project you wish to deploy into
+- click the "Add to Project" dropdown in the top-right corner
+- select the "Deploy Image" option
+- select the "Image Name" radio button
+- supply a Postgres image name from the [Red Hat Image Catalog](https://access.redhat.com/containers/)
+    - e.g. `registry.access.redhat.com/rhscl/postgresql-10-rhel7`
+- supply a value for the "name" field
+    - e.g. `pg-cli`
+- enter a value for the `POSTGRESQL_ADMIN_PASSWORD` environment variable
+    - you're only making use of the CLI; this password won't be used to control access to the database, it's just necessary that it be set to avoid errors spinning up PostgreSQL
+- Click "Deploy"
+- Visit `Applications` > `Pods` and find the pod you just deployed
+- Click through to see the detail page for the pod
+- Select the "Terminal" tab to launch a terminal inside the running pod
+- Once the shell spawns, run `psql` to begin your session
 
 ## Who
 
