@@ -35,6 +35,7 @@ To access your database to manually load some data you can run a container in Op
 - select the "Image Name" radio button
 - supply a Postgres image name from the [Red Hat Image Catalog](https://access.redhat.com/containers/)
     - e.g. `registry.access.redhat.com/rhscl/postgresql-10-rhel7`
+- click the magnifying glass button to load the image details
 - supply a value for the "name" field
     - e.g. `pg-cli`
 - enter a value for the `POSTGRESQL_ADMIN_PASSWORD` environment variable
