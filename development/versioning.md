@@ -21,10 +21,7 @@ Use semantic versioning with the standard [npm publishing](npm.md) interface.
 
 ### API versioning
 
-It may or may not be important to version our APIs. Typically we would avoid using versions, if at all possible. If versions are necessary, rather than keeping the old versions running, it is recommended to have _all supported versions_ implemented in your current API. 
-
-- Our BFFs should have a single client: The UI. The UI and BFF are coupled through one delivery pipeline, and released together. In this case their domain models and versioning are coupled, and the UI should always simply be accessing the latest version of its BFF.
-- For our API platform services, we most likely need to version them, as they will be shared by teams, and we don't want to break other projects.
+It may or may not be important to version our APIs. Typically we would avoid using versions, if at all possible. If versions are necessary, rather than keeping the old versions running, it is recommended to have _all supported versions_ implemented in your current API. For our API platform services, we most likely need to version them, as they will be shared by teams, and we don't want to break other projects.
 
 There are multiple ways we _could_ pass our version to an API:
 
