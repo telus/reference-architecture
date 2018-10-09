@@ -10,10 +10,9 @@ We need to maintain confidentiality and at-rest encryption of our secrets, lest 
 
 ## How
 
-### Use secrets as a coherent and consistent secret management strategy
+> Use secrets as a coherent and consistent secret management strategy.
 
 **Store** all the secrets Keys/Values encrypted and **in a secured platform**. Current solution at TELUS Digital is Hashicorp Vault.
-
 
 **Define roles and accesses** (read/write) level for each key, team, project.
 
