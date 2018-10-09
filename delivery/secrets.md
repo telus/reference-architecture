@@ -10,31 +10,38 @@ We need to maintain confidentiality and at-rest encryption of our secrets, lest 
 
 ## How
 
-### Kubernetes/OpenShift secrets
+### Use secrets as a coherent and consistent secret management strategy
 
-For our reference architecture applications, the secrets are provisioned in Kubernetes/OpenShift, by pushing them as base64 encoded strings, via YAML configuration. These secrets can be mounted into our Docker containers either as environment variables or volumes (files/folders). However, since Kubernetes is a declarative platform, we want to store these secrets somewhere, so that we can recover them if need be. Also we need access to many secrets for local development. For this, we need some sort of secure storage mechanism.
+**Store** all the secrets Keys/Values encrypted and **in a secured platform**. Current solution at TELUS Digital is Hashicorp Vault.
 
-### Secret storage
 
-We have a few techniques in play for managing the storage of our secrets, before they go into Kubernetes.
+**Define roles and accesses** (read/write) level for each key, team, project.
 
-#### Good
+Set a solution to retrieve secrets locally and on the project delivery platform.
 
-We are phasing out the use Ansible Vault, a secret management tool built into Ansible, which simply encrypts secrets into a file with a password. These files are then committed into source control. While this satisfies encryption at rest, it is not easily auditable, and there is no access control. This means if developers leave our organization, they will still be have access to the secrets that they have previously checked out, as long as they know the password. Also, if we have some shared credentials (e.g. GitHub/NPM read tokens) that get exposed, there is no way to quickly and easily rotate the keys... it would need to be done manually for every vault/application.
+**Rotate the key values** on a regular basis, depending on its importance and exposure.
 
-#### Better
+**Monitor** and validate roles and accesses on a regular basis.
 
-HashiCorp Vault is a much better tool than Ansible Vault. Our implementation uses HashiCorp Consul as a high-availability backing store, where we have a centralized single-source-of-truth for all of our secrets, for all of our applications. With a single source, it is easier to rotate keys across the whole organization all at once. Vault also offers an audit log that shows who/what is using the certificates, and you can stream this log into machine learning algorithms to find malicious patterns.
+### Where to store
 
-Secrets can be nested in a tree, and users/groups can be given access to specific branches. So only developers of a specific application have access to their specific secrets. Access can be revoked as well. Vault also offers password generators for specific services, so that it can create short-lived/ephemeral access tokens that are only used for a single request, or several minutes.
+In Vault by using [Shippy](https://github.com/telus/shippy-cli).
 
-#### Best
+Specific [documentation for TELUS Digital](https://github.com/telus/my-telus-e2e/blob/master/SECRETS.md).
 
-Rather than provisioning the secrets from HashiCorp Vault into Kubernetes, and exposing them to the app, the app can instead get a Vault access token and query it directly for secrets. We have not tested this capability yet, but it's where we'd like to go `:)`.
+### What is a "Secret"
+
+TLS private keys, tokens, passwords, certificates, API keys, data stores, testing data…
+
+### "MUST" and "MUST NOT"
+
+**MUST** apply this strategy to all object defined as a secret.
+
+**MUST NOT** publish or share non-encrypted secret values within a third party tool (GitHub, Slack, Google Application) or Email.
 
 ## Who
 
-@delivery
+Everyone!
 
 ## References
 
