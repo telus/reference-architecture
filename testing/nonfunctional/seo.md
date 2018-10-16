@@ -112,7 +112,7 @@ Page headings help Search Engines (screen readers and other assistive technology
 
 Internal linking plays a critical role in Search Crawlers being able to discover our page content. Of course, internal links  ensure human users can easily navigate our content too.
 
-- [ ] Use descriptive anchor text. Do not use "click here", "learn more", or similar phrases as anchor text; these phrases provide no insight into the content on the linked page. Can augment with `visually hidden` text.
+- [ ] Use descriptive anchor text. Do not use "click here", "learn more", or similar phrases as anchor text; these phrases provide no insight into the content on the linked page. Can augment with [visually hidden](https://a11yproject.com/posts/how-to-hide-content/) text.
 
 - [ ] Links must resolve to a page with a valid 200 status code: i.e. no links to pages with `404 Not Found`, `410 Gone`, `500 Server Error` or other errors
 - [ ] Links should not result in redirect loops
