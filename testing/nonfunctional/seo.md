@@ -2,14 +2,13 @@
 
 ## Why
 
-We want our web pages (and native apps) to rank well when queried in search engines.
-SEO considerations include properly tagged, optimized content and page speed.
+This document outlines the SEO Requirements to be applied to every telus.com web page we publish. 
 
-This document will only cover testing practices focused on the User Interface; specifically, the Document Object Model (DOM).
+By incorporating these best practices into our web pages, we greatly improve the likelihood of ranking well in Search Engines and driving organic traffic. Additionally, some of these tests overlap other disciplines, notably accessibility and content development, the benefits of which extend beyond search results alone.
 
 ## What
 
-TELUS maintains an "SEO Checklist" for best practices and requirements. The following is a subset that covers @developer & @qa concerns **that can be automated**.
+The following SEO Checklist is focused on @developer, @content, and @qa concerns. Further, these best practices form an integral component of our overall Digital Standards Index and should be audited pre and post deployment.
 
 ## SEO Checklist
 
@@ -33,30 +32,30 @@ TELUS maintains an "SEO Checklist" for best practices and requirements. The foll
 ### Document Title
 
 - `<title>`
-  - [ ] element exists and is unique
-  - [ ] element is between 40 and 65 characters including spaces
-  - [ ] each word in the title should be unique
+  - [ ] Element exists and is unique
+  - [ ] Element is between 40 and 65 characters including spaces
+  - [ ] Each word in the title should be unique
     - a title tag of "Events - About TELUS - About TELUS" is not valid
-  - [ ] element should conform to pattern: <Keyword rich page title> | TELUS
+  - [ ] Element should conform to pattern: <Keyword rich page title> | TELUS
     - e.g. "Apple iPhone X on Canada's fastest phone network | TELUS"
-  - [ ] element must include one or more of the comma-separated values found in the meta keywords element.
-  - [ ] title should reflect the content on the page to help customers that use screen readers and other assistive technology.
+  - [ ] Element must include one or more of the comma-separated values found in the meta keywords element.
+  - [ ] Title should reflect the content on the page to help customers that use screen readers and other assistive technology.
 
 ### Meta Keywords
 
-While meta keywords are ignored by Google (and other search engines), we require them to validate our content strategy.
+While meta keywords are ignored by Google (and other search engines), we require them to validate our SEO-Content strategy.
 
 - `<meta name="keywords">`
-  - [ ] element exists
-  - [ ] element content is between 10 and 150 including spaces and commas
+  - [ ] Element exists
+  - [ ] Element content is between 10 and 150 including spaces and commas
     - `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
 
 ### Meta Description
 
 - `<meta name="description">`
-  - [ ] element exists
-  - [ ] element content is between 150 and 320 characters including spaces
-  - [ ] element must include one or more of the comma-separated values found in the meta keywords element. For example:
+  - [ ] Element exists
+  - [ ] Element content is between 150 and 320 characters including spaces
+  - [ ] Element must include one or more meta keyword values. For example:
     - `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
     - `<meta name="description" content="The future of the smartphone. The Apple iPhone X offers an edge to edge display, Face ID sensors and wireless charging in an all-glass design. Now at TELUS!">`
 
@@ -66,68 +65,75 @@ More info from [Google Support](https://support.google.com/webmasters/answer/356
 
 **URLs must be selected by your SEO Prime**.
 
-URLs should be consistent, human-readable, and include targeted keywords. URLs are very important Search Relevance signal.
+URLs are a very important Search Relevance signal. They should be consistent, human-readable, and include targeted keywords. 
 
-- [ ] each word in the URL phrase should be separated by a dash (`-`). 
-- [ ] URL phrase must include one or more of the comma-separated values found in the meta keywords element.
-- [ ] Maximum 90 character length - URLs should be short and easy to remember
-- [ ] Max of 3 paths excluding language and region parameters
-- [ ] base url does not include variants (facets / dimensions), query strings, or fragments
+Optimized Format: `https://www.telus.com/[language][province*]/[category-keyword]/[subcategory-keyword]/[primary-keyword]`
 
-For example, for the following `<meta name="keywords" content="Apple iPhone X, iphone x, phones, iphone x canada">`
+- [ ] Max 90 character length
+- [ ] Each word should be separated by a dash (`-`)
+- [ ] Must be served over `https`
+- [ ] `https://www.telus.com` must be followed by a language path (e.g. `en`|`fr`)
+- [ ] Max of 3 paths excluding language and province* (province is optional). Further, each path in the URL should resolve to a page in our content hierarchy.
+- [ ] Must include at least one of the comma-separated meta keyword values
+- [ ] Base url (the canonical url) should include `lowercase` characters only
+- [ ] Base url (the canonical url) should NOT include variants, query strings, or fragments
 
-- Optimized URL: `https://www.telus.com/en/mobility/phones/apple-iphone-x/`
+For example, for the following `<meta name="keywords" content="Apple iPhone X, phones, iphone x canada">`
 
-When considering URLs, ask how a user would search on Google - "appleiphonex" or "apple iphone x"? Presumably the latter. Effectively, the dash represents a space in a user search. 
+- Optimized URL: `https://www.telus.com/en/mobility/phones/apple-iphone-x/` 
+
+More info at [Google Support](https://support.google.com/webmasters/answer/76329?hl=en)
 
 ### Canonical URL
 
+The Canonical URL tells search engines which URL to include in search results. It also serves to mitigate against indexing pages with duplicate content.
+
 - `<link rel="canonical">`
-  - [ ] element should exist
-  - [ ] element href attribute should not be empty
-  - [ ] element href attribute should exclude provincial parameters, tracking codes and any other extra parameters & query strings
-  - [ ] element `href` attribute is not broken and/or do not fall in an infinite loop (i.e. canonicals pointing to each other)
+  - [ ] Element should exist
+  - [ ] Element `href` attribute must include a lowercase URL that resolves with a 200 status code
+  - [ ] Element `href` attribute should exclude provincial parameters and pathing, tracking codes, fragments, query strings, and any other extra parameters
 
-For example, for the following URL `https://www.telus.com/en/ab/mobility/phones/iphone-x`
+For example, for the following URL `https://www.telus.com/en/ab/mobility/phones/iphone-x?tracking-code=123` 
 
-- Canonical: `<link rel="canonical" href="https://www.telus.com/en/mobility/phones/iphone-x/">`
+Valid Canonical: `<link rel="canonical" href="https://www.telus.com/en/mobility/phones/iphone-x/">`
 
 More info at [Google Support](https://support.google.com/webmasters/answer/139066)
 
 ### Page headings
 
-Page headings should properly reflect the title of the page.
+Page headings help Search Engines (screen readers and other assistive technology) understand the content outline of a page. They should include relevant search keywords and be weighted accordingly: `h1` (introduces the page topic) followed by `h2` (breakdown of article sections), ...
 
 - [ ] `<h1 />` element should be unique and found only once per page
-- [ ] `<h1 />` element must include one or more of the comma-separated values found in the meta keywords element.
-- [ ] `<h1 />` element should reflect the content on the page and complement the `<title>` to help customers that use screen readers and other assistive technology.
+- [ ] `<h1 />` element must include one or more of the comma-separated meta keyword values
+- [ ] `<h1 />` element should reflect the content on the page and complement the `<title>`
+- [ ] do not skip heading levels. For example, `<h3 />` must be preceeded by an `<h2 />`. And `<h2 />` must be preceeded by an `<h1 />`.
 
 ### Internal Links
 
-Internal linking plays a critical role in Googlebot's ability to find our site's pages and ensures that our visitors can navigate and enjoy your site.
+Internal linking plays a critical role in Search Crawlers being able to discover our page content. Of course, internal links  ensure human users can easily navigate our content too.
 
-- [ ] Use descriptive anchor text. Do not use "click here", learn more", or similar phrases as anchor text - these phrases provide no context to search crawlers or screeen readers.
+- [ ] Use descriptive anchor text. Do not use "click here", "learn more", or similar phrases as anchor text; these phrases provide no insight into the content on the linked page. Can augment with `visually hidden` text.
 
-- [ ] Page does not contain any broken links (returning `404 Not Found` or `410 Gone`)
-- [ ] Page does not contain any links that result in redirect loops
+- [ ] Links must resolve to a page with a valid 200 status code: i.e. no links to pages with `404 Not Found`, `410 Gone`, `500 Server Error` or other errors
+- [ ] Links should not result in redirect loops
 
 Sub-optimal
-`<a href="https://www.telus.com/en/mobility/phones/iphone-x/">click here</a>`
+`<a href="https://www.telus.com/en/mobility/phones/iphone-x/">Learn more</a>`
 
 Desired
-`<a href="https://www.telus.com/en/mobility/phones/iphone-x/">Apple iPhone X on Canada's fastest network</a>`
+`<a href="https://www.telus.com/en/mobility/phones/iphone-x/">Apple iPhone X</a>`
 
 More info at [Google Support](https://support.google.com/webmasters/answer/139066)
 
 ### Images
 
-Images that cannot be seen by crawlers should have short and descriptive alternate text, and be named descriptively. Cf. [Google Content Guidelines](https://support.google.com/webmasters/answer/76329?hl=en#):
+Images represent a significant (and growing) search traffic source, but only if they can be properly crawled and indexed.
 
 - `<img>`
+  - [ ] Element `alt` attribute exists and provides enough context that you can understand the image without viewing it
+  - [ ] Element `src` attribute (i.e. the filename) should be separated by hyphens (-) and similarly describe the image
 
-  - [ ] element alt attribute exists and is short and descriptive
-  - [ ] element src attribute should be separated by hyphens ("-")
-  - [ ] image file descriptively named and separated by hyphens ("-")
+For example, an image of a woman taking a selfie with an iPhone XS might look like `<img src="https://www.telus.com/images/apple-iphone-xs-woman-selfie.jpg" alt="Woman taking a selfie with an Apple iPhone XS">`
 
 ### hreflang
 
@@ -177,14 +183,7 @@ Use leading compatibility checking tools to evaluate mobile friendliness
 
 ### Page Speed
 
-All Telus web apps should have [Telus Lighthouse](https://github.com/telusdigital/telus-lighthouse) running in the build pipeline for continuous performance monitoring. We also run Telus Lighthouse against production URLs, and surface the results in DOMO.
-
-If using the Chrome browser, you can run Lighthouse at any time - and against any environment - by browsing to a page, opening the DevTools, and selecting the Audit tab.
-
-Additionally, there are several online performance testing tools:
-
-- [ ] Mobile and Desktop speed tests on [Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/)
-- [ ] Mobile Page Speed test on [Think With Google](https://testmysite.thinkwithgoogle.com/)
+Page speed is a ranking signal on Google Search. The SEO team recommends using [Telus-Lighthouse](https://github.com/telus/reference-architecture/blob/master/performance/performance-baseline.md) in your continuous integration pipelines to monitor page speed (and all other TELUS-specific SEO best practices).
 
 ### Indexability checks
 
@@ -196,11 +195,64 @@ Ensure page is not being blocked from crawler discovery and indexing.
 
 ### Structured Data
 
-Structured data is a standardized format for providing information about a page and classifying the page content; for example, for product pages: what are the price, stock availability, review ratings, and so on.
+Structured data is a standardized data format that `explicitly` tells Search Engines about the content of our pages - guesswork removed. Google Search uses structured data to more accurately return search results and to enable search result enhancements. 
+
+Structured Data formats exist to describe pretty much anything that exists in the physical world, but we are focussed principally on a few data types; notably Breadcrumbs and Products using the `JSON-LD` format.
 
 Cf. [Introduction to Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
 
+#### Breadcrumbs
+
+In addition to serving as an excellent navigation aid for humans, Breadcrumbs (with Structured Data) are the best way to inform Search Engines about our Information Architecture; it has been designed specifically for this purpose.
+
+[View Breadcrumb Schema API (JSON-LD)](https://schema.org/BreadcrumbList)
+
+- `"@type": "BreadcrumbList"`
+  - [ ] element should exist on every page (except the telus.com home page)
+- `"itemListElement:"`
+  - [ ] element should contain an ordered list of URLs and anchor text indicating each level of the content hierarchy from the home page to the current page as noted below
+
+For example, given the following Canonical URL: `https://www.telus.com/en/mobility/phones/iphone-x`
+
+The Breadcrumb User Interface Link List should be `Home > Mobility > Phones > iPhone X` and include the following Structured Data:
+
+```
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "https://www.telus.com/en/mobility/",
+                "name": "Mobility"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@id":"https://www.telus.com/en/mobility/phones/",
+                "name":"Phones"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@id":"https://www.telus.com/en/mobility/phones/iphone-x",
+                "name":"iPhone X"
+            }
+        }
+    ]
+}
+```
+
 #### Product & Service Detail pages
+
+[View Product Schema API (JSON-LD)](https://schema.org/Product)
 
 > e.g., phones and accessories.
 
@@ -225,13 +277,15 @@ Cf. [Introduction to Structured Data](https://developers.google.com/search/docs/
 - `"url"`
   - [ ] element should exist
 
+[Multi-SKU Product Schema example](https://www.schemaapp.com/tips/schema-org-variable-products-productmodels-offers/)
+
 #### Product Catalogue pages
 
-> (that do not link directly to products)
-
-Use the product schema as noted above, but EXCLUDE the URL property.
+Provided the products DO NOT link to dedicated product detail pages, use the Product Schema as noted above, but EXCLUDE the URL property.
 
 #### For video content types
+
+[View Video Object Schema API (JSON-LD)](https://schema.org/VideoObject)
 
 - `"@type": "VideoObject"`
   - [ ] element should exist
@@ -246,15 +300,22 @@ Use the product schema as noted above, but EXCLUDE the URL property.
 
 ### Pagination
 
-Ensure your paginated content ie "load more" is not hidden from bots. Cf. [Google Content Guidelines](https://support.google.com/webmasters/answer/1663744?hl=en).
+Ensure paginated content is discoverbale to search crawlers (and assistive technology). 
 
-- [ ] Ensure a "View All" page exists or use `rel="next"` and `rel="prev"` links to indicate the relationship between component URLs
+- [ ] All pages must be accesibile with a link and a unique URL
+- [ ] Each page in a pagination sequence should use `rel="next"` and / or `rel="prev"` links to indicate the relationship between the sequence of paged content.
+
+For example, page 2 in a 10-page pagination sequence `https://www.telus.com/en/support/article-part2` should include the following:
+
+`<link rel="prev" href="https://www.telus.com/en/support/article" />` and `<link rel="next" href="https://www.telus.com/en/support/article-part3" />`
+
+[Google Content Guidelines](https://support.google.com/webmasters/answer/1663744?hl=en).
 
 ## How
 
-Incorporate [Telus Lighthouse](https://github.com/telusdigital/telus-lighthouse) in your application. Telus Lighthouse will validate your pages and ensure compliance with the SEO standards above. Easy :)
+Incorporate [Telus-Lighthouse](https://github.com/telusdigital/telus-lighthouse) into your application and test regularly to ensure your pages comply with the SEO Standards above.
 
 ## Who
 
 - @seo: SEO Checklist
-- @delivery, @developers, @qa: tooling & implementation
+- @delivery, @developers, @content, @qa: tooling & implementation
