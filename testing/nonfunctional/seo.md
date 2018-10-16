@@ -216,8 +216,7 @@ For example, given the following Canonical URL: `https://www.telus.com/en/mobili
 
 The Breadcrumb User Interface Link List should be `Home > Mobility > Phones > iPhone X` and include the following Structured Data:
 
-```
-<script type="application/ld+json">
+```<script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "BreadcrumbList",
