@@ -1,3 +1,5 @@
+_extends: github-settings
+
 repository:
   name: reference-architecture
   description: TELUS Reference Architecture Documentation
@@ -5,13 +7,6 @@ repository:
   homepage: https://telus.com/digital
   private: false
   has_issues: false
-  has_wiki: false
-  has_downloads: false
-  has_projects: false
-  default_branch: master
-  allow_squash_merge: true
-  allow_merge_commit: false
-  allow_rebase_merge: true
 
 labels:
   - name: security
@@ -26,7 +21,7 @@ labels:
     description: New feature or request
     color: 5EBEFF
 
-  - name: optimizaiton
+  - name: optimization
     description: Performance or Code Optimization
     color: 5EBEFF
 
@@ -58,22 +53,10 @@ branches:
   - name: master
     protection:
       required_pull_request_reviews:
-        # disable until this issue is closed: https://github.com/probot/settings/issues/87
-        # required_approving_review_count: 1
-        dismiss_stale_reviews: true
-        require_code_owner_reviews: true
         dismissal_restrictions:
-          users: []
           teams:
             - architecture-support
 
-      required_status_checks:
-        strict: true
-        contexts: []
-
-      enforce_admins: true
-
       restrictions:
-        users: []
         teams:
           - architecture-support
