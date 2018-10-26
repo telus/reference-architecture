@@ -18,7 +18,7 @@ Not only can React code be used on the server and client side, there's also [Rea
 
 The [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit) is a standard boilerplate for building a Node.js isomorphic React application. It uses [webpack](webpack.md), and [babel](babel.md) to transpile the React JSX & ES2015 code into browser-native ES5. Using isomorphism, it pre-renders the React components on a page before sending the content to the browser client. After the browser receives the rendered application, it is able to render all further React components on the client side, using AJAX requests to populate it with data.
 
-Generally speaking you do not want to put business logic in your React View. If you need business logic, you should use a [BFF](bff.md) ("Backend for Frontend") to handle all of the downstream data sources, and expose an API with data that matches the React component state. Our starter kit also ships with a BFF container by default, for this reason.
+Generally speaking, you do not want to put business logic in your React View. If you need business logic, you should put your logic and handle all of the downstream data sources in the backend of your application, and expose data that matches the React component state. 
 
 ## Who
 

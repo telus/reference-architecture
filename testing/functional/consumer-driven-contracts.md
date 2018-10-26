@@ -1,6 +1,6 @@
 # Consumer-Driven Contract Tests
 
-Modern web architecture is moving away from monoliths, patterns such as BFFs and micro services. In these modern patterns we have APIs being exposed, and as such it is very important to adopt a pattern of “Consumer-Driven Contract Tests”.
+Modern web architecture is moving away from monoliths, patterns such as BFF (Backend For Front-end) and micro services. In these modern patterns we have APIs being exposed, and as such it is very important to adopt a pattern of “Consumer-Driven Contract Tests”.
 
 ## Illustrating the problem
 Let’s say you have applications: A phone catalogue page (the Client) and a Product API (the Provider).
