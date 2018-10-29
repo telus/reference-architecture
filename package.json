@@ -25,6 +25,6 @@
   "devDependencies": {
     "@telus/remark-preset-lint-markdown": "*",
     "editorconfig-checker": "^1.3.3",
-    "remark-cli": "^5.0.0"
+    "remark-cli": "^6.0.0"
   }
 }
