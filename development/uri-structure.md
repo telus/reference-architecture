@@ -99,7 +99,7 @@ Any teams deploying to www.telus.com:
 - [Inbound proxies](../delivery/inbound-proxies.md)
 - [inbound.telus-gateway-staging-config][telus-gateway-staging-config]
 - [inbound.telus-gateway-production-config][telus-gateway-production-config]
-- [Adobe Target](//marketing.adobe.com/resources/help/en_US/target/target/c_spa-visual-experience-composer.html)
+- [Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/c_spa-visual-experience-composer.html)
 
 [rfc-6570]: https://tools.ietf.org/html/rfc6570 "RFC 6570"
 

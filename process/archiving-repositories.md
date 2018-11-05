@@ -20,7 +20,7 @@ This includes:
 
 ## How
 
-We created a separate Github organization: [`telusdigital-archive`][archive] that will host all archived repositories, leveraging the ["transfer ownership"][transfer-docs] feature in Github.
+We created a separate Github organization: [`telus-archive`][archive] that will host all archived repositories, leveraging the ["transfer ownership"][transfer-docs] feature in Github.
 
 Once repo is transferred, the following actions need to be taken:
 
@@ -32,5 +32,5 @@ Once repo is transferred, the following actions need to be taken:
 - disable GitHub Pages _(if enabled)_
 
 [eol]: https://en.wikipedia.org/wiki/End-of-life_(product)
-[archive]: https://github.com/telusdigital-archive
+[archive]: https://github.com/telus-archive
 [transfer-docs]: https://help.github.com/articles/transferring-a-repository-owned-by-your-organization/

@@ -75,14 +75,14 @@ However, you should invest in these tests, **because** users’ affection and tr
 - [Saucelabs][saucelabs]
 
 [unit-tests]: functional/unit.md
-[contract-tests]: functional/consumer_driven_contracts.md
+[contract-tests]: functional/consumer-driven-contracts.md
 [e2e-functional]: functional/e2e.md
 [e2e-ui]:functional/visual-regression.md
 [seo]: nonfunctional/seo.md
 [security]: nonfunctional/security.md#
 [performance]: nonfunctional/performance.md
 [load]: nonfunctional/load.md
-[acessibility]: nonfunctional/accessibility.md
+[accessibility]: nonfunctional/accessibility.md
 [analytics]: nonfunctional/analytics.md
 
 [functional-testing]: https://en.wikipedia.org/wiki/Functional_testing
