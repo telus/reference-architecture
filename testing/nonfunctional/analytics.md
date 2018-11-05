@@ -2,11 +2,11 @@
 
 ## Why
 
-Our [Analytics](../analytics/) practice relies on a `dataLayer` object that is injected onto the DOM at build time, this object must follow a specific structure and format, values will vary based on application and route of the website. We should test for that structure, format and values as part of our automated testing.
+Our [Analytics](../../analytics/README.md) practice relies on a `dataLayer` object that is injected onto the DOM at build time, this object must follow a specific structure and format, values will vary based on application and route of the website. We should test for that structure, format and values as part of our automated testing.
 
 ## What
 
-Validate the object in the [e2e](e2e.md) testing phase using [JSON Schema][json-schema]
+Validate the object in the [e2e](../functional/e2e.md) testing phase using [JSON Schema][json-schema]
 
 1. validate structure & format _(consistent across **all** implementations)_
 2. validate values across pages per project _(custom schemas needed in each project)_
@@ -17,7 +17,7 @@ In our [isomorphic starter kit][starter-kit], we have a standard schemas that de
 
 Additionally, if a custom schema is provided for the project level, it will validate values as well. 
 
-These are automated [gating](../process/continuous-delivery.md#automated-gating) tests. If the structure or content of your objects is incorrect, the test will fail, and the delivery pipeline will be halted.
+These are automated [gating](../../process/continuous-delivery.md#automated-gating) tests. If the structure or content of your objects is incorrect, the test will fail, and the delivery pipeline will be halted.
 
 ## When
 

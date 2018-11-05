@@ -47,7 +47,7 @@ Bill Wake's [article on the INVEST mnemonic](http://xp123.com/articles/invest-in
 > - **Small**: stories should be built in a small amount of time, usually a matter of person-days. Certainly you should be able to build several stories within one iteration.
 > - **Testable**: you should be able to write tests to verify the software for this story works correctly.
 
-For more on the importance and practical advice on how to achieve small stories, check out the article on [smaller stories](process/small-stories-are-faster.md).
+For more on the importance and practical advice on how to achieve small stories, check out the article on [smaller stories](small-stories-are-faster.md).
 
 Once a story has stabilized, and before its picked up by developers, it's common practice to include acceptance criteria in order to help a developer know when they're finished. QA folks often go by the acceptance criteria when validating a story and developing a test strategy. When present, acceptance criteria often follow a "Given, When, Then" pattern. Martin Fowler's article on the [Given When Then](https://martinfowler.com/bliki/GivenWhenThen.html) pattern describes it well:
 

@@ -2,7 +2,7 @@
 
 ## Why
 
-When our application gets deployed through our [Continuous Delivery](../process/continuous-delivery.md) pipeline, we want to know that our code is secure, and does not have vulnerable packages installed, so that we don't get owned.
+When our application gets deployed through our [Continuous Delivery](../../process/continuous-delivery.md) pipeline, we want to know that our code is secure, and does not have vulnerable packages installed, so that we don't get owned.
 
 ## What
 
@@ -18,7 +18,7 @@ Security team to instill and maintain
 
 ### Node Security Platform
 
-Our [starter kits](../development/starter-kits.md) ship out of the box with [nsp](https://nodesecurity.io/) to scan the `package.json` for any known vulnerabilities. Our pipeline will fail if any are found.
+Our [starter kits](../../development/starter-kits.md) ship out of the box with [nsp](https://nodesecurity.io/) to scan the `package.json` for any known vulnerabilities. Our pipeline will fail if any are found.
 
 ### TwistLock
 
