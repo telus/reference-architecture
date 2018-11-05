@@ -13,7 +13,7 @@ The `README` file is a typical place where this information can be found. This w
 
 ## What
 
-Use a `colophon.yml` file in your repository that follows the [Colophon schema](https://github.com/ahmadnassri/colophon).
+Use a `colophon.yml` file in your repository that follows the [Colophon schema](https://github.com/project-colophon/schema).
 
 ## How
 
@@ -49,7 +49,7 @@ references:
 
 The `id` can be used to link this GitHub repo to the project via other mediums, such as by placing the `id` in an HTML `meta` tag, or the HTTP header response of an API.
 
-See the [spec](https://github.com/ahmadnassri/colophon/tree/master/spec/1.0.0) for other fields that may be appropriate for your project.
+See the [spec](https://github.com/project-colophon/schema/tree/master/schema/1.0) for other fields that may be appropriate for your project.
 
 ## Who
 
@@ -57,4 +57,4 @@ Everyone!
 
 ## References
 
-- [Colophon schema](https://github.com/ahmadnassri/colophon)
+- [Colophon schema](https://github.com/project-colophon/schema)
