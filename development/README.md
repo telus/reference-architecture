@@ -44,4 +44,4 @@
 ### Guidelines
 
 - [Accessibility](accessibility.md)
-- [Supported Browers](supported-browsers.md)
+- [Supported Browsers](supported-browsers.md)

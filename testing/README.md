@@ -82,7 +82,7 @@ However, you should invest in these tests, **because** users’ affection and tr
 [security]: nonfunctional/security.md#
 [performance]: nonfunctional/performance.md
 [load]: nonfunctional/load.md
-[acessibility]: nonfunctional/accessibility.md
+[accessibility]: nonfunctional/accessibility.md
 [analytics]: nonfunctional/analytics.md
 
 [functional-testing]: https://en.wikipedia.org/wiki/Functional_testing
