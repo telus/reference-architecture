@@ -4,23 +4,23 @@
 
 > _Why does this exist?_
 
-This wiki acts as a source of truth for all the technical knowledge, software specifications, standards and architecture evolution.
+This wiki is the source of truth for all **technical knowledge**, **software specifications**, **standards** and **architecture evolution**.
 
-This is a collaborative effort to **document**, **track**, and **discuss** digital software standards, tooling and practices, you are welcome to contribute and suggest changes, please follow the [contribution guidelines](.github/CONTRIBUTING.md) and keep in mind: _this repository is [**Open Source**](#open-source)_.
+The goal of the document is to **track** and **discuss** software standards, tooling and practices within TELUS. You are welcome to contribute and suggest changes. Please follow the [contribution guidelines](.github/CONTRIBUTING.md) and keep in mind that this repository is [**open source**](#open-source).
 
 ## Who
 
 > _Who is this for?_
 
-- **Existing _Team Members_**: use as a reference, and contribute updates
-- **New & Future _Team Members_**: learn about our software development standards and practices
-- **Partners**: get familiar with our software standards and practices prior to project delivery commitments
+- **Existing Team Members** reference and contribute to this document.
+- **Perspective Team Members** learn about TELUS software development standards and practices.
+- **TELUS partners** familiarize with TELUS software standards and practices prior to project delivery commitments.
 
 ## What
 
 > _What is the structure?_
 
-This is a **Public** & [**Open Source**](#open-source) repository, with articles written in Markdown denoting various topics in the following categories:
+This is a **public** and [**open source**](#open-source) repository. Articles are written in Markdown on topics in the following categories:
 
 - [Development](development/README.md)
 - [Process](process/README.md)
@@ -32,8 +32,7 @@ This is a **Public** & [**Open Source**](#open-source) repository, with articles
 - [Analytics](analytics/README.md)
 - [Hardware & Tooling](equipment/README.md)
 
-A _thin_ and simple documentation format for technical resources, tools, platforms and decisions. Members can quickly and easily get context on _"Why, What & How"_ for every part of our software standards.
-
+Documentation is meant to be _thin_ and _simple_. Members should be able to quickly and easily understand the whys, whats and hows of any part of our software standards.
 ## How
 
 > _How to take part?_
@@ -65,20 +64,23 @@ In order to achieve this, we ensure no sensitive content is included, such as:
 
 ### Process & Contribution
 
-A few avenues are made available for ensuring open collaboration and extended support for contributions to this standards wiki:
+To ensure open collaboration and support for wiki contributions, a few avenues are made available:
 
 - [**Technology Forum**][technology-forum]  
-  As a TELUS team member, you are welcome to use _The Technology Forum_ as **the official process** to guide conversations and discussions around technology solutions, ideas, issue escalation, questions, knowledge sharing, and Reference Architecture evolution.
+  The Technology Forum is the official discussion board for conversations around
+  technology solutions, ideas, issue escalations, questions, knowledge sharing,
+  and Reference Architecture evolution.
 
-  > We keep these two repositories separate, since this one is meant to be public and Open Source, whereas the Technology Forum will involve deep technical discussions and private information.
+  > Since Reference Architecture is open source, we separated Technology Forum into
+  > its own private repository for deep technical discussions and confidential information.
 
 - **Open Contribution**  
-  Simply use GitHub to make new pull-requests, start discussions, and contribute to active ones.  
-  However, if your contribution was not addressed in _The Technology Forum_ the likelihood of adopting your suggested changes is minimal.
+  Use GitHub to create pull-requests, start discussions, and contribute to active issues.
+  Your contributions should also be addressed in _The Technology Forum_ in order to be considered for adoption.
 
 ### Format
 
-All topics MUST follow the format outlined in this [this template](.template.md)
+All topics MUST adhere to the format outlined in [this template](.template.md)
 
 ### GitHub
 
