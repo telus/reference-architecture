@@ -2,23 +2,33 @@
 
 ## Why
 
-We need a [JavaScript](javascript.md) library for building [isomorphic](isomorphic.md) web applications, which have the rich "app-like" transitionless experience of a mobile native app, while maintaining good SEO and performance. This library needs to be easy to use, and have a good community of support behind it. It must support "component architecture", so that we can set design standards, and share components between applications for a similar look and feel. Finally, we want something that works well with our [Continuous Integration](../process/continuous-integration.md) practices, by being declarative, stateless (no database or complicated setup), and easily scaled.
+We need a [JavaScript](javascript.md) library for building web applications that:
+  - are [isomorphic](isomorphic.md)
+  - have rich transitionless experiences that mobile apps have
+  - maintains good SEO standards
+  - maintains good performance standards
+  - is easy to use
+  - has good community support
+  - has support for component architecture for setting design standards by sharing components
+  - works well with [continuous integration](../process/continuous-integration.md) practices by being declarative, stateless (no database or complicated setup), and easily scalable.
 
 ## What
 
-[React.js](https://facebook.github.io/react/) is Facebook's JavaScript library for building declarative, component-based user interfaces. Instead of traditional MVC (model-view-controller) architectures, React focuses primarily on the "view" portion.
+Facebook's open source JavaScript library, [React.js](https://facebook.github.io/react/), is made to build component-based user interfaces in a declarative manner. Instead of traditional MVC (model-view-controller) architectures, React focuses primarily on the view.
 
-Given a data object (called "state"), it deterministically renders your HTML component template, with nested JavaScript code in it (in a format known as "JSX"). This means that to make updates to the website, you simply need to change data in the state, and React will "declaratively" handle the redrawing of the page for you. There is no need for you to define the control flow, i.e. "how the HTML DOM is updated", like one would previously have to do, with JQuery etc.
+React renders JavaScript components by listening for changes in the application's data. Given a data object, React generates HTML views with embedded JavaScript variables. To redraw the web page, simply change data in the state. React will declaratively redraw the page. In JQuery, control flow (instructions on how the HTML DOM will be updated), is required to be defined whereas React does not require these definitions.
 
-Not only can React code be used on the server and client side, there's also [React Native](https://facebook.github.io/react-native/) for building native components for mobile apps, on iOS and Android.
+More information on how React works can be found in [this guide](https://reactjs.org/docs/hello-world.html).
+
+React code is used on the server and client, and can be used for mobile apps. (See [React Native](https://facebook.github.io/react-native/))
 
 ## How
 
-[TELUS Design System](http://tds.telus.com/) is our standard library of React components. Where possible, these should be used, rather than creating your own components, so that we can have a consistent design language across all of our pages.
+The [TELUS Design System](http://tds.telus.com/) hosts and standardizes a library of React components. Where possible, the components in this library should be used rather than building new components. This ensures a consistent design language across all of our pages.
 
-The [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit) is a standard boilerplate for building a Node.js isomorphic React application. It uses [webpack](webpack.md), and [babel](babel.md) to transpile the React JSX & ES2015 code into browser-native ES5. Using isomorphism, it pre-renders the React components on a page before sending the content to the browser client. After the browser receives the rendered application, it is able to render all further React components on the client side, using AJAX requests to populate it with data.
+The [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit) is the standard starting point for building isomorphic Node.js and React applications. It contains boilerplate code developers can use with minimal change. The starter kit uses [webpack](webpack.md) and [babel](babel.md) to transpile React JSX and ES2015 code into browser-native ES5 code. Isomorphism is used to pre-render React components on a server before sending them to the browser. This reduces the amount of work on the browser by completing it on the server side. After the browser receives the rendered application, the browser is able to render more React components using AJAX requests to gather data.
 
-Generally speaking, you do not want to put business logic in your React View. If you need business logic, you should put your logic and handle all of the downstream data sources in the backend of your application, and expose data that matches the React component state. 
+Generally speaking, business logic should not be in the React view layer. Business logic should be placed in the backend alongside all handling of downstream data sources. The backend should also expose data that matches the React component state.
 
 ## Who
 
