@@ -56,9 +56,9 @@ has a lot of information about how we use Redux.
 
 - Describe an event via Actions
 - Actions describe a need as a fact or an event already happened without dictating how to fulfill the need. 
-  
+
   Eg. Need => ``TIME_TO_TRAVEL_ARRIVED``
-  
+
   - ``personOneSaga`` reacts by => ``startWalking()``
   - ``personTwoSaga`` reacts by => ``callTaxi()``
 
