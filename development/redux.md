@@ -9,7 +9,7 @@ Managing state in a declarative framework like React.js is critical and easy to
 get wrong. How can we minimize side effects, while maximizing testability and
 reproducibility? We separate data, logic, and rendering. How can we visualize
 the changes we are pushing to our state? We use
-[Uni-directional data flow](http://redux.js.org/docs/basics/DataFlow.html)
+[uni-directional data flow](http://redux.js.org/docs/basics/DataFlow.html)
 to easily reason about the interactions between actors.
 
 ## What
