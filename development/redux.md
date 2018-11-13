@@ -68,7 +68,7 @@ has a lot of information about how we use Redux.
 - The [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth).
 - Keeper of state information, should not keep business logic.
 - Can only be affected by actions.
-- Prevents unintentional modifications by other methods via Object Reference, or Directly Accessing Store Members.
+- Prevents unintentional modifications by other methods via object reference, or directly accessing store members.
 
 ```ts
 //Reducer
