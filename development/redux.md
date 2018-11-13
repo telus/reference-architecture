@@ -43,7 +43,7 @@ has a lot of information about how we use Redux.
 ### React Component
 
 - Responsible for Presentation and User Interactions.
-- Blind to the complexities of the app since it does not know what happens after action is broadcasted.
+- Blind to the complexities of the app since it does not know what happens after the action is broadcasted.
 - Able to react to state change via `connect`.
 
 ### Actions
