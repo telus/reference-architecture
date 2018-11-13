@@ -84,7 +84,7 @@ export const people = (state = [], action) => {
 
 ### The Saga Library
 
-- Responsible for Business Logic and Async actions (HTTP Calls).
+- Responsible for business logic and asynchronous actions (HTTP Calls).
 - Does not keep local state.
 - Typical use is take user input, make an HTTP call, and provide output to go into the store.
 
