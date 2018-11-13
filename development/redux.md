@@ -4,7 +4,7 @@
 
 While [React.js](react.md) provides stateful components, managing state across entire
 single-page-applications requires an [isomorphic](isomorphic.md) tool.
-More specifically, we need a [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth).
+More specifically, we need a [single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth).
 Managing state in a declarative framework like React.js is critical and easy to
 get wrong. How can we minimize side effects, while maximizing testability and
 reproducibility? We separate data, logic, and rendering. How can we visualize
