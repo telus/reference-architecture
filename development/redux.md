@@ -55,7 +55,7 @@ has a lot of information about how we use Redux.
 ### Reactive Style
 
 - Describe an event via actions
-- Actions describe a need as a fact or an event already happened without dictating how to fulfill the need. 
+- Actions describe a need as a fact or an event already happened, without dictating how to fulfill the need. 
 
   Eg. Need => ``TIME_TO_TRAVEL_ARRIVED``
 
