@@ -49,7 +49,7 @@ has a lot of information about how we use Redux.
 ### Actions
 
 - Responsible for communication between parts of redux
-- Use event description instead of function Invocation
+- Use event description instead of function invocation
 - Listeners determine how to react to actions
 
 ### Reactive Style
