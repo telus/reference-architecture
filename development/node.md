@@ -19,7 +19,7 @@ The open-source community around Node also has a thriving suite of modules and l
 
 Our Node.js code must conform with our [generic code formatting standards](code-formatting.md), and use [ESLint](eslint.md) for further JavaScript-specific styling. We have [starter kits](starter-kits.md) with cloneable examples of API and UI applications that have our standards baked in. We also have several private [npm libraries](npm.md).
 
-Currently, our standard is to use Node 6, and we will always strive to use the most recent Node [LTS](https://github.com/nodejs/LTS#lts-schedule1) (aka "long term support") version. We are looking forward to Node 8, this fall `:)`
+Currently, our standard is to use Node 8, and we will always strive to use the most recent Node [LTS](https://github.com/nodejs/LTS#lts-schedule1) (aka "long term support") version. We are about to trial Node 10.
 
 Check out the [Node compatability table](http://node.green/) to see which features are supported by the current version.
 

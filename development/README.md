@@ -31,6 +31,7 @@
 - [Jest](jest.md)
 - [Logging](logging.md)
 - [NewRelic](newrelic.md)
+- [Contrast](contrast.md)
 - [Publishing to NPM](npm.md)
 - [Webpack](webpack.md)
 
@@ -43,4 +44,4 @@
 ### Guidelines
 
 - [Accessibility](accessibility.md)
-- [Supported Browers](supported-browsers.md)
+- [Supported Browsers](supported-browsers.md)
