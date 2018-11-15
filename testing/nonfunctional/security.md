@@ -10,30 +10,18 @@ Build continuous security into our delivery pipeline, so that we monitor our app
 
 ## How
 
-## When
+### NPM Audit
 
-## Standards
+Our [starter kits](../development/starter-kits.md) ship out of the box with security audits, done using [npm audit](https://docs.npmjs.com/cli/audit). Running `npm audit` assesses package dependencies for security vulnerabilities and allows us to find and fix known vulnerabilities in dependencies that could cause data loss, service outages, unauthorized access to sensitive information, or other issues. 
 
-Security team to instill and maintain
 
-### Node Security Platform
-
-Our [starter kits](../../development/starter-kits.md) ship out of the box with [nsp](https://nodesecurity.io/) to scan the `package.json` for any known vulnerabilities. Our pipeline will fail if any are found.
-
-### TwistLock
-
-TODO
-
-### Clair
-
-TODO
+Failing the audit will cause the pipeline to fail, so you should address the issues before pushing any code. To automatically install any compatible (not semver-major) updates to vulnerable dependencies, run `npm audit fix`. For more information, please refer to the NPM documentation.
 
 ## Who
 
-@delivery @security @dev
+@everyone
 
 ## References
 
-- [Node security platform](https://nodesecurity.io/)
-- [Twistlock](https://www.twistlock.com)
-- [Clair](https://coreos.com/clair/docs/latest/)
+- [NPM - `npm audit` docs](https://docs.npmjs.com/cli/audit)
+- [NPM - About security audits](https://docs.npmjs.com/getting-started/running-a-security-audit)
