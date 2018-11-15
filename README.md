@@ -78,6 +78,20 @@ To ensure open collaboration and support for wiki contributions, a few avenues a
   Use GitHub to create pull-requests, start discussions, and contribute to active issues.
   Your contributions should also be addressed in _The Technology Forum_ in order to be considered for adoption.
 
+#### Local development setup
+
+If you want to make sure your changes will pass our CircleCI steps, you might want to run things locally:
+
+```bash
+npm run lint
+```
+
+In order to setup everything needed to run all of the checks locally, please run the script below. This will install locally all of the dependencies needed and mirror the CI setup:
+
+```bash
+npm run setup-local
+```
+
 ### Format
 
 All topics MUST adhere to the format outlined in [this template](.template.md)
