@@ -1,0 +1,38 @@
+version: 2.1
+
+executors:
+  app:
+    working_directory: ~/src
+
+    docker:
+      - image: telus/build-essential
+
+commands:
+  persist:
+    steps:
+      - persist_to_workspace: { root: ~/src, paths: . }
+
+  attach:
+    steps:
+      - attach_workspace: { at: "." }
+
+jobs:
+  build:
+    executor: app
+    steps:
+      - checkout
+      - persist
+
+  lint:
+    executor: app
+    steps:
+      - attach
+      - run: npm run lint
+
+workflows:
+  version: 2
+  run:
+    jobs:
+      - build
+      - lint:
+          requires: [ build ]
