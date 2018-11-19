@@ -20,9 +20,9 @@ We also use text-to-speech engines (screen readers) like [NVDA](https://www.nvac
 
 ## When
 
-Writing analytics tests: Upon story completion, make sure to include the assertion
+Accessibility tests are written near the end of a story. While writing your story, be sure to include an assertion that validates your accessibility criteria.
 
-Running analytics tests: As part of the delivery pipeline
+The delivery pipeline automatically runs accessibility tests and will notify you of any failures.
 
 ## Who
 
