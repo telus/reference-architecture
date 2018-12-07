@@ -1,5 +1,5 @@
 {
   "plugins": [
-    "@telus/remark-preset-lint-markdown"
+    "@telus/remark-config"
   ]
 }
