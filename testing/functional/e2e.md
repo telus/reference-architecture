@@ -20,6 +20,33 @@ Running E2E functional tests: A lightweight E2E smoke test suite should be run a
 
 ## Standards
 
+When writing your tests, please keep the following standards in mind with respect to code, documentation, HTML, and CSS.
+
+### Code
+
+#### Structure
+
+- Selectors and methods are gathered in page objects. A unique file for each different page in a dedicated page object folder.[1][ref1]
+- Test filename is relevant.
+- Test file is running a single use case.
+- Profile/account information in a JSON file is stored in Vault secrets.
+
+#### Documentation
+
+- How to run the tests.
+- Test plan.
+
+#### HTML and CSS
+
+- Selectors: give priority to ID and CSS with creation of data-test class attributes. Adopt XPATH only if the 2 first options are not applicable.[2][ref2]
+- Lint: use the same package as for the BFF and UI to respect TELUS Digital standards and consistency in the repository.[3][ref3]
+- Chose explicit wait over implicit wait, never mix together.[4][ref4]
+- Code cleanup: remove everything from the starterkit that is not relevant in the project (hello-page, analytics for authenticated experience like My TELUS, ...).
+- Each test case is running in a reasonable timeline (~2-3 minutes max).
+- Each test case offers a good description of the pages, steps, and naming of methods.
+- Custom commands and assertions are respecting the NightwatchJS and NodeJS style standards.
+- Assertions on UI copy are to be used only for rational business cases.
+
 ### API
 
 API's shall be end-to-end tested using node-fetch, to query the API endpoints and verify that they are working. Authenticated APIs should be able to log in, in order to test secured endpoints.
@@ -46,3 +73,8 @@ TODO
 
 - [Nightwatch.js](http://nightwatchjs.org/)
 - [Sauce Labs](https://saucelabs.com/)
+
+[ref1]: http://elementalselenium.com/tips/9-use-a-base-page-object
+[ref2]: http://elementalselenium.com/tips/32-xpath-vs-css
+[ref3]: https://github.com/telus/reference-architecture/blob/master/development/code-formatting.md
+[ref4]: http://elementalselenium.com/tips/47-waiting
