@@ -79,22 +79,22 @@ Every week, it is recommended that a new Github Refining Facilitator be selected
 ### Process
 
 1. Review stories with the ‘triage’ or ‘review needed’ label, assess and assign an appropriate label, and rename the issue if unclear. _Every issue requires ‘status’, ‘type’, and ‘priority’ labels._
-  * First review triaged or unlabeled issues.
-  * Second, review issues that were marked as “Review Needed”
+  - First review triaged or unlabeled issues.
+  - Second, review issues that were marked as “Review Needed”
 
 2. Review Pull Requests
-  * Look at pull requests (oldest first) _not made by renovate or a team member_ and assign them to a team member to look at right away.
-  * Look at pull requests made by a team member that are very old and backlog them.
+  - Look at pull requests (oldest first) _not made by renovate or a team member_ and assign them to a team member to look at right away.
+  - Look at pull requests made by a team member that are very old and backlog them.
 
 3. Determine high priority issues and create duplicate stories in Jira.
-  * Typically pull in 1 request or defect/accessibility issue every week, based on capacity. The goal is to complete at least 4 GitHub issues per month.
-  * _Note:_ if applicable, when something needs a design review, reach out to the reporter to reach out to their team’s designer (who will reach out to their design lead for a design review)
-  * Sort all issues by ‘recently updated’ and filter by highest priority, pull in the top reviewed issue
-  * The Jira stories only need to link to GitHub, no duplicate information required
+  - Typically pull in 1 request or defect/accessibility issue every week, based on capacity. The goal is to complete at least 4 GitHub issues per month.
+  - _Note:_ if applicable, when something needs a design review, reach out to the reporter to reach out to their team’s designer (who will reach out to their design lead for a design review)
+  - Sort all issues by ‘recently updated’ and filter by highest priority, pull in the top reviewed issue
+  - The Jira stories only need to link to GitHub, no duplicate information required
 
 4. If your team has designers, check on the status of issues in ‘Design Review’ (can be asynchronous)
 5. Refinement facilitator, follow up on any issues last updated over 30 days ago (can be asynchronous)
 
 ## Who
 
-* Product Owners
+- Product Owners
