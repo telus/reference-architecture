@@ -154,15 +154,15 @@ For more information see [this documentation](https://support.google.com/webmast
 
 - `<meta property="og:title">`
 
-  - Should be identical to the page [Document Title](https://github.com/telusdigital/reference-architecture/blob/master/testing/nonfunctional/seo.md#document-title)
+  - Should be identical to the page [Document Title](https://github.com/telus/reference-architecture/blob/master/testing/nonfunctional/seo.md#document-title)
 
 - `<meta property="og:description">`
 
-  - Should be identical to the page [Meta Description](https://github.com/telusdigital/reference-architecture/blob/master/testing/nonfunctional/seo.md#meta-description)
+  - Should be identical to the page [Meta Description](https://github.com/telus/reference-architecture/blob/master/testing/nonfunctional/seo.md#meta-description)
 
 - `<meta property="og:url">`
 
-  - Should be identical to the page [ref=canonical](https://github.com/telusdigital/reference-architecture/blob/master/testing/nonfunctional/seo.md#canonical-url)
+  - Should be identical to the page [ref=canonical](https://github.com/telus/reference-architecture/blob/master/testing/nonfunctional/seo.md#canonical-url)
 
 - `<meta property="og:image">`
   - [ ] element should exist and be unique
@@ -312,7 +312,7 @@ For example, page 2 in a 10-page pagination sequence `https://www.telus.com/en/s
 
 ## How
 
-Incorporate [Telus-Lighthouse](https://github.com/telusdigital/telus-lighthouse) into your application and test regularly to ensure your pages comply with the SEO Standards above.
+Incorporate [Telus-Lighthouse](https://github.com/telus/telus-lighthouse) into your application and test regularly to ensure your pages comply with the SEO Standards above.
 
 ## Who
 

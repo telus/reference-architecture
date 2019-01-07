@@ -52,6 +52,6 @@ Analytics team to set
 
 [json-schema]: http://json-schema.org/
 
-[starter-kit]: https://github.com/telusdigital/telus-isomorphic-starter-kit
+[starter-kit]: https://github.com/telus/telus-isomorphic-starter-kit
 
 [nightwatch]: https://github.com/nightwatchjs/nightwatch

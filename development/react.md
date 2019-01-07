@@ -26,7 +26,7 @@ React code is used on the server and client, and can be used for mobile apps. (S
 
 The [TELUS Design System](http://tds.telus.com/) hosts and standardizes a library of React components. Where possible, the components in this library should be used rather than building new components. This ensures a consistent design language across all of our pages.
 
-The [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit) is the standard starting point for building isomorphic Node.js and React applications. It contains boilerplate code developers can use with minimal change. The starter kit uses [webpack](webpack.md) and [babel](babel.md) to transpile React JSX and ES2015 code into browser-native ES5 code. Isomorphism is used to pre-render React components on a server before sending them to the browser. This reduces the amount of work on the browser by completing it on the server side. After the browser receives the rendered application, the browser is able to render more React components using AJAX requests to gather data.
+The [TELUS Isomorphic Starter Kit](https://github.com/telus/telus-isomorphic-starter-kit) is the standard starting point for building isomorphic Node.js and React applications. It contains boilerplate code developers can use with minimal change. The starter kit uses [webpack](webpack.md) and [babel](babel.md) to transpile React JSX and ES2015 code into browser-native ES5 code. Isomorphism is used to pre-render React components on a server before sending them to the browser. This reduces the amount of work on the browser by completing it on the server side. After the browser receives the rendered application, the browser is able to render more React components using AJAX requests to gather data.
 
 Generally speaking, business logic should not be in the React view layer. Business logic should be placed in the backend alongside all handling of downstream data sources. The backend should also expose data that matches the React component state.
 
@@ -38,7 +38,7 @@ Everyone!
 
 - [React.js](https://facebook.github.io/react/)
 - [React tutorials](https://egghead.io/technologies/react)
-- [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit)
+- [TELUS Isomorphic Starter Kit](https://github.com/telus/telus-isomorphic-starter-kit)
 - [React Developer Tools](https://github.com/facebook/react-devtools)
 - [React Native](https://facebook.github.io/react-native/)
 - [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/languages-and-frameworks/react-js)

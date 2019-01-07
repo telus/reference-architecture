@@ -30,10 +30,10 @@ We currently use Express v4.
 
 ### TELUS digital packages
 
-- [express-error-handlers](https://github.com/telusdigital/express-error-handlers)
-- [express-oauth2](https://github.com/telusdigital/express-oauth2) _(soon to be deprecated by Authorization Proxy)_
-- [express-locale](https://github.com/telusdigital/express-locale)
-- [node-utility-middlewares](https://github.com/telusdigital/node-utility-middlewares)
+- [express-error-handlers](https://github.com/telus/express-error-handlers)
+- [express-oauth2](https://github.com/telus/express-oauth2) _(soon to be deprecated by Authorization Proxy)_
+- [express-locale](https://github.com/telus/express-locale)
+- [node-utility-middlewares](https://github.com/telus/node-utility-middlewares)
 
 ## Who
 

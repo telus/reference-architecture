@@ -10,7 +10,7 @@ Webpack builds an entire dependency graph for all of your file types, and lets y
 
 ## How
 
-We use Webpack 2.0 for any rich user interfaces, which need a lot of compilation, transpiling, etc. It is not commonly used for APIs. It is used in our [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit/) to compile the React.js code into a rich [isomorphic](isomorphic.md) web application, that can be run in Node.js and in the browser, alike.
+We use Webpack 2.0 for any rich user interfaces, which need a lot of compilation, transpiling, etc. It is not commonly used for APIs. It is used in our [TELUS Isomorphic Starter Kit](https://github.com/telus/telus-isomorphic-starter-kit/) to compile the React.js code into a rich [isomorphic](isomorphic.md) web application, that can be run in Node.js and in the browser, alike.
 
 Webpack supports two modes of transpilation, based on the `NODE_ENV` environment variable.
 

@@ -88,15 +88,15 @@ e.g:
 
 ## Who
 
-@telusdigital/digital-farmers @qa @peopleops
+@telus/digital-farmers @qa @peopleops
 
 ## References
 
-[sk]: https://github.com/telusdigital/telus-isomorphic-starter-kit/tree/master/e2e
+[sk]: https://github.com/telus/telus-isomorphic-starter-kit/tree/master/e2e
 
-[sk-dfconfig]: https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.devicefarm.conf.js
+[sk-dfconfig]: https://github.com/telus/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.devicefarm.conf.js
 
-[sk-dfconfig_selenium]: https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.devicefarm.conf.js#L41_L42
+[sk-dfconfig_selenium]: https://github.com/telus/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.devicefarm.conf.js#L41_L42
 
 [nw]: http://nightwatchjs.org/
 

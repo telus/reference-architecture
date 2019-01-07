@@ -23,11 +23,11 @@ Any library should:
 - Be explicit about dependencies
 - Include documentation with example usage
 - Follow the versioning strategy defined [here](versioning.md)
-- Include [automated tests](https://github.com/telusdigital/reference-architecture/tree/master/testing)
-- Have clear [contribution guidelines](https://github.com/telusdigital/reference-architecture/blob/master/.github/CONTRIBUTING.md)
-- Use the [npm library starter Kit](https://github.com/telusdigital/npm-library-starter-kit) as a starting point.
+- Include [automated tests](https://github.com/telus/reference-architecture/tree/master/testing)
+- Have clear [contribution guidelines](https://github.com/telus/reference-architecture/blob/master/.github/CONTRIBUTING.md)
+- Use the [npm library starter Kit](https://github.com/telus/npm-library-starter-kit) as a starting point.
 
 ## References
 
 - [Versioning](versioning.md)
-- [npm library starter kit](https://github.com/telusdigital/npm-library-starter-kit)
+- [npm library starter kit](https://github.com/telus/npm-library-starter-kit)

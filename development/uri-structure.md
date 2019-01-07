@@ -103,6 +103,6 @@ Any teams deploying to www.telus.com:
 
 [rfc-6570]: https://tools.ietf.org/html/rfc6570 "RFC 6570"
 
-[telus-gateway-staging-config]: https://github.com/telusdigital/inbound.telus-gateway-staging-config "inbound.telus-gateway-staging-config"
+[telus-gateway-staging-config]: https://github.com/telus/inbound.telus-gateway-staging-config "inbound.telus-gateway-staging-config"
 
-[telus-gateway-production-config]: https://github.com/telusdigital/inbound.telus-gateway-production-config "inbound.telus-gateway-production-config"
+[telus-gateway-production-config]: https://github.com/telus/inbound.telus-gateway-production-config "inbound.telus-gateway-production-config"

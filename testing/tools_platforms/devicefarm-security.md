@@ -41,7 +41,7 @@ Securing the devicefarm's physical resources, which includes:
 
 ## Who
 
-@telusdigital/digital-farmers @qa @peopleops
+@telus/digital-farmers @qa @peopleops
 
 ## References
 
