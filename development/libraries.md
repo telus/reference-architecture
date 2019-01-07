@@ -25,7 +25,7 @@ Any library should:
 - Follow the versioning strategy defined [here](versioning.md)
 - Include [automated tests](https://github.com/telus/reference-architecture/tree/master/testing)
 - Have clear [contribution guidelines](https://github.com/telus/reference-architecture/blob/master/.github/CONTRIBUTING.md)
-- Use the [npm library starter Kit](https://github.com/telus/npm-library-starter-kit) as a starting point.
+- Use the [npm library starter kit (@telus/create-library)](https://github.com/telus/create-library) as a starting point.
 
 ## References
 
