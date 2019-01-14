@@ -33,7 +33,6 @@ jobs:
     executor: app
     steps:
       - attach
-      - run: npm i @semantic-release/changelog
       - run: npx semantic-release
 
 workflows:
