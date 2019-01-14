@@ -4,7 +4,7 @@
 
 > _Why does this exist?_
 
-This wiki is the source of truth for all **technical knowledge**, **software specifications**, **standards** and **architecture evolution**.
+This wiki is the source of truth for all **technical knowledge**, **software specifications**, **standards** and **architecture evolution** for TELUS.
 
 The goal of the document is to **track** and **discuss** software standards, tooling and practices within TELUS. You are welcome to contribute and suggest changes. Please follow the [contribution guidelines](.github/CONTRIBUTING.md) and keep in mind that this repository is [**open source**](#open-source).
 
