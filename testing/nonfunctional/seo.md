@@ -1,5 +1,7 @@
 # Search Engine Optimization (SEO) Testing
 
+## Questions? Suggestions? Feedback? We're all ears. Please fill out this form. https://docs.google.com/forms/d/1TaG4zduLm2A8Jsoc2S-6rsmR9j8FkKKa-YmqPW8ndOs
+
 ## Why
 
 This document outlines the SEO Requirements to be applied to every telus.com web page we publish. 
