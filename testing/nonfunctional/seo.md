@@ -10,6 +10,10 @@ By incorporating these best practices into our web pages, we greatly improve the
 
 The following SEO Checklist is focused on @developer, @content, and @qa concerns. Further, these best practices form an integral component of our overall Digital Standards Index and should be audited pre and post deployment.
 
+## Have questions, suggestions or feedbacks?
+
+We're all ears. [Please fill out this form.](https://docs.google.com/forms/d/1TaG4zduLm2A8Jsoc2S-6rsmR9j8FkKKa-YmqPW8ndOs)
+
 ## SEO Checklist
 
 - [Document Title](#document-title)
@@ -33,7 +37,7 @@ The following SEO Checklist is focused on @developer, @content, and @qa concerns
 
 - `<title>`
   - [ ] Element exists and is unique
-  - [ ] Element is between 40 and 65 characters including spaces
+  - [ ] Element is between 30 and 60. characters including spaces
   - [ ] Each word in the title should be unique
     - a title tag of "Events - About TELUS - About TELUS" is not valid
   - [ ] Element should conform to pattern: <Keyword rich page title> | TELUS
@@ -43,7 +47,9 @@ The following SEO Checklist is focused on @developer, @content, and @qa concerns
 
 ### Meta Keywords
 
-While meta keywords are ignored by Google (and other search engines), we require them to validate our SEO-Content strategy.
+While meta keywords are ignored by Google (and other search engines), we require them to validate our SEO-Content strategy as defined by the team's keyword research activity. 
+
+Keyword research is a core SEO activity as it aims to provide insights into the intent of the searcher and the problems they are trying to solve in their search. A successful keyword strategy ensures that we drive the most qualified traffic to a web page or digital experience. To learn more about keyword research, read our ["How to do Keyword Research" Meeting Monday deck.](https://telusdigital.atlassian.net/wiki/download/attachments/4339317/SEO%20Guild%20-%20Keyword%20Research.pdf?version=1&modificationDate=1537279124272&cacheVersion=1&api=v2)  
 
 - `<meta name="keywords">`
   - [ ] Element exists
@@ -54,7 +60,7 @@ While meta keywords are ignored by Google (and other search engines), we require
 
 - `<meta name="description">`
   - [ ] Element exists
-  - [ ] Element content is between 150 and 320 characters including spaces
+  - [ ] Element content is between 70 and 155 characters including spaces
   - [ ] Element must include one or more meta keyword values. For example:
     - `<meta name="keywords" content="smartphone, Apple iPhone X, wireless charging">`
     - `<meta name="description" content="The future of the smartphone. The Apple iPhone X offers an edge to edge display, Face ID sensors and wireless charging in an all-glass design. Now at TELUS!">`
