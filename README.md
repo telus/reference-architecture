@@ -76,7 +76,15 @@ To ensure open collaboration and support for wiki contributions, a few avenues a
 
 - **Open Contribution**  
   Use GitHub to create pull-requests, start discussions, and contribute to active issues.
-  Your contributions should also be addressed in _The Technology Forum_ in order to be considered for adoption.
+  Your contributions should also be addressed in _The Technology Forum_ in order to be considered for adoption. 
+
+  If you are ready to start contributing, here are some things to keep in mind:
+  - This a versioned documentation repository, and commit messages follow the [karma format][karma-format].
+  - If you are adding new documentation or updating existing documentation, you should format your commits following this model: `docs(<scope>): added/updated standards about <scope>`. 
+  - If you are adding major sections or introducing major changes, then consider marking your commit as a breaking change.
+  - If you are only making corrections or fixing style/layout/punctuation/grammar, etc., then follow this model: `style(<scope>): fix grammar issues in <scope> docs`.
+  - For all other commits, follow the above mentioned Karma conventions.
+  - Feel free to consult our [CONTRIBUTING](./.github/CONTRIBUTING.md) guide for more guidance on how to contribute.
 
 #### Local development setup
 
@@ -113,3 +121,4 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 [bcp14]: https://tools.ietf.org/html/bcp14
 [rfc2119]: https://tools.ietf.org/html/rfc2119
 [rfc8174]: https://tools.ietf.org/html/rfc8174
+[karma-format]: https://karma-runner.github.io/1.0/dev/git-commit-msg.html
