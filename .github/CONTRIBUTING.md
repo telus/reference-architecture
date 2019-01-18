@@ -80,7 +80,7 @@ You should usually open a pull request in the following situations:
 
 A pull request doesn't have to represent finished work. It's usually better to open a pull request early on, so others can watch or give feedback on your progress. Just mark it as a "WIP" (Work in Progress) in the subject line. You can always add more commits later.
 
-As your write commits, be sure to check the [pull request template](./PULL_REQUEST_TEMPLATE.md) for guidance.
+As you write commits, be sure to check the [pull request template](./PULL_REQUEST_TEMPLATE.md) for guidance. Your commits should follow the [karma format][karma-format]. 
 
 ## What happens after you submit a contribution
 
