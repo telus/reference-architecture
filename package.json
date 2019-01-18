@@ -24,11 +24,5 @@
     "lint:md": "npx remark --quiet --frail .",
     "lint": "npx npm-run-all -p lint:*",
     "setup-local": "npx install-group peer --package @telus/build-essential --no-save"
-  },
-  "release": {
-    "extends": "@telus/semantic-release-config/github",
-    "releaseRules": [
-      { "type": "docs", "release": "minor" }
-    ]
   }
 }
