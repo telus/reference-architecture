@@ -17,7 +17,7 @@ The only setup necessary to get started with Renovate is to create a config file
 ```json
 {
   "extends": [
-    "@telusdigital"
+    "@telus"
   ]
 }
 ```

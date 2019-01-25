@@ -79,7 +79,7 @@ We have [farmville][farmville] which provides
 
 ## Who
 
-@telusdigital/digital-farmers @qa
+@telus/digital-farmers @qa
 
 ---
 
@@ -108,7 +108,7 @@ We have [farmville][farmville] which provides
 
 ### Tech
 
-- [Grid FW setup repo](https://github.com/telusdigital/farmville)
+- [Grid FW setup repo](https://github.com/telus/farmville)
 - [Machine setup](https://drive.google.com/open?id=1rkqCqPDlNR_aH4zrTGWEqb-jyF8jJ6-pI1EH13hl3rA)
 - [Framework requirements design](https://docs.google.com/presentation/d/1NlHf1CCi6PQ23HwIUYKgGEQcOrGelzJgb9ZKEwX21ZA)
 - [Grid setup](https://drive.google.com/open?id=1CNwNHZbw8i8rchWri6SmIffWFrocuJjTcgv0wNAo8RI)
@@ -140,7 +140,7 @@ We have [farmville][farmville] which provides
 
 [df media: nestcam]: devicefarm_media/nestcam.jpeg
 
-[farmville]: https://github.com/telusdigital/farmville
+[farmville]: https://github.com/telus/farmville
 
 [df media: webapp]: devicefarm_media/webapp.gif
 

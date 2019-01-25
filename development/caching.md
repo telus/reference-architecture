@@ -67,12 +67,12 @@ To gain access to Amazon IAM, you can submit a pull request to the Data VPC IAM 
 ### Resources
 
 - [Elasticache Docs](http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/WhatIs.html)
-- [Terraform Elasticache Module](https://github.com/telusdigital/terraform-aws_elasticache_cluster)
+- [Terraform Elasticache Module](https://github.com/telus/terraform-aws_elasticache_cluster)
 - [Data VPC MAIN][terraform-openshift-datavpc-main]
 - [Data VPC SANDBOX][terraform-openshift-datavpc-sandbox]
 - [Data VPC IAM][terraform-openshift-datavpc-iam]
 
 [cache-control-spec]: http://httpwg.org/specs/rfc7234.html#header.cache-control
-[terraform-openshift-datavpc-main]: https://github.com/telusdigital/terraform-openshift-datavpc-main
-[terraform-openshift-datavpc-sandbox]: https://github.com/telusdigital/terraform-openshift-datavpc-sandbox
-[terraform-openshift-datavpc-iam]: https://github.com/telusdigital/terraform-openshift-datavpc-iam
+[terraform-openshift-datavpc-main]: https://github.com/telus/terraform-openshift-datavpc-main
+[terraform-openshift-datavpc-sandbox]: https://github.com/telus/terraform-openshift-datavpc-sandbox
+[terraform-openshift-datavpc-iam]: https://github.com/telus/terraform-openshift-datavpc-iam

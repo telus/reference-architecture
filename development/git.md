@@ -30,7 +30,7 @@ Team members utilising Git and contributing to project repositories can follow [
 - [Git][git]
 - [GitHub][github]
 
-[org]: https://github.com/orgs/telusdigital/people
+[org]: https://github.com/orgs/telus/people
 [contribution]: ../process/contribution-model.md
 [github-ssh]: https://help.github.com/articles/connecting-to-github-with-ssh/
 [github-gpg]: https://help.github.com/articles/signing-commits-using-gpg/

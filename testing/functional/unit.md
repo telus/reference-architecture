@@ -61,4 +61,4 @@ ie: Given a `Card` that gets wrapped in an HoC, the directory structure should l
 
 [tdd]: https://en.wikipedia.org/wiki/Test-driven_development
 [sonarqube]: https://github.com/SonarSource/sonarqube
-[telus-sonarqube]: https://github.com/telusdigital/sonarqube
+[telus-sonarqube]: https://github.com/telus/sonarqube
