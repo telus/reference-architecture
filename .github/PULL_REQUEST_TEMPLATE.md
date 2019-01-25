@@ -21,7 +21,7 @@
 - [ ] this topic was discussed in the [Technology Forum][technology-forum] _(ignore if the pull request represents small changes)_
 - [ ] provided a descriptive topic and overview of contribution
 - [ ] documentation format follows the [topic template][template]
-- [ ] fork is up to date _(Hint: ["Syncing a Fork"][guide-forks])_
+- [ ] branch is up to date with master
 - [ ] "work in progress" commits are squashed _(Hint: ["Squashing Commits"][guide-squash])_
 - [ ] commits follow the [Conventional ChangeLog][conventional-changelog] format
 - [ ] no sensitive content included, such as:
@@ -31,6 +31,5 @@
 
 [template]: https://github.com/telus/reference-architecture/blob/master/.template.md
 [conventional-changelog]: https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular
-[guide-forks]: https://help.github.com/articles/syncing-a-fork/
 [guide-squash]: https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History
 [technology-forum]: https://github.com/telus/technology-forum]
