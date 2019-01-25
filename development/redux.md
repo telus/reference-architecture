@@ -38,7 +38,7 @@ programming, and therefore highly unit testable.
 Our
 [TELUS isomorphic starter kit](https://github.com/telus/telus-isomorphic-starter-kit)
 defines our standard UI application, with React and Redux at its heart. The
-[FAQ](https://github.com/telus/telus-isomorphic-starter-kit/tree/master/ui#faq)
+[FAQ](https://github.com/telus/telus-isomorphic-starter-kit/tree/master/app#faq)
 has a lot of information about how we use Redux.
 
 ### React Component
