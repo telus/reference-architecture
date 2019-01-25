@@ -21,7 +21,7 @@
 - [ ] this topic was discussed in the [Technology Forum][technology-forum] _(ignore if the pull request represents small changes)_
 - [ ] provided a descriptive topic and overview of contribution
 - [ ] documentation format follows the [topic template][template]
-- [ ] branch is up to date
+- [ ] branch is up to date with master
 - [ ] "work in progress" commits are squashed _(Hint: ["Squashing Commits"][guide-squash])_
 - [ ] commits follow the [Conventional ChangeLog][conventional-changelog] format
 - [ ] no sensitive content included, such as:
