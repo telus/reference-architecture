@@ -30,4 +30,4 @@ Any library should:
 ## References
 
 - [Versioning](versioning.md)
-- [npm library starter kit](https://github.com/telus/npm-library-starter-kit)
+- [create-library](https://github.com/telus/create-library)
