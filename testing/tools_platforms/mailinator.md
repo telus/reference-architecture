@@ -12,8 +12,14 @@ Mailinator is a disposable email service that lets you use any email address you
 
 ## How
 
-We have a month to month contract that offers access to a secured (by token) access to their API.
-Hostname used by the old Ruby stack is `@binkmail.com`.
+We have a month to month contract that offers access to a secured access to their API.
+
+Get the token from Vault with Shippy:
+```bash
+shippy get secret mailinator --common
+```
+
+Example of hostname that can be used: `@binkmail.com`.
 
 ## Who
 
