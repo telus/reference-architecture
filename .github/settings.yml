@@ -1,4 +1,4 @@
-_extends: org-settings:base.yml
+_extends: org-settings
 
 repository:
   name: reference-architecture
