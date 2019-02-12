@@ -37,7 +37,7 @@ jobs:
 
 workflows:
   version: 2
-  run:
+  default:
     jobs:
       - build
       - lint:
