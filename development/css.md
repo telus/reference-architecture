@@ -18,15 +18,14 @@ The preferred approach is to use automated build-time style scoping in combinati
 
 ## How
 
-While we do not currenly have a standardized technology to handle automated build-time style scoping, there are a few libraries in use today, including [styled-components](https://www.styled-components.com/) and [CSS Modules](https://github.com/css-modules/css-modules). We hope to soon agree on a recommended technology.
+We currently use [styled-components](https://www.styled-components.com/) as our css technology to handle automated build-time style scoping. This allows us to write [styles in JavaScript](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660) (CSS-in-JS) rather than using a pre-processor such as Sass or plain CSS. Doing so solves the co-location problem by attaching styles directly to components.
 
 We also have some best practices to follow when styling applications:
 
-- Always try to reuse existing styles and components (such as TDS components) before creating new styles.
-- Write [styles in JavaScript](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660) (CSS-in-JS) rather than using a pre-processor such as Sass or plain CSS.
-- Follow the "styled component" pattern by attaching styles directly to components.
-- Push logic out of CSS into JavaScript (such as animations, pseudo-states such as :hover/:focus, media queries) so that the code is easier to reason about, test, and maintain.
-- Share functionality via components instead of CSS classes (even layout or animations can be created as components).
+- Must use [style objects](https://www.styled-components.com/docs/advanced#style-objects) with the `styled` syntax when creating styled-components
+- Should try to reuse existing components (such as TDS components) before creating new styled-components
+- Recommend that functionality such as layouts and animations be created and shared via components
+- Must [sanitize](https://www.styled-components.com/docs/advanced#security) user input if it is to be used as styles
 
 ## References
 
@@ -34,3 +33,4 @@ We also have some best practices to follow when styling applications:
 - [caniuse.com (Browser compatibility tables)](http://caniuse.com/)
 - [CSS Tricks](https://css-tricks.com/)
 - [React: CSS in JS by Christopher "vjeux" Chedeau](http://blog.vjeux.com/2014/javascript/react-css-in-js-nationjs.html)
+- [Announcing native support for the css prop in styled-components](https://medium.com/styled-components/announcing-native-support-for-the-css-prop-in-styled-components-245ca5252feb)
