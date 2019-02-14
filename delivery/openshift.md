@@ -44,7 +44,7 @@ Each outcome team also gets an `o-outcome-team` namespace. Only users who are ad
 
 ### OpenShift Cluster Provisioning
 
-Our [OpenShift Cluster Provisioning](https://github.com/telusdigital/openshift-cluster-provisioning) scripts set up the baseline of our OpenShift clusters. All projects and user access roles are defined here. You'll have to submit a pull request to this git repository, if you want to set up a user, squad or project.
+Our [OpenShift Cluster Provisioning](https://github.com/telus/openshift-cluster-provisioning) scripts set up the baseline of our OpenShift clusters. All projects and user access roles are defined here. You'll have to submit a pull request to this git repository, if you want to set up a user, squad or project.
 
 ### Configurations
 

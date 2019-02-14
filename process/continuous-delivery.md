@@ -1,5 +1,7 @@
 # Continuous Delivery (and Deployment)
 
+> **CI vs CD ?** Please refer to the [CI/CD topic](ci-cd.md).
+
 ## Why
 
 Our [continuous integration](continuous-integration.md) build pipeline asserts that our application artifact is built and tested correctly. Given the confidence that our pipeline instills in our code, when we have proper testing practices, we should also be able to automate the deployment of any version of our application all the way to production.

@@ -16,7 +16,7 @@ Rather than sending a blank page with a JavaScript application, an isomorphic ap
 
 ## How
 
-The [TELUS Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit) is a boilerplate application, which is a [template](starter-kits.md) for building an Isomorphic/Universal React.js UI. It has a `client.js` and a `server.js`, which contain the relevant Isomorphic bootstrapping code. The rest of the code (the React components, the Redux state, etc.) is Universal and shared between server and client side.
+The [TELUS Isomorphic Starter Kit](https://github.com/telus/telus-isomorphic-starter-kit) is a boilerplate application, which is a [template](starter-kits.md) for building an Isomorphic/Universal React.js UI. It has a `client.js` and a `server.js`, which contain the relevant Isomorphic bootstrapping code. The rest of the code (the React components, the Redux state, etc.) is Universal and shared between server and client side.
 
 ## Who
 
@@ -26,4 +26,4 @@ Developers, developers, developers, developers.
 
 - [AirBnB Isomorphism](https://medium.com/airbnb-engineering/isomorphic-javascript-the-future-of-web-apps-10882b7a2ebc)
 - [Isomorphism vs Universal](https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb)
-- [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit)
+- [Isomorphic Starter Kit](https://github.com/telus/telus-isomorphic-starter-kit)

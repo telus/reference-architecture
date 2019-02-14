@@ -14,7 +14,7 @@ OpenShift also alleviates the traditional achilles heel of Jenkins: being a hype
 
 ### Jenkins starter kit
 
-Currently we are using an OpenShift dedicated cluster. Sadly, this means we cannot update the default Jenkins Docker image, to include plugins like the Slack notifier. As such, we have extended the OpenShift image with our own, in a separate git repository. To kick off any reference architecture project, you'll need to install the [Jenkins Starter Kit](https://github.com/telusdigital/openshift-jenkins-starter-kit) to your project.
+Currently we are using an OpenShift dedicated cluster. Sadly, this means we cannot update the default Jenkins Docker image, to include plugins like the Slack notifier. As such, we have extended the OpenShift image with our own, in a separate git repository. To kick off any reference architecture project, you'll need to install the [Jenkins Starter Kit](https://github.com/telus/openshift-jenkins-starter-kit) to your project.
 
 ### Jenkinsfile
 

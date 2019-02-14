@@ -42,9 +42,9 @@ When consuming an API, response data should be validated whether or not validati
 When handling a schema validation error, if the API is unable to finish processing the client's request, then the API should respond with the HTTP status code `503 Service Unavailable` to indicate that a downstream dependency failed.
 
 Example:
-- [Ajv validation logic](https://github.com/telusdigital/api-platform-utils/blob/master/src/validate-body/index.js)
+- [Ajv validation logic](https://github.com/telus/api-platform-utils/blob/master/src/validate-body/index.js)
 in `api-platform-utils`
-- [Schema](https://github.com/telusdigital/api-platform-order/blob/master/src/domain/order-automation/quote/quoteResponseSchema.js) for BTO Order Management Service GET quote response in api-platform-order
+- [Schema](https://github.com/telus/api-platform-order/blob/master/src/domain/order-automation/quote/quoteResponseSchema.js) for BTO Order Management Service GET quote response in api-platform-order
 
 ## References
 

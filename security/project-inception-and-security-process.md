@@ -15,8 +15,8 @@ A high-level overview of TELUS security process that a project team is required 
 The standard engagement of the TELUS security and privacy teams for a digital initiative is done through internal processes that must be coordinated by a TELUS prime. TELUS prime is typically a PO or tech lead who must also be a TELUS employee (not vendor), as he/she would require access to corporate network to access, submit and make changes to required online forms.
 
 - Environment security configuration:
-  - TELUS digital initiatives - staging and production environments must be configured to route through staging and production inbound proxy respectively as per [instructions](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md).
-  - Vendor hosted/whitelabel TELUS solutions - Ensure that your development, staging or demo environments are not accessible over the internet. Staging environments must be ip-whitelisted to only a limited number of IP addresses that require access or secured with a server-level basic authentication. Production environment must follow [domain management](https://github.com/telusdigital/reference-architecture/blob/master/security/domain-management.md) process.
+  - TELUS digital initiatives - staging and production environments must be configured to route through staging and production inbound proxy respectively as per [instructions](https://github.com/telus/reference-architecture/blob/master/delivery/inbound-proxies.md).
+  - Vendor hosted/whitelabel TELUS solutions - Ensure that your development, staging or demo environments are not accessible over the internet. Staging environments must be ip-whitelisted to only a limited number of IP addresses that require access or secured with a server-level basic authentication. Production environment must follow [domain management](https://github.com/telus/reference-architecture/blob/master/security/domain-management.md) process.
 
 - Privacy Impact Assessment (PIA): Complete the form found at go/PIA. 
   - Allow 2 weeks to have a PIA prime assigned to work with you.

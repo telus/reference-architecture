@@ -65,7 +65,7 @@ Long story short: Mac minis power devices as Appium nodes, connects to a Seleniu
 
 <details><summary>Q: How can I start using devicefarm for running my automated tests?</summary><p> 
 
-For web automation, if you are using Nightwatch.js, or you are still on the Ruby/Cucumber automation stack that we had previously implemented(yes it's still supported), then you are in luck! You can point to the Selenium server dedicated for devicefarm in your Selenium config. Where is this Selenium server you ask? Checkout our [starter-kit:e2e devicefarm config](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.devicefarm.conf.js#L42)!
+For web automation, if you are using Nightwatch.js, or you are still on the Ruby/Cucumber automation stack that we had previously implemented(yes it's still supported), then you are in luck! You can point to the Selenium server dedicated for devicefarm in your Selenium config. Where is this Selenium server you ask? Checkout our [starter-kit:e2e devicefarm config](https://github.com/telus/telus-isomorphic-starter-kit/blob/master/e2e/nightwatch.devicefarm.conf.js#L42)!
 
 </p></details>
 
@@ -106,7 +106,7 @@ FYI [Perfecto][perfecto] (who specializes in physical device testing) recommends
 
 <details><summary>Q: How are the devices managed?</summary><p> 
 
-- Software layer: For a short-term strategy, we currently just use selenium grid's console, as well as some shell scripts to manage the devices.  For a long term strategy, a proper MDM (mobile device management) system [needs to be established](https://github.com/telusdigital/farmville/issues/18).
+- Software layer: For a short-term strategy, we currently just use selenium grid's console, as well as some shell scripts to manage the devices.  For a long term strategy, a proper MDM (mobile device management) system [needs to be established](https://github.com/telus/farmville/issues/18).
 
 - Hardware / infrastructure: Currently manually managed
 
@@ -153,7 +153,7 @@ The rationale is that a farm can be "grown" or scaled up, whereas a lab is perce
 
 - Ask in #devicefarm on Slack
 - Contact @Nintendot / Slack: @benexpress / Email: ben.chen@telus.com
-- Contact @telusdigital/digital-farmers 
+- Contact @@telus/digital-farmers 
 
 </p></details>
 

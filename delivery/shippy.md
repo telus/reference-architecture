@@ -8,7 +8,7 @@ We want a common tool to access our delivery infrastructure and development envi
 
 The indefatigable TELUS digital delivery platform assistant.
 
-- Clone and deploy [reference architecture](https://github.com/telusdigital/reference-architecture) starter kits
+- Clone and deploy [reference architecture](https://github.com/telus/reference-architecture) starter kits
 - Onboard users into OpenShift & HashiCorp Vault
 - Create squads & assign tech leads & members
 - Create projects & assign them to squads
@@ -60,5 +60,5 @@ Shippy core values:
 
 ## References
 
-- [shippy-cli](https://github.com/telusdigital/shippy-cli)
-- [@telusdigital/shippy-cli](https://www.npmjs.com/package/@telusdigital/shippy-cli)
+- [shippy-cli](https://github.com/telus/shippy-cli)
+- [@telus/shippy-cli](https://www.npmjs.com/package/@telus/shippy-cli)
