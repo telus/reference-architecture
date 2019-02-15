@@ -29,3 +29,6 @@ of using [Play Store](https://play.google.com) release tracks.
 - [JUnit4](https://junit.org/junit4/) for unit tests (being deprecated in favour of JUnit5)
 - [JUnit5](https://junit.org/junit5/) newest version of JUnit test framework
 - [Espresso](https://developer.android.com/training/testing/espresso/) for UI testing
+
+## Who
+@eslimaf @vknez95 from My Telus - Team Vader
