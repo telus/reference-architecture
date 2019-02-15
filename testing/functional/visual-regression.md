@@ -10,7 +10,7 @@ Use [node-resemble-js](https://www.npmjs.com/package/node-resemble-js) to perfor
 
 ## How
 
-In our [isomorphic starter kit](../development/starter-kits.md), we created a [nightwatch](http://nightwatchjs.org/) custom assertion library that runs in the [e2e](e2e.md) testing phase.
+In our [isomorphic starter kit](../../development/starter-kits.md), we created a [nightwatch](http://nightwatchjs.org/) custom assertion library that runs in the [e2e](e2e.md) testing phase.
 
 When you run the assertion for the first time, it will generate and store new baseline screenshots for your tests.
 

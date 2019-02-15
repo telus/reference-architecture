@@ -2,7 +2,7 @@
 
 ## Why
 
-We need a way of managing CSS complexity at scale, with many developers contributing and sharing styling across many applications. Styles must not overlap or conflict inadvertently, which causes non-deterministic behaviour and defects. It must be easy to do the right thing, even for developers who are not experts at CSS.
+We need a method of managing CSS complexity at scale, as many developers contribute and share styling across many applications. Styles must not overlap or conflict inadvertently, which causes non-deterministic behaviour and defects. It must be easy for developers to do the right thing, even if they are not experts at CSS.
 
 ## What
 
@@ -10,23 +10,23 @@ In a [component architecture](./react.md), co-locating styles with components is
 
 ### Avoid
 
-An often-used methodology is an agreed-upon naming convention for CSS classes, such as [BEM (Block-Element-Modifier)](http://getbem.com/). While conventions are good, everyone must **always** remember to follow the BEM rules, making it more of a manual process that is prone to mistakes.
+An often-used methodology is an agreed-upon naming convention for CSS classes, such as [BEM (Block-Element-Modifier)](http://getbem.com/). While conventions are useful, everyone must **always** remember to follow the BEM rules. This results in a manual process that is prone to mistakes.
 
 ### Use
 
-Instead, the preferred approach is to use automated build-time style scoping in combination with co-location of styles and components. With minimal tooling, styles are scoped automatically as part of your application's build process. This allows the developer to use whatever class names make the most sense for each component (or to stop hand writing class names altogether), without worry of style conflicts or inadvertent class name overriding.
+The preferred approach is to use automated build-time style scoping in combination with co-location of styles and components. With minimal tooling, styles are scoped automatically as part of the application's build process. This allows the developer to use the class names that make the most sense for each component (or to stop manually writing class names altogether), without worrying about style conflicts or inadvertent class name overriding.
 
 ## How
 
-While we do not currenly have a standardized technology to handle automated build-time style scoping, there are a few in use today, including [styled-components](https://www.styled-components.com/) and [CSS Modules](https://github.com/css-modules/css-modules). We hope to soon align on a recommended technology.
+While we do not currenly have a standardized technology to handle automated build-time style scoping, there are a few libraries in use today, including [styled-components](https://www.styled-components.com/) and [CSS Modules](https://github.com/css-modules/css-modules). We hope to soon agree on a recommended technology.
 
 We also have some best practices to follow when styling applications:
 
-- Always try to reuse existing styles and components (such as TDS components) before creating new styles
-- Seek to write [styles in JavaScript](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660) (CSS-in-JS) rather than using a pre-processor such as Sass or plain CSS
+- Always try to reuse existing styles and components (such as TDS components) before creating new styles.
+- Write [styles in JavaScript](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660) (CSS-in-JS) rather than using a pre-processor such as Sass or plain CSS.
 - Follow the "styled component" pattern by attaching styles directly to components.
-- Attempt to push logic out of CSS into JavaScript (such as animations, pseudo-states such as :hover/:focus, media queries) so that it is easier to reason about, test, and maintain
-- Share functionality via components instead of CSS classes (even layout or animations can be created as components)
+- Push logic out of CSS into JavaScript (such as animations, pseudo-states such as :hover/:focus, media queries) so that the code is easier to reason about, test, and maintain.
+- Share functionality via components instead of CSS classes (even layout or animations can be created as components).
 
 ## References
 

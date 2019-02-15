@@ -2,7 +2,7 @@
 
 ## Why
 
-Small [user stories](process/user-stories.md) are beautiful, as they flow through the system more quickly. This gives us faster feedback, which means that its easier to find and fix bugs.  It also means that each increment has less risk in it, as less code is changed. 
+Small [user stories](user-stories.md) are beautiful, as they flow through the system more quickly. This gives us faster feedback, which means that its easier to find and fix bugs.  It also means that each increment has less risk in it, as less code is changed. 
 
 ### Faster feedback compound benefits
 
@@ -14,7 +14,7 @@ One popular approach is to aim for stories that take one day to kick off, develo
 
 ## How
 
-The [INVEST](process/user-stories.md) principles around what a good story looks like are still important - each story should be independent, negotiable, valuable, small, and testable. 
+The [INVEST](user-stories.md) principles around what a good story looks like are still important - each story should be independent, negotiable, valuable, small, and testable. 
 
 Given these constraints, how do you make stories smaller?  Here's one example<sup>[1](#footnote1)</sup>: 
 

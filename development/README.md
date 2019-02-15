@@ -5,7 +5,6 @@
 - [Starter Kits](starter-kits.md)
 - [Versioning](versioning.md)
 - [Colophon](colophon.md)
-- [BFF](bff.md) _(Backend-for-frontend)_
 - [URI Templates & Structure](uri-structure.md)
 - [Application Configuration](application-configuration.md)
 - [Dependency Management](dependencies.md)
@@ -33,6 +32,7 @@
 - [Jest](jest.md)
 - [Logging](logging.md)
 - [NewRelic](newrelic.md)
+- [Contrast](contrast.md)
 - [Publishing to NPM](npm.md)
 - [Webpack](webpack.md)
 
@@ -45,4 +45,4 @@
 ### Guidelines
 
 - [Accessibility](accessibility.md)
-- [Supported Browers](supported-browsers.md)
+- [Supported Browsers](supported-browsers.md)

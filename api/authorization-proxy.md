@@ -22,4 +22,4 @@ The Authorization Proxy handles:
 
 ## How
 
-The Authorization Proxy [README](https://github.com/telusdigital/authorization-proxy)
+The Authorization Proxy [README](https://github.com/telus/authorization-proxy)

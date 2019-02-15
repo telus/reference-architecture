@@ -1,0 +1,6 @@
+{
+  "extends": "@telus/semantic-release-config/github",
+  "releaseRules": [
+    { "type": "docs", "release": "minor" }
+  ]
+}

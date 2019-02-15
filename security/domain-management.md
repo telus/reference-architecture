@@ -8,7 +8,7 @@ In order to maintain customer trust and ensure a consistent experience when visi
 
 ### Digital Platform Applications
 
-TELUS digital properties that are on Digital Platform (RA) are to be routed through [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md) in order to be hosted as a context path under www.telus.com domain - example: www.telus.com/app
+TELUS digital properties that are on Digital Platform (RA) are to be routed through [inbound proxy](https://github.com/telus/reference-architecture/blob/master/delivery/inbound-proxies.md) in order to be hosted as a context path under www.telus.com domain - example: www.telus.com/app
 
 ### Whitelabel/Vendor hosted TELUS solutions
 
@@ -16,7 +16,7 @@ Whitelabel/Vendor hosted TELUS solutions (not on RA/Digital Platform) must follo
 
 ## How
 
-Digital Platform Applications must be configured to be routed through the [inbound proxy](https://github.com/telusdigital/reference-architecture/blob/master/delivery/inbound-proxies.md)<br>
+Digital Platform Applications must be configured to be routed through the [inbound proxy](https://github.com/telus/reference-architecture/blob/master/delivery/inbound-proxies.md)<br>
 
 All other applications, including Whitelabel/Vendor hosted TELUS solutions:
 

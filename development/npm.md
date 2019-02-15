@@ -63,7 +63,7 @@ We currently have three shared accounts for specific purposes:
   - `npm version (major | minor | patch)`
   - `git push && git push --tags`
   - `npm publish`
-7. If your package needs to be private and internal to TELUS Digital, reach out to one of the [Architects](https://github.com/orgs/telus/teams/digital-architecture/members) for assistance in getting the package published in the `@telusdigital` organization and with read-only permissions assigned to the `telusdigital-dev` account token.
+7. If your package needs to be private and internal to TELUS Digital, reach out to one of the [Architects](https://github.com/orgs/telus/teams/digital-architecture/members) for assistance in getting the package published in the `@telus` organization and with read-only permissions assigned to the `telusdigital-dev` account token.
 
 ### Recommended file structure
 

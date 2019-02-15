@@ -27,11 +27,11 @@ The hardware and tooling requirements below reflect an evolving standard. At TEL
 
 > 2.5GHz dual-core 7th generation Intel Core i7 processor, Turbo Boost up to 4.0GHz, RAM 16GB or more, 256/512GB SSD storage
 
-**[ThinkPad X1 Carbon (5th Gen)](https://www.lenovo.com/ca/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Carbon-5th-Gen/p/22TP2TXX15G)**
+**[ThinkPad X1 Carbon (6th Gen)](https://www.lenovo.com/ca/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Carbon-6th-Gen/p/22TP2TXX16G)**
 
-> Linux, 7th Generation Intel® Core™ i7-7500U Processor (2.70GHz, up to 3.50GHz, 4MB Cache), RAM 16 GB or more, 256/512GB SSD storage
+> Linux, 8th Generation Intel® Core™ i7-8550U (1.80GHz, up to 4.0GHz with Turbo Boost, 8MB Cache), RAM 16 GB or more, 256/512GB SSD storage
 
-**[Dell XPS 13 _(new model)_](https://www.dell.com/en-ca/shop/dell-laptops-netbooks-and-tablets/new-xps-13-laptop/spd/xps-13-9370-laptop?view=configurations&appliedRefinements=103)**
+**[Dell XPS 13 _(new model)_](https://www.dell.com/en-ca/work/shop/laptops-ultrabooks/xps-13-developer-edition/spd/xps-13-9370-laptop/cax13w10p2c606ubuntuca)**
 
 > Linux, 8th Generation Intel® Core™ i7-8550U Processor (8M Cache, up to 4.0 GHz, 4 cores), RAM 16GB LPDDR3 2133MHz, 256/512GB PCIe SSD
 
