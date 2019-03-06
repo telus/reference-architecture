@@ -73,6 +73,7 @@ However, you should invest in these tests, **because** users’ affection and tr
   - [Security measures][devicefarm-security]
   - [FAQs][devicefarm-faq]
 - [Saucelabs][saucelabs]
+- [Mailinator][mailinator]
 
 [unit-tests]: functional/unit.md
 [contract-tests]: functional/consumer-driven-contracts.md
@@ -94,5 +95,6 @@ However, you should invest in these tests, **because** users’ affection and tr
 [devicefarm-security]: tools_platforms/devicefarm-security.md
 
 [saucelabs]: tools_platforms/saucelabs.md
+[mailinator]: tools_platforms/mailinator.md
 
 [defect-standards]: standards/defect.md
