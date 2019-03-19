@@ -28,6 +28,20 @@ We use [Sonarqube][sonarqube] for static code analysis purposes.
 
 For details on what value it adds to reference architecture and how to have it set up for your project, check out [Sonarqube in TELUS Digital][telus-sonarqube]
 
+### Testing visual components
+
+At TELUS, we build and consume many visual React components such as those in the [TELUS Design System](https://tds.telus.com/). The following functionality is
+most appropriate for unit tests:
+
+- Props or functionality that relate to accessibility, such as assuring supplied text is being rendered
+- User interactions such as an `onClick` that invokes a function
+- Multiple snapshots for different variants of a components, such as a purple or green button
+
+The following are **not necessary** for unit tests and are better-suited for snapshots or [end-to-end](./e2e.md) tests:
+
+- Validating props being set
+- Validating CSS styles being set based on props
+
 ## When
 
 - Writing unit tests: ideally, before you write the actual code, as we want to follow the [TDD][tdd]
