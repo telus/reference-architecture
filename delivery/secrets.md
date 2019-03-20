@@ -26,7 +26,9 @@ Set a solution to retrieve secrets locally and on the project delivery platform.
 
 In Vault by using [Shippy](https://github.com/telus/shippy-cli).
 
-Specific [documentation for TELUS Digital](https://github.com/telus/my-telus-e2e/blob/master/SECRETS.md).
+Additional instructions can be found here:
+- [Consuming secrets from the Vault with Environment Variables](../development/consuming-secret.md)
+- [How to create and consume secrets in json format (my-telus-e2e)](https://github.com/telus/my-telus-e2e/blob/master/SECRETS.md)
 
 ### What is a "Secret"
 
