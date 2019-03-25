@@ -33,7 +33,7 @@ The hardware and tooling requirements below reflect an evolving standard. At TEL
 
 **[Dell XPS 13 _(new model)_](https://www.dell.com/en-ca/work/shop/laptops-ultrabooks/xps-13-developer-edition/spd/xps-13-9380-laptop/cax13w10p1c707subuntuca)**
 
-> 8th Generation Intel® Core™ i7-8565U Processor (8MB Cache, up to 4.6 GHz, 4 cores), RAM 16GB LPDDR3 2133MHz, 256/512GB PCIe SSD
+> Linux, 8th Generation Intel® Core™ i7-8565U Processor (8MB Cache, up to 4.6 GHz, 4 cores), RAM 16GB LPDDR3 2133MHz, 256/512GB PCIe SSD
 
 ### Software
 
