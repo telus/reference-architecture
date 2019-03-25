@@ -31,9 +31,9 @@ The hardware and tooling requirements below reflect an evolving standard. At TEL
 
 > Linux, 8th Generation Intel® Core™ i7-8550U (1.80GHz, up to 4.0GHz with Turbo Boost, 8MB Cache), RAM 16 GB or more, 256/512GB SSD storage
 
-**[Dell XPS 13 _(new model)_](https://www.dell.com/en-ca/work/shop/laptops-ultrabooks/xps-13-developer-edition/spd/xps-13-9370-laptop/cax13w10p2c606ubuntuca)**
+**[Dell XPS 13 _(new model)_](https://www.dell.com/en-ca/work/shop/laptops-ultrabooks/xps-13-developer-edition/spd/xps-13-9380-laptop/cax13w10p1c707subuntuca)**
 
-> Linux, 8th Generation Intel® Core™ i7-8550U Processor (8M Cache, up to 4.0 GHz, 4 cores), RAM 16GB LPDDR3 2133MHz, 256/512GB PCIe SSD
+> Linux, 8th Generation Intel® Core™ i7-8565U Processor (8MB Cache, up to 4.6 GHz, 4 cores), RAM 16GB LPDDR3 2133MHz, 256/512GB PCIe SSD
 
 ### Software
 
