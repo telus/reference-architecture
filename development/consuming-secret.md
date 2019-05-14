@@ -29,7 +29,7 @@ There are two common ways to consume secrets in Openshift:
 
 ## Recommended Approach
 
-It is recommneded to use the Environment Variable approach due to simplicity.
+It is recommended to use the Environment Variable approach due to simplicity.
 
 ## How
 
