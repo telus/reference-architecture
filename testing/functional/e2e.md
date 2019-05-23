@@ -38,7 +38,7 @@ When writing your tests, please keep the following standards in mind with respec
 
 #### HTML and CSS
 
-- Selectors: give priority to ID and CSS with creation of data-test class attributes. Adopt XPATH only if the 2 first options are not applicable.[2][ref2]
+- Selectors: should be reliable, readable and durable.[2][ref2]
 - Lint: use the same package as for the BFF and UI to respect TELUS Digital standards and consistency in the repository.[3][ref3]
 - Chose explicit wait over implicit wait, never mix together.[4][ref4]
 - Code cleanup: remove everything from the starterkit that is not relevant in the project (hello-page, analytics for authenticated experience like My TELUS, ...).
