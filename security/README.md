@@ -36,4 +36,4 @@ Owners or stakeholders of TELUS projects should use the TELUS Security Standards
 
 ## References
 
-- [OWASP Secure Coding Cheat Sheet](https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet)
+- [OWASP Secure Coding Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md)
