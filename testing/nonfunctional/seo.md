@@ -40,7 +40,7 @@ We're all ears. [Please fill out this form.](https://docs.google.com/forms/d/1Ta
   - [ ] Element is between 30 and 60 characters including spaces
   - [ ] Each word in the title should be unique
     - a title tag of "Events - About TELUS - About TELUS" is not valid
-  - [ ] Element should conform to pattern: <Keyword rich page title> | TELUS OR <Keyword rich page title> | TELUS \[Sub brand\]
+  - [ ] Element should conform to pattern: \<Keyword rich page title\> | TELUS **OR** \<Keyword rich page title\> | TELUS \[Sub brand\]
     - e.g. "Apple iPhone X on Canada's fastest phone network | TELUS"
     - e.g. "Digital health solutions in Canada | TELUS Health"
   - [ ] Element must include one or more of the comma-separated values found in the meta keywords element.
