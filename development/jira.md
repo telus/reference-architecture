@@ -36,6 +36,9 @@ Notes
 
 ### Viewing related GitHub updates on a Jira Story
 
+
+Example as shown per Jira documentation:
+
 ![Jira Development Panel][panel]
 
 [panel]: https://confluence.atlassian.com/jirasoftwarecloud/files/777002795/947850193/1/1522126382029/Issue+with+dev+panel.png
