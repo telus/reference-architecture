@@ -28,6 +28,7 @@
 - [Caching](caching.md)
 - [Databases](databases.md)
 - [Git & GitHub](git.md)
+- [GitHub & Jira Integration](jira.md)
 - [Jest](jest.md)
 - [Logging](logging.md)
 - [NewRelic](newrelic.md)
