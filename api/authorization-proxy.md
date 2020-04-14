@@ -6,7 +6,7 @@ The Authorization Proxy was created for centralizing OAuth2 login/logout and man
 
 Another problem that it solves is keeping consistent session across applications under the umbrella domain of `www.telus.com`. For example, logging out from one application should log the user out from all applications or interacting with one application should extend the session for another.
 
-With centralized session, we can also implement authenticated components on any page. We can now implement a login/logout button on all pages or implement a usage meter on mobility makreintg pages if the customer has already logged in.
+With centralized session, we can also implement authenticated components on any page. We can now implement a login/logout button on all pages or implement a usage meter on mobility marketing pages if the customer has already logged in.
 
 ## What
 
