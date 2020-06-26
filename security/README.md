@@ -22,6 +22,7 @@ TELUS Security Standards are intended to serve as guidelines to which we should 
 - [Domain Management](domain-management.md)
 - [Password Policy](password-policy.md)
 - [Privacy Policy](privacy-policy.md)
+- [Web Application Firewall (WAF) Standard](waf-standard.md)
 
 Owners or stakeholders of TELUS projects should use the TELUS Security Standards as follows:
 - review at project inception
