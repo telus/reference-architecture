@@ -51,9 +51,9 @@ To mask these PI information using masking snippet, either provided by 3rd-party
 
 ### Safeguarding PI Data
 
-Special care needs to be given to handling of PI data.
+Special care needs to be given to handling of PI data, aligned with Telus Data & Trust Office.
 
-- Collect PI data only on “as needed" basis.
+- Limit Collection of PI data only on “as needed" basis.
 - Ensure appropriate access controls are in place for PI data.
 - PI data must be handled with extra precaution when sent to client:
   - masking of credit card number
