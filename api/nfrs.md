@@ -4,7 +4,7 @@
 
 This document contains documentation related to non-functional API standards within TELUS Digital.
 
-It is a proof of concept of the architectural standards process and is, itself, a work in progress. Please contact alex.flanagan@telus.com (@alfl in Slack, @alexflanagan on GitHub) with questions.
+It is a proof of concept of the architectural standards process and is, itself, a work in progress.
 
 ### What
 
@@ -35,4 +35,4 @@ This document defines the above standards. They are discussed through [the API T
 
 ### Who
 
-TELUS Digital API Team owns this document. It is a work in progress. Please contact alex.flanagan@telus.com (@alfl in Slack, @alexflanagan on GitHub) with questions.
+No longer any owners.

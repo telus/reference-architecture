@@ -18,11 +18,47 @@
     "url": "https://github.com/telus/reference-architecture/issues"
   },
   "scripts": {
-    "lint:audit": "npm audit",
-    "lint:deps": "npx updated",
-    "lint:ec": "npx editorconfig-checker .",
-    "lint:md": "npx remark --quiet --frail .",
-    "lint": "npx npm-run-all -p lint:*",
-    "setup-local": "npx install-group peer --package @telus/build-essential --no-save"
+    "lint": "remark --quiet --frail ."
+  },
+  "dependencies": {
+    "remark-cli": "^8.0.1",
+    "remark-preset-lint-markdown-style-guide": "^3.0.1"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-lint-markdown-style-guide",
+      [
+        "lint-heading-increment",
+        false
+      ],
+      [
+        "lint-list-item-indent",
+        "space"
+      ],
+      [
+        "lint-list-item-spacing",
+        false
+      ],
+      [
+        "lint-maximum-line-length",
+        false
+      ],
+      [
+        "lint-emphasis-marker",
+        "_"
+      ],
+      [
+        "lint-ordered-list-marker-value",
+        "ordered"
+      ],
+      [
+        "remark-lint-table-pipe-alignment",
+        false
+      ],
+      [
+        "remark-lint-table-cell-padding",
+        false
+      ]
+    ]
   }
 }

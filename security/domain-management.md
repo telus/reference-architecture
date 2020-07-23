@@ -38,7 +38,7 @@ When requesting a TELUS subdomain, keep in mind the following:
 
 ### 2) Requesting Digital Certificates
 
-To request SSL certificate, the TELUS prime should email dldigitalsecurity@telus.com who will create CSR request on behalf of the application owner. The cost of a new cert is $150 USD. If the upper level domain does not exist in Symantec then there is a one time $250 USD charge to get it created (additional $150 charge per server where cert is installed).
+To request SSL certificate, the TELUS prime should email <mailto:dldigitalsecurity@telus.com> who will create CSR request on behalf of the application owner. The cost of a new cert is $150 USD. If the upper level domain does not exist in Symantec then there is a one time $250 USD charge to get it created (additional $150 charge per server where cert is installed).
 Please include the following in your email to `dldigitalsecurity@telus.com`:
 
 - domain
@@ -49,9 +49,9 @@ Please include the following in your email to `dldigitalsecurity@telus.com`:
 ### 3) DNS requests
 
 To request a new TELUS subdomain (or modify an existing one), a TELUS prime should follow the following internal process:
-1. Email CIDC.change@telus.com with the request, it can simply state the following: `We would like to add/remove DNS record for xyz.telus.com`
-2. You will receive a response from CIDC.change@telus.com which will include the incident number (IN#).
-3. Visit GO/SensitiveDNSchange and complete the form found within the site. Add the IN# received from the CIDC team in the appropriate field.
+1. Email <mailto:CIDC.change@telus.com> with the request, it can simply state the following: `We would like to add/remove DNS record for xyz.telus.com`
+2. You will receive a response from <mailto:CIDC.change@telus.com> which will include the incident number (IN#).
+3. Visit [go/SensitiveDNSchange](https://go.telus.com/SensitiveDNSchange) and complete the form found within the site. Add the IN# received from the CIDC team in the appropriate field.
 
 ## Who
 

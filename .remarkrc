@@ -1,5 +1,0 @@
-{
-  "plugins": [
-    "@telus/remark-config"
-  ]
-}

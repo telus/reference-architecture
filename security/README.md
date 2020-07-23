@@ -29,7 +29,7 @@ Owners or stakeholders of TELUS projects should use the TELUS Security Standards
 - use as reference or checklist during system/software development life cycle
 - adhere to throughout the system/software development life cycle
 - ensure the standards are met prior to launch
-- if any deviations of the standards are required contact digital security team for consultation: dldigitalsecurity@telus.com
+- if any deviations of the standards are required contact digital security team for consultation: <mailto:dldigitalsecurity@telus.com>
 
 ## Who
 
