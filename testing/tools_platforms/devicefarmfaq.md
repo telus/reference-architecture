@@ -151,9 +151,7 @@ The rationale is that a farm can be "grown" or scaled up, whereas a lab is perce
 
 <details><summary>Q: I can't find the answer I want!</summary><p> 
 
-- Ask in #devicefarm on Slack
-- Contact @Nintendot / Slack: @benexpress / Email: ben.chen@telus.com
-- Contact @@telus/digital-farmers 
+Ask in #devicefarm on Slack
 
 </p></details>
 

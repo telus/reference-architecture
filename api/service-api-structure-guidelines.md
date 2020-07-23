@@ -7,8 +7,9 @@ Note that it provides guideline on structures like naming conventions, formats a
 and _does not_ dictate REST design of API like use of verbs and resources.
 
 The goal of these guidelines is to:
-1.  Bring consistency in interface so that there is potential to write common code and runtime (like common parser, validator and logging). 
-2.  Promote best practices in interface design
+
+1. Bring consistency in interface so that there is potential to write common code and runtime (like common parser, validator and logging). 
+2. Promote best practices in interface design
 
 ## What
 
@@ -56,9 +57,10 @@ Instead of
 ```
 
 Implication - 
-1.  Populating null values makes initial integration efforts easier for consumer and response schema always available in response
-2.  It is always easier for consumer to check field for nullability than to check for fields existence and then check for valid value.
-3.  Consumers need to code for ignoring additional fields. As new minor version are introduced additional attributes may be returned while maintaining backward compatibility these should not result in parsing errors.
+
+1. Populating null values makes initial integration efforts easier for consumer and response schema always available in response
+2. It is always easier for consumer to check field for nullability than to check for fields existence and then check for valid value.
+3. Consumers need to code for ignoring additional fields. As new minor version are introduced additional attributes may be returned while maintaining backward compatibility these should not result in parsing errors.
 
 ### Return empty array instead of null value
 
