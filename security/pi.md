@@ -22,7 +22,7 @@ The goal is to mitigate business risks and provide customer solutions that take 
 
 To protect customer privacy, TELUS Privacy team requires all these Personal Identifiers entered by TELUS customer, to be blocked to TELUS employees and vendors, in all TELUS github repositories at all times. Personal Identifiers, as entered by TELUS customers, should only be visible to TELUS customer, and no one else.
 
-To mask these PI information using masking snippet, either provided by 3rd-party provider, or creating masking class internally at Telus.
+To mask these PI information using masking snippet, either provided by 3rd-party provider, or creating masking class internally at TELUS.
 
 ### TELUS PI-blocking Requirement
 
@@ -51,9 +51,9 @@ To mask these PI information using masking snippet, either provided by 3rd-party
 
 ### Safeguarding PI Data
 
-Special care needs to be given to handling of PI data.
+Special care needs to be given to handling of PI data, aligned with TELUS Data & Trust Office.
 
-- Collect PI data only on “as needed" basis.
+- Limit Collection of PI data only on “as needed" basis.
 - Ensure appropriate access controls are in place for PI data.
 - PI data must be handled with extra precaution when sent to client:
   - masking of credit card number
