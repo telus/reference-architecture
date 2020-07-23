@@ -10,17 +10,12 @@ RedHat's OpenShift platform is (as of v3.0) an extension of Google's [Kubernetes
 
 ## How
 
-### Video Tutorials
-
-Use your Telus google account to view [YouTube Delivery Playlist](https://www.youtube.com/playlist?list=PLJgHilVD2rhL8Xne1UwpCwiVIB9F1JDL6)
-
 ### Clusters
 
 We currently have two deployed clusters, [main](https://console.telusdigital.openshift.com/) and [sandbox](https://console.telusdigitalsandbox.openshift.com/). The main cluster is intended for our official delivery pipelines, for any application that is intended to go live to customers. The sandbox is designed for short-lived testing: feature branches, test apps, etc. Don't expect projects on the sandbox environment to stick around too long... we purge it occasionally `:)`
 
 ### CLI
-
-Install the [OpenShift CLI](https://docs.openshift.org/latest/cli_reference/get_started_cli.html), to be able to access the cluster from your development workspace.
+Install the [OpenShift CLI](https://console.telusdigital.openshift.com/console/command-line), to be able to access the cluster from your development workspace.
 
 #### Login
 
