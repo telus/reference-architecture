@@ -1,7 +1,0 @@
-{
-  "plugins": [
-    "@telus/remark-config",
-    ["remark-lint-table-pipe-alignment", false],
-    ["remark-lint-table-cell-padding", false]
-  ]
-}
