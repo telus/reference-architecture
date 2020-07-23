@@ -50,5 +50,4 @@ Developers.
 
 ## References
 
-Check the "How it works" section on this guide to learn more about Jira + Github:
-https://confluence.atlassian.com/adminjiracloud/integrating-with-development-tools-776636216.html
+Check the guide from Atlassian called [*Integrating with development tools*](https://confluence.atlassian.com/adminjiracloud/integrating-with-development-tools-776636216.html#Integratingwithdevelopmenttools-howitworksHowitworks) to learn more about Jira + Github.
