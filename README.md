@@ -13,7 +13,7 @@ The goal of the document is to **track** and **discuss** software standards, too
 > _Who is this for?_
 
 - **Existing Team Members** reference and contribute to this document.
-- **Perspective Team Members** learn about TELUS software development standards and practices.
+- **Prospective Team Members** learn about TELUS software development standards and practices.
 - **TELUS partners** familiarize with TELUS software standards and practices prior to project delivery commitments.
 
 ## What
