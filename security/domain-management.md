@@ -38,13 +38,17 @@ When requesting a TELUS subdomain, keep in mind the following:
 
 ### 2) Requesting Digital Certificates
 
-To request SSL certificate, the TELUS prime should email <mailto:dldigitalsecurity@telus.com> who will create CSR request on behalf of the application owner. The cost of a new cert is $150 USD. If the upper level domain does not exist in Symantec then there is a one time $250 USD charge to get it created (additional $150 charge per server where cert is installed).
-Please include the following in your email to `dldigitalsecurity@telus.com`:
 
-- domain
+To request a TLS certificate, the TELUS prime should refer to go/clm Certificate Lifecycle Management.
+
+Exceptions: if the application is behind WAF, IBP or  is a .digital app please email dldigitalsecurity who will help you through the process.
+The cost of a new cert is $150 USD. If the upper level domain does not exist in DigiCert then there is a one time $250 USD charge to get it created
+
+Please include the following in your email:
+- domain name
 - manager name
 - cost center
-- number of servers on which the certificate will be installed
+-team distribution list
 
 ### 3) DNS requests
 
