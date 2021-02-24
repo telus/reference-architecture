@@ -48,7 +48,7 @@ Please include the following in your email:
 - domain name
 - manager name
 - cost center
--team distribution list
+- team distribution list
 
 ### 3) DNS requests
 
