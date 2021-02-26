@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "remark-cli": "^9.0.0",
-    "remark-preset-lint-markdown-style-guide": "^3.0.1"
+    "remark-preset-lint-markdown-style-guide": "^4.0.0"
   },
   "remarkConfig": {
     "plugins": [
