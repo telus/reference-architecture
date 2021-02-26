@@ -38,7 +38,6 @@ When requesting a TELUS subdomain, keep in mind the following:
 
 ### 2) Requesting Digital Certificates
 
-
 To request a TLS certificate, the TELUS prime should refer to go/clm Certificate Lifecycle Management.
 
 Exceptions: if the application is behind WAF, IBP or is a (dot)digital app please email <mailto:dldigitalsecurity@telus.com> who will help you through the process.
