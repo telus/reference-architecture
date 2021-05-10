@@ -60,8 +60,7 @@ branches:
       required_status_checks:
         strict: true
         contexts:
-          - 'ci/circleci: build'
-          - 'ci/circleci: lint'
+          - 'Validate'
 
       restrictions:
         teams:
