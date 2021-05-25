@@ -50,7 +50,7 @@ labels:
     color: D2DAE1
 
 branches:
-  - name: master
+  - name: main
     protection:
       required_pull_request_reviews:
         dismissal_restrictions:
@@ -60,8 +60,7 @@ branches:
       required_status_checks:
         strict: true
         contexts:
-          - 'ci/circleci: build'
-          - 'ci/circleci: lint'
+          - 'Validate'
 
       restrictions:
         teams:

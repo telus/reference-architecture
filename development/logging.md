@@ -20,9 +20,9 @@ For reference-architecture apps, we use [Winston](https://github.com/winstonjs/w
 #### Exception Handling
 - Exceptions may be thrown throughout applications, especially when calling REST services or using libraries.
 - How to handle an exception depends on your use case:
-    - If the exception is trivial/expected, log at debug or info level and move on
-    - If we can still display the requested page, despite an exception, log a warn and move on
-    - If the exception is non-trivial and breaks the page, log an error
+  - If the exception is trivial/expected, log at debug or info level and move on
+  - If we can still display the requested page, despite an exception, log a warn and move on
+  - If the exception is non-trivial and breaks the page, log an error
 
 ### Personal Information
 

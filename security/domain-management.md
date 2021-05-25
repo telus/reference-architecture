@@ -42,6 +42,7 @@ When requesting a TELUS subdomain, keep in mind the following:
 To request a TLS certificate, the TELUS prime should refer to go/clm Certificate Lifecycle Management.
 
 Exception 1 : if the application is behind WAF please email <mailto:dldigitalsecurity@telus.com> who will help you through the process.
+
 The cost of a new cert is $150 USD. If the upper level domain does not exist in DigiCert then there is a one time $250 USD charge to get it created.
 
 Please include the following in your email:
@@ -50,7 +51,9 @@ Please include the following in your email:
 - cost center
 - team distribution list
 
+
 Exception 2 :  if the application is behind IBP or is a (dot)digital app please fill the following form (https://forms.gle/64fKWWv3EiyE3yg39)
+
 
 ### 3) DNS requests
 

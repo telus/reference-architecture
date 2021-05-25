@@ -16,8 +16,8 @@ The user must be able to access the TELUS privacy policy at any stage when using
 
 Information on the privacy policy can be found here:
 
-- [Support - Privacy policy](https://www.telus.com/en/bc/support/privacy-policy)
-- [Privacy FAQ](https://www.telus.com/support/privacy-policy/assets/TELUS_Privacy_FAQ_EN.pdf?1517846227154)
+- [Telus - Privacy center](https://www.telus.com/en/about/privacy)
+- [Privacy FAQ](https://www.telus.com/en/about/privacy/faqs)
 
 ## Who
 
