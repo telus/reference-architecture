@@ -48,20 +48,3 @@ labels:
   - name: on hold
     description: No work planned on this for now
     color: D2DAE1
-
-branches:
-  - name: main
-    protection:
-      required_pull_request_reviews:
-        dismissal_restrictions:
-          teams:
-            - architecture-support
-
-      required_status_checks:
-        strict: true
-        contexts:
-          - 'Validate'
-
-      restrictions:
-        teams:
-          - architecture-support
