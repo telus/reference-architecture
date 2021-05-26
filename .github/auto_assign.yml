@@ -3,8 +3,8 @@ addReviewers: true
 addAssignees: true
 
 reviewers:
-  - ruxandrafed
-  - kspaans
-  - ahmadnassri
+  - pdufault
+  - gonzalovazquez
+  - jcayne-telus
 
 numberOfReviewers: 2
